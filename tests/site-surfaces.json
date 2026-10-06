@@ -1,0 +1,86 @@
+{
+  "surfaces": [
+    {
+      "name": "Homepage",
+      "url": "https://workforcewonkery.com/",
+      "required_markers": [
+        "Workforce Wonkery",
+        "Policy",
+        "Data",
+        "Practice"
+      ]
+    },
+    {
+      "name": "Policy Brief Library",
+      "url": "https://workforcewonkery.com/policy-briefs/",
+      "required_markers": [
+        "From policy to possibility",
+        "Find the rule, understand what changed, and get to the official source quickly.",
+        "Find a policy brief.",
+        "Search briefs by keyword, topic, or identifier",
+        "Clear filters",
+        "Show more briefs",
+        "All 222 published policy briefs remain available below"
+      ]
+    },
+    {
+      "name": "Data",
+      "url": "https://workforcewonkery.com/data/",
+      "required_markers": [
+        "Data decoded",
+        "California is hiring, cutting, and changing at the same time.",
+        "Health care is doing much of the pulling."
+      ]
+    },
+    {
+      "name": "Regional Training Opportunity Registry",
+      "url": "https://workforcewonkery.com/data/training-opportunities/",
+      "required_markers": [
+        "Regional Training Opportunity"
+      ]
+    },
+    {
+      "name": "California Workforce Board Examples",
+      "url": "https://workforcewonkery.com/workforce-board-examples/",
+      "required_markers": [
+        "California Workforce Board Examples",
+        "Recently added"
+      ]
+    },
+    {
+      "name": "Santa Cruz-Watsonville RTO Brief",
+      "url": "https://workforcewonkery.com/data/training-opportunities/santa-cruz-watsonville/",
+      "required_markers": [
+        "Santa Cruz-Watsonville",
+        "aviation"
+      ]
+    },
+    {
+      "name": "Occupation Explorer",
+      "url": "https://workforcewonkery.com/data/occupation-explorer/",
+      "required_markers": [
+        "Find the occupations worth a closer look.",
+        "occ-runtime-data",
+        "Occupation records are loaded from the shared Data public evidence layer."
+      ]
+    },
+    {
+      "name": "NOVAworks WAE tract map",
+      "url": "https://workforcewonkery.com/data/workforce-access-equity/novaworks/",
+      "required_markers": [
+        "Workforce Access",
+        "weq-nova-tract-v2",
+        "nova-map-status"
+      ]
+    },
+    {
+      "name": "San Diego WAE tract map",
+      "url": "https://workforcewonkery.com/data/workforce-access-equity/san-diego-county/",
+      "required_markers": [
+        "Workforce Access",
+        "weq-wae-map-v2",
+        "wae-map-zoom-in"
+      ]
+    }
+  ]
+}

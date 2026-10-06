@@ -1,0 +1,636 @@
+{
+  "schema_version": "1.0",
+  "market_id": "42100",
+  "market": {
+    "label": "Santa Cruz-Watsonville MSA",
+    "source": "santa-cruz",
+    "basic": 42.98,
+    "contextOpts": [],
+    "eddArea": "0621042100",
+    "component_counties": [
+      "Santa Cruz"
+    ],
+    "edd_components": [
+      {
+        "label": "Santa Cruz-Watsonville MSA",
+        "geog_area": "0621042100",
+        "counties": [
+          "Santa Cruz"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 1800,
+      "projected_employment": 1920,
+      "growth_pct": 6.7,
+      "total_openings": 1620,
+      "wage": {
+        "value": 110155,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "11-3021",
+      "employment": 300,
+      "projected_employment": 340,
+      "growth_pct": 13.3,
+      "total_openings": 250,
+      "wage": {
+        "value": 194124,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1111",
+      "employment": 680,
+      "projected_employment": 730,
+      "growth_pct": 7.4,
+      "total_openings": 610,
+      "wage": {
+        "value": 103820,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1161",
+      "employment": 450,
+      "projected_employment": 490,
+      "growth_pct": 8.9,
+      "total_openings": 440,
+      "wage": {
+        "value": 77857,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-2011",
+      "employment": 830,
+      "projected_employment": 880,
+      "growth_pct": 6,
+      "total_openings": 700,
+      "wage": {
+        "value": 84610,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1232",
+      "employment": 220,
+      "projected_employment": 230,
+      "growth_pct": 4.5,
+      "total_openings": 150,
+      "wage": {
+        "value": 75405,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1252",
+      "employment": 570,
+      "projected_employment": 630,
+      "growth_pct": 10.5,
+      "total_openings": 370,
+      "wage": {
+        "value": 142511,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2021",
+      "employment": 1000,
+      "projected_employment": 1030,
+      "growth_pct": 3,
+      "total_openings": 690,
+      "wage": {
+        "value": 82821,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2031",
+      "employment": 580,
+      "projected_employment": 600,
+      "growth_pct": 3.4,
+      "total_openings": 380,
+      "wage": {
+        "value": 84403,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-3031",
+      "employment": 510,
+      "projected_employment": 550,
+      "growth_pct": 7.8,
+      "total_openings": 670,
+      "wage": {
+        "value": 61692,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-9045",
+      "employment": 1030,
+      "projected_employment": 1060,
+      "growth_pct": 2.9,
+      "total_openings": 1260,
+      "wage": {
+        "value": 47065,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1141",
+      "employment": 1590,
+      "projected_employment": 1610,
+      "growth_pct": 1.3,
+      "total_openings": 850,
+      "wage": {
+        "value": 183762,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1292",
+      "employment": 170,
+      "projected_employment": 180,
+      "growth_pct": 5.9,
+      "total_openings": 120,
+      "wage": {
+        "value": 130575,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2034",
+      "employment": 120,
+      "projected_employment": 120,
+      "growth_pct": 0,
+      "total_openings": 60,
+      "wage": {
+        "value": 127750,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2055",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Santa Cruz-Watsonville MSA (Santa Cruz County); no broader value is substituted."
+    },
+    {
+      "soc": "29-2061",
+      "employment": 330,
+      "projected_employment": 350,
+      "growth_pct": 6.1,
+      "total_openings": 290,
+      "wage": {
+        "value": 81743,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1120",
+      "employment": 4370,
+      "projected_employment": 5520,
+      "growth_pct": 26.3,
+      "total_openings": 8360,
+      "wage": {
+        "value": 34411,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1131",
+      "employment": 340,
+      "projected_employment": 360,
+      "growth_pct": 5.9,
+      "total_openings": 510,
+      "wage": {
+        "value": 48059,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-2021",
+      "employment": 50,
+      "projected_employment": 60,
+      "growth_pct": 20,
+      "total_openings": 100,
+      "wage": {
+        "value": 86203,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-9092",
+      "employment": 870,
+      "projected_employment": 1000,
+      "growth_pct": 14.9,
+      "total_openings": 1330,
+      "wage": {
+        "value": 50465,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "33-2011",
+      "employment": 340,
+      "projected_employment": 360,
+      "growth_pct": 5.9,
+      "total_openings": 280,
+      "wage": {
+        "value": 76238,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3023",
+      "employment": 3090,
+      "projected_employment": 3440,
+      "growth_pct": 11.3,
+      "total_openings": 7920,
+      "wage": {
+        "value": 38360,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3031",
+      "employment": 1830,
+      "projected_employment": 1950,
+      "growth_pct": 6.6,
+      "total_openings": 3990,
+      "wage": {
+        "value": 36273,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2011",
+      "employment": 2580,
+      "projected_employment": 2360,
+      "growth_pct": -8.5,
+      "total_openings": 4480,
+      "wage": {
+        "value": 37485,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2031",
+      "employment": 2420,
+      "projected_employment": 2400,
+      "growth_pct": -0.8,
+      "total_openings": 3470,
+      "wage": {
+        "value": 37741,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "43-3031",
+      "employment": 1180,
+      "projected_employment": 1130,
+      "growth_pct": -4.2,
+      "total_openings": 1250,
+      "wage": {
+        "value": 61517,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "45-2092",
+      "employment": 3520,
+      "projected_employment": 3150,
+      "growth_pct": -10.5,
+      "total_openings": 4710,
+      "wage": {
+        "value": 38602,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-1011",
+      "employment": 420,
+      "projected_employment": 460,
+      "growth_pct": 9.5,
+      "total_openings": 370,
+      "wage": {
+        "value": 89176,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2031",
+      "employment": 810,
+      "projected_employment": 870,
+      "growth_pct": 7.4,
+      "total_openings": 700,
+      "wage": {
+        "value": 74878,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2111",
+      "employment": 360,
+      "projected_employment": 430,
+      "growth_pct": 19.4,
+      "total_openings": 420,
+      "wage": {
+        "value": 79202,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2152",
+      "employment": 350,
+      "projected_employment": 390,
+      "growth_pct": 11.4,
+      "total_openings": 350,
+      "wage": {
+        "value": 71388,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3011",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Santa Cruz-Watsonville MSA (Santa Cruz County); no broader value is substituted."
+    },
+    {
+      "soc": "49-3041",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Santa Cruz-Watsonville MSA (Santa Cruz County); no broader value is substituted."
+    },
+    {
+      "soc": "49-3042",
+      "employment": 80,
+      "projected_employment": 80,
+      "growth_pct": 0,
+      "total_openings": 60,
+      "wage": {
+        "value": 80113,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-9041",
+      "employment": 130,
+      "projected_employment": 150,
+      "growth_pct": 15.4,
+      "total_openings": 130,
+      "wage": {
+        "value": 72041,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-4121",
+      "employment": 90,
+      "projected_employment": 90,
+      "growth_pct": 0,
+      "total_openings": 100,
+      "wage": {
+        "value": 59424,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-8031",
+      "employment": 80,
+      "projected_employment": 80,
+      "growth_pct": 0,
+      "total_openings": 80,
+      "wage": {
+        "value": 88018,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-3032",
+      "employment": 950,
+      "projected_employment": 1020,
+      "growth_pct": 7.4,
+      "total_openings": 1070,
+      "wage": {
+        "value": 60547,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7062",
+      "employment": 1230,
+      "projected_employment": 1250,
+      "growth_pct": 1.6,
+      "total_openings": 1630,
+      "wage": {
+        "value": 42171,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7065",
+      "employment": 1430,
+      "projected_employment": 1570,
+      "growth_pct": 9.8,
+      "total_openings": 2530,
+      "wage": {
+        "value": 38780,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Cruz-Watsonville MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Cruz-Watsonville MSA (Santa Cruz County). The source geography exactly matches the published MSA/CBSA labor market."
+    }
+  ],
+  "qa": {
+    "cbsa": "42100",
+    "label": "Santa Cruz-Watsonville MSA",
+    "catalog_size": 40,
+    "embedded_rows": 40,
+    "exact_msa_rows": 40,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 0,
+    "wage_rows": 37,
+    "projection_rows": 37,
+    "source_periods": [
+      "2023-2033 projections; wages 2025 Q1"
+    ],
+    "coverage_status": "exact_msa_core_complete",
+    "qa_status": "PASS",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

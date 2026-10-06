@@ -1,0 +1,645 @@
+{
+  "schema_version": "1.0",
+  "market_id": "42200",
+  "market": {
+    "label": "Santa Maria-Santa Barbara MSA",
+    "source": "santa-barbara",
+    "basic": 35.78,
+    "contextOpts": [],
+    "eddArea": "0621042200",
+    "component_counties": [
+      "Santa Barbara"
+    ],
+    "edd_components": [
+      {
+        "label": "Santa Maria-Santa Barbara MSA",
+        "geog_area": "0621042200",
+        "counties": [
+          "Santa Barbara"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 3600,
+      "projected_employment": 3820,
+      "growth_pct": 6.1,
+      "total_openings": 3200,
+      "wage": {
+        "value": 112070,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "11-3021",
+      "employment": 830,
+      "projected_employment": 960,
+      "growth_pct": 15.7,
+      "total_openings": 730,
+      "wage": {
+        "value": 204513,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1111",
+      "employment": 810,
+      "projected_employment": 880,
+      "growth_pct": 8.6,
+      "total_openings": 740,
+      "wage": {
+        "value": 104156,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1161",
+      "employment": 1060,
+      "projected_employment": 1170,
+      "growth_pct": 10.4,
+      "total_openings": 1070,
+      "wage": {
+        "value": 79589,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-2011",
+      "employment": 1630,
+      "projected_employment": 1750,
+      "growth_pct": 7.4,
+      "total_openings": 1400,
+      "wage": {
+        "value": 89795,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1232",
+      "employment": 1040,
+      "projected_employment": 1100,
+      "growth_pct": 5.8,
+      "total_openings": 730,
+      "wage": {
+        "value": 80387,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1252",
+      "employment": 2170,
+      "projected_employment": 2430,
+      "growth_pct": 12,
+      "total_openings": 1440,
+      "wage": {
+        "value": 167450,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2021",
+      "employment": 1940,
+      "projected_employment": 1960,
+      "growth_pct": 1,
+      "total_openings": 1300,
+      "wage": {
+        "value": 102779,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2031",
+      "employment": 1220,
+      "projected_employment": 1230,
+      "growth_pct": 0.8,
+      "total_openings": 750,
+      "wage": {
+        "value": 102646,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-3031",
+      "employment": 1150,
+      "projected_employment": 1100,
+      "growth_pct": -4.3,
+      "total_openings": 1290,
+      "wage": {
+        "value": 50814,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-9045",
+      "employment": 2160,
+      "projected_employment": 2160,
+      "growth_pct": 0,
+      "total_openings": 2540,
+      "wage": {
+        "value": 46151,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1141",
+      "employment": 3120,
+      "projected_employment": 3450,
+      "growth_pct": 10.6,
+      "total_openings": 2020,
+      "wage": {
+        "value": 137097,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1292",
+      "employment": 290,
+      "projected_employment": 310,
+      "growth_pct": 6.9,
+      "total_openings": 210,
+      "wage": {
+        "value": 135598,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2034",
+      "employment": 260,
+      "projected_employment": 290,
+      "growth_pct": 11.5,
+      "total_openings": 180,
+      "wage": {
+        "value": 109898,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2055",
+      "employment": 130,
+      "projected_employment": 140,
+      "growth_pct": 7.7,
+      "total_openings": 90,
+      "wage": {
+        "value": 80397,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2061",
+      "employment": 750,
+      "projected_employment": 780,
+      "growth_pct": 4,
+      "total_openings": 620,
+      "wage": {
+        "value": 78723,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1120",
+      "employment": 5920,
+      "projected_employment": 7240,
+      "growth_pct": 22.3,
+      "total_openings": 10900,
+      "wage": {
+        "value": 34494,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1131",
+      "employment": 1130,
+      "projected_employment": 1220,
+      "growth_pct": 8,
+      "total_openings": 1730,
+      "wage": {
+        "value": 47503,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-2021",
+      "employment": 70,
+      "projected_employment": 90,
+      "growth_pct": 28.6,
+      "total_openings": 140,
+      "wage": {
+        "value": 84774,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-9092",
+      "employment": 1390,
+      "projected_employment": 1630,
+      "growth_pct": 17.3,
+      "total_openings": 2170,
+      "wage": {
+        "value": 51123,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "33-2011",
+      "employment": 320,
+      "projected_employment": 320,
+      "growth_pct": 0,
+      "total_openings": 230,
+      "wage": {
+        "value": 76988,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3023",
+      "employment": 5920,
+      "projected_employment": 6840,
+      "growth_pct": 15.5,
+      "total_openings": 15720,
+      "wage": {
+        "value": 38011,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3031",
+      "employment": 3750,
+      "projected_employment": 4190,
+      "growth_pct": 11.7,
+      "total_openings": 8560,
+      "wage": {
+        "value": 35316,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2011",
+      "employment": 4360,
+      "projected_employment": 4290,
+      "growth_pct": -1.6,
+      "total_openings": 8150,
+      "wage": {
+        "value": 36770,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2031",
+      "employment": 4250,
+      "projected_employment": 4360,
+      "growth_pct": 2.6,
+      "total_openings": 6350,
+      "wage": {
+        "value": 37301,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "43-3031",
+      "employment": 2110,
+      "projected_employment": 2060,
+      "growth_pct": -2.4,
+      "total_openings": 2300,
+      "wage": {
+        "value": 59913,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "45-2092",
+      "employment": 20000,
+      "projected_employment": 22370,
+      "growth_pct": 11.9,
+      "total_openings": 34680,
+      "wage": {
+        "value": 37799,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-1011",
+      "employment": 800,
+      "projected_employment": 870,
+      "growth_pct": 8.8,
+      "total_openings": 710,
+      "wage": {
+        "value": 92697,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2031",
+      "employment": 1280,
+      "projected_employment": 1400,
+      "growth_pct": 9.4,
+      "total_openings": 1160,
+      "wage": {
+        "value": 64893,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2111",
+      "employment": 590,
+      "projected_employment": 670,
+      "growth_pct": 13.6,
+      "total_openings": 640,
+      "wage": {
+        "value": 78007,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2152",
+      "employment": 680,
+      "projected_employment": 730,
+      "growth_pct": 7.4,
+      "total_openings": 640,
+      "wage": {
+        "value": 62577,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3011",
+      "employment": 130,
+      "projected_employment": 140,
+      "growth_pct": 7.7,
+      "total_openings": 120,
+      "wage": {
+        "value": 82537,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3041",
+      "employment": 380,
+      "projected_employment": 500,
+      "growth_pct": 31.6,
+      "total_openings": 480,
+      "wage": {
+        "value": 49643,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3042",
+      "employment": 220,
+      "projected_employment": 230,
+      "growth_pct": 4.5,
+      "total_openings": 200,
+      "wage": {
+        "value": 79610,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-9041",
+      "employment": 260,
+      "projected_employment": 300,
+      "growth_pct": 15.4,
+      "total_openings": 250,
+      "wage": {
+        "value": 65530,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-4121",
+      "employment": 250,
+      "projected_employment": 260,
+      "growth_pct": 4,
+      "total_openings": 260,
+      "wage": {
+        "value": 58306,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-8031",
+      "employment": 240,
+      "projected_employment": 230,
+      "growth_pct": -4.2,
+      "total_openings": 210,
+      "wage": {
+        "value": 85423,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-3032",
+      "employment": 2170,
+      "projected_employment": 2490,
+      "growth_pct": 14.7,
+      "total_openings": 2690,
+      "wage": {
+        "value": 58611,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7062",
+      "employment": 2340,
+      "projected_employment": 2440,
+      "growth_pct": 4.3,
+      "total_openings": 3190,
+      "wage": {
+        "value": 39712,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7065",
+      "employment": 2460,
+      "projected_employment": 2910,
+      "growth_pct": 18.3,
+      "total_openings": 4720,
+      "wage": {
+        "value": 38442,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Maria-Santa Barbara MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Maria-Santa Barbara MSA (Santa Barbara County). The source geography exactly matches the published MSA/CBSA labor market."
+    }
+  ],
+  "qa": {
+    "cbsa": "42200",
+    "label": "Santa Maria-Santa Barbara MSA",
+    "catalog_size": 40,
+    "embedded_rows": 40,
+    "exact_msa_rows": 40,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 0,
+    "wage_rows": 40,
+    "projection_rows": 40,
+    "source_periods": [
+      "2023-2033 projections; wages 2025 Q1"
+    ],
+    "coverage_status": "exact_msa_core_complete",
+    "qa_status": "PASS",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

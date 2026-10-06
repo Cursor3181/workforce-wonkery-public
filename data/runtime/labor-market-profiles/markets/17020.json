@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "market_id": "17020",
+  "market": {
+    "label": "Chico MSA",
+    "source": null,
+    "basic": 24.06,
+    "contextOpts": [
+      {
+        "id": "sow-nortec",
+        "label": "North State"
+      }
+    ],
+    "eddArea": "0621017020",
+    "component_counties": [
+      "Butte"
+    ],
+    "edd_components": [
+      {
+        "label": "Chico MSA",
+        "geog_area": "0621017020",
+        "counties": [
+          "Butte"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$100,930 annual",
+      "fit": "context",
+      "evidence_geography": "North State",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North State. This is not a local-area opening estimate and is not used to rank occupations for NoRTEC."
+    },
+    {
+      "soc": "13-2011",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$80,589 annual",
+      "fit": "context",
+      "evidence_geography": "North State",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North State. This is not a local-area opening estimate and is not used to rank occupations for NoRTEC."
+    },
+    {
+      "soc": "25-2021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$93,749 annual",
+      "fit": "context",
+      "evidence_geography": "North State",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North State. This is not a local-area opening estimate and is not used to rank occupations for NoRTEC."
+    },
+    {
+      "soc": "25-3031",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$62,740 annual",
+      "fit": "context",
+      "evidence_geography": "North State",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North State. This is not a local-area opening estimate and is not used to rank occupations for NoRTEC."
+    }
+  ],
+  "qa": {
+    "cbsa": "17020",
+    "label": "Chico MSA",
+    "catalog_size": 40,
+    "embedded_rows": 4,
+    "exact_msa_rows": 0,
+    "regional_context_rows": 4,
+    "profile_link_only_rows": 36,
+    "wage_rows": 4,
+    "projection_rows": 0,
+    "source_periods": [
+      "broader regional context"
+    ],
+    "coverage_status": "regional_context_partial",
+    "qa_status": "WARN",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

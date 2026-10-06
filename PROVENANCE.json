@@ -1,0 +1,964 @@
+{
+  "export_mode": "allowlist",
+  "file_count": 191,
+  "files": [
+    {
+      "sha256": "cc8c3fef0fc148012263283e968cb0ddcc8019d4065547a2ee16cb195b95622e",
+      "source": "public-companion/templates/README.md",
+      "target": "README.md"
+    },
+    {
+      "sha256": "3ff299a9e1845a415cccc3e67bf8fbe816ddd939b9d2d35dbb4f91a7adfe1a9c",
+      "source": "public-companion/templates/CONTRIBUTING.md",
+      "target": "CONTRIBUTING.md"
+    },
+    {
+      "sha256": "cf149ce3a4d4ecaa6c975d8734f180ab89662b64c87ed246b8ba579e60920e57",
+      "source": "public-companion/templates/SECURITY.md",
+      "target": "SECURITY.md"
+    },
+    {
+      "sha256": "1d709cb94707227d5a32d2e0186fa015028e6afa3b8356902b62329c76b5ad42",
+      "source": "public-companion/templates/LICENSE-NOTICE.md",
+      "target": "LICENSE-NOTICE.md"
+    },
+    {
+      "sha256": "0101e760f6d6f3da83260695cd215fdf1656ae7731930eb232b6572c5c4035f2",
+      "source": "generated/public/discovery/manifest.json",
+      "target": "data/runtime/discovery/manifest.json"
+    },
+    {
+      "sha256": "0328747d2090cf47e7772fb358197ff82dbf2821a25ba1a52ffd5902ff186997",
+      "source": "generated/public/discovery/shards/occupation-11-29.json",
+      "target": "data/runtime/discovery/shards/occupation-11-29.json"
+    },
+    {
+      "sha256": "ce6e343a3deddaff874d60cc3f834c287295300ce690e983738e8ee16e79a2dc",
+      "source": "generated/public/discovery/shards/occupation-31-59.json",
+      "target": "data/runtime/discovery/shards/occupation-31-59.json"
+    },
+    {
+      "sha256": "d59186197d9ac7e18a560c903bede3c1e07109320264fba52a8af00005556538",
+      "source": "generated/public/discovery/shards/policy.json",
+      "target": "data/runtime/discovery/shards/policy.json"
+    },
+    {
+      "sha256": "b2d7bb2450057a16c6fe1931c1fcf4f0a3ec670444542c196e27189687539221",
+      "source": "generated/public/discovery/shards/practice.json",
+      "target": "data/runtime/discovery/shards/practice.json"
+    },
+    {
+      "sha256": "b59f282cbb218e4b0ce829c821831962b66b0d709d576c986d742d21550b51ac",
+      "source": "generated/public/discovery/shards/regional.json",
+      "target": "data/runtime/discovery/shards/regional.json"
+    },
+    {
+      "sha256": "6c73ee8eac1ac152d82fb153b8b6e534f37a7198a0b221b6a0f3fc98cfcea417",
+      "source": "generated/public/discovery/shards/sector.json",
+      "target": "data/runtime/discovery/shards/sector.json"
+    },
+    {
+      "sha256": "a3b0c77bf1f416b9777c295cb1dac49b37f3403f1bbff0c7c0facddae0dcb59a",
+      "source": "generated/public/discovery/shards/site.json",
+      "target": "data/runtime/discovery/shards/site.json"
+    },
+    {
+      "sha256": "6e542d9ec6f8f69eaa8934f55942965c68e6f5e27de08aeeaeeb367e8cae9628",
+      "source": "generated/public/intelligence-graph/context/0.json",
+      "target": "data/runtime/intelligence-graph/context/0.json"
+    },
+    {
+      "sha256": "015eb43d8583d1fc80c6be88252c54174c55238cfde55919b22277d5a00d2c0e",
+      "source": "generated/public/intelligence-graph/context/1.json",
+      "target": "data/runtime/intelligence-graph/context/1.json"
+    },
+    {
+      "sha256": "a0ee21f2d162aeec06bde511e80bf5f029a04acebbc90ce68079ee0d5d9b8214",
+      "source": "generated/public/intelligence-graph/context/2.json",
+      "target": "data/runtime/intelligence-graph/context/2.json"
+    },
+    {
+      "sha256": "580c3c54dafe0bc1ba330964c707635ee40682981d8953bf2f56dbac7637a001",
+      "source": "generated/public/intelligence-graph/context/3.json",
+      "target": "data/runtime/intelligence-graph/context/3.json"
+    },
+    {
+      "sha256": "fe883edbe6eb7d90665eeda1e240ad5940bdcdfb6a8491a4a66b4312f2571e54",
+      "source": "generated/public/intelligence-graph/context/4.json",
+      "target": "data/runtime/intelligence-graph/context/4.json"
+    },
+    {
+      "sha256": "767f7c9933fc9809fa5d66bbb57aaa17d834b18cd603bd9ab98cfb7baf9b5dc5",
+      "source": "generated/public/intelligence-graph/context/5.json",
+      "target": "data/runtime/intelligence-graph/context/5.json"
+    },
+    {
+      "sha256": "00c9b8cbfe7ba0fddfbab9c1d685d7004c873e88c824e7428e2b1e69f2f1f038",
+      "source": "generated/public/intelligence-graph/context/6.json",
+      "target": "data/runtime/intelligence-graph/context/6.json"
+    },
+    {
+      "sha256": "3318adfcbc5274fb1608ec5666d759e8817e0084f8aee7e20adb1864ac97dc63",
+      "source": "generated/public/intelligence-graph/context/7.json",
+      "target": "data/runtime/intelligence-graph/context/7.json"
+    },
+    {
+      "sha256": "de498c4ae11b7400a1759d394f113f422c8c06b92bc86aba147f1b4c576bbad5",
+      "source": "generated/public/intelligence-graph/context/8.json",
+      "target": "data/runtime/intelligence-graph/context/8.json"
+    },
+    {
+      "sha256": "0d8a5d751abca50c1a43965a999c3f2fabcc38344f73ca76e1b89a15de82577e",
+      "source": "generated/public/intelligence-graph/context/9.json",
+      "target": "data/runtime/intelligence-graph/context/9.json"
+    },
+    {
+      "sha256": "62620c20bdb9566bcbe517923bf68f065c747109a4c06aacad42bcd2128494fb",
+      "source": "generated/public/intelligence-graph/context/a.json",
+      "target": "data/runtime/intelligence-graph/context/a.json"
+    },
+    {
+      "sha256": "bb22d19e25ca2bc72bf36e1864c0276625a6ed3d92489c212fd0e41228aa90fd",
+      "source": "generated/public/intelligence-graph/context/b.json",
+      "target": "data/runtime/intelligence-graph/context/b.json"
+    },
+    {
+      "sha256": "2017590be8709055a82638f58b5642e9e1e2671c7aef5de1874c6aa5385c508b",
+      "source": "generated/public/intelligence-graph/context/c.json",
+      "target": "data/runtime/intelligence-graph/context/c.json"
+    },
+    {
+      "sha256": "cef1e5780b56fe168f533996e321451928e2056da9916dbe15353db4e97f5752",
+      "source": "generated/public/intelligence-graph/context/d.json",
+      "target": "data/runtime/intelligence-graph/context/d.json"
+    },
+    {
+      "sha256": "a0cbdfef246a8b4eb13f13237adbe1c732abe6dfeb992d8e1307a22ae7aa277f",
+      "source": "generated/public/intelligence-graph/context/e.json",
+      "target": "data/runtime/intelligence-graph/context/e.json"
+    },
+    {
+      "sha256": "8d56d73b4c31a8836697b97a7f2417a85b9279a7cdb6a904d72a60e618d695db",
+      "source": "generated/public/intelligence-graph/context/f.json",
+      "target": "data/runtime/intelligence-graph/context/f.json"
+    },
+    {
+      "sha256": "9215871fe38f05792bdfc984a4865753d8e26df541bf8a114a92015d29a59bb8",
+      "source": "generated/public/intelligence-graph/entities/access_equity.json",
+      "target": "data/runtime/intelligence-graph/entities/access_equity.json"
+    },
+    {
+      "sha256": "eb1ced9a01554da9c4351432cf1a00cb03840d1a513794ae89fb1dafb4cab211",
+      "source": "generated/public/intelligence-graph/entities/agency.json",
+      "target": "data/runtime/intelligence-graph/entities/agency.json"
+    },
+    {
+      "sha256": "eca19337e79ad6647cc84c723838fb5295b467a6dde479c39e300399484de9cb",
+      "source": "generated/public/intelligence-graph/entities/concept.json",
+      "target": "data/runtime/intelligence-graph/entities/concept.json"
+    },
+    {
+      "sha256": "d89b40da01ae4ddcfba42435bbab837a04ac8a9b30d439daed7cce37e2f59087",
+      "source": "generated/public/intelligence-graph/entities/data_tool.json",
+      "target": "data/runtime/intelligence-graph/entities/data_tool.json"
+    },
+    {
+      "sha256": "dd38bd331ee25d2b5148dae934b39a28ef5d906ddf6dba7ed0f826f635262513",
+      "source": "generated/public/intelligence-graph/entities/funding_source.json",
+      "target": "data/runtime/intelligence-graph/entities/funding_source.json"
+    },
+    {
+      "sha256": "02c748b3bb36c2708acf1364bf48ad041858b73813e8166190c92fa1bc043a65",
+      "source": "generated/public/intelligence-graph/entities/geography.json",
+      "target": "data/runtime/intelligence-graph/entities/geography.json"
+    },
+    {
+      "sha256": "16b724af9e67d1e88388588375b4f53c1e53d070f1dc2225e43987abf8b0eeb2",
+      "source": "generated/public/intelligence-graph/entities/geography_type.json",
+      "target": "data/runtime/intelligence-graph/entities/geography_type.json"
+    },
+    {
+      "sha256": "9c8e395633269ec74f212cebc69109d338dd1ae59659e1fb4b05bb370c7e009a",
+      "source": "generated/public/intelligence-graph/entities/methodology.json",
+      "target": "data/runtime/intelligence-graph/entities/methodology.json"
+    },
+    {
+      "sha256": "518798c51353e2c196a048888d65c333001f91e511a1ee06c751d0f26cb15ca7",
+      "source": "generated/public/intelligence-graph/entities/occupation-11-29.json",
+      "target": "data/runtime/intelligence-graph/entities/occupation-11-29.json"
+    },
+    {
+      "sha256": "778ca7179412c971f5647bfbe1a5491e26dc48d568b10780a588498a35c3ae77",
+      "source": "generated/public/intelligence-graph/entities/occupation-31-59.json",
+      "target": "data/runtime/intelligence-graph/entities/occupation-31-59.json"
+    },
+    {
+      "sha256": "5c1ca0aeb01bbbe568640a393ac6a76eee203f4028239295377eca07a242f2b2",
+      "source": "generated/public/intelligence-graph/entities/organization_type.json",
+      "target": "data/runtime/intelligence-graph/entities/organization_type.json"
+    },
+    {
+      "sha256": "346ab94a2d060ec8f04e1253881f2b1e01a75def86e8d797c7e93022fd2de7d2",
+      "source": "generated/public/intelligence-graph/entities/page.json",
+      "target": "data/runtime/intelligence-graph/entities/page.json"
+    },
+    {
+      "sha256": "9248171071ce36fc3df3f515ce9e945150b6c1ba083a16ff46803f7b5c7ee960",
+      "source": "generated/public/intelligence-graph/entities/policy.json",
+      "target": "data/runtime/intelligence-graph/entities/policy.json"
+    },
+    {
+      "sha256": "70a26a482502c025c37e84c5991ae6b18fdd3c05db7b0b03c48faa323c499208",
+      "source": "generated/public/intelligence-graph/entities/policy_digest.json",
+      "target": "data/runtime/intelligence-graph/entities/policy_digest.json"
+    },
+    {
+      "sha256": "8f4a0227fd138960ecdeb71b691d490752a8a822ecf6ab21eebe4dbac9219914",
+      "source": "generated/public/intelligence-graph/entities/practice.json",
+      "target": "data/runtime/intelligence-graph/entities/practice.json"
+    },
+    {
+      "sha256": "1f7477fc98f1983e33373fedebb4d61ce83be39405416ade5e93578f17e911fa",
+      "source": "generated/public/intelligence-graph/entities/program.json",
+      "target": "data/runtime/intelligence-graph/entities/program.json"
+    },
+    {
+      "sha256": "d790b12b9df346a41703b77c75286ced74cedeb65bb6d42e592c9b6bcad563eb",
+      "source": "generated/public/intelligence-graph/entities/report.json",
+      "target": "data/runtime/intelligence-graph/entities/report.json"
+    },
+    {
+      "sha256": "9c5e65df33f428f18966dad333d9688794430e6b461f331e6a47d966212c2010",
+      "source": "generated/public/intelligence-graph/entities/sector_partnership.json",
+      "target": "data/runtime/intelligence-graph/entities/sector_partnership.json"
+    },
+    {
+      "sha256": "2f307d34ff222b5927596d00c259ab75cbe3dd6087aa78d6b25d21e996d76859",
+      "source": "generated/public/intelligence-graph/entities/training_opportunity.json",
+      "target": "data/runtime/intelligence-graph/entities/training_opportunity.json"
+    },
+    {
+      "sha256": "b4940c269c530553d3fe001c23b2c70e64327cb4d5d649e07393575bd800cafa",
+      "source": "generated/public/intelligence-graph/impact-index.json",
+      "target": "data/runtime/intelligence-graph/impact-index.json"
+    },
+    {
+      "sha256": "a7e2d1add4a39dd15536dbc67da2e7181a36fc4d3044aecb1d0debb9157e4096",
+      "source": "generated/public/intelligence-graph/manifest.json",
+      "target": "data/runtime/intelligence-graph/manifest.json"
+    },
+    {
+      "sha256": "5f208b55e7811b4fd4b8f754cb6ccee87e08cce514d889a695c6dbddb971e270",
+      "source": "generated/public/intelligence-graph/reader/0.json",
+      "target": "data/runtime/intelligence-graph/reader/0.json"
+    },
+    {
+      "sha256": "e59875dc261d6d52497805912ee55884ca834d701edc82791ef5a032092b5f40",
+      "source": "generated/public/intelligence-graph/reader/1.json",
+      "target": "data/runtime/intelligence-graph/reader/1.json"
+    },
+    {
+      "sha256": "b734dd8ef5044d68eda027a1a70bcb3c81cd1b207ea59075c021996c977258fd",
+      "source": "generated/public/intelligence-graph/reader/2.json",
+      "target": "data/runtime/intelligence-graph/reader/2.json"
+    },
+    {
+      "sha256": "5a5dadf426cad6c133cb74d472dd019f115b556588b60b891590e132831fec72",
+      "source": "generated/public/intelligence-graph/reader/3.json",
+      "target": "data/runtime/intelligence-graph/reader/3.json"
+    },
+    {
+      "sha256": "c76ae80d203071ef38d889a4c587e2b624cfaed36da784ef33f73efbb8d69076",
+      "source": "generated/public/intelligence-graph/reader/4.json",
+      "target": "data/runtime/intelligence-graph/reader/4.json"
+    },
+    {
+      "sha256": "ca64f5b31fb0f387bdc8a580e490ddd8a7f4ca566f7434a0e1d58e20985b6d48",
+      "source": "generated/public/intelligence-graph/reader/5.json",
+      "target": "data/runtime/intelligence-graph/reader/5.json"
+    },
+    {
+      "sha256": "12c5bfa7a3ea97a08cd2f103d3e5e516ee86fa45d6293dc05ce6e160b7a5c9c0",
+      "source": "generated/public/intelligence-graph/reader/6.json",
+      "target": "data/runtime/intelligence-graph/reader/6.json"
+    },
+    {
+      "sha256": "50654575e1016ddc32b97468e14e48aad585d3f0f7f40a48a9d9651be612e155",
+      "source": "generated/public/intelligence-graph/reader/7.json",
+      "target": "data/runtime/intelligence-graph/reader/7.json"
+    },
+    {
+      "sha256": "83c5c54b07f02f052dd1d1ec0d213227e56d29098e9e9e9440d0572fceee3c53",
+      "source": "generated/public/intelligence-graph/reader/8.json",
+      "target": "data/runtime/intelligence-graph/reader/8.json"
+    },
+    {
+      "sha256": "7009ebec9006291ee0a2ec1dd9cdb3083e07a143049a2560a0bb90c2066bdeb2",
+      "source": "generated/public/intelligence-graph/reader/9.json",
+      "target": "data/runtime/intelligence-graph/reader/9.json"
+    },
+    {
+      "sha256": "91d4df84e33d95303a98d82bb526051119c4ac52161b64016d623e50afa04604",
+      "source": "generated/public/intelligence-graph/reader/a.json",
+      "target": "data/runtime/intelligence-graph/reader/a.json"
+    },
+    {
+      "sha256": "67807426538571d9078955c5f68cbec5c56760f12f665c75bd5390bae18101fb",
+      "source": "generated/public/intelligence-graph/reader/b.json",
+      "target": "data/runtime/intelligence-graph/reader/b.json"
+    },
+    {
+      "sha256": "44eba4069b834865e75ff9ae18664bd188b8985831f9c1ee7ed81ea905166794",
+      "source": "generated/public/intelligence-graph/reader/c.json",
+      "target": "data/runtime/intelligence-graph/reader/c.json"
+    },
+    {
+      "sha256": "4147d7c46cff33bf280b3eff893a9e3a1e76a015e023186bcc5dc3f7d545b754",
+      "source": "generated/public/intelligence-graph/reader/d.json",
+      "target": "data/runtime/intelligence-graph/reader/d.json"
+    },
+    {
+      "sha256": "46282e1ed88b1e6c0418da0521dab2bd437ad371de51048a475d9853fbe103ed",
+      "source": "generated/public/intelligence-graph/reader/e.json",
+      "target": "data/runtime/intelligence-graph/reader/e.json"
+    },
+    {
+      "sha256": "b6c1245cd817314dc2ae693b15486168a9338041db299c61a0d63134e5975d67",
+      "source": "generated/public/intelligence-graph/reader/f.json",
+      "target": "data/runtime/intelligence-graph/reader/f.json"
+    },
+    {
+      "sha256": "330e94addd9508b30a238536d002075f9a6a86c3cd3a871556c8651fec6afec9",
+      "source": "generated/public/intelligence-graph/relationships/0.json",
+      "target": "data/runtime/intelligence-graph/relationships/0.json"
+    },
+    {
+      "sha256": "5a46c39cfb732ad32dc9271f32100be6ca948f6aa33fe2855e56441560499e9c",
+      "source": "generated/public/intelligence-graph/relationships/1.json",
+      "target": "data/runtime/intelligence-graph/relationships/1.json"
+    },
+    {
+      "sha256": "0882c32ec618684614821cf911f972411ef44375f31e6399e0e1ef6cd73e3b7b",
+      "source": "generated/public/intelligence-graph/relationships/2.json",
+      "target": "data/runtime/intelligence-graph/relationships/2.json"
+    },
+    {
+      "sha256": "21f93f074fb613d44878350d65ae5683851d8e93e95ae93bcf09da53d6f856f9",
+      "source": "generated/public/intelligence-graph/relationships/3.json",
+      "target": "data/runtime/intelligence-graph/relationships/3.json"
+    },
+    {
+      "sha256": "1a04ca8632ee235070d66a0889bc735c931d5a92e9f815986060902ec2970e51",
+      "source": "generated/public/intelligence-graph/relationships/4.json",
+      "target": "data/runtime/intelligence-graph/relationships/4.json"
+    },
+    {
+      "sha256": "4fbd051f600b9ea04573da55ae16f5b4fbe38c1d6888ed9e673ad2fcfaba3531",
+      "source": "generated/public/intelligence-graph/relationships/5.json",
+      "target": "data/runtime/intelligence-graph/relationships/5.json"
+    },
+    {
+      "sha256": "e606ec027a0720a4f234ee7d60c8f714be2dd4ff4b3b93e3d4ad0c696db1442d",
+      "source": "generated/public/intelligence-graph/relationships/6.json",
+      "target": "data/runtime/intelligence-graph/relationships/6.json"
+    },
+    {
+      "sha256": "8cc2ed5c3a14334e81e55d262a0fa33e68b59956751e62e3218caaa2b224d5a2",
+      "source": "generated/public/intelligence-graph/relationships/7.json",
+      "target": "data/runtime/intelligence-graph/relationships/7.json"
+    },
+    {
+      "sha256": "d3e9957fb88a163001b2fc2a5d1cb8f32d1e85d24820d7d0275914177614d74b",
+      "source": "generated/public/intelligence-graph/relationships/8.json",
+      "target": "data/runtime/intelligence-graph/relationships/8.json"
+    },
+    {
+      "sha256": "409ea4cefa36a3b933ecefbc61693c6a1f6c5fd13fa01f0ffd67a03fd1a91b8a",
+      "source": "generated/public/intelligence-graph/relationships/9.json",
+      "target": "data/runtime/intelligence-graph/relationships/9.json"
+    },
+    {
+      "sha256": "0bc5d8a198f1255f950064c1ef6648e1a27923448a8664ae4a10d0038cb45f7a",
+      "source": "generated/public/intelligence-graph/relationships/a.json",
+      "target": "data/runtime/intelligence-graph/relationships/a.json"
+    },
+    {
+      "sha256": "0f5242f74ab16e72777981fef5e0069f092a6035daab7dee7ad5b7e71554a2a3",
+      "source": "generated/public/intelligence-graph/relationships/b.json",
+      "target": "data/runtime/intelligence-graph/relationships/b.json"
+    },
+    {
+      "sha256": "de2aeb1e2e77bdfce5eda079f05c354aad72d93be2709b2503e3e0c856f554ab",
+      "source": "generated/public/intelligence-graph/relationships/c.json",
+      "target": "data/runtime/intelligence-graph/relationships/c.json"
+    },
+    {
+      "sha256": "1945300cf5c3c71c56a5f836d09a87b3abd6f20b9e5846edd41ec891d55ae8fe",
+      "source": "generated/public/intelligence-graph/relationships/d.json",
+      "target": "data/runtime/intelligence-graph/relationships/d.json"
+    },
+    {
+      "sha256": "fc2d993e318b893d03ff3a6291995a44b1206313f2e05909ac32a2949f8b1bf6",
+      "source": "generated/public/intelligence-graph/relationships/e.json",
+      "target": "data/runtime/intelligence-graph/relationships/e.json"
+    },
+    {
+      "sha256": "493f41870155590e96bbaab01246d08de62631ccbd434c43205cb3d733dea784",
+      "source": "generated/public/intelligence-graph/relationships/f.json",
+      "target": "data/runtime/intelligence-graph/relationships/f.json"
+    },
+    {
+      "sha256": "2f9fcf2053a23538e9aa920c724eac08d0931237ead24f344f7a236330b02bf2",
+      "source": "generated/public/labor-market-profiles/index.json",
+      "target": "data/runtime/labor-market-profiles/index.json"
+    },
+    {
+      "sha256": "0e80a7afaa881b253eb4dea1021c877da68a67adad7fedaf1dff322c02e8f59d",
+      "source": "generated/public/labor-market-profiles/markets/12540.json",
+      "target": "data/runtime/labor-market-profiles/markets/12540.json"
+    },
+    {
+      "sha256": "db91f7d75f93ff95aca87f66d4ee8efd9bea2f4809182a5a575421db61e49347",
+      "source": "generated/public/labor-market-profiles/markets/17020.json",
+      "target": "data/runtime/labor-market-profiles/markets/17020.json"
+    },
+    {
+      "sha256": "2297f52585ad999d5be6dcf747a05fd3d6790a5ec7e8b548749fb15576bf0bc6",
+      "source": "generated/public/labor-market-profiles/markets/20940.json",
+      "target": "data/runtime/labor-market-profiles/markets/20940.json"
+    },
+    {
+      "sha256": "b0cfc020d8e488b9b2db602021872d8449eb55acd93ce10a0d2a43752df23cad",
+      "source": "generated/public/labor-market-profiles/markets/23420.json",
+      "target": "data/runtime/labor-market-profiles/markets/23420.json"
+    },
+    {
+      "sha256": "d98a7647a1812ac8b36ccb76fd9acd117159340ea5323e993f6dacffbb6b3731",
+      "source": "generated/public/labor-market-profiles/markets/25260.json",
+      "target": "data/runtime/labor-market-profiles/markets/25260.json"
+    },
+    {
+      "sha256": "40035d27723e9a3e1ce5a3b81c999ae92b852fef346dd1350d817206117437e5",
+      "source": "generated/public/labor-market-profiles/markets/31080.json",
+      "target": "data/runtime/labor-market-profiles/markets/31080.json"
+    },
+    {
+      "sha256": "1a8571c993cc424c6fa428ae382b285d8e43169256b7241f62bc00c9c1b156b7",
+      "source": "generated/public/labor-market-profiles/markets/32900.json",
+      "target": "data/runtime/labor-market-profiles/markets/32900.json"
+    },
+    {
+      "sha256": "673345d805fc98d326bbaab75c2b4f9e836d4a2b0dcfcf25a083f2a00cbf0cf4",
+      "source": "generated/public/labor-market-profiles/markets/33700.json",
+      "target": "data/runtime/labor-market-profiles/markets/33700.json"
+    },
+    {
+      "sha256": "add109e73b2985c74eb72bf5e54dc346f45d264a7074d1609f34ced26897cb00",
+      "source": "generated/public/labor-market-profiles/markets/34900.json",
+      "target": "data/runtime/labor-market-profiles/markets/34900.json"
+    },
+    {
+      "sha256": "970c15fff30df12596de6c931066f455d7a35ac87b6b6bad2b34acf9c948d7cb",
+      "source": "generated/public/labor-market-profiles/markets/37100.json",
+      "target": "data/runtime/labor-market-profiles/markets/37100.json"
+    },
+    {
+      "sha256": "de710e6d494dc3f8810b4cc79fcc696bc231954accf4cf587a2e23a7e933476d",
+      "source": "generated/public/labor-market-profiles/markets/39820.json",
+      "target": "data/runtime/labor-market-profiles/markets/39820.json"
+    },
+    {
+      "sha256": "9b86fa5e2d5345f98f9c4b34a37eae584d5f4c9e923ed2fe2d30abc47b123d80",
+      "source": "generated/public/labor-market-profiles/markets/40140.json",
+      "target": "data/runtime/labor-market-profiles/markets/40140.json"
+    },
+    {
+      "sha256": "96718acedaacc999155e0aeaac6fb29383ed6516df52e5d277d135d4e96290dc",
+      "source": "generated/public/labor-market-profiles/markets/40900.json",
+      "target": "data/runtime/labor-market-profiles/markets/40900.json"
+    },
+    {
+      "sha256": "802c5511eb7f6d68036e1305eb9aff8aadd39f38460208ca262cc142ba9bf3ed",
+      "source": "generated/public/labor-market-profiles/markets/41500.json",
+      "target": "data/runtime/labor-market-profiles/markets/41500.json"
+    },
+    {
+      "sha256": "0c402dbeecc9e81689572e5b78de324f6ecaf59691f64e7bb9c86382c7e2f863",
+      "source": "generated/public/labor-market-profiles/markets/41740.json",
+      "target": "data/runtime/labor-market-profiles/markets/41740.json"
+    },
+    {
+      "sha256": "3d1802b911cf1667ed756118be2a9625356846a8d94cd0284d865242b4830da9",
+      "source": "generated/public/labor-market-profiles/markets/41860.json",
+      "target": "data/runtime/labor-market-profiles/markets/41860.json"
+    },
+    {
+      "sha256": "1a41679fef0c0eca7e6961bf11266b0c9904a60b3bdc1e8ddda400c9e555cf63",
+      "source": "generated/public/labor-market-profiles/markets/41940.json",
+      "target": "data/runtime/labor-market-profiles/markets/41940.json"
+    },
+    {
+      "sha256": "6506fdcf1effd9908edfae2c0016aa904c6a2ab52978087919cd057b70de3235",
+      "source": "generated/public/labor-market-profiles/markets/42020.json",
+      "target": "data/runtime/labor-market-profiles/markets/42020.json"
+    },
+    {
+      "sha256": "b5757e9ab8f71bbdd470ee0ae6af943796865697249b67b09d478d3d1bbf995b",
+      "source": "generated/public/labor-market-profiles/markets/42100.json",
+      "target": "data/runtime/labor-market-profiles/markets/42100.json"
+    },
+    {
+      "sha256": "7f7a3337bfcc3be0155d2e1563e78ba102af2e8a377206c392e0bb9e53c5d48b",
+      "source": "generated/public/labor-market-profiles/markets/42200.json",
+      "target": "data/runtime/labor-market-profiles/markets/42200.json"
+    },
+    {
+      "sha256": "d79238c965ec35257513069a0221127f26a618ae6d9f4b1f359f0bf04084ebef",
+      "source": "generated/public/labor-market-profiles/markets/42220.json",
+      "target": "data/runtime/labor-market-profiles/markets/42220.json"
+    },
+    {
+      "sha256": "156603cbb989f2426d768af2e965988b6797147140dd77f2262ae8df4438c56e",
+      "source": "generated/public/labor-market-profiles/markets/44700.json",
+      "target": "data/runtime/labor-market-profiles/markets/44700.json"
+    },
+    {
+      "sha256": "8e90e6562cb4abf54b7ec39840e8966cc1a5436f4aa931f39026a9d5b4548bcf",
+      "source": "generated/public/labor-market-profiles/markets/46700.json",
+      "target": "data/runtime/labor-market-profiles/markets/46700.json"
+    },
+    {
+      "sha256": "806936eaf104acdd4b3c5cde77d4fe8e9a87cf21c90ea329b47c2c9684b92090",
+      "source": "generated/public/labor-market-profiles/markets/47300.json",
+      "target": "data/runtime/labor-market-profiles/markets/47300.json"
+    },
+    {
+      "sha256": "bc0639ddf72db1d06ed68b81eba2684464c8c01bf687e1f9458bcd57981d53fb",
+      "source": "generated/public/labor-market-profiles/markets/49700.json",
+      "target": "data/runtime/labor-market-profiles/markets/49700.json"
+    },
+    {
+      "sha256": "5c69b3f319c509def4962a48e4473fc56841705b1a8af5679bf1b461bf7cf25e",
+      "source": "generated/public/manifest.json",
+      "target": "data/runtime/manifest.json"
+    },
+    {
+      "sha256": "77358367f58618e73622c8e6819b362b79f01bc5094758657bfda78c60c8e0ff",
+      "source": "generated/public/occupation-explorer/index.json",
+      "target": "data/runtime/occupation-explorer/index.json"
+    },
+    {
+      "sha256": "5ec2fd2a8977dae815f4882493e9d71ff24f8e6d7ab9933152eb7ff5a50f2424",
+      "source": "generated/public/occupation-explorer/markets/20940.json",
+      "target": "data/runtime/occupation-explorer/markets/20940.json"
+    },
+    {
+      "sha256": "77ad4fd6a743ce0dc890da5a5355a2e6e2fd0cc6ea999b62eb3ddba6cfc6d496",
+      "source": "generated/public/occupation-explorer/markets/25260.json",
+      "target": "data/runtime/occupation-explorer/markets/25260.json"
+    },
+    {
+      "sha256": "270a3880f7bb8bee27d073e47e513315b3585495fbd0d04fb4ef8456b31e5c8e",
+      "source": "generated/public/occupation-explorer/markets/32900.json",
+      "target": "data/runtime/occupation-explorer/markets/32900.json"
+    },
+    {
+      "sha256": "270937c137ca886e1e3cb4623bcc3ff9c30be0c11119ec31d3e293c0ccc985a2",
+      "source": "generated/public/occupation-explorer/markets/33700.json",
+      "target": "data/runtime/occupation-explorer/markets/33700.json"
+    },
+    {
+      "sha256": "fb8ca1d3b22afa61318c96da2bf2cff1774f619daf7e9d81b3a85f142e5e61ac",
+      "source": "generated/public/occupation-explorer/markets/37100.json",
+      "target": "data/runtime/occupation-explorer/markets/37100.json"
+    },
+    {
+      "sha256": "c81f72b5e9cd68693272c61e0176cb654f45b3bcd30050e6f84464b5e32e4afe",
+      "source": "generated/public/occupation-explorer/markets/40140.json",
+      "target": "data/runtime/occupation-explorer/markets/40140.json"
+    },
+    {
+      "sha256": "6de022febdcd5a6d1a89e35e122dd4c9841adae5fbd23ae885a507d3254a50f6",
+      "source": "generated/public/occupation-explorer/markets/40900.json",
+      "target": "data/runtime/occupation-explorer/markets/40900.json"
+    },
+    {
+      "sha256": "96a80b69b95265b611b2027edda5c0875460a37e6b1105c72efad0b1d9d5b45d",
+      "source": "generated/public/occupation-explorer/markets/41500.json",
+      "target": "data/runtime/occupation-explorer/markets/41500.json"
+    },
+    {
+      "sha256": "f8cf8fea0185de6359b554b5456a0eb94e9a3965e43e650bff3807fd4f4b8120",
+      "source": "generated/public/occupation-explorer/markets/41740.json",
+      "target": "data/runtime/occupation-explorer/markets/41740.json"
+    },
+    {
+      "sha256": "bb6038f86a406fff7a68f4e596f577db9ae2ad2e8aa54a959587010007203dae",
+      "source": "generated/public/occupation-explorer/markets/41940.json",
+      "target": "data/runtime/occupation-explorer/markets/41940.json"
+    },
+    {
+      "sha256": "dc1cf997589dc54a6def3cb396a94afef150687207e699a6b4bd87d0279b67a9",
+      "source": "generated/public/occupation-explorer/markets/42020.json",
+      "target": "data/runtime/occupation-explorer/markets/42020.json"
+    },
+    {
+      "sha256": "847152208dc55797ffa1b5a309da637b3e0b1d47d3d0c2d68e602d679e600394",
+      "source": "generated/public/occupation-explorer/markets/42100.json",
+      "target": "data/runtime/occupation-explorer/markets/42100.json"
+    },
+    {
+      "sha256": "9eaa4138836a86291045db374149633538278b538c2a425bb6b9bc1e475cee01",
+      "source": "generated/public/occupation-explorer/markets/42200.json",
+      "target": "data/runtime/occupation-explorer/markets/42200.json"
+    },
+    {
+      "sha256": "97b424c24e0edf31617aec1d10bdaa1ac155243c84e528bdeee350dc65b01595",
+      "source": "generated/public/occupation-explorer/markets/42220.json",
+      "target": "data/runtime/occupation-explorer/markets/42220.json"
+    },
+    {
+      "sha256": "f367bad61250ef27d49a9884527cfb4071b7b4db92b2a04f53ab2b83944f79c2",
+      "source": "generated/public/occupation-explorer/markets/44700.json",
+      "target": "data/runtime/occupation-explorer/markets/44700.json"
+    },
+    {
+      "sha256": "5a529b1b05aeb52fe4bd3c62b6e6a64d051a4326957454fb49166c9be1759604",
+      "source": "generated/public/occupation-explorer/markets/46700.json",
+      "target": "data/runtime/occupation-explorer/markets/46700.json"
+    },
+    {
+      "sha256": "b13a1e3a79a316c1f3c77092f01de14f91a312ab779d8bb8e30514a0f58f53df",
+      "source": "generated/public/occupation-explorer/markets/47300.json",
+      "target": "data/runtime/occupation-explorer/markets/47300.json"
+    },
+    {
+      "sha256": "364abc1919f9927eafbcb771bc1d46c3ed9c4968e0a9338fede6141315201d33",
+      "source": "generated/public/occupation-explorer/markets/california.json",
+      "target": "data/runtime/occupation-explorer/markets/california.json"
+    },
+    {
+      "sha256": "9cae5ed40215f2f93b5ea4a59f29758083b53c02e0c3d881eae28d614727177e",
+      "source": "generated/public/occupation-explorer/runtime.json",
+      "target": "data/runtime/occupation-explorer/runtime.json"
+    },
+    {
+      "sha256": "5342b18c9f4bd19f2801731308176cdbc33da96c349a8602cff18d8d7d46d2ad",
+      "source": "generated/public/policy/backfill-queue.json",
+      "target": "data/runtime/policy/backfill-queue.json"
+    },
+    {
+      "sha256": "e8c0b04bd01418f02fe4d7e2997d688b1b717f79f574ee6f80ce13b17468af15",
+      "source": "generated/public/policy/backfill-queue.md",
+      "target": "data/runtime/policy/backfill-queue.md"
+    },
+    {
+      "sha256": "dfa5b90c979e9705ef70726a387e30a10ca85049ea226d38837b47d60afc9c10",
+      "source": "generated/public/policy/deadlines.ics",
+      "target": "data/runtime/policy/deadlines.ics"
+    },
+    {
+      "sha256": "09ddb525e2ef3adb100026e2ed8771776a666367ed3041bd3bd2abce28e1ae01",
+      "source": "generated/public/policy/deadlines.json",
+      "target": "data/runtime/policy/deadlines.json"
+    },
+    {
+      "sha256": "c313d1143538ca4d8eba0b57b180880568d72730bfb9681a8d67f8107f4efcb6",
+      "source": "generated/public/policy/records.json",
+      "target": "data/runtime/policy/records.json"
+    },
+    {
+      "sha256": "570a74ef7021e64773725bf514c3ee5c1ef723e2b83a30dbec261111e959648c",
+      "source": "generated/public/policy/runtime.json",
+      "target": "data/runtime/policy/runtime.json"
+    },
+    {
+      "sha256": "836dd659ba76ca9d9edd70f8ac6913b1024fda8af1abd2d93353776b0ef0bccd",
+      "source": "generated/public/policy/search-index.json",
+      "target": "data/runtime/policy/search-index.json"
+    },
+    {
+      "sha256": "af30d70b12537fd33fdd789248cd5e8e9c37248c1ddc02eaf7d87089acf61836",
+      "source": "generated/public/sector-partnerships/index.json",
+      "target": "data/runtime/sector-partnerships/index.json"
+    },
+    {
+      "sha256": "5872a3a8e725eb986375858634d1d95847f5fd3579c9effb694f7c94a8c31bb0",
+      "source": "generated/public/sector-partnerships/markets/12540.html",
+      "target": "data/runtime/sector-partnerships/markets/12540.html"
+    },
+    {
+      "sha256": "9d4f185794e7c5f5b3386bca2b0771753c7b09acbd16acd1d91b69e275be29c9",
+      "source": "generated/public/sector-partnerships/markets/17020.html",
+      "target": "data/runtime/sector-partnerships/markets/17020.html"
+    },
+    {
+      "sha256": "e5e187adb6f416a1ea8bee826e5fe8ee17fc91c9c2aeb4950584354329b3dd3f",
+      "source": "generated/public/sector-partnerships/markets/20940.html",
+      "target": "data/runtime/sector-partnerships/markets/20940.html"
+    },
+    {
+      "sha256": "d61d8a409f3f10be1d793fc961b205e91d0717749e65b7d1c6e759fbcc42270a",
+      "source": "generated/public/sector-partnerships/markets/23420.html",
+      "target": "data/runtime/sector-partnerships/markets/23420.html"
+    },
+    {
+      "sha256": "21b7955f750ced79bf9cf49b09a1df3f8d3bb3242e79bdf8246a0604932df2a6",
+      "source": "generated/public/sector-partnerships/markets/25260.html",
+      "target": "data/runtime/sector-partnerships/markets/25260.html"
+    },
+    {
+      "sha256": "62d7f23d092e77300fecb729bed256bb9ed0764d54d86712a0e847b79063abc0",
+      "source": "generated/public/sector-partnerships/markets/31080.html",
+      "target": "data/runtime/sector-partnerships/markets/31080.html"
+    },
+    {
+      "sha256": "f57011d6d699f745c31351eb27df50c4b05ed4e053597991d987802f72391378",
+      "source": "generated/public/sector-partnerships/markets/32900.html",
+      "target": "data/runtime/sector-partnerships/markets/32900.html"
+    },
+    {
+      "sha256": "22e42d54dfe83cef6467b7f339150888483737ba6432f72bf5867e4075d6bb95",
+      "source": "generated/public/sector-partnerships/markets/33700.html",
+      "target": "data/runtime/sector-partnerships/markets/33700.html"
+    },
+    {
+      "sha256": "712d4a2223191c66d75e140c31182bd801a9f3e6b21307d781f24b69afdb8766",
+      "source": "generated/public/sector-partnerships/markets/34900.html",
+      "target": "data/runtime/sector-partnerships/markets/34900.html"
+    },
+    {
+      "sha256": "56e732f9b09badf50f6cc5b9a219a7308c047109913d04f069ec4a94f368d382",
+      "source": "generated/public/sector-partnerships/markets/37100.html",
+      "target": "data/runtime/sector-partnerships/markets/37100.html"
+    },
+    {
+      "sha256": "c3e8f6d6d5a9bc55a4850917a04532ca18866f587cdd10ec1c62041006f5d2d9",
+      "source": "generated/public/sector-partnerships/markets/39820.html",
+      "target": "data/runtime/sector-partnerships/markets/39820.html"
+    },
+    {
+      "sha256": "d958c6d8bbc084d0f91dadc7e1710da0b1d3b39d5fe15c8e0968cc8359165bc3",
+      "source": "generated/public/sector-partnerships/markets/40140.html",
+      "target": "data/runtime/sector-partnerships/markets/40140.html"
+    },
+    {
+      "sha256": "51a24f80b1d7fbf905972c1b999b8150df2dcba3a624d7622cc36ad21fe168ab",
+      "source": "generated/public/sector-partnerships/markets/40900.html",
+      "target": "data/runtime/sector-partnerships/markets/40900.html"
+    },
+    {
+      "sha256": "7e286beb4fc36476496525f7097f74179dbef82ee47f22388d49ba300be7b254",
+      "source": "generated/public/sector-partnerships/markets/41500.html",
+      "target": "data/runtime/sector-partnerships/markets/41500.html"
+    },
+    {
+      "sha256": "282429780f7a798b009457165e90b0b7c5689e5759c7c9282030bdb1ef6133fc",
+      "source": "generated/public/sector-partnerships/markets/41740.html",
+      "target": "data/runtime/sector-partnerships/markets/41740.html"
+    },
+    {
+      "sha256": "a17f74281d13f6bda1b1753f5577d7d1ebd0844162aa22dbaafc25a305695bc8",
+      "source": "generated/public/sector-partnerships/markets/41860.html",
+      "target": "data/runtime/sector-partnerships/markets/41860.html"
+    },
+    {
+      "sha256": "bce12148a1b4aa3d854aae7d0c71cc02b02f7e0ab77b4d43fe6e9bac5c0a1a3e",
+      "source": "generated/public/sector-partnerships/markets/41940.html",
+      "target": "data/runtime/sector-partnerships/markets/41940.html"
+    },
+    {
+      "sha256": "c1576d959c6d4966cfa964066de55df6f94abbd07d017fc3c2674f006c64dd7b",
+      "source": "generated/public/sector-partnerships/markets/42020.html",
+      "target": "data/runtime/sector-partnerships/markets/42020.html"
+    },
+    {
+      "sha256": "d95bc99f83ce47196324251bac2ef7fcf39e5c5004a9136fe0afba21196ffefb",
+      "source": "generated/public/sector-partnerships/markets/42100.html",
+      "target": "data/runtime/sector-partnerships/markets/42100.html"
+    },
+    {
+      "sha256": "bd2e00ff611f8390fb2129067ce76822dd5717945c4624d252b8c6770a2c4fca",
+      "source": "generated/public/sector-partnerships/markets/42200.html",
+      "target": "data/runtime/sector-partnerships/markets/42200.html"
+    },
+    {
+      "sha256": "1e562d49fda5953b0bc29c061dc212472a50798f1f6306095e71bf61a1ad8612",
+      "source": "generated/public/sector-partnerships/markets/42220.html",
+      "target": "data/runtime/sector-partnerships/markets/42220.html"
+    },
+    {
+      "sha256": "f5994f51fcd557e94bb240e7a2cd67ad40bfb46c324186b8c0edd081b6a19772",
+      "source": "generated/public/sector-partnerships/markets/44700.html",
+      "target": "data/runtime/sector-partnerships/markets/44700.html"
+    },
+    {
+      "sha256": "cba27b5a6af8d6653407b2c1b8039529214fa00e0f2089ee58d14bf3c662521e",
+      "source": "generated/public/sector-partnerships/markets/46700.html",
+      "target": "data/runtime/sector-partnerships/markets/46700.html"
+    },
+    {
+      "sha256": "bf82c63bea462769e89b0b3c6b0ef20cadca39380d6ced84d95c9f7d0602c768",
+      "source": "generated/public/sector-partnerships/markets/47300.html",
+      "target": "data/runtime/sector-partnerships/markets/47300.html"
+    },
+    {
+      "sha256": "246716a6699df107e46b9d27fa5ddcee59753f743c65477253bd7abe52a791fb",
+      "source": "generated/public/sector-partnerships/markets/49700.html",
+      "target": "data/runtime/sector-partnerships/markets/49700.html"
+    },
+    {
+      "sha256": "925d43d97c5a5cf8b6f54c030fa67d3d38bd3117674ff821ba301fe9b614f170",
+      "source": "generated/public/tool-intelligence/runtime.json",
+      "target": "data/runtime/tool-intelligence/runtime.json"
+    },
+    {
+      "sha256": "4685eff22686117258250014274b53bda9402073cc29fbc3a3941c26ecc144e1",
+      "source": "generated/public/wae/context-seed.json",
+      "target": "data/runtime/wae/context-seed.json"
+    },
+    {
+      "sha256": "228a7b22dfa9a457b185a61206a3a06795fdf6dc0d963df82135d8c7a190811d",
+      "source": "generated/public/workforce-lens/runtime.json",
+      "target": "data/runtime/workforce-lens/runtime.json"
+    },
+    {
+      "sha256": "9eed03820e7d60f7a16599c5c7a15c55a5d9568d47299f3f2ce957851e8cdcf2",
+      "source": "data/geography/us-states.json",
+      "target": "data/geography/us-states.json"
+    },
+    {
+      "sha256": "e78c5c2b8e43ffb321224502ab6d8e1a4650f0980b177b1b82ccd871e897377d",
+      "source": "wordpress/css/README.md",
+      "target": "src/wordpress/css/README.md"
+    },
+    {
+      "sha256": "5bc4a7b337e22992bfc63da33d93aab38b11c1fc1d9e6a505882d4dab3f277d8",
+      "source": "wordpress/css/policy-editorial.css",
+      "target": "src/wordpress/css/policy-editorial.css"
+    },
+    {
+      "sha256": "09200e5f7ea46084157f3f0ff3d54df8a5c47d830629dbdceb650c1012406e94",
+      "source": "wordpress/css/site-shell.css",
+      "target": "src/wordpress/css/site-shell.css"
+    },
+    {
+      "sha256": "2a5a741bb83dc83810cf473a2104008f7ae5b12a92e4d900bc4ce0f7d46c96d2",
+      "source": "wordpress/javascript/README.md",
+      "target": "src/wordpress/javascript/README.md"
+    },
+    {
+      "sha256": "1ab665312ebf75a05717bfd92405d50efc52810c34a3f17fd64bde3b9111a9b7",
+      "source": "wordpress/javascript/occupation-explorer-wpcode.js",
+      "target": "src/wordpress/javascript/occupation-explorer-wpcode.js"
+    },
+    {
+      "sha256": "a363442e141db0085cc35ed66974046a88925781bda92a5fa8446d3c0434509d",
+      "source": "wordpress/javascript/workforce-lens-runtime.js",
+      "target": "src/wordpress/javascript/workforce-lens-runtime.js"
+    },
+    {
+      "sha256": "18374a15db82a37a684a7e6d0c84f1a5c2cf65c72357393516d6a47210acd100",
+      "source": "wordpress/plugins/workforce-wonkery-deadlines-feed/workforce-wonkery-deadlines-feed.php",
+      "target": "src/wordpress/plugins/workforce-wonkery-deadlines-feed/workforce-wonkery-deadlines-feed.php"
+    },
+    {
+      "sha256": "5b1807db7a69a69bb1b18509176b5771662b832a2ef8aa6b578e9a4145fa0f9d",
+      "source": "docs/intelligence-graph.md",
+      "target": "docs/intelligence-graph.md"
+    },
+    {
+      "sha256": "333cbe72dec3598693756a4680e73c23f3006e022ee8aa082e1e4020f41ca2c9",
+      "source": "docs/nationalization-foundation.md",
+      "target": "docs/nationalization-foundation.md"
+    },
+    {
+      "sha256": "6d65d8b6bc7b4e8d11ab0871ca93ec9370c6659a1ed2755d14916a1e9837f1e0",
+      "source": "docs/policy-living-records.md",
+      "target": "docs/policy-living-records.md"
+    },
+    {
+      "sha256": "48a1a3eed34d6b07ef80a0d9059ebbc1c8f68e941eb89daa72f270c46d51c854",
+      "source": "docs/visual-design-system-v1.md",
+      "target": "docs/visual-design-system-v1.md"
+    },
+    {
+      "sha256": "d3b59b5f519a09cccb623b77bb3801c8409b292577a86d6ac937f4e5f8ffbdb9",
+      "source": "docs/workforce-deadlines.md",
+      "target": "docs/workforce-deadlines.md"
+    },
+    {
+      "sha256": "41a3c86893e5f4b43cf30b3cb2479b6ae38d26b612d4d2ee30397624efa91551",
+      "source": "docs/workforce-deadlines-subscription-feed.md",
+      "target": "docs/workforce-deadlines-subscription-feed.md"
+    },
+    {
+      "sha256": "098eb6b997f34707f254ebd2d30863fc7a988eeff08f1c08733dedd607cb1b2d",
+      "source": "docs/workforce-wonkery-depth-layers-v1.md",
+      "target": "docs/workforce-wonkery-depth-layers-v1.md"
+    },
+    {
+      "sha256": "9ba79fb832898b4882338b56a938547952473fbd491822d6c8beacac93c43549",
+      "source": "content/intelligence-report/structural-shift-standard.md",
+      "target": "docs/methodology/structural-shift-standard.md"
+    },
+    {
+      "sha256": "53681471dc958c44f4e4bda63f82ac48de3c866e6165e571ab676656888bda03",
+      "source": "content/policy-briefs/implementation-impact-standard.md",
+      "target": "docs/methodology/implementation-impact-standard.md"
+    },
+    {
+      "sha256": "8f62e628bdb542d333ac1af34fe79648bd4fc7218b1868a74d1ca0bd8bf5f8ec",
+      "source": "content/practice/editorial-standard-feature-briefs.md",
+      "target": "docs/methodology/editorial-standard-feature-briefs.md"
+    },
+    {
+      "sha256": "a21598c43af353ba941d521db9b2329c3cf4c3bc361469e656b66b75f9b87b99",
+      "source": "public-companion/templates/.github/workflows/public-ci.yml",
+      "target": "github/workflows/public-ci.yml"
+    },
+    {
+      "sha256": "959691885a5e6c193c025768ab72cd3e9a4122ebbe0b712f3c4fe290cdda7611",
+      "source": "public-companion/templates/.github/workflows/live-browser-acceptance.yml",
+      "target": "github/workflows/live-browser-acceptance.yml"
+    },
+    {
+      "sha256": "deec6762ad999c3d947f7c6d6798f30fd98213d2c6e2964f8b9780e0377ab38a",
+      "source": "public-companion/templates/.github/workflows/site-structure-check.yml",
+      "target": "github/workflows/site-structure-check.yml"
+    },
+    {
+      "sha256": "806f75844ebbc9729b434808f380bfa584288d4767465199fd3d132ae8cfb843",
+      "source": "public-companion/templates/.github/workflows/discovery-acceptance.yml",
+      "target": "github/workflows/discovery-acceptance.yml"
+    },
+    {
+      "sha256": "f405531338fc2423276284a2b2987bad40c3960080137d44224e222a4a58b2f1",
+      "source": "public-companion/templates/.github/workflows/promote-private-sync.yml",
+      "target": "github/workflows/promote-private-sync.yml"
+    },
+    {
+      "sha256": "ad90818eb9dbc40898e8f59e89e08f0085b9ea6f1b1550559dfb6a0c24715094",
+      "source": "public-companion/tests/browser_acceptance.py",
+      "target": "tests/browser_acceptance.py"
+    },
+    {
+      "sha256": "74a1bb67756786c7f22a1c4f8711aa698a4adfa3289c242e9ca566a9b4cab006",
+      "source": "public-companion/tests/site-surfaces.json",
+      "target": "tests/site-surfaces.json"
+    },
+    {
+      "sha256": "f87f8e47ccb8ffd2267a5f19c2b4443082fd2c672b9685ff1867b749a99bdbe6",
+      "source": "public-companion/tests/site_structure_check.py",
+      "target": "tests/site_structure_check.py"
+    },
+    {
+      "sha256": "5e22c82fe6f21f0c27d756d8542f4658ab48ab3f08af4e0e2af6a272a8fa2332",
+      "source": "public-companion/tests/validate_public_export.py",
+      "target": "tests/validate_public_export.py"
+    }
+  ],
+  "source_commit": "38d3bf5a4a7a66d16e1b35f2035110c6f00c7fd7",
+  "source_repository": "Cursor3181/workforce-wonkery",
+  "target_repository": "Cursor3181/workforce-wonkery-public"
+}

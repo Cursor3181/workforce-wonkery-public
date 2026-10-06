@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "market_id": "34900",
+  "market": {
+    "label": "Napa MSA",
+    "source": null,
+    "basic": 31.44,
+    "contextOpts": [
+      {
+        "id": "sow-workforce-alliance-north-bay",
+        "label": "North Bay"
+      }
+    ],
+    "eddArea": "0621034900",
+    "component_counties": [
+      "Napa"
+    ],
+    "edd_components": [
+      {
+        "label": "Napa MSA",
+        "geog_area": "0621034900",
+        "counties": [
+          "Napa"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$115,334 annual",
+      "fit": "context",
+      "evidence_geography": "North Bay",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North Bay. This is not a local-area opening estimate and is not used to rank occupations for Workforce Alliance of the North Bay."
+    },
+    {
+      "soc": "13-2011",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$98,338 annual",
+      "fit": "context",
+      "evidence_geography": "North Bay",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North Bay. This is not a local-area opening estimate and is not used to rank occupations for Workforce Alliance of the North Bay."
+    },
+    {
+      "soc": "25-2021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$101,903 annual",
+      "fit": "context",
+      "evidence_geography": "North Bay",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North Bay. This is not a local-area opening estimate and is not used to rank occupations for Workforce Alliance of the North Bay."
+    },
+    {
+      "soc": "25-3031",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$64,204 annual",
+      "fit": "context",
+      "evidence_geography": "North Bay",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North Bay. This is not a local-area opening estimate and is not used to rank occupations for Workforce Alliance of the North Bay."
+    }
+  ],
+  "qa": {
+    "cbsa": "34900",
+    "label": "Napa MSA",
+    "catalog_size": 40,
+    "embedded_rows": 4,
+    "exact_msa_rows": 0,
+    "regional_context_rows": 4,
+    "profile_link_only_rows": 36,
+    "wage_rows": 4,
+    "projection_rows": 0,
+    "source_periods": [
+      "broader regional context"
+    ],
+    "coverage_status": "regional_context_partial",
+    "qa_status": "WARN",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

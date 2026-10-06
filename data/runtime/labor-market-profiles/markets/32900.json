@@ -1,0 +1,633 @@
+{
+  "schema_version": "1.0",
+  "market_id": "32900",
+  "market": {
+    "label": "Merced MSA",
+    "source": "merced",
+    "basic": 24.36,
+    "contextOpts": [],
+    "eddArea": "0621032900",
+    "component_counties": [
+      "Merced"
+    ],
+    "edd_components": [
+      {
+        "label": "Merced MSA",
+        "geog_area": "0621032900",
+        "counties": [
+          "Merced"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 1050,
+      "projected_employment": 1120,
+      "growth_pct": 6.7,
+      "total_openings": 940,
+      "wage": {
+        "value": 100825,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "11-3021",
+      "employment": 110,
+      "projected_employment": 120,
+      "growth_pct": 9.1,
+      "total_openings": 80,
+      "wage": {
+        "value": 161643,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1111",
+      "employment": 300,
+      "projected_employment": 310,
+      "growth_pct": 3.3,
+      "total_openings": 250,
+      "wage": {
+        "value": 79049,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1161",
+      "employment": 160,
+      "projected_employment": 160,
+      "growth_pct": 0,
+      "total_openings": 130,
+      "wage": {
+        "value": 60257,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-2011",
+      "employment": 410,
+      "projected_employment": 410,
+      "growth_pct": 0,
+      "total_openings": 310,
+      "wage": {
+        "value": 80129,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1232",
+      "employment": 140,
+      "projected_employment": 140,
+      "growth_pct": 0,
+      "total_openings": 90,
+      "wage": {
+        "value": 67218,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1252",
+      "employment": 70,
+      "projected_employment": 70,
+      "growth_pct": 0,
+      "total_openings": 30,
+      "wage": {
+        "value": 136995,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2021",
+      "employment": 1180,
+      "projected_employment": 1240,
+      "growth_pct": 5.1,
+      "total_openings": 850,
+      "wage": {
+        "value": 100047,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2031",
+      "employment": 920,
+      "projected_employment": 970,
+      "growth_pct": 5.4,
+      "total_openings": 620,
+      "wage": {
+        "value": 100119,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-3031",
+      "employment": 1700,
+      "projected_employment": 1870,
+      "growth_pct": 10,
+      "total_openings": 2300,
+      "wage": {
+        "value": 52961,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-9045",
+      "employment": 1610,
+      "projected_employment": 1690,
+      "growth_pct": 5,
+      "total_openings": 2020,
+      "wage": {
+        "value": 38961,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1141",
+      "employment": 920,
+      "projected_employment": 990,
+      "growth_pct": 7.6,
+      "total_openings": 560,
+      "wage": {
+        "value": 130328,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1292",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Merced MSA (Merced County); no broader value is substituted."
+    },
+    {
+      "soc": "29-2034",
+      "employment": 70,
+      "projected_employment": 80,
+      "growth_pct": 14.3,
+      "total_openings": 50,
+      "wage": {
+        "value": 100407,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2055",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Merced MSA (Merced County); no broader value is substituted."
+    },
+    {
+      "soc": "29-2061",
+      "employment": 260,
+      "projected_employment": 280,
+      "growth_pct": 7.7,
+      "total_openings": 230,
+      "wage": {
+        "value": 73371,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1120",
+      "employment": 4650,
+      "projected_employment": 5830,
+      "growth_pct": 25.4,
+      "total_openings": 8810,
+      "wage": {
+        "value": 34483,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1131",
+      "employment": 390,
+      "projected_employment": 410,
+      "growth_pct": 5.1,
+      "total_openings": 580,
+      "wage": {
+        "value": 45292,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-2021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Merced MSA (Merced County); no broader value is substituted."
+    },
+    {
+      "soc": "31-9092",
+      "employment": 600,
+      "projected_employment": 760,
+      "growth_pct": 26.7,
+      "total_openings": 1030,
+      "wage": {
+        "value": 40314,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "33-2011",
+      "employment": 120,
+      "projected_employment": 130,
+      "growth_pct": 8.3,
+      "total_openings": 110,
+      "wage": {
+        "value": 67198,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3023",
+      "employment": 2560,
+      "projected_employment": 2840,
+      "growth_pct": 10.9,
+      "total_openings": 6550,
+      "wage": {
+        "value": 37476,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3031",
+      "employment": 650,
+      "projected_employment": 680,
+      "growth_pct": 4.6,
+      "total_openings": 1390,
+      "wage": {
+        "value": 34370,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2011",
+      "employment": 2360,
+      "projected_employment": 2320,
+      "growth_pct": -1.7,
+      "total_openings": 4400,
+      "wage": {
+        "value": 35420,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2031",
+      "employment": 1530,
+      "projected_employment": 1590,
+      "growth_pct": 3.9,
+      "total_openings": 2310,
+      "wage": {
+        "value": 35819,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "43-3031",
+      "employment": 750,
+      "projected_employment": 710,
+      "growth_pct": -5.3,
+      "total_openings": 780,
+      "wage": {
+        "value": 50924,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "45-2092",
+      "employment": 6190,
+      "projected_employment": 6160,
+      "growth_pct": -0.5,
+      "total_openings": 9390,
+      "wage": {
+        "value": 36451,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-1011",
+      "employment": 270,
+      "projected_employment": 300,
+      "growth_pct": 11.1,
+      "total_openings": 250,
+      "wage": {
+        "value": 82207,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2031",
+      "employment": 590,
+      "projected_employment": 670,
+      "growth_pct": 13.6,
+      "total_openings": 560,
+      "wage": {
+        "value": 66025,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2111",
+      "employment": 160,
+      "projected_employment": 180,
+      "growth_pct": 12.5,
+      "total_openings": 170,
+      "wage": {
+        "value": 66365,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2152",
+      "employment": 180,
+      "projected_employment": 200,
+      "growth_pct": 11.1,
+      "total_openings": 170,
+      "wage": {
+        "value": 58253,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3011",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Merced MSA (Merced County); no broader value is substituted."
+    },
+    {
+      "soc": "49-3041",
+      "employment": 260,
+      "projected_employment": 290,
+      "growth_pct": 11.5,
+      "total_openings": 250,
+      "wage": {
+        "value": 63097,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3042",
+      "employment": 100,
+      "projected_employment": 100,
+      "growth_pct": 0,
+      "total_openings": 80,
+      "wage": {
+        "value": 58403,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-9041",
+      "employment": 350,
+      "projected_employment": 420,
+      "growth_pct": 20,
+      "total_openings": 370,
+      "wage": {
+        "value": 77453,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-4121",
+      "employment": 290,
+      "projected_employment": 300,
+      "growth_pct": 3.4,
+      "total_openings": 300,
+      "wage": {
+        "value": 49975,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-8031",
+      "employment": 90,
+      "projected_employment": 90,
+      "growth_pct": 0,
+      "total_openings": 80,
+      "wage": {
+        "value": 80354,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-3032",
+      "employment": 2040,
+      "projected_employment": 2160,
+      "growth_pct": 5.9,
+      "total_openings": 2260,
+      "wage": {
+        "value": 56265,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7062",
+      "employment": 1110,
+      "projected_employment": 1170,
+      "growth_pct": 5.4,
+      "total_openings": 1530,
+      "wage": {
+        "value": 38207,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7065",
+      "employment": 1640,
+      "projected_employment": 1820,
+      "growth_pct": 11,
+      "total_openings": 2930,
+      "wage": {
+        "value": 39620,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Merced MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Merced MSA (Merced County). The source geography exactly matches the published MSA/CBSA labor market."
+    }
+  ],
+  "qa": {
+    "cbsa": "32900",
+    "label": "Merced MSA",
+    "catalog_size": 40,
+    "embedded_rows": 40,
+    "exact_msa_rows": 40,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 0,
+    "wage_rows": 36,
+    "projection_rows": 36,
+    "source_periods": [
+      "2023-2033 projections; wages 2025 Q1"
+    ],
+    "coverage_status": "exact_msa_core_complete",
+    "qa_status": "PASS",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

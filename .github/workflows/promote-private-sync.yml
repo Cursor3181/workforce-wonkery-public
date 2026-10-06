@@ -1,0 +1,36 @@
+name: Promote validated private sync
+
+on:
+  workflow_run:
+    workflows: ["Public companion CI"]
+    types: [completed]
+    branches: ["sync/private-main"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: promote-private-sync
+  cancel-in-progress: true
+
+jobs:
+  promote:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: sync/private-main
+          fetch-depth: 0
+      - name: Promote only when main has not diverged
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin main
+          if ! git merge-base --is-ancestor origin/main HEAD; then
+            echo "Public main has diverged from the generated sync branch."
+            echo "Do not overwrite it automatically. Reconcile the public change back into the private source repository first."
+            exit 1
+          fi
+          git push origin HEAD:main

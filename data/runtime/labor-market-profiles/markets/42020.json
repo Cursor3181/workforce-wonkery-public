@@ -1,0 +1,645 @@
+{
+  "schema_version": "1.0",
+  "market_id": "42020",
+  "market": {
+    "label": "San Luis Obispo-Paso Robles MSA",
+    "source": "san-luis-obispo",
+    "basic": 29.72,
+    "contextOpts": [],
+    "eddArea": "0621042020",
+    "component_counties": [
+      "San Luis Obispo"
+    ],
+    "edd_components": [
+      {
+        "label": "San Luis Obispo-Paso Robles MSA",
+        "geog_area": "0621042020",
+        "counties": [
+          "San Luis Obispo"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 2150,
+      "projected_employment": 2300,
+      "growth_pct": 7,
+      "total_openings": 1940,
+      "wage": {
+        "value": 105470,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "11-3021",
+      "employment": 230,
+      "projected_employment": 270,
+      "growth_pct": 17.4,
+      "total_openings": 200,
+      "wage": {
+        "value": 168395,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1111",
+      "employment": 630,
+      "projected_employment": 710,
+      "growth_pct": 12.7,
+      "total_openings": 610,
+      "wage": {
+        "value": 85425,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1161",
+      "employment": 540,
+      "projected_employment": 580,
+      "growth_pct": 7.4,
+      "total_openings": 530,
+      "wage": {
+        "value": 66786,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-2011",
+      "employment": 940,
+      "projected_employment": 1000,
+      "growth_pct": 6.4,
+      "total_openings": 790,
+      "wage": {
+        "value": 83765,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1232",
+      "employment": 270,
+      "projected_employment": 280,
+      "growth_pct": 3.7,
+      "total_openings": 190,
+      "wage": {
+        "value": 71379,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1252",
+      "employment": 480,
+      "projected_employment": 560,
+      "growth_pct": 16.7,
+      "total_openings": 350,
+      "wage": {
+        "value": 135598,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2021",
+      "employment": 1040,
+      "projected_employment": 1060,
+      "growth_pct": 1.9,
+      "total_openings": 720,
+      "wage": {
+        "value": 94706,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2031",
+      "employment": 550,
+      "projected_employment": 560,
+      "growth_pct": 1.8,
+      "total_openings": 350,
+      "wage": {
+        "value": 95579,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-3031",
+      "employment": 780,
+      "projected_employment": 830,
+      "growth_pct": 6.4,
+      "total_openings": 1010,
+      "wage": {
+        "value": 54143,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-9045",
+      "employment": 1180,
+      "projected_employment": 1190,
+      "growth_pct": 0.8,
+      "total_openings": 1400,
+      "wage": {
+        "value": 40132,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1141",
+      "employment": 1960,
+      "projected_employment": 2180,
+      "growth_pct": 11.2,
+      "total_openings": 1290,
+      "wage": {
+        "value": 137097,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1292",
+      "employment": 210,
+      "projected_employment": 240,
+      "growth_pct": 14.3,
+      "total_openings": 170,
+      "wage": {
+        "value": 124391,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2034",
+      "employment": 100,
+      "projected_employment": 110,
+      "growth_pct": 10,
+      "total_openings": 60,
+      "wage": {
+        "value": 108018,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2055",
+      "employment": 60,
+      "projected_employment": 70,
+      "growth_pct": 16.7,
+      "total_openings": 50,
+      "wage": {
+        "value": 79688,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2061",
+      "employment": 430,
+      "projected_employment": 480,
+      "growth_pct": 11.6,
+      "total_openings": 410,
+      "wage": {
+        "value": 79606,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1120",
+      "employment": 4040,
+      "projected_employment": 4820,
+      "growth_pct": 19.3,
+      "total_openings": 7230,
+      "wage": {
+        "value": 34278,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1131",
+      "employment": 540,
+      "projected_employment": 610,
+      "growth_pct": 13,
+      "total_openings": 870,
+      "wage": {
+        "value": 46650,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-2021",
+      "employment": 60,
+      "projected_employment": 80,
+      "growth_pct": 33.3,
+      "total_openings": 130,
+      "wage": {
+        "value": 80722,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-9092",
+      "employment": 850,
+      "projected_employment": 1020,
+      "growth_pct": 20,
+      "total_openings": 1370,
+      "wage": {
+        "value": 49509,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "33-2011",
+      "employment": 340,
+      "projected_employment": 340,
+      "growth_pct": 0,
+      "total_openings": 250,
+      "wage": {
+        "value": 76032,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3023",
+      "employment": 3440,
+      "projected_employment": 3690,
+      "growth_pct": 7.3,
+      "total_openings": 8520,
+      "wage": {
+        "value": 37949,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3031",
+      "employment": 2850,
+      "projected_employment": 2910,
+      "growth_pct": 2.1,
+      "total_openings": 5950,
+      "wage": {
+        "value": 35522,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2011",
+      "employment": 3000,
+      "projected_employment": 2900,
+      "growth_pct": -3.3,
+      "total_openings": 5510,
+      "wage": {
+        "value": 36780,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2031",
+      "employment": 3250,
+      "projected_employment": 3410,
+      "growth_pct": 4.9,
+      "total_openings": 4980,
+      "wage": {
+        "value": 38354,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "43-3031",
+      "employment": 1220,
+      "projected_employment": 1170,
+      "growth_pct": -4.1,
+      "total_openings": 1290,
+      "wage": {
+        "value": 58820,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "45-2092",
+      "employment": 3040,
+      "projected_employment": 3120,
+      "growth_pct": 2.6,
+      "total_openings": 4790,
+      "wage": {
+        "value": 38098,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-1011",
+      "employment": 660,
+      "projected_employment": 700,
+      "growth_pct": 6.1,
+      "total_openings": 550,
+      "wage": {
+        "value": 95559,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2031",
+      "employment": 1110,
+      "projected_employment": 1200,
+      "growth_pct": 8.1,
+      "total_openings": 990,
+      "wage": {
+        "value": 74569,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2111",
+      "employment": 560,
+      "projected_employment": 640,
+      "growth_pct": 14.3,
+      "total_openings": 610,
+      "wage": {
+        "value": 82424,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2152",
+      "employment": 360,
+      "projected_employment": 380,
+      "growth_pct": 5.6,
+      "total_openings": 340,
+      "wage": {
+        "value": 63812,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3011",
+      "employment": 110,
+      "projected_employment": 120,
+      "growth_pct": 9.1,
+      "total_openings": 90,
+      "wage": {
+        "value": 80914,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3041",
+      "employment": 80,
+      "projected_employment": 90,
+      "growth_pct": 12.5,
+      "total_openings": 90,
+      "wage": {
+        "value": 52570,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3042",
+      "employment": 140,
+      "projected_employment": 150,
+      "growth_pct": 7.1,
+      "total_openings": 130,
+      "wage": {
+        "value": 83009,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-9041",
+      "employment": 120,
+      "projected_employment": 140,
+      "growth_pct": 16.7,
+      "total_openings": 120,
+      "wage": {
+        "value": 75697,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-4121",
+      "employment": 220,
+      "projected_employment": 240,
+      "growth_pct": 9.1,
+      "total_openings": 240,
+      "wage": {
+        "value": 60399,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-8031",
+      "employment": 180,
+      "projected_employment": 170,
+      "growth_pct": -5.6,
+      "total_openings": 150,
+      "wage": {
+        "value": 82570,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-3032",
+      "employment": 810,
+      "projected_employment": 880,
+      "growth_pct": 8.6,
+      "total_openings": 940,
+      "wage": {
+        "value": 61438,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7062",
+      "employment": 1180,
+      "projected_employment": 1250,
+      "growth_pct": 5.9,
+      "total_openings": 1630,
+      "wage": {
+        "value": 39559,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7065",
+      "employment": 1640,
+      "projected_employment": 1910,
+      "growth_pct": 16.5,
+      "total_openings": 3090,
+      "wage": {
+        "value": 39538,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Luis Obispo-Paso Robles MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for San Luis Obispo-Paso Robles MSA (San Luis Obispo County). The source geography exactly matches the published MSA/CBSA labor market."
+    }
+  ],
+  "qa": {
+    "cbsa": "42020",
+    "label": "San Luis Obispo-Paso Robles MSA",
+    "catalog_size": 40,
+    "embedded_rows": 40,
+    "exact_msa_rows": 40,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 0,
+    "wage_rows": 40,
+    "projection_rows": 40,
+    "source_periods": [
+      "2023-2033 projections; wages 2025 Q1"
+    ],
+    "coverage_status": "exact_msa_core_complete",
+    "qa_status": "PASS",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

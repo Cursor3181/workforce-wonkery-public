@@ -1,0 +1,61 @@
+name: Public live browser acceptance
+
+on:
+  schedule:
+    - cron: "0 17 * * 2"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "tests/browser_acceptance.py"
+      - ".github/workflows/live-browser-acceptance.yml"
+
+concurrency:
+  group: public-live-browser-acceptance
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  browser-acceptance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright==1.63.0
+          python -m playwright install --with-deps chromium
+      - name: Run full public-site browser acceptance
+        run: python tests/browser_acceptance.py
+      - name: Write browser summary
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, os
+          from collections import Counter
+          from pathlib import Path
+          p=Path("qa/artifacts/browser-acceptance/results.json")
+          out=Path(os.environ["GITHUB_STEP_SUMMARY"])
+          lines=["## Full public browser acceptance",""]
+          if not p.exists():
+              lines.append("No results.json was produced.")
+          else:
+              data=json.loads(p.read_text(encoding="utf-8"))
+              results=data.get("results",[])
+              counts=Counter(r.get("status","UNKNOWN") for r in results)
+              lines += [
+                  f"- Checks: {len(results)}",
+                  f"- PASS: {counts.get('PASS',0)}",
+                  f"- WARN: {counts.get('WARN',0)}",
+                  f"- FAIL: {counts.get('FAIL',0)}",
+                  f"- Test exceptions: {len(data.get('failures',[]))}",
+              ]
+          with out.open("a",encoding="utf-8") as fh:
+              fh.write("\n".join(lines)+"\n")
+          PY

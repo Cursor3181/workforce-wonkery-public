@@ -1,0 +1,121 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Workforce Wonkery//Policy Deadlines//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Workforce Wonkery Policy Deadlines
+X-WR-CALDESC:Governed Workforce Wonkery policy dates. Official sources control.
+BEGIN:VEVENT
+UID:wsin26-10-survey-close-2026-10-05@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20261005
+SUMMARY:WSIN26-10 - EDD statewide LWDB and career-service-provider survey closes
+DESCRIPTION:Official source controls. https://edd.ca.gov/en/jobs_and_training/Information_Notices/wsin26-10/
+URL:https://workforcewonkery.com/2026/08/25/wsin26-10-statewide-survey-edd-support-lwdbs-career-service-providers/
+CATEGORIES:feedback
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wsin26-13-water-workforce-2026-10-05@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;TZID=America/New_York:20261005T235900
+DURATION:PT15M
+SUMMARY:WSIN26-13 - Innovative Water Infrastructure Workforce Development Grant applications are due
+DESCRIPTION:Official source controls. https://edd.ca.gov/en/jobs_and_training/Information_Notices/wsin26-13/
+URL:https://workforcewonkery.com/2026/09/08/wsin26-13-water-infrastructure-workforce-grant/
+CATEGORIES:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wsin26-12-fap-proposal-2026-10-12@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;TZID=America/Los_Angeles:20261012T235900
+DURATION:PT15M
+SUMMARY:WSIN26-12 - Farmworkers Advancement Program proposals are due
+DESCRIPTION:Official source controls. https://edd.ca.gov/en/jobs_and_training/Information_Notices/wsin26-12/
+URL:https://workforcewonkery.com/2026/09/03/wsin26-12-farmworkers-advancement-program-py-26-27/
+CATEGORIES:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eo-n-6-26-milestone-2026-10-15@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20261015
+SUMMARY:EO N-6-26 - AI workforce review and playbook milestone
+DESCRIPTION:Official source controls. https://www.gov.ca.gov/wp-content/uploads/2026/05/5.21.26-AI-Workforce-EO-FINAL-SIGNED.pdf
+URL:https://workforcewonkery.com/2026/05/21/california-eo-n-6-26-ai-workforce/
+CATEGORIES:review
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wsin26-17-comment-2026-10-23@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20261023
+SUMMARY:WSIN26-17 - Comments on California's three proposed WIOA waivers are due
+DESCRIPTION:Official source controls. https://edd.ca.gov/en/jobs_and_training/Information_Notices/wsin26-17/
+URL:https://workforcewonkery.com/2026/09/24/wsin26-17-california-three-wioa-waivers-public-comment/
+CATEGORIES:comment
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:wsin26-16-ems-ta-proposal-2026-10-27@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;TZID=America/Los_Angeles:20261027T235900
+DURATION:PT15M
+SUMMARY:WSIN26-16 - EMS Technical Assistance proposals are due
+DESCRIPTION:Official source controls. https://edd.ca.gov/en/jobs_and_training/Information_Notices/wsin26-16/
+URL:https://workforcewonkery.com/2026/09/17/wsin26-16-ems-technical-assistance-py-26-27/
+CATEGORIES:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:pl-119-103-cr-expiration-2026-12-11@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20261211
+SUMMARY:P.L. 119-103 - Current federal continuing-appropriations period expires
+DESCRIPTION:Official source controls. https://www.govinfo.gov/app/details/PLAW-119publ103
+URL:https://workforcewonkery.com/2026/09/02/pl-119-103-federal-funding-december-11-fy-2027-wioa/
+CATEGORIES:other
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ab-2771-transition-2027-01-01@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20270101
+SUMMARY:AB 2771 - AB 2771 commercial-driving training exemption transition begins
+DESCRIPTION:Official source controls. https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2771
+URL:https://workforcewonkery.com/2026/09/14/ab-2771-new-etpl-and-private-training-provider-rules-take-effect-in-2027/
+CATEGORIES:operative
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ab-2771-application-2027-03-31@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20270331
+SUMMARY:AB 2771 - Affected training institutions must submit approval applications and disclosure
+DESCRIPTION:Official source controls. https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2771
+URL:https://workforcewonkery.com/2026/09/14/ab-2771-new-etpl-and-private-training-provider-rules-take-effect-in-2027/
+CATEGORIES:application
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ab-1534-operative-2028-07-01@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20280701
+SUMMARY:AB 1534 - AB 1534 participant-training requirement becomes operative
+DESCRIPTION:Official source controls. https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1534
+URL:https://workforcewonkery.com/2026/09/08/ab-1534-50-percent-participant-training-workforce-pell/
+CATEGORIES:operative
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:ab-2324-guidance-2028-07-01@workforcewonkery.com
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20280701
+SUMMARY:AB 2324 - California Department of Education guidance for the Personal Care and Services pathway is due
+DESCRIPTION:Official source controls. https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2324
+URL:https://workforcewonkery.com/2026/09/30/ab-2324-youth-caregiving-cte-work-based-learning/
+CATEGORIES:implementation
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,962 @@
+{
+  "schema_version": "2.0",
+  "source_generated": "2026-09-28",
+  "asset_set_sha256": "58516eaa131ed92e5c9dbffe43f06e11c5a65a8de6b3e04c1645456a95d8c3db",
+  "asset_count": 159,
+  "assets": [
+    {
+      "path": "discovery/manifest.json",
+      "bytes": 4475,
+      "records": 1393,
+      "sha256": "0101e760f6d6f3da83260695cd215fdf1656ae7731930eb232b6572c5c4035f2"
+    },
+    {
+      "path": "discovery/shards/occupation-11-29.json",
+      "bytes": 203763,
+      "records": 296,
+      "sha256": "0328747d2090cf47e7772fb358197ff82dbf2821a25ba1a52ffd5902ff186997"
+    },
+    {
+      "path": "discovery/shards/occupation-31-59.json",
+      "bytes": 237205,
+      "records": 338,
+      "sha256": "ce6e343a3deddaff874d60cc3f834c287295300ce690e983738e8ee16e79a2dc"
+    },
+    {
+      "path": "discovery/shards/policy.json",
+      "bytes": 242942,
+      "records": 228,
+      "sha256": "d59186197d9ac7e18a560c903bede3c1e07109320264fba52a8af00005556538"
+    },
+    {
+      "path": "discovery/shards/practice.json",
+      "bytes": 48223,
+      "records": 68,
+      "sha256": "b2d7bb2450057a16c6fe1931c1fcf4f0a3ec670444542c196e27189687539221"
+    },
+    {
+      "path": "discovery/shards/regional.json",
+      "bytes": 88280,
+      "records": 113,
+      "sha256": "b59f282cbb218e4b0ce829c821831962b66b0d709d576c986d742d21550b51ac"
+    },
+    {
+      "path": "discovery/shards/sector.json",
+      "bytes": 72393,
+      "records": 94,
+      "sha256": "6c73ee8eac1ac152d82fb153b8b6e534f37a7198a0b221b6a0f3fc98cfcea417"
+    },
+    {
+      "path": "discovery/shards/site.json",
+      "bytes": 157747,
+      "records": 256,
+      "sha256": "a3b0c77bf1f416b9777c295cb1dac49b37f3403f1bbff0c7c0facddae0dcb59a"
+    },
+    {
+      "path": "intelligence-graph/context/0.json",
+      "bytes": 53053,
+      "records": 94,
+      "sha256": "6e542d9ec6f8f69eaa8934f55942965c68e6f5e27de08aeeaeeb367e8cae9628"
+    },
+    {
+      "path": "intelligence-graph/context/1.json",
+      "bytes": 48391,
+      "records": 73,
+      "sha256": "015eb43d8583d1fc80c6be88252c54174c55238cfde55919b22277d5a00d2c0e"
+    },
+    {
+      "path": "intelligence-graph/context/2.json",
+      "bytes": 42306,
+      "records": 96,
+      "sha256": "a0ee21f2d162aeec06bde511e80bf5f029a04acebbc90ce68079ee0d5d9b8214"
+    },
+    {
+      "path": "intelligence-graph/context/3.json",
+      "bytes": 56537,
+      "records": 85,
+      "sha256": "580c3c54dafe0bc1ba330964c707635ee40682981d8953bf2f56dbac7637a001"
+    },
+    {
+      "path": "intelligence-graph/context/4.json",
+      "bytes": 63838,
+      "records": 108,
+      "sha256": "fe883edbe6eb7d90665eeda1e240ad5940bdcdfb6a8491a4a66b4312f2571e54"
+    },
+    {
+      "path": "intelligence-graph/context/5.json",
+      "bytes": 53769,
+      "records": 96,
+      "sha256": "767f7c9933fc9809fa5d66bbb57aaa17d834b18cd603bd9ab98cfb7baf9b5dc5"
+    },
+    {
+      "path": "intelligence-graph/context/6.json",
+      "bytes": 61921,
+      "records": 94,
+      "sha256": "00c9b8cbfe7ba0fddfbab9c1d685d7004c873e88c824e7428e2b1e69f2f1f038"
+    },
+    {
+      "path": "intelligence-graph/context/7.json",
+      "bytes": 60867,
+      "records": 99,
+      "sha256": "3318adfcbc5274fb1608ec5666d759e8817e0084f8aee7e20adb1864ac97dc63"
+    },
+    {
+      "path": "intelligence-graph/context/8.json",
+      "bytes": 57367,
+      "records": 98,
+      "sha256": "de498c4ae11b7400a1759d394f113f422c8c06b92bc86aba147f1b4c576bbad5"
+    },
+    {
+      "path": "intelligence-graph/context/9.json",
+      "bytes": 73747,
+      "records": 106,
+      "sha256": "0d8a5d751abca50c1a43965a999c3f2fabcc38344f73ca76e1b89a15de82577e"
+    },
+    {
+      "path": "intelligence-graph/context/a.json",
+      "bytes": 49954,
+      "records": 93,
+      "sha256": "62620c20bdb9566bcbe517923bf68f065c747109a4c06aacad42bcd2128494fb"
+    },
+    {
+      "path": "intelligence-graph/context/b.json",
+      "bytes": 53276,
+      "records": 93,
+      "sha256": "bb22d19e25ca2bc72bf36e1864c0276625a6ed3d92489c212fd0e41228aa90fd"
+    },
+    {
+      "path": "intelligence-graph/context/c.json",
+      "bytes": 72559,
+      "records": 99,
+      "sha256": "2017590be8709055a82638f58b5642e9e1e2671c7aef5de1874c6aa5385c508b"
+    },
+    {
+      "path": "intelligence-graph/context/d.json",
+      "bytes": 41665,
+      "records": 90,
+      "sha256": "cef1e5780b56fe168f533996e321451928e2056da9916dbe15353db4e97f5752"
+    },
+    {
+      "path": "intelligence-graph/context/e.json",
+      "bytes": 71629,
+      "records": 100,
+      "sha256": "a0cbdfef246a8b4eb13f13237adbe1c732abe6dfeb992d8e1307a22ae7aa277f"
+    },
+    {
+      "path": "intelligence-graph/context/f.json",
+      "bytes": 62258,
+      "records": 90,
+      "sha256": "8d56d73b4c31a8836697b97a7f2417a85b9279a7cdb6a904d72a60e618d695db"
+    },
+    {
+      "path": "intelligence-graph/entities/access_equity.json",
+      "bytes": 28848,
+      "records": 47,
+      "sha256": "9215871fe38f05792bdfc984a4865753d8e26df541bf8a114a92015d29a59bb8"
+    },
+    {
+      "path": "intelligence-graph/entities/agency.json",
+      "bytes": 841,
+      "records": 2,
+      "sha256": "eb1ced9a01554da9c4351432cf1a00cb03840d1a513794ae89fb1dafb4cab211"
+    },
+    {
+      "path": "intelligence-graph/entities/concept.json",
+      "bytes": 6645,
+      "records": 17,
+      "sha256": "eca19337e79ad6647cc84c723838fb5295b467a6dde479c39e300399484de9cb"
+    },
+    {
+      "path": "intelligence-graph/entities/data_tool.json",
+      "bytes": 3478,
+      "records": 6,
+      "sha256": "d89b40da01ae4ddcfba42435bbab837a04ac8a9b30d439daed7cce37e2f59087"
+    },
+    {
+      "path": "intelligence-graph/entities/funding_source.json",
+      "bytes": 454,
+      "records": 1,
+      "sha256": "dd38bd331ee25d2b5148dae934b39a28ef5d906ddf6dba7ed0f826f635262513"
+    },
+    {
+      "path": "intelligence-graph/entities/geography.json",
+      "bytes": 72623,
+      "records": 132,
+      "sha256": "02c748b3bb36c2708acf1364bf48ad041858b73813e8166190c92fa1bc043a65"
+    },
+    {
+      "path": "intelligence-graph/entities/geography_type.json",
+      "bytes": 820,
+      "records": 2,
+      "sha256": "16b724af9e67d1e88388588375b4f53c1e53d070f1dc2225e43987abf8b0eeb2"
+    },
+    {
+      "path": "intelligence-graph/entities/methodology.json",
+      "bytes": 611,
+      "records": 1,
+      "sha256": "9c8e395633269ec74f212cebc69109d338dd1ae59659e1fb4b05bb370c7e009a"
+    },
+    {
+      "path": "intelligence-graph/entities/occupation-11-29.json",
+      "bytes": 175348,
+      "records": 296,
+      "sha256": "518798c51353e2c196a048888d65c333001f91e511a1ee06c751d0f26cb15ca7"
+    },
+    {
+      "path": "intelligence-graph/entities/occupation-31-59.json",
+      "bytes": 202485,
+      "records": 338,
+      "sha256": "778ca7179412c971f5647bfbe1a5491e26dc48d568b10780a588498a35c3ae77"
+    },
+    {
+      "path": "intelligence-graph/entities/organization_type.json",
+      "bytes": 511,
+      "records": 1,
+      "sha256": "5c1ca0aeb01bbbe568640a393ac6a76eee203f4028239295377eca07a242f2b2"
+    },
+    {
+      "path": "intelligence-graph/entities/page.json",
+      "bytes": 132924,
+      "records": 252,
+      "sha256": "346ab94a2d060ec8f04e1253881f2b1e01a75def86e8d797c7e93022fd2de7d2"
+    },
+    {
+      "path": "intelligence-graph/entities/policy.json",
+      "bytes": 138758,
+      "records": 225,
+      "sha256": "9248171071ce36fc3df3f515ce9e945150b6c1ba083a16ff46803f7b5c7ee960"
+    },
+    {
+      "path": "intelligence-graph/entities/policy_digest.json",
+      "bytes": 1949,
+      "records": 3,
+      "sha256": "70a26a482502c025c37e84c5991ae6b18fdd3c05db7b0b03c48faa323c499208"
+    },
+    {
+      "path": "intelligence-graph/entities/practice.json",
+      "bytes": 36775,
+      "records": 68,
+      "sha256": "8f4a0227fd138960ecdeb71b691d490752a8a822ecf6ab21eebe4dbac9219914"
+    },
+    {
+      "path": "intelligence-graph/entities/program.json",
+      "bytes": 4429,
+      "records": 12,
+      "sha256": "1f7477fc98f1983e33373fedebb4d61ce83be39405416ade5e93578f17e911fa"
+    },
+    {
+      "path": "intelligence-graph/entities/report.json",
+      "bytes": 1219,
+      "records": 2,
+      "sha256": "d790b12b9df346a41703b77c75286ced74cedeb65bb6d42e592c9b6bcad563eb"
+    },
+    {
+      "path": "intelligence-graph/entities/sector_partnership.json",
+      "bytes": 45566,
+      "records": 74,
+      "sha256": "9c5e65df33f428f18966dad333d9688794430e6b461f331e6a47d966212c2010"
+    },
+    {
+      "path": "intelligence-graph/entities/training_opportunity.json",
+      "bytes": 19726,
+      "records": 35,
+      "sha256": "2f307d34ff222b5927596d00c259ab75cbe3dd6087aa78d6b25d21e996d76859"
+    },
+    {
+      "path": "intelligence-graph/impact-index.json",
+      "bytes": 99394,
+      "records": 113,
+      "sha256": "b4940c269c530553d3fe001c23b2c70e64327cb4d5d649e07393575bd800cafa"
+    },
+    {
+      "path": "intelligence-graph/manifest.json",
+      "bytes": 11317,
+      "records": 1514,
+      "sha256": "a7e2d1add4a39dd15536dbc67da2e7181a36fc4d3044aecb1d0debb9157e4096"
+    },
+    {
+      "path": "intelligence-graph/reader/0.json",
+      "bytes": 20535,
+      "records": 15,
+      "sha256": "5f208b55e7811b4fd4b8f754cb6ccee87e08cce514d889a695c6dbddb971e270"
+    },
+    {
+      "path": "intelligence-graph/reader/1.json",
+      "bytes": 18901,
+      "records": 14,
+      "sha256": "e59875dc261d6d52497805912ee55884ca834d701edc82791ef5a032092b5f40"
+    },
+    {
+      "path": "intelligence-graph/reader/2.json",
+      "bytes": 30049,
+      "records": 23,
+      "sha256": "b734dd8ef5044d68eda027a1a70bcb3c81cd1b207ea59075c021996c977258fd"
+    },
+    {
+      "path": "intelligence-graph/reader/3.json",
+      "bytes": 28203,
+      "records": 20,
+      "sha256": "5a5dadf426cad6c133cb74d472dd019f115b556588b60b891590e132831fec72"
+    },
+    {
+      "path": "intelligence-graph/reader/4.json",
+      "bytes": 31232,
+      "records": 23,
+      "sha256": "c76ae80d203071ef38d889a4c587e2b624cfaed36da784ef33f73efbb8d69076"
+    },
+    {
+      "path": "intelligence-graph/reader/5.json",
+      "bytes": 28165,
+      "records": 22,
+      "sha256": "ca64f5b31fb0f387bdc8a580e490ddd8a7f4ca566f7434a0e1d58e20985b6d48"
+    },
+    {
+      "path": "intelligence-graph/reader/6.json",
+      "bytes": 27336,
+      "records": 21,
+      "sha256": "12c5bfa7a3ea97a08cd2f103d3e5e516ee86fa45d6293dc05ce6e160b7a5c9c0"
+    },
+    {
+      "path": "intelligence-graph/reader/7.json",
+      "bytes": 37227,
+      "records": 27,
+      "sha256": "50654575e1016ddc32b97468e14e48aad585d3f0f7f40a48a9d9651be612e155"
+    },
+    {
+      "path": "intelligence-graph/reader/8.json",
+      "bytes": 26085,
+      "records": 18,
+      "sha256": "83c5c54b07f02f052dd1d1ec0d213227e56d29098e9e9e9440d0572fceee3c53"
+    },
+    {
+      "path": "intelligence-graph/reader/9.json",
+      "bytes": 31974,
+      "records": 23,
+      "sha256": "7009ebec9006291ee0a2ec1dd9cdb3083e07a143049a2560a0bb90c2066bdeb2"
+    },
+    {
+      "path": "intelligence-graph/reader/a.json",
+      "bytes": 25023,
+      "records": 18,
+      "sha256": "91d4df84e33d95303a98d82bb526051119c4ac52161b64016d623e50afa04604"
+    },
+    {
+      "path": "intelligence-graph/reader/b.json",
+      "bytes": 22482,
+      "records": 16,
+      "sha256": "67807426538571d9078955c5f68cbec5c56760f12f665c75bd5390bae18101fb"
+    },
+    {
+      "path": "intelligence-graph/reader/c.json",
+      "bytes": 34133,
+      "records": 24,
+      "sha256": "44eba4069b834865e75ff9ae18664bd188b8985831f9c1ee7ed81ea905166794"
+    },
+    {
+      "path": "intelligence-graph/reader/d.json",
+      "bytes": 15018,
+      "records": 11,
+      "sha256": "4147d7c46cff33bf280b3eff893a9e3a1e76a015e023186bcc5dc3f7d545b754"
+    },
+    {
+      "path": "intelligence-graph/reader/e.json",
+      "bytes": 36850,
+      "records": 26,
+      "sha256": "46282e1ed88b1e6c0418da0521dab2bd437ad371de51048a475d9853fbe103ed"
+    },
+    {
+      "path": "intelligence-graph/reader/f.json",
+      "bytes": 31000,
+      "records": 23,
+      "sha256": "b6c1245cd817314dc2ae693b15486168a9338041db299c61a0d63134e5975d67"
+    },
+    {
+      "path": "intelligence-graph/relationships/0.json",
+      "bytes": 20346,
+      "records": 79,
+      "sha256": "330e94addd9508b30a238536d002075f9a6a86c3cd3a871556c8651fec6afec9"
+    },
+    {
+      "path": "intelligence-graph/relationships/1.json",
+      "bytes": 15296,
+      "records": 60,
+      "sha256": "5a46c39cfb732ad32dc9271f32100be6ca948f6aa33fe2855e56441560499e9c"
+    },
+    {
+      "path": "intelligence-graph/relationships/2.json",
+      "bytes": 14691,
+      "records": 56,
+      "sha256": "0882c32ec618684614821cf911f972411ef44375f31e6399e0e1ef6cd73e3b7b"
+    },
+    {
+      "path": "intelligence-graph/relationships/3.json",
+      "bytes": 18897,
+      "records": 75,
+      "sha256": "21f93f074fb613d44878350d65ae5683851d8e93e95ae93bcf09da53d6f856f9"
+    },
+    {
+      "path": "intelligence-graph/relationships/4.json",
+      "bytes": 22598,
+      "records": 88,
+      "sha256": "1a04ca8632ee235070d66a0889bc735c931d5a92e9f815986060902ec2970e51"
+    },
+    {
+      "path": "intelligence-graph/relationships/5.json",
+      "bytes": 20662,
+      "records": 79,
+      "sha256": "4fbd051f600b9ea04573da55ae16f5b4fbe38c1d6888ed9e673ad2fcfaba3531"
+    },
+    {
+      "path": "intelligence-graph/relationships/6.json",
+      "bytes": 23296,
+      "records": 90,
+      "sha256": "e606ec027a0720a4f234ee7d60c8f714be2dd4ff4b3b93e3d4ad0c696db1442d"
+    },
+    {
+      "path": "intelligence-graph/relationships/7.json",
+      "bytes": 20991,
+      "records": 83,
+      "sha256": "8cc2ed5c3a14334e81e55d262a0fa33e68b59956751e62e3218caaa2b224d5a2"
+    },
+    {
+      "path": "intelligence-graph/relationships/8.json",
+      "bytes": 20700,
+      "records": 81,
+      "sha256": "d3e9957fb88a163001b2fc2a5d1cb8f32d1e85d24820d7d0275914177614d74b"
+    },
+    {
+      "path": "intelligence-graph/relationships/9.json",
+      "bytes": 28790,
+      "records": 112,
+      "sha256": "409ea4cefa36a3b933ecefbc61693c6a1f6c5fd13fa01f0ffd67a03fd1a91b8a"
+    },
+    {
+      "path": "intelligence-graph/relationships/a.json",
+      "bytes": 18250,
+      "records": 72,
+      "sha256": "0bc5d8a198f1255f950064c1ef6648e1a27923448a8664ae4a10d0038cb45f7a"
+    },
+    {
+      "path": "intelligence-graph/relationships/b.json",
+      "bytes": 14798,
+      "records": 59,
+      "sha256": "0f5242f74ab16e72777981fef5e0069f092a6035daab7dee7ad5b7e71554a2a3"
+    },
+    {
+      "path": "intelligence-graph/relationships/c.json",
+      "bytes": 26142,
+      "records": 103,
+      "sha256": "de2aeb1e2e77bdfce5eda079f05c354aad72d93be2709b2503e3e0c856f554ab"
+    },
+    {
+      "path": "intelligence-graph/relationships/d.json",
+      "bytes": 14157,
+      "records": 56,
+      "sha256": "1945300cf5c3c71c56a5f836d09a87b3abd6f20b9e5846edd41ec891d55ae8fe"
+    },
+    {
+      "path": "intelligence-graph/relationships/e.json",
+      "bytes": 26336,
+      "records": 103,
+      "sha256": "fc2d993e318b893d03ff3a6291995a44b1206313f2e05909ac32a2949f8b1bf6"
+    },
+    {
+      "path": "intelligence-graph/relationships/f.json",
+      "bytes": 24380,
+      "records": 94,
+      "sha256": "493f41870155590e96bbaab01246d08de62631ccbd434c43205cb3d733dea784"
+    },
+    {
+      "path": "labor-market-profiles/index.json",
+      "bytes": 23480,
+      "records": 40,
+      "sha256": "2f9fcf2053a23538e9aa920c724eac08d0931237ead24f344f7a236330b02bf2"
+    },
+    {
+      "path": "labor-market-profiles/markets/12540.json",
+      "bytes": 3236,
+      "records": 4,
+      "sha256": "0e80a7afaa881b253eb4dea1021c877da68a67adad7fedaf1dff322c02e8f59d"
+    },
+    {
+      "path": "labor-market-profiles/markets/17020.json",
+      "bytes": 2903,
+      "records": 4,
+      "sha256": "db91f7d75f93ff95aca87f66d4ee8efd9bea2f4809182a5a575421db61e49347"
+    },
+    {
+      "path": "labor-market-profiles/markets/20940.json",
+      "bytes": 22533,
+      "records": 40,
+      "sha256": "2297f52585ad999d5be6dcf747a05fd3d6790a5ec7e8b548749fb15576bf0bc6"
+    },
+    {
+      "path": "labor-market-profiles/markets/23420.json",
+      "bytes": 3251,
+      "records": 4,
+      "sha256": "b0cfc020d8e488b9b2db602021872d8449eb55acd93ce10a0d2a43752df23cad"
+    },
+    {
+      "path": "labor-market-profiles/markets/25260.json",
+      "bytes": 22078,
+      "records": 40,
+      "sha256": "d98a7647a1812ac8b36ccb76fd9acd117159340ea5323e993f6dacffbb6b3731"
+    },
+    {
+      "path": "labor-market-profiles/markets/31080.json",
+      "bytes": 3890,
+      "records": 5,
+      "sha256": "40035d27723e9a3e1ce5a3b81c999ae92b852fef346dd1350d817206117437e5"
+    },
+    {
+      "path": "labor-market-profiles/markets/32900.json",
+      "bytes": 21315,
+      "records": 40,
+      "sha256": "1a8571c993cc424c6fa428ae382b285d8e43169256b7241f62bc00c9c1b156b7"
+    },
+    {
+      "path": "labor-market-profiles/markets/33700.json",
+      "bytes": 21851,
+      "records": 40,
+      "sha256": "673345d805fc98d326bbaab75c2b4f9e836d4a2b0dcfcf25a083f2a00cbf0cf4"
+    },
+    {
+      "path": "labor-market-profiles/markets/34900.json",
+      "bytes": 3019,
+      "records": 4,
+      "sha256": "add109e73b2985c74eb72bf5e54dc346f45d264a7074d1609f34ced26897cb00"
+    },
+    {
+      "path": "labor-market-profiles/markets/37100.json",
+      "bytes": 23484,
+      "records": 40,
+      "sha256": "970c15fff30df12596de6c931066f455d7a35ac87b6b6bad2b34acf9c948d7cb"
+    },
+    {
+      "path": "labor-market-profiles/markets/39820.json",
+      "bytes": 2911,
+      "records": 4,
+      "sha256": "de710e6d494dc3f8810b4cc79fcc696bc231954accf4cf587a2e23a7e933476d"
+    },
+    {
+      "path": "labor-market-profiles/markets/40140.json",
+      "bytes": 2808,
+      "records": 4,
+      "sha256": "9b86fa5e2d5345f98f9c4b34a37eae584d5f4c9e923ed2fe2d30abc47b123d80"
+    },
+    {
+      "path": "labor-market-profiles/markets/40900.json",
+      "bytes": 2894,
+      "records": 4,
+      "sha256": "96718acedaacc999155e0aeaac6fb29383ed6516df52e5d277d135d4e96290dc"
+    },
+    {
+      "path": "labor-market-profiles/markets/41500.json",
+      "bytes": 21607,
+      "records": 40,
+      "sha256": "802c5511eb7f6d68036e1305eb9aff8aadd39f38460208ca262cc142ba9bf3ed"
+    },
+    {
+      "path": "labor-market-profiles/markets/41740.json",
+      "bytes": 23351,
+      "records": 40,
+      "sha256": "0c402dbeecc9e81689572e5b78de324f6ecaf59691f64e7bb9c86382c7e2f863"
+    },
+    {
+      "path": "labor-market-profiles/markets/41860.json",
+      "bytes": 5585,
+      "records": 8,
+      "sha256": "3d1802b911cf1667ed756118be2a9625356846a8d94cd0284d865242b4830da9"
+    },
+    {
+      "path": "labor-market-profiles/markets/41940.json",
+      "bytes": 2761,
+      "records": 4,
+      "sha256": "1a41679fef0c0eca7e6961bf11266b0c9904a60b3bdc1e8ddda400c9e555cf63"
+    },
+    {
+      "path": "labor-market-profiles/markets/42020.json",
+      "bytes": 23756,
+      "records": 40,
+      "sha256": "6506fdcf1effd9908edfae2c0016aa904c6a2ab52978087919cd057b70de3235"
+    },
+    {
+      "path": "labor-market-profiles/markets/42100.json",
+      "bytes": 22898,
+      "records": 40,
+      "sha256": "b5757e9ab8f71bbdd470ee0ae6af943796865697249b67b09d478d3d1bbf995b"
+    },
+    {
+      "path": "labor-market-profiles/markets/42200.json",
+      "bytes": 23539,
+      "records": 40,
+      "sha256": "7f7a3337bfcc3be0155d2e1563e78ba102af2e8a377206c392e0bb9e53c5d48b"
+    },
+    {
+      "path": "labor-market-profiles/markets/42220.json",
+      "bytes": 22729,
+      "records": 40,
+      "sha256": "d79238c965ec35257513069a0221127f26a618ae6d9f4b1f359f0bf04084ebef"
+    },
+    {
+      "path": "labor-market-profiles/markets/44700.json",
+      "bytes": 22468,
+      "records": 40,
+      "sha256": "156603cbb989f2426d768af2e965988b6797147140dd77f2262ae8df4438c56e"
+    },
+    {
+      "path": "labor-market-profiles/markets/46700.json",
+      "bytes": 21656,
+      "records": 40,
+      "sha256": "8e90e6562cb4abf54b7ec39840e8966cc1a5436f4aa931f39026a9d5b4548bcf"
+    },
+    {
+      "path": "labor-market-profiles/markets/47300.json",
+      "bytes": 21665,
+      "records": 40,
+      "sha256": "806936eaf104acdd4b3c5cde77d4fe8e9a87cf21c90ea329b47c2c9684b92090"
+    },
+    {
+      "path": "labor-market-profiles/markets/49700.json",
+      "bytes": 2994,
+      "records": 4,
+      "sha256": "bc0639ddf72db1d06ed68b81eba2684464c8c01bf687e1f9458bcd57981d53fb"
+    },
+    {
+      "path": "occupation-explorer/index.json",
+      "bytes": 266808,
+      "records": 634,
+      "sha256": "77358367f58618e73622c8e6819b362b79f01bc5094758657bfda78c60c8e0ff"
+    },
+    {
+      "path": "occupation-explorer/markets/20940.json",
+      "bytes": 22727,
+      "records": 243,
+      "sha256": "5ec2fd2a8977dae815f4882493e9d71ff24f8e6d7ab9933152eb7ff5a50f2424"
+    },
+    {
+      "path": "occupation-explorer/markets/25260.json",
+      "bytes": 19869,
+      "records": 212,
+      "sha256": "77ad4fd6a743ce0dc890da5a5355a2e6e2fd0cc6ea999b62eb3ddba6cfc6d496"
+    },
+    {
+      "path": "occupation-explorer/markets/32900.json",
+      "bytes": 27376,
+      "records": 292,
+      "sha256": "270a3880f7bb8bee27d073e47e513315b3585495fbd0d04fb4ef8456b31e5c8e"
+    },
+    {
+      "path": "occupation-explorer/markets/33700.json",
+      "bytes": 36105,
+      "records": 380,
+      "sha256": "270937c137ca886e1e3cb4623bcc3ff9c30be0c11119ec31d3e293c0ccc985a2"
+    },
+    {
+      "path": "occupation-explorer/markets/37100.json",
+      "bytes": 43320,
+      "records": 455,
+      "sha256": "fb8ca1d3b22afa61318c96da2bf2cff1774f619daf7e9d81b3a85f142e5e61ac"
+    },
+    {
+      "path": "occupation-explorer/markets/40140.json",
+      "bytes": 476,
+      "records": 3,
+      "sha256": "c81f72b5e9cd68693272c61e0176cb654f45b3bcd30050e6f84464b5e32e4afe"
+    },
+    {
+      "path": "occupation-explorer/markets/40900.json",
+      "bytes": 471,
+      "records": 3,
+      "sha256": "6de022febdcd5a6d1a89e35e122dd4c9841adae5fbd23ae885a507d3254a50f6"
+    },
+    {
+      "path": "occupation-explorer/markets/41500.json",
+      "bytes": 32748,
+      "records": 345,
+      "sha256": "96a80b69b95265b611b2027edda5c0875460a37e6b1105c72efad0b1d9d5b45d"
+    },
+    {
+      "path": "occupation-explorer/markets/41740.json",
+      "bytes": 57234,
+      "records": 590,
+      "sha256": "f8cf8fea0185de6359b554b5456a0eb94e9a3965e43e650bff3807fd4f4b8120"
+    },
+    {
+      "path": "occupation-explorer/markets/41940.json",
+      "bytes": 576,
+      "records": 4,
+      "sha256": "bb6038f86a406fff7a68f4e596f577db9ae2ad2e8aa54a959587010007203dae"
+    },
+    {
+      "path": "occupation-explorer/markets/42020.json",
+      "bytes": 35650,
+      "records": 379,
+      "sha256": "dc1cf997589dc54a6def3cb396a94afef150687207e699a6b4bd87d0279b67a9"
+    },
+    {
+      "path": "occupation-explorer/markets/42100.json",
+      "bytes": 31929,
+      "records": 340,
+      "sha256": "847152208dc55797ffa1b5a309da637b3e0b1d47d3d0c2d68e602d679e600394"
+    },
+    {
+      "path": "occupation-explorer/markets/42200.json",
+      "bytes": 38916,
+      "records": 410,
+      "sha256": "9eaa4138836a86291045db374149633538278b538c2a425bb6b9bc1e475cee01"
+    },
+    {
+      "path": "occupation-explorer/markets/42220.json",
+      "bytes": 37801,
+      "records": 399,
+      "sha256": "97b424c24e0edf31617aec1d10bdaa1ac155243c84e528bdeee350dc65b01595"
+    },
+    {
+      "path": "occupation-explorer/markets/44700.json",
+      "bytes": 39153,
+      "records": 412,
+      "sha256": "f367bad61250ef27d49a9884527cfb4071b7b4db92b2a04f53ab2b83944f79c2"
+    },
+    {
+      "path": "occupation-explorer/markets/46700.json",
+      "bytes": 31085,
+      "records": 328,
+      "sha256": "5a529b1b05aeb52fe4bd3c62b6e6a64d051a4326957454fb49166c9be1759604"
+    },
+    {
+      "path": "occupation-explorer/markets/47300.json",
+      "bytes": 30919,
+      "records": 326,
+      "sha256": "b13a1e3a79a316c1f3c77092f01de14f91a312ab779d8bb8e30514a0f58f53df"
+    },
+    {
+      "path": "occupation-explorer/markets/california.json",
+      "bytes": 2410,
+      "records": 22,
+      "sha256": "364abc1919f9927eafbcb771bc1d46c3ed9c4968e0a9338fede6141315201d33"
+    },
+    {
+      "path": "occupation-explorer/runtime.json",
+      "bytes": 220755,
+      "records": 634,
+      "sha256": "9cae5ed40215f2f93b5ea4a59f29758083b53c02e0c3d881eae28d614727177e"
+    },
+    {
+      "path": "policy/backfill-queue.json",
+      "bytes": 164108,
+      "records": 204,
+      "sha256": "5342b18c9f4bd19f2801731308176cdbc33da96c349a8602cff18d8d7d46d2ad"
+    },
+    {
+      "path": "policy/backfill-queue.md",
+      "bytes": 10495,
+      "records": 204,
+      "sha256": "e8c0b04bd01418f02fe4d7e2997d688b1b717f79f574ee6f80ce13b17468af15"
+    },
+    {
+      "path": "policy/deadlines.ics",
+      "bytes": 5663,
+      "records": 11,
+      "sha256": "dfa5b90c979e9705ef70726a387e30a10ca85049ea226d38837b47d60afc9c10"
+    },
+    {
+      "path": "policy/deadlines.json",
+      "bytes": 7602,
+      "records": 11,
+      "sha256": "09ddb525e2ef3adb100026e2ed8771776a666367ed3041bd3bd2abce28e1ae01"
+    },
+    {
+      "path": "policy/records.json",
+      "bytes": 199030,
+      "records": 222,
+      "sha256": "c313d1143538ca4d8eba0b57b180880568d72730bfb9681a8d67f8107f4efcb6"
+    },
+    {
+      "path": "policy/runtime.json",
+      "bytes": 119616,
+      "records": 222,
+      "sha256": "570a74ef7021e64773725bf514c3ee5c1ef723e2b83a30dbec261111e959648c"
+    },
+    {
+      "path": "policy/search-index.json",
+      "bytes": 221715,
+      "records": 222,
+      "sha256": "836dd659ba76ca9d9edd70f8ac6913b1024fda8af1abd2d93353776b0ef0bccd"
+    },
+    {
+      "path": "sector-partnerships/index.json",
+      "bytes": 36267,
+      "records": 74,
+      "sha256": "af30d70b12537fd33fdd789248cd5e8e9c37248c1ddc02eaf7d87089acf61836"
+    },
+    {
+      "path": "sector-partnerships/markets/12540.html",
+      "bytes": 23408,
+      "records": 3,
+      "sha256": "5872a3a8e725eb986375858634d1d95847f5fd3579c9effb694f7c94a8c31bb0"
+    },
+    {
+      "path": "sector-partnerships/markets/17020.html",
+      "bytes": 22811,
+      "records": 3,
+      "sha256": "9d4f185794e7c5f5b3386bca2b0771753c7b09acbd16acd1d91b69e275be29c9"
+    },
+    {
+      "path": "sector-partnerships/markets/20940.html",
+      "bytes": 16510,
+      "records": 2,
+      "sha256": "e5e187adb6f416a1ea8bee826e5fe8ee17fc91c9c2aeb4950584354329b3dd3f"
+    },
+    {
+      "path": "sector-partnerships/markets/23420.html",
+      "bytes": 22291,
+      "records": 3,
+      "sha256": "d61d8a409f3f10be1d793fc961b205e91d0717749e65b7d1c6e759fbcc42270a"
+    },
+    {
+      "path": "sector-partnerships/markets/25260.html",
+      "bytes": 26999,
+      "records": 4,
+      "sha256": "21b7955f750ced79bf9cf49b09a1df3f8d3bb3242e79bdf8246a0604932df2a6"
+    },
+    {
+      "path": "sector-partnerships/markets/31080.html",
+      "bytes": 45175,
+      "records": 6,
+      "sha256": "62d7f23d092e77300fecb729bed256bb9ed0764d54d86712a0e847b79063abc0"
+    },
+    {
+      "path": "sector-partnerships/markets/32900.html",
+      "bytes": 13674,
+      "records": 1,
+      "sha256": "f57011d6d699f745c31351eb27df50c4b05ed4e053597991d987802f72391378"
+    },
+    {
+      "path": "sector-partnerships/markets/33700.html",
+      "bytes": 29669,
+      "records": 4,
+      "sha256": "22e42d54dfe83cef6467b7f339150888483737ba6432f72bf5867e4075d6bb95"
+    },
+    {
+      "path": "sector-partnerships/markets/34900.html",
+      "bytes": 24245,
+      "records": 3,
+      "sha256": "712d4a2223191c66d75e140c31182bd801a9f3e6b21307d781f24b69afdb8766"
+    },
+    {
+      "path": "sector-partnerships/markets/37100.html",
+      "bytes": 24991,
+      "records": 3,
+      "sha256": "56e732f9b09badf50f6cc5b9a219a7308c047109913d04f069ec4a94f368d382"
+    },
+    {
+      "path": "sector-partnerships/markets/39820.html",
+      "bytes": 32702,
+      "records": 5,
+      "sha256": "c3e8f6d6d5a9bc55a4850917a04532ca18866f587cdd10ec1c62041006f5d2d9"
+    },
+    {
+      "path": "sector-partnerships/markets/40140.html",
+      "bytes": 37680,
+      "records": 5,
+      "sha256": "d958c6d8bbc084d0f91dadc7e1710da0b1d3b39d5fe15c8e0968cc8359165bc3"
+    },
+    {
+      "path": "sector-partnerships/markets/40900.html",
+      "bytes": 33414,
+      "records": 5,
+      "sha256": "51a24f80b1d7fbf905972c1b999b8150df2dcba3a624d7622cc36ad21fe168ab"
+    },
+    {
+      "path": "sector-partnerships/markets/41500.html",
+      "bytes": 35962,
+      "records": 5,
+      "sha256": "7e286beb4fc36476496525f7097f74179dbef82ee47f22388d49ba300be7b254"
+    },
+    {
+      "path": "sector-partnerships/markets/41740.html",
+      "bytes": 46746,
+      "records": 7,
+      "sha256": "282429780f7a798b009457165e90b0b7c5689e5759c7c9282030bdb1ef6133fc"
+    },
+    {
+      "path": "sector-partnerships/markets/41860.html",
+      "bytes": 37923,
+      "records": 5,
+      "sha256": "a17f74281d13f6bda1b1753f5577d7d1ebd0844162aa22dbaafc25a305695bc8"
+    },
+    {
+      "path": "sector-partnerships/markets/41940.html",
+      "bytes": 28532,
+      "records": 4,
+      "sha256": "bce12148a1b4aa3d854aae7d0c71cc02b02f7e0ab77b4d43fe6e9bac5c0a1a3e"
+    },
+    {
+      "path": "sector-partnerships/markets/42020.html",
+      "bytes": 23096,
+      "records": 3,
+      "sha256": "c1576d959c6d4966cfa964066de55df6f94abbd07d017fc3c2674f006c64dd7b"
+    },
+    {
+      "path": "sector-partnerships/markets/42100.html",
+      "bytes": 53229,
+      "records": 8,
+      "sha256": "d95bc99f83ce47196324251bac2ef7fcf39e5c5004a9136fe0afba21196ffefb"
+    },
+    {
+      "path": "sector-partnerships/markets/42200.html",
+      "bytes": 28586,
+      "records": 4,
+      "sha256": "bd2e00ff611f8390fb2129067ce76822dd5717945c4624d252b8c6770a2c4fca"
+    },
+    {
+      "path": "sector-partnerships/markets/42220.html",
+      "bytes": 16642,
+      "records": 2,
+      "sha256": "1e562d49fda5953b0bc29c061dc212472a50798f1f6306095e71bf61a1ad8612"
+    },
+    {
+      "path": "sector-partnerships/markets/44700.html",
+      "bytes": 13967,
+      "records": 1,
+      "sha256": "f5994f51fcd557e94bb240e7a2cd67ad40bfb46c324186b8c0edd081b6a19772"
+    },
+    {
+      "path": "sector-partnerships/markets/46700.html",
+      "bytes": 21993,
+      "records": 2,
+      "sha256": "cba27b5a6af8d6653407b2c1b8039529214fa00e0f2089ee58d14bf3c662521e"
+    },
+    {
+      "path": "sector-partnerships/markets/47300.html",
+      "bytes": 33052,
+      "records": 5,
+      "sha256": "bf82c63bea462769e89b0b3c6b0ef20cadca39380d6ced84d95c9f7d0602c768"
+    },
+    {
+      "path": "sector-partnerships/markets/49700.html",
+      "bytes": 10015,
+      "records": 1,
+      "sha256": "246716a6699df107e46b9d27fa5ddcee59753f743c65477253bd7abe52a791fb"
+    },
+    {
+      "path": "tool-intelligence/runtime.json",
+      "bytes": 93242,
+      "records": 25,
+      "sha256": "925d43d97c5a5cf8b6f54c030fa67d3d38bd3117674ff821ba301fe9b614f170"
+    },
+    {
+      "path": "wae/context-seed.json",
+      "bytes": 17224,
+      "records": 69,
+      "sha256": "4685eff22686117258250014274b53bda9402073cc29fbc3a3941c26ecc144e1"
+    },
+    {
+      "path": "workforce-lens/runtime.json",
+      "bytes": 15530,
+      "records": 83,
+      "sha256": "228a7b22dfa9a457b185a61206a3a06795fdf6dc0d963df82135d8c7a190811d"
+    }
+  ]
+}

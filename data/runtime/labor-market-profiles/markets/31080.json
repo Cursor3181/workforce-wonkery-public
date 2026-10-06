@@ -1,0 +1,122 @@
+{
+  "schema_version": "1.0",
+  "market_id": "31080",
+  "market": {
+    "label": "Los Angeles-Long Beach-Anaheim MSA",
+    "source": null,
+    "basic": 30.79,
+    "contextOpts": [
+      {
+        "id": "sow-los-angeles-county",
+        "label": "Los Angeles Basin"
+      },
+      {
+        "id": "sow-orange-county",
+        "label": "Orange"
+      }
+    ],
+    "eddArea": null,
+    "component_counties": [
+      "Los Angeles",
+      "Orange"
+    ],
+    "edd_components": [
+      {
+        "label": "Los Angeles-Long Beach-Glendale MD",
+        "geog_area": "0621031084",
+        "counties": [
+          "Los Angeles"
+        ]
+      },
+      {
+        "label": "Anaheim-Santa Ana-Irvine MD",
+        "geog_area": "0621011244",
+        "counties": [
+          "Orange"
+        ]
+      }
+    ],
+    "crosswalk_status": "component_divisions_required",
+    "geography_note": "EDD publishes occupation evidence for the two metropolitan divisions rather than one combined Los Angeles-Long Beach-Anaheim occupation series."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$128,226 annual",
+      "fit": "context",
+      "evidence_geography": "Los Angeles Basin",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Los Angeles Basin. This is not a local-area opening estimate and is not used to rank occupations for Los Angeles County."
+    },
+    {
+      "soc": "13-1111",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$106,632 annual",
+      "fit": "context",
+      "evidence_geography": "Los Angeles Basin",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Los Angeles Basin. This is not a local-area opening estimate and is not used to rank occupations for Los Angeles County."
+    },
+    {
+      "soc": "13-2011",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$94,876 annual",
+      "fit": "context",
+      "evidence_geography": "Los Angeles Basin",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Los Angeles Basin. This is not a local-area opening estimate and is not used to rank occupations for Los Angeles County."
+    },
+    {
+      "soc": "25-3031",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$59,045 annual",
+      "fit": "context",
+      "evidence_geography": "Los Angeles Basin",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Los Angeles Basin. This is not a local-area opening estimate and is not used to rank occupations for Los Angeles County."
+    },
+    {
+      "soc": "15-1252",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$164,421 annual",
+      "fit": "context",
+      "evidence_geography": "Orange",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Orange. This is not a local-area opening estimate and is not used to rank occupations for Orange County."
+    }
+  ],
+  "qa": {
+    "cbsa": "31080",
+    "label": "Los Angeles-Long Beach-Anaheim MSA",
+    "catalog_size": 40,
+    "embedded_rows": 5,
+    "exact_msa_rows": 0,
+    "regional_context_rows": 5,
+    "profile_link_only_rows": 35,
+    "wage_rows": 5,
+    "projection_rows": 0,
+    "source_periods": [
+      "broader regional context"
+    ],
+    "coverage_status": "regional_context_partial",
+    "qa_status": "WARN",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

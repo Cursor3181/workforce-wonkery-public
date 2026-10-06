@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "market_id": "12540",
+  "market": {
+    "label": "Bakersfield-Delano MSA",
+    "source": null,
+    "basic": 24.07,
+    "contextOpts": [
+      {
+        "id": "sow-kern-inyo-mono",
+        "label": "San Joaquin Valley"
+      }
+    ],
+    "eddArea": "0621012540",
+    "component_counties": [
+      "Kern"
+    ],
+    "edd_components": [
+      {
+        "label": "Bakersfield-Delano MSA",
+        "geog_area": "0621012540",
+        "counties": [
+          "Kern"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$104,230 annual",
+      "fit": "context",
+      "evidence_geography": "San Joaquin Valley and Associated Counties",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from San Joaquin Valley and Associated Counties. This is not a local-area opening estimate and is not used to rank occupations for Kern/Inyo/Mono."
+    },
+    {
+      "soc": "25-2021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$99,359 annual",
+      "fit": "context",
+      "evidence_geography": "San Joaquin Valley and Associated Counties",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from San Joaquin Valley and Associated Counties. This is not a local-area opening estimate and is not used to rank occupations for Kern/Inyo/Mono."
+    },
+    {
+      "soc": "25-2031",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$102,783 annual",
+      "fit": "context",
+      "evidence_geography": "San Joaquin Valley and Associated Counties",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from San Joaquin Valley and Associated Counties. This is not a local-area opening estimate and is not used to rank occupations for Kern/Inyo/Mono."
+    },
+    {
+      "soc": "25-3031",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$61,675 annual",
+      "fit": "context",
+      "evidence_geography": "San Joaquin Valley and Associated Counties",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from San Joaquin Valley and Associated Counties. This is not a local-area opening estimate and is not used to rank occupations for Kern/Inyo/Mono."
+    }
+  ],
+  "qa": {
+    "cbsa": "12540",
+    "label": "Bakersfield-Delano MSA",
+    "catalog_size": 40,
+    "embedded_rows": 4,
+    "exact_msa_rows": 0,
+    "regional_context_rows": 4,
+    "profile_link_only_rows": 36,
+    "wage_rows": 4,
+    "projection_rows": 0,
+    "source_periods": [
+      "broader regional context"
+    ],
+    "coverage_status": "regional_context_partial",
+    "qa_status": "WARN",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

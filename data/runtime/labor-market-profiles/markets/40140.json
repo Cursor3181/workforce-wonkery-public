@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "market_id": "40140",
+  "market": {
+    "label": "Riverside-San Bernardino-Ontario MSA",
+    "source": null,
+    "basic": 28.26,
+    "contextOpts": [],
+    "eddArea": "0621040140",
+    "component_counties": [
+      "Riverside",
+      "San Bernardino"
+    ],
+    "edd_components": [
+      {
+        "label": "Riverside-San Bernardino-Ontario MSA",
+        "geog_area": "0621040140",
+        "counties": [
+          "Riverside",
+          "San Bernardino"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 20720,
+      "projected_employment": 23150,
+      "growth_pct": 11.7,
+      "total_openings": 19670,
+      "wage": {
+        "value": 49.99,
+        "unit": "median hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "Riverside-San Bernardino-Ontario MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": null
+    },
+    {
+      "soc": "13-2011",
+      "employment": 9170,
+      "projected_employment": 10170,
+      "growth_pct": 10.9,
+      "total_openings": 8370,
+      "wage": {
+        "value": 41.02,
+        "unit": "median hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "Riverside-San Bernardino-Ontario MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": null
+    },
+    {
+      "soc": "25-2021",
+      "employment": 20200,
+      "projected_employment": 22150,
+      "growth_pct": 9.7,
+      "total_openings": 16020,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Riverside-San Bernardino-Ontario MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": "EDD does not report a usable hourly wage for this teacher occupation in the MSA wage table."
+    },
+    {
+      "soc": "25-3031",
+      "employment": 9720,
+      "projected_employment": 11050,
+      "growth_pct": 13.7,
+      "total_openings": 13710,
+      "wage": {
+        "value": 30.04,
+        "unit": "median hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "Riverside-San Bernardino-Ontario MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": null
+    }
+  ],
+  "qa": {
+    "cbsa": "40140",
+    "label": "Riverside-San Bernardino-Ontario MSA",
+    "catalog_size": 40,
+    "embedded_rows": 4,
+    "exact_msa_rows": 4,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 36,
+    "wage_rows": 3,
+    "projection_rows": 4,
+    "source_periods": [
+      "2022-2032 projections; wages 2026 Q1"
+    ],
+    "coverage_status": "exact_msa_partial",
+    "qa_status": "WARN",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

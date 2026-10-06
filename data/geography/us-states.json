@@ -1,0 +1,631 @@
+{
+  "schema_version": "1.0",
+  "country": {
+    "id": "geography:us",
+    "level": "country",
+    "name": "United States",
+    "code": "US",
+    "fips": "00",
+    "slug": "united-states",
+    "aliases": [
+      "U.S.",
+      "US",
+      "USA",
+      "United States of America"
+    ]
+  },
+  "states": [
+    {
+      "id": "geography:state:al",
+      "level": "state",
+      "name": "Alabama",
+      "abbr": "AL",
+      "fips": "01",
+      "slug": "alabama",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Alabama"
+      ]
+    },
+    {
+      "id": "geography:state:ak",
+      "level": "state",
+      "name": "Alaska",
+      "abbr": "AK",
+      "fips": "02",
+      "slug": "alaska",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Alaska"
+      ]
+    },
+    {
+      "id": "geography:state:az",
+      "level": "state",
+      "name": "Arizona",
+      "abbr": "AZ",
+      "fips": "04",
+      "slug": "arizona",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Arizona"
+      ]
+    },
+    {
+      "id": "geography:state:ar",
+      "level": "state",
+      "name": "Arkansas",
+      "abbr": "AR",
+      "fips": "05",
+      "slug": "arkansas",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Arkansas"
+      ]
+    },
+    {
+      "id": "geography:state:ca",
+      "level": "state",
+      "name": "California",
+      "abbr": "CA",
+      "fips": "06",
+      "slug": "california",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of California"
+      ]
+    },
+    {
+      "id": "geography:state:co",
+      "level": "state",
+      "name": "Colorado",
+      "abbr": "CO",
+      "fips": "08",
+      "slug": "colorado",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Colorado"
+      ]
+    },
+    {
+      "id": "geography:state:ct",
+      "level": "state",
+      "name": "Connecticut",
+      "abbr": "CT",
+      "fips": "09",
+      "slug": "connecticut",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Connecticut"
+      ]
+    },
+    {
+      "id": "geography:state:de",
+      "level": "state",
+      "name": "Delaware",
+      "abbr": "DE",
+      "fips": "10",
+      "slug": "delaware",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Delaware"
+      ]
+    },
+    {
+      "id": "geography:state:dc",
+      "level": "state",
+      "name": "District of Columbia",
+      "abbr": "DC",
+      "fips": "11",
+      "slug": "district-of-columbia",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of District of Columbia"
+      ]
+    },
+    {
+      "id": "geography:state:fl",
+      "level": "state",
+      "name": "Florida",
+      "abbr": "FL",
+      "fips": "12",
+      "slug": "florida",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Florida"
+      ]
+    },
+    {
+      "id": "geography:state:ga",
+      "level": "state",
+      "name": "Georgia",
+      "abbr": "GA",
+      "fips": "13",
+      "slug": "georgia",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Georgia"
+      ]
+    },
+    {
+      "id": "geography:state:hi",
+      "level": "state",
+      "name": "Hawaii",
+      "abbr": "HI",
+      "fips": "15",
+      "slug": "hawaii",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Hawaii"
+      ]
+    },
+    {
+      "id": "geography:state:id",
+      "level": "state",
+      "name": "Idaho",
+      "abbr": "ID",
+      "fips": "16",
+      "slug": "idaho",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Idaho"
+      ]
+    },
+    {
+      "id": "geography:state:il",
+      "level": "state",
+      "name": "Illinois",
+      "abbr": "IL",
+      "fips": "17",
+      "slug": "illinois",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Illinois"
+      ]
+    },
+    {
+      "id": "geography:state:in",
+      "level": "state",
+      "name": "Indiana",
+      "abbr": "IN",
+      "fips": "18",
+      "slug": "indiana",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Indiana"
+      ]
+    },
+    {
+      "id": "geography:state:ia",
+      "level": "state",
+      "name": "Iowa",
+      "abbr": "IA",
+      "fips": "19",
+      "slug": "iowa",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Iowa"
+      ]
+    },
+    {
+      "id": "geography:state:ks",
+      "level": "state",
+      "name": "Kansas",
+      "abbr": "KS",
+      "fips": "20",
+      "slug": "kansas",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Kansas"
+      ]
+    },
+    {
+      "id": "geography:state:ky",
+      "level": "state",
+      "name": "Kentucky",
+      "abbr": "KY",
+      "fips": "21",
+      "slug": "kentucky",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Kentucky"
+      ]
+    },
+    {
+      "id": "geography:state:la",
+      "level": "state",
+      "name": "Louisiana",
+      "abbr": "LA",
+      "fips": "22",
+      "slug": "louisiana",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Louisiana"
+      ]
+    },
+    {
+      "id": "geography:state:me",
+      "level": "state",
+      "name": "Maine",
+      "abbr": "ME",
+      "fips": "23",
+      "slug": "maine",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Maine"
+      ]
+    },
+    {
+      "id": "geography:state:md",
+      "level": "state",
+      "name": "Maryland",
+      "abbr": "MD",
+      "fips": "24",
+      "slug": "maryland",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Maryland"
+      ]
+    },
+    {
+      "id": "geography:state:ma",
+      "level": "state",
+      "name": "Massachusetts",
+      "abbr": "MA",
+      "fips": "25",
+      "slug": "massachusetts",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Massachusetts"
+      ]
+    },
+    {
+      "id": "geography:state:mi",
+      "level": "state",
+      "name": "Michigan",
+      "abbr": "MI",
+      "fips": "26",
+      "slug": "michigan",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Michigan"
+      ]
+    },
+    {
+      "id": "geography:state:mn",
+      "level": "state",
+      "name": "Minnesota",
+      "abbr": "MN",
+      "fips": "27",
+      "slug": "minnesota",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Minnesota"
+      ]
+    },
+    {
+      "id": "geography:state:ms",
+      "level": "state",
+      "name": "Mississippi",
+      "abbr": "MS",
+      "fips": "28",
+      "slug": "mississippi",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Mississippi"
+      ]
+    },
+    {
+      "id": "geography:state:mo",
+      "level": "state",
+      "name": "Missouri",
+      "abbr": "MO",
+      "fips": "29",
+      "slug": "missouri",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Missouri"
+      ]
+    },
+    {
+      "id": "geography:state:mt",
+      "level": "state",
+      "name": "Montana",
+      "abbr": "MT",
+      "fips": "30",
+      "slug": "montana",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Montana"
+      ]
+    },
+    {
+      "id": "geography:state:ne",
+      "level": "state",
+      "name": "Nebraska",
+      "abbr": "NE",
+      "fips": "31",
+      "slug": "nebraska",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Nebraska"
+      ]
+    },
+    {
+      "id": "geography:state:nv",
+      "level": "state",
+      "name": "Nevada",
+      "abbr": "NV",
+      "fips": "32",
+      "slug": "nevada",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Nevada"
+      ]
+    },
+    {
+      "id": "geography:state:nh",
+      "level": "state",
+      "name": "New Hampshire",
+      "abbr": "NH",
+      "fips": "33",
+      "slug": "new-hampshire",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of New Hampshire"
+      ]
+    },
+    {
+      "id": "geography:state:nj",
+      "level": "state",
+      "name": "New Jersey",
+      "abbr": "NJ",
+      "fips": "34",
+      "slug": "new-jersey",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of New Jersey"
+      ]
+    },
+    {
+      "id": "geography:state:nm",
+      "level": "state",
+      "name": "New Mexico",
+      "abbr": "NM",
+      "fips": "35",
+      "slug": "new-mexico",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of New Mexico"
+      ]
+    },
+    {
+      "id": "geography:state:ny",
+      "level": "state",
+      "name": "New York",
+      "abbr": "NY",
+      "fips": "36",
+      "slug": "new-york",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of New York"
+      ]
+    },
+    {
+      "id": "geography:state:nc",
+      "level": "state",
+      "name": "North Carolina",
+      "abbr": "NC",
+      "fips": "37",
+      "slug": "north-carolina",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of North Carolina"
+      ]
+    },
+    {
+      "id": "geography:state:nd",
+      "level": "state",
+      "name": "North Dakota",
+      "abbr": "ND",
+      "fips": "38",
+      "slug": "north-dakota",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of North Dakota"
+      ]
+    },
+    {
+      "id": "geography:state:oh",
+      "level": "state",
+      "name": "Ohio",
+      "abbr": "OH",
+      "fips": "39",
+      "slug": "ohio",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Ohio"
+      ]
+    },
+    {
+      "id": "geography:state:ok",
+      "level": "state",
+      "name": "Oklahoma",
+      "abbr": "OK",
+      "fips": "40",
+      "slug": "oklahoma",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Oklahoma"
+      ]
+    },
+    {
+      "id": "geography:state:or",
+      "level": "state",
+      "name": "Oregon",
+      "abbr": "OR",
+      "fips": "41",
+      "slug": "oregon",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Oregon"
+      ]
+    },
+    {
+      "id": "geography:state:pa",
+      "level": "state",
+      "name": "Pennsylvania",
+      "abbr": "PA",
+      "fips": "42",
+      "slug": "pennsylvania",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Pennsylvania"
+      ]
+    },
+    {
+      "id": "geography:state:ri",
+      "level": "state",
+      "name": "Rhode Island",
+      "abbr": "RI",
+      "fips": "44",
+      "slug": "rhode-island",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Rhode Island"
+      ]
+    },
+    {
+      "id": "geography:state:sc",
+      "level": "state",
+      "name": "South Carolina",
+      "abbr": "SC",
+      "fips": "45",
+      "slug": "south-carolina",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of South Carolina"
+      ]
+    },
+    {
+      "id": "geography:state:sd",
+      "level": "state",
+      "name": "South Dakota",
+      "abbr": "SD",
+      "fips": "46",
+      "slug": "south-dakota",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of South Dakota"
+      ]
+    },
+    {
+      "id": "geography:state:tn",
+      "level": "state",
+      "name": "Tennessee",
+      "abbr": "TN",
+      "fips": "47",
+      "slug": "tennessee",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Tennessee"
+      ]
+    },
+    {
+      "id": "geography:state:tx",
+      "level": "state",
+      "name": "Texas",
+      "abbr": "TX",
+      "fips": "48",
+      "slug": "texas",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Texas"
+      ]
+    },
+    {
+      "id": "geography:state:ut",
+      "level": "state",
+      "name": "Utah",
+      "abbr": "UT",
+      "fips": "49",
+      "slug": "utah",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Utah"
+      ]
+    },
+    {
+      "id": "geography:state:vt",
+      "level": "state",
+      "name": "Vermont",
+      "abbr": "VT",
+      "fips": "50",
+      "slug": "vermont",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Vermont"
+      ]
+    },
+    {
+      "id": "geography:state:va",
+      "level": "state",
+      "name": "Virginia",
+      "abbr": "VA",
+      "fips": "51",
+      "slug": "virginia",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Virginia"
+      ]
+    },
+    {
+      "id": "geography:state:wa",
+      "level": "state",
+      "name": "Washington",
+      "abbr": "WA",
+      "fips": "53",
+      "slug": "washington",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Washington"
+      ]
+    },
+    {
+      "id": "geography:state:wv",
+      "level": "state",
+      "name": "West Virginia",
+      "abbr": "WV",
+      "fips": "54",
+      "slug": "west-virginia",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of West Virginia"
+      ]
+    },
+    {
+      "id": "geography:state:wi",
+      "level": "state",
+      "name": "Wisconsin",
+      "abbr": "WI",
+      "fips": "55",
+      "slug": "wisconsin",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Wisconsin"
+      ]
+    },
+    {
+      "id": "geography:state:wy",
+      "level": "state",
+      "name": "Wyoming",
+      "abbr": "WY",
+      "fips": "56",
+      "slug": "wyoming",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Wyoming"
+      ]
+    }
+  ]
+}

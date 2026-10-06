@@ -1,0 +1,492 @@
+{
+  "schema_version": "1.0",
+  "count": 69,
+  "sources": [
+    "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+  ],
+  "tracts": {
+    "06087100100": {
+      "geoid": "06087100100",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1001.00",
+      "primary": "Delaveaga Park Course",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087100200": {
+      "geoid": "06087100200",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1002.00",
+      "primary": "Midtown",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087100300": {
+      "geoid": "06087100300",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1003.00",
+      "primary": "Pogonip",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087100400": {
+      "geoid": "06087100400",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1004.00",
+      "primary": "UC Santa Cruz",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087100500": {
+      "geoid": "06087100500",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1005.00",
+      "primary": "Arroyo Seco / Moore Creek",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087100600": {
+      "geoid": "06087100600",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1006.00",
+      "primary": "Santa Cruz / Levee",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087100700": {
+      "geoid": "06087100700",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1007.00",
+      "primary": "Tannery",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087100801": {
+      "geoid": "06087100801",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1008.01",
+      "primary": "Lower Ocean / Seabright · Tract 1008.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087100802": {
+      "geoid": "06087100802",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1008.02",
+      "primary": "Lower Ocean / Seabright · Tract 1008.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087100900": {
+      "geoid": "06087100900",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1009.00",
+      "primary": "West Seabright",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087101001": {
+      "geoid": "06087101001",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1010.01",
+      "primary": "Boardwalk / Beach Flats · Tract 1010.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087101002": {
+      "geoid": "06087101002",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1010.02",
+      "primary": "Boardwalk / Beach Flats · Tract 1010.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087101100": {
+      "geoid": "06087101100",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1011.00",
+      "primary": "Steamer Lane",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087101200": {
+      "geoid": "06087101200",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1012.00",
+      "primary": "Natural Bridges",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110101": {
+      "geoid": "06087110101",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1101.01",
+      "primary": "Ann Soldo Elementary / Bridge Street neighborhoods · Tract 1101.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110102": {
+      "geoid": "06087110102",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1101.02",
+      "primary": "Ann Soldo Elementary / Bridge Street neighborhoods · Tract 1101.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110201": {
+      "geoid": "06087110201",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1102.01",
+      "primary": "Mintie White / E.A. Hall / MacQuiddy / All Saints / Elks area · Tract 1102.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110202": {
+      "geoid": "06087110202",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1102.02",
+      "primary": "Mintie White / E.A. Hall / MacQuiddy / All Saints / Elks area · Tract 1102.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110301": {
+      "geoid": "06087110301",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1103.01",
+      "primary": "CAB / Plaza / Watsonville High · Tract 1103.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110302": {
+      "geoid": "06087110302",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1103.02",
+      "primary": "CAB / Plaza / Watsonville High · Tract 1103.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110401": {
+      "geoid": "06087110401",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1104.01",
+      "primary": "West Beach / Industrial / Second Harvest area · Tract 1104.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110402": {
+      "geoid": "06087110402",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1104.02",
+      "primary": "West Beach / Industrial / Second Harvest area · Tract 1104.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110503": {
+      "geoid": "06087110503",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1105.03",
+      "primary": "DMV / Hyde Elementary / Cesar Chavez Middle · Tract 1105.03",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110504": {
+      "geoid": "06087110504",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1105.04",
+      "primary": "DMV / Hyde Elementary / Cesar Chavez Middle · Tract 1105.04",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110505": {
+      "geoid": "06087110505",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1105.05",
+      "primary": "Nob Hill / Cesar Chavez Middle / Coach Town · Tract 1105.05",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110506": {
+      "geoid": "06087110506",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1105.06",
+      "primary": "Nob Hill / Cesar Chavez Middle / Coach Town · Tract 1105.06",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110601": {
+      "geoid": "06087110601",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1106.01",
+      "primary": "Watsonville Hospital / Monterey Vista / Freedom Elementary area · Tract 1106.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110602": {
+      "geoid": "06087110602",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1106.02",
+      "primary": "Watsonville Hospital / Monterey Vista / Freedom Elementary area · Tract 1106.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087110700": {
+      "geoid": "06087110700",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1107.00",
+      "primary": "Watsonville Airport",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087120200": {
+      "geoid": "06087120200",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1202.00",
+      "primary": "Davenport / Bonny Doon / Swanton",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087120301": {
+      "geoid": "06087120301",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1203.01",
+      "primary": "Ben Lomond / Fall Creek / Felton / Boulder Creek",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087120302": {
+      "geoid": "06087120302",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1203.02",
+      "primary": "Brackney / Glen Arbor",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087120400": {
+      "geoid": "06087120400",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1204.00",
+      "primary": "Boulder Creek West to Empire Grade",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087120500": {
+      "geoid": "06087120500",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1205.00",
+      "primary": "Los Cumbres / Castle Rock",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087120600": {
+      "geoid": "06087120600",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1206.00",
+      "primary": "Lompico",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087120700": {
+      "geoid": "06087120700",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1207.00",
+      "primary": "North UCSC / Henry Cowell / South Felton",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087120800": {
+      "geoid": "06087120800",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1208.00",
+      "primary": "Pasatiempo",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087120901": {
+      "geoid": "06087120901",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1209.01",
+      "primary": "Scotts Valley / Zayante · Tract 1209.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087120902": {
+      "geoid": "06087120902",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1209.02",
+      "primary": "Scotts Valley / Zayante · Tract 1209.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121000": {
+      "geoid": "06087121000",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1210.00",
+      "primary": "Soquel San Jose Road / Highland Way",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121100": {
+      "geoid": "06087121100",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1211.00",
+      "primary": "Soquel High area",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121200": {
+      "geoid": "06087121200",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1212.00",
+      "primary": "Upper Branciforte / Granite Creek / Mystery Spot",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121300": {
+      "geoid": "06087121300",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1213.00",
+      "primary": "Dominican / Santa Cruz Gardens",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121401": {
+      "geoid": "06087121401",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1214.01",
+      "primary": "Green Acres Elementary area",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121402": {
+      "geoid": "06087121402",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1214.02",
+      "primary": "Chanticleer",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121403": {
+      "geoid": "06087121403",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1214.03",
+      "primary": "Jose Avenue County Park area",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121501": {
+      "geoid": "06087121501",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1215.01",
+      "primary": "Twin Lakes · Tract 1215.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121502": {
+      "geoid": "06087121502",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1215.02",
+      "primary": "Twin Lakes · Tract 1215.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121601": {
+      "geoid": "06087121601",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1216.01",
+      "primary": "Pleasure Point / Opal Cliffs · Tract 1216.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121602": {
+      "geoid": "06087121602",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1216.02",
+      "primary": "Pleasure Point / Opal Cliffs · Tract 1216.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121701": {
+      "geoid": "06087121701",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1217.01",
+      "primary": "North / northwest 41st Avenue to Wharf Road · Tract 1217.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121702": {
+      "geoid": "06087121702",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1217.02",
+      "primary": "North / northwest 41st Avenue to Wharf Road · Tract 1217.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121801": {
+      "geoid": "06087121801",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1218.01",
+      "primary": "Park Avenue / Bay Avenue / Capitola · Tract 1218.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087121802": {
+      "geoid": "06087121802",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1218.02",
+      "primary": "Park Avenue / Bay Avenue / Capitola · Tract 1218.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122001": {
+      "geoid": "06087122001",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1220.01",
+      "primary": "Main Street Elementary / Camphill Communities",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122002": {
+      "geoid": "06087122002",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1220.02",
+      "primary": "Nisene Marks",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122004": {
+      "geoid": "06087122004",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1220.04",
+      "primary": "Cabrillo College area · Tract 1220.04",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122005": {
+      "geoid": "06087122005",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1220.05",
+      "primary": "Cabrillo College area · Tract 1220.05",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122100": {
+      "geoid": "06087122100",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1221.00",
+      "primary": "New Brighton State Beach",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122202": {
+      "geoid": "06087122202",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1222.02",
+      "primary": "Rio Del Mar Elementary / Aptos Community Methodist area",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122203": {
+      "geoid": "06087122203",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1222.03",
+      "primary": "Seascape Golf Club",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122204": {
+      "geoid": "06087122204",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1222.04",
+      "primary": "Aptos Village / Rio Del Mar / Seascape Resort · Tract 1222.04",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122205": {
+      "geoid": "06087122205",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1222.05",
+      "primary": "Aptos Village / Rio Del Mar / Seascape Resort · Tract 1222.05",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122300": {
+      "geoid": "06087122300",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1223.00",
+      "primary": "Pajaro Dunes to Seascape",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122401": {
+      "geoid": "06087122401",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1224.01",
+      "primary": "Corralitos · Tract 1224.01",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122402": {
+      "geoid": "06087122402",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1224.02",
+      "primary": "Corralitos · Tract 1224.02",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087122500": {
+      "geoid": "06087122500",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1225.00",
+      "primary": "PVUSD / Holohan / Green Valley area",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087123100": {
+      "geoid": "06087123100",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1231.00",
+      "primary": "Amesti Road / Pinto Lake",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    },
+    "06087123300": {
+      "geoid": "06087123300",
+      "area_id": "SANTA-CRUZ",
+      "display_tract": "1233.00",
+      "primary": "Salsipuedes / Aromas",
+      "source": "santa-cruz-tract-neighborhood-crosswalk-v3.json"
+    }
+  }
+}

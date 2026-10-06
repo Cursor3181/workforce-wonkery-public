@@ -1,0 +1,642 @@
+{
+  "schema_version": "1.0",
+  "market_id": "33700",
+  "market": {
+    "label": "Modesto MSA",
+    "source": "stanislaus",
+    "basic": 25.2,
+    "contextOpts": [],
+    "eddArea": "0621033700",
+    "component_counties": [
+      "Stanislaus"
+    ],
+    "edd_components": [
+      {
+        "label": "Modesto MSA",
+        "geog_area": "0621033700",
+        "counties": [
+          "Stanislaus"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 2870,
+      "projected_employment": 3140,
+      "growth_pct": 9.4,
+      "total_openings": 2590,
+      "wage": {
+        "value": 100825,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "11-3021",
+      "employment": 250,
+      "projected_employment": 300,
+      "growth_pct": 20,
+      "total_openings": 220,
+      "wage": {
+        "value": 161643,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1111",
+      "employment": 540,
+      "projected_employment": 600,
+      "growth_pct": 11.1,
+      "total_openings": 510,
+      "wage": {
+        "value": 79049,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1161",
+      "employment": 520,
+      "projected_employment": 580,
+      "growth_pct": 11.5,
+      "total_openings": 520,
+      "wage": {
+        "value": 60257,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-2011",
+      "employment": 1310,
+      "projected_employment": 1460,
+      "growth_pct": 11.5,
+      "total_openings": 1160,
+      "wage": {
+        "value": 80129,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1232",
+      "employment": 340,
+      "projected_employment": 350,
+      "growth_pct": 2.9,
+      "total_openings": 220,
+      "wage": {
+        "value": 67218,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1252",
+      "employment": 300,
+      "projected_employment": 350,
+      "growth_pct": 16.7,
+      "total_openings": 200,
+      "wage": {
+        "value": 136995,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2021",
+      "employment": 2340,
+      "projected_employment": 2420,
+      "growth_pct": 3.4,
+      "total_openings": 1670,
+      "wage": {
+        "value": 100047,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2031",
+      "employment": 1660,
+      "projected_employment": 1720,
+      "growth_pct": 3.6,
+      "total_openings": 1120,
+      "wage": {
+        "value": 100119,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-3031",
+      "employment": 1840,
+      "projected_employment": 1980,
+      "growth_pct": 7.6,
+      "total_openings": 2380,
+      "wage": {
+        "value": 52961,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-9045",
+      "employment": 2770,
+      "projected_employment": 2880,
+      "growth_pct": 4,
+      "total_openings": 3570,
+      "wage": {
+        "value": 38961,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1141",
+      "employment": 5020,
+      "projected_employment": 5590,
+      "growth_pct": 11.4,
+      "total_openings": 3200,
+      "wage": {
+        "value": 130328,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1292",
+      "employment": 210,
+      "projected_employment": 240,
+      "growth_pct": 14.3,
+      "total_openings": 160,
+      "wage": {
+        "value": 124299,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2034",
+      "employment": 260,
+      "projected_employment": 300,
+      "growth_pct": 15.4,
+      "total_openings": 190,
+      "wage": {
+        "value": 100407,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2055",
+      "employment": 160,
+      "projected_employment": 180,
+      "growth_pct": 12.5,
+      "total_openings": 120,
+      "wage": {
+        "value": 84300,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2061",
+      "employment": 1030,
+      "projected_employment": 1120,
+      "growth_pct": 8.7,
+      "total_openings": 950,
+      "wage": {
+        "value": 73371,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1120",
+      "employment": 8820,
+      "projected_employment": 11530,
+      "growth_pct": 30.7,
+      "total_openings": 17630,
+      "wage": {
+        "value": 34483,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1131",
+      "employment": 1420,
+      "projected_employment": 1480,
+      "growth_pct": 4.2,
+      "total_openings": 2060,
+      "wage": {
+        "value": 45292,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-2021",
+      "employment": 130,
+      "projected_employment": 180,
+      "growth_pct": 38.5,
+      "total_openings": 270,
+      "wage": {
+        "value": 84033,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-9092",
+      "employment": 1590,
+      "projected_employment": 1970,
+      "growth_pct": 23.9,
+      "total_openings": 2490,
+      "wage": {
+        "value": 40314,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "33-2011",
+      "employment": 340,
+      "projected_employment": 360,
+      "growth_pct": 5.9,
+      "total_openings": 280,
+      "wage": {
+        "value": 67198,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3023",
+      "employment": 7270,
+      "projected_employment": 8130,
+      "growth_pct": 11.8,
+      "total_openings": 18200,
+      "wage": {
+        "value": 37476,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3031",
+      "employment": 2310,
+      "projected_employment": 2420,
+      "growth_pct": 4.8,
+      "total_openings": 4780,
+      "wage": {
+        "value": 34370,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2011",
+      "employment": 4910,
+      "projected_employment": 4710,
+      "growth_pct": -4.1,
+      "total_openings": 9000,
+      "wage": {
+        "value": 35420,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2031",
+      "employment": 5100,
+      "projected_employment": 5210,
+      "growth_pct": 2.2,
+      "total_openings": 7430,
+      "wage": {
+        "value": 35819,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "43-3031",
+      "employment": 1880,
+      "projected_employment": 1870,
+      "growth_pct": -0.5,
+      "total_openings": 2130,
+      "wage": {
+        "value": 50924,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "45-2092",
+      "employment": 6350,
+      "projected_employment": 6540,
+      "growth_pct": 3,
+      "total_openings": 9720,
+      "wage": {
+        "value": 36451,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-1011",
+      "employment": 870,
+      "projected_employment": 1020,
+      "growth_pct": 17.2,
+      "total_openings": 850,
+      "wage": {
+        "value": 82207,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2031",
+      "employment": 1960,
+      "projected_employment": 2280,
+      "growth_pct": 16.3,
+      "total_openings": 1830,
+      "wage": {
+        "value": 66025,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2111",
+      "employment": 820,
+      "projected_employment": 1050,
+      "growth_pct": 28,
+      "total_openings": 1020,
+      "wage": {
+        "value": 66365,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2152",
+      "employment": 560,
+      "projected_employment": 690,
+      "growth_pct": 23.2,
+      "total_openings": 640,
+      "wage": {
+        "value": 58253,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3011",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Modesto MSA (Stanislaus County); no broader value is substituted."
+    },
+    {
+      "soc": "49-3041",
+      "employment": 300,
+      "projected_employment": 340,
+      "growth_pct": 13.3,
+      "total_openings": 300,
+      "wage": {
+        "value": 63097,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3042",
+      "employment": 230,
+      "projected_employment": 250,
+      "growth_pct": 8.7,
+      "total_openings": 210,
+      "wage": {
+        "value": 58403,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-9041",
+      "employment": 870,
+      "projected_employment": 1050,
+      "growth_pct": 20.7,
+      "total_openings": 960,
+      "wage": {
+        "value": 77453,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-4121",
+      "employment": 490,
+      "projected_employment": 520,
+      "growth_pct": 6.1,
+      "total_openings": 520,
+      "wage": {
+        "value": 49975,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-8031",
+      "employment": 210,
+      "projected_employment": 200,
+      "growth_pct": -4.8,
+      "total_openings": 180,
+      "wage": {
+        "value": 80354,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-3032",
+      "employment": 4140,
+      "projected_employment": 4420,
+      "growth_pct": 6.8,
+      "total_openings": 4570,
+      "wage": {
+        "value": 56265,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7062",
+      "employment": 4830,
+      "projected_employment": 4850,
+      "growth_pct": 0.4,
+      "total_openings": 6130,
+      "wage": {
+        "value": 38207,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7065",
+      "employment": 3580,
+      "projected_employment": 3950,
+      "growth_pct": 10.3,
+      "total_openings": 6240,
+      "wage": {
+        "value": 39620,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Modesto MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Modesto MSA (Stanislaus County). The source geography exactly matches the published MSA/CBSA labor market."
+    }
+  ],
+  "qa": {
+    "cbsa": "33700",
+    "label": "Modesto MSA",
+    "catalog_size": 40,
+    "embedded_rows": 40,
+    "exact_msa_rows": 40,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 0,
+    "wage_rows": 39,
+    "projection_rows": 39,
+    "source_periods": [
+      "2023-2033 projections; wages 2025 Q1"
+    ],
+    "coverage_status": "exact_msa_core_complete",
+    "qa_status": "PASS",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

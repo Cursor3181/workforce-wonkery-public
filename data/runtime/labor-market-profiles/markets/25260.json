@@ -1,0 +1,633 @@
+{
+  "schema_version": "1.0",
+  "market_id": "25260",
+  "market": {
+    "label": "Hanford-Corcoran MSA",
+    "source": "kings",
+    "basic": 24.16,
+    "contextOpts": [],
+    "eddArea": "0621025260",
+    "component_counties": [
+      "Kings"
+    ],
+    "edd_components": [
+      {
+        "label": "Hanford-Corcoran MSA",
+        "geog_area": "0621025260",
+        "counties": [
+          "Kings"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 520,
+      "projected_employment": 580,
+      "growth_pct": 11.5,
+      "total_openings": 500,
+      "wage": {
+        "value": 102547,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "11-3021",
+      "employment": 60,
+      "projected_employment": 70,
+      "growth_pct": 16.7,
+      "total_openings": 50,
+      "wage": {
+        "value": 177379,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1111",
+      "employment": 220,
+      "projected_employment": 270,
+      "growth_pct": 22.7,
+      "total_openings": 250,
+      "wage": {
+        "value": 80108,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1161",
+      "employment": 70,
+      "projected_employment": 70,
+      "growth_pct": 0,
+      "total_openings": 60,
+      "wage": {
+        "value": 63577,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-2011",
+      "employment": 260,
+      "projected_employment": 270,
+      "growth_pct": 3.8,
+      "total_openings": 210,
+      "wage": {
+        "value": 77185,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1232",
+      "employment": 100,
+      "projected_employment": 110,
+      "growth_pct": 10,
+      "total_openings": 80,
+      "wage": {
+        "value": 66777,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1252",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Hanford-Corcoran MSA (Kings County); no broader value is substituted."
+    },
+    {
+      "soc": "25-2021",
+      "employment": 660,
+      "projected_employment": 690,
+      "growth_pct": 4.5,
+      "total_openings": 480,
+      "wage": {
+        "value": 100920,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2031",
+      "employment": 680,
+      "projected_employment": 710,
+      "growth_pct": 4.4,
+      "total_openings": 450,
+      "wage": {
+        "value": 102512,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-3031",
+      "employment": 240,
+      "projected_employment": 260,
+      "growth_pct": 8.3,
+      "total_openings": 310,
+      "wage": {
+        "value": 57091,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-9045",
+      "employment": 770,
+      "projected_employment": 800,
+      "growth_pct": 3.9,
+      "total_openings": 950,
+      "wage": {
+        "value": 42381,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1141",
+      "employment": 630,
+      "projected_employment": 690,
+      "growth_pct": 9.5,
+      "total_openings": 400,
+      "wage": {
+        "value": 134293,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1292",
+      "employment": 70,
+      "projected_employment": 70,
+      "growth_pct": 0,
+      "total_openings": 50,
+      "wage": {
+        "value": 105111,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2034",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Hanford-Corcoran MSA (Kings County); no broader value is substituted."
+    },
+    {
+      "soc": "29-2055",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Hanford-Corcoran MSA (Kings County); no broader value is substituted."
+    },
+    {
+      "soc": "29-2061",
+      "employment": 280,
+      "projected_employment": 290,
+      "growth_pct": 3.6,
+      "total_openings": 230,
+      "wage": {
+        "value": 77614,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1120",
+      "employment": 3040,
+      "projected_employment": 3920,
+      "growth_pct": 28.9,
+      "total_openings": 5950,
+      "wage": {
+        "value": 34936,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1131",
+      "employment": 240,
+      "projected_employment": 240,
+      "growth_pct": 0,
+      "total_openings": 330,
+      "wage": {
+        "value": 46670,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-2021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Hanford-Corcoran MSA (Kings County); no broader value is substituted."
+    },
+    {
+      "soc": "31-9092",
+      "employment": 450,
+      "projected_employment": 500,
+      "growth_pct": 11.1,
+      "total_openings": 660,
+      "wage": {
+        "value": 47174,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "33-2011",
+      "employment": 120,
+      "projected_employment": 130,
+      "growth_pct": 8.3,
+      "total_openings": 110,
+      "wage": {
+        "value": 53931,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3023",
+      "employment": 1680,
+      "projected_employment": 2010,
+      "growth_pct": 19.6,
+      "total_openings": 4610,
+      "wage": {
+        "value": 37887,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3031",
+      "employment": 260,
+      "projected_employment": 290,
+      "growth_pct": 11.5,
+      "total_openings": 590,
+      "wage": {
+        "value": 34699,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2011",
+      "employment": 1160,
+      "projected_employment": 1120,
+      "growth_pct": -3.4,
+      "total_openings": 2130,
+      "wage": {
+        "value": 35931,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2031",
+      "employment": 820,
+      "projected_employment": 870,
+      "growth_pct": 6.1,
+      "total_openings": 1270,
+      "wage": {
+        "value": 37097,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "43-3031",
+      "employment": 440,
+      "projected_employment": 410,
+      "growth_pct": -6.8,
+      "total_openings": 450,
+      "wage": {
+        "value": 51159,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "45-2092",
+      "employment": 3440,
+      "projected_employment": 3250,
+      "growth_pct": -5.5,
+      "total_openings": 4910,
+      "wage": {
+        "value": 36770,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-1011",
+      "employment": 120,
+      "projected_employment": 140,
+      "growth_pct": 16.7,
+      "total_openings": 120,
+      "wage": {
+        "value": 93366,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2031",
+      "employment": 150,
+      "projected_employment": 170,
+      "growth_pct": 13.3,
+      "total_openings": 150,
+      "wage": {
+        "value": 74652,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2111",
+      "employment": 180,
+      "projected_employment": 230,
+      "growth_pct": 27.8,
+      "total_openings": 230,
+      "wage": {
+        "value": 70380,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2152",
+      "employment": 90,
+      "projected_employment": 100,
+      "growth_pct": 11.1,
+      "total_openings": 90,
+      "wage": {
+        "value": 66715,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3011",
+      "employment": 180,
+      "projected_employment": 190,
+      "growth_pct": 5.6,
+      "total_openings": 150,
+      "wage": {
+        "value": 82794,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3041",
+      "employment": 90,
+      "projected_employment": 90,
+      "growth_pct": 0,
+      "total_openings": 80,
+      "wage": {
+        "value": 48000,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3042",
+      "employment": 50,
+      "projected_employment": 50,
+      "growth_pct": 0,
+      "total_openings": 40,
+      "wage": {
+        "value": 73654,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-9041",
+      "employment": 160,
+      "projected_employment": 200,
+      "growth_pct": 25,
+      "total_openings": 180,
+      "wage": {
+        "value": 73582,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-4121",
+      "employment": 60,
+      "projected_employment": 70,
+      "growth_pct": 16.7,
+      "total_openings": 80,
+      "wage": {
+        "value": 47102,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-8031",
+      "employment": 70,
+      "projected_employment": 70,
+      "growth_pct": 0,
+      "total_openings": 60,
+      "wage": {
+        "value": 62954,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-3032",
+      "employment": 830,
+      "projected_employment": 960,
+      "growth_pct": 15.7,
+      "total_openings": 1050,
+      "wage": {
+        "value": 58652,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7062",
+      "employment": 680,
+      "projected_employment": 760,
+      "growth_pct": 11.8,
+      "total_openings": 1010,
+      "wage": {
+        "value": 45551,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7065",
+      "employment": 790,
+      "projected_employment": 880,
+      "growth_pct": 11.4,
+      "total_openings": 1410,
+      "wage": {
+        "value": 39702,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Hanford-Corcoran MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Hanford-Corcoran MSA (Kings County). The source geography exactly matches the published MSA/CBSA labor market."
+    }
+  ],
+  "qa": {
+    "cbsa": "25260",
+    "label": "Hanford-Corcoran MSA",
+    "catalog_size": 40,
+    "embedded_rows": 40,
+    "exact_msa_rows": 40,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 0,
+    "wage_rows": 36,
+    "projection_rows": 36,
+    "source_periods": [
+      "2023-2033 projections; wages 2025 Q1"
+    ],
+    "coverage_status": "exact_msa_core_complete",
+    "qa_status": "PASS",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

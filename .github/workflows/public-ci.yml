@@ -1,0 +1,58 @@
+name: Public companion CI
+
+on:
+  push:
+    branches:
+      - main
+      - sync/private-main
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: public-companion-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate public export boundary and data
+        run: python tests/validate_public_export.py
+      - name: Check reader-facing JavaScript syntax
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' file; do
+            echo "Checking $file"
+            node --check "$file"
+          done < <(find src/wordpress/javascript -type f -name '*.js' -print0)
+      - name: Lint exported WordPress PHP
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r -d '' file; do
+            echo "Checking $file"
+            php -l "$file"
+          done < <(find src/wordpress/plugins -type f -name '*.php' -print0)
+      - name: Write public CI summary
+        if: always()
+        run: |
+          {
+            echo "## Workforce Wonkery public companion CI"
+            echo
+            echo "- Repository boundary and provenance checked"
+            echo "- Public JSON parsed and runtime hashes checked"
+            echo "- Exported JavaScript syntax checked"
+            echo "- Exported WordPress PHP linted"
+            echo
+            echo "These checks run in the public repository so standard GitHub-hosted runner time is not charged to the private Workforce Wonkery Actions allowance."
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,43 @@
+name: Public live site structure check
+
+on:
+  schedule:
+    - cron: "30 16 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "tests/site_structure_check.py"
+      - "tests/site-surfaces.json"
+      - ".github/workflows/site-structure-check.yml"
+
+concurrency:
+  group: public-site-structure-check
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  structural-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check governed public surfaces
+        run: |
+          set -o pipefail
+          python tests/site_structure_check.py | tee /tmp/site-structure.log
+      - name: Write structural summary
+        if: always()
+        run: |
+          {
+            echo "## Live structural smoke"
+            echo
+            echo '~~~text'
+            test -f /tmp/site-structure.log && cat /tmp/site-structure.log || echo "Structural check did not run."
+            echo '~~~'
+          } >> "$GITHUB_STEP_SUMMARY"

@@ -1,0 +1,645 @@
+{
+  "schema_version": "1.0",
+  "market_id": "42220",
+  "market": {
+    "label": "Santa Rosa-Petaluma MSA",
+    "source": "sonoma",
+    "basic": 31.3,
+    "contextOpts": [],
+    "eddArea": "0621042220",
+    "component_counties": [
+      "Sonoma"
+    ],
+    "edd_components": [
+      {
+        "label": "Santa Rosa-Petaluma MSA",
+        "geog_area": "0621042220",
+        "counties": [
+          "Sonoma"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 4450,
+      "projected_employment": 4680,
+      "growth_pct": 5.2,
+      "total_openings": 3890,
+      "wage": {
+        "value": 116633,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "11-3021",
+      "employment": 440,
+      "projected_employment": 490,
+      "growth_pct": 11.4,
+      "total_openings": 360,
+      "wage": {
+        "value": 175118,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1111",
+      "employment": 850,
+      "projected_employment": 880,
+      "growth_pct": 3.5,
+      "total_openings": 720,
+      "wage": {
+        "value": 95498,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1161",
+      "employment": 1030,
+      "projected_employment": 1070,
+      "growth_pct": 3.9,
+      "total_openings": 940,
+      "wage": {
+        "value": 79008,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-2011",
+      "employment": 1960,
+      "projected_employment": 2020,
+      "growth_pct": 3.1,
+      "total_openings": 1570,
+      "wage": {
+        "value": 89958,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1232",
+      "employment": 530,
+      "projected_employment": 520,
+      "growth_pct": -1.9,
+      "total_openings": 330,
+      "wage": {
+        "value": 78846,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1252",
+      "employment": 670,
+      "projected_employment": 710,
+      "growth_pct": 6,
+      "total_openings": 400,
+      "wage": {
+        "value": 144976,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2021",
+      "employment": 2140,
+      "projected_employment": 2160,
+      "growth_pct": 0.9,
+      "total_openings": 1440,
+      "wage": {
+        "value": 99801,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2031",
+      "employment": 1030,
+      "projected_employment": 1040,
+      "growth_pct": 1,
+      "total_openings": 640,
+      "wage": {
+        "value": 100181,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-3031",
+      "employment": 1170,
+      "projected_employment": 1240,
+      "growth_pct": 6,
+      "total_openings": 1510,
+      "wage": {
+        "value": 61045,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-9045",
+      "employment": 1910,
+      "projected_employment": 1910,
+      "growth_pct": 0,
+      "total_openings": 2250,
+      "wage": {
+        "value": 48729,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1141",
+      "employment": 3650,
+      "projected_employment": 3770,
+      "growth_pct": 3.3,
+      "total_openings": 2020,
+      "wage": {
+        "value": 177075,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1292",
+      "employment": 340,
+      "projected_employment": 340,
+      "growth_pct": 0,
+      "total_openings": 220,
+      "wage": {
+        "value": 135187,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2034",
+      "employment": 190,
+      "projected_employment": 200,
+      "growth_pct": 5.3,
+      "total_openings": 110,
+      "wage": {
+        "value": 136440,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2055",
+      "employment": 110,
+      "projected_employment": 110,
+      "growth_pct": 0,
+      "total_openings": 60,
+      "wage": {
+        "value": 104587,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2061",
+      "employment": 820,
+      "projected_employment": 810,
+      "growth_pct": -1.2,
+      "total_openings": 640,
+      "wage": {
+        "value": 82359,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1120",
+      "employment": 9200,
+      "projected_employment": 10350,
+      "growth_pct": 12.5,
+      "total_openings": 15390,
+      "wage": {
+        "value": 35892,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1131",
+      "employment": 1090,
+      "projected_employment": 1120,
+      "growth_pct": 2.8,
+      "total_openings": 1580,
+      "wage": {
+        "value": 48737,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-2021",
+      "employment": 80,
+      "projected_employment": 100,
+      "growth_pct": 25,
+      "total_openings": 150,
+      "wage": {
+        "value": 92559,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-9092",
+      "employment": 1790,
+      "projected_employment": 1910,
+      "growth_pct": 6.7,
+      "total_openings": 2480,
+      "wage": {
+        "value": 64688,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "33-2011",
+      "employment": 380,
+      "projected_employment": 390,
+      "growth_pct": 2.6,
+      "total_openings": 290,
+      "wage": {
+        "value": 90954,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3023",
+      "employment": 5200,
+      "projected_employment": 5530,
+      "growth_pct": 6.3,
+      "total_openings": 12780,
+      "wage": {
+        "value": 39173,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3031",
+      "employment": 4070,
+      "projected_employment": 4170,
+      "growth_pct": 2.5,
+      "total_openings": 8540,
+      "wage": {
+        "value": 37342,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2011",
+      "employment": 5240,
+      "projected_employment": 4920,
+      "growth_pct": -6.1,
+      "total_openings": 9330,
+      "wage": {
+        "value": 38631,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2031",
+      "employment": 5310,
+      "projected_employment": 5280,
+      "growth_pct": -0.6,
+      "total_openings": 7640,
+      "wage": {
+        "value": 39633,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "43-3031",
+      "employment": 2410,
+      "projected_employment": 2270,
+      "growth_pct": -5.8,
+      "total_openings": 2500,
+      "wage": {
+        "value": 61241,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "45-2092",
+      "employment": 3870,
+      "projected_employment": 3840,
+      "growth_pct": -0.8,
+      "total_openings": 5850,
+      "wage": {
+        "value": 44954,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-1011",
+      "employment": 1220,
+      "projected_employment": 1320,
+      "growth_pct": 8.2,
+      "total_openings": 1070,
+      "wage": {
+        "value": 103341,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2031",
+      "employment": 2770,
+      "projected_employment": 2990,
+      "growth_pct": 7.9,
+      "total_openings": 2450,
+      "wage": {
+        "value": 83597,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2111",
+      "employment": 1080,
+      "projected_employment": 1260,
+      "growth_pct": 16.7,
+      "total_openings": 1200,
+      "wage": {
+        "value": 82043,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2152",
+      "employment": 690,
+      "projected_employment": 760,
+      "growth_pct": 10.1,
+      "total_openings": 680,
+      "wage": {
+        "value": 67899,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3011",
+      "employment": 50,
+      "projected_employment": 60,
+      "growth_pct": 20,
+      "total_openings": 50,
+      "wage": {
+        "value": 85371,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3041",
+      "employment": 130,
+      "projected_employment": 150,
+      "growth_pct": 15.4,
+      "total_openings": 130,
+      "wage": {
+        "value": 61844,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3042",
+      "employment": 190,
+      "projected_employment": 200,
+      "growth_pct": 5.3,
+      "total_openings": 170,
+      "wage": {
+        "value": 77710,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-9041",
+      "employment": 300,
+      "projected_employment": 350,
+      "growth_pct": 16.7,
+      "total_openings": 300,
+      "wage": {
+        "value": 73161,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-4121",
+      "employment": 330,
+      "projected_employment": 360,
+      "growth_pct": 9.1,
+      "total_openings": 370,
+      "wage": {
+        "value": 60779,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-8031",
+      "employment": 210,
+      "projected_employment": 200,
+      "growth_pct": -4.8,
+      "total_openings": 180,
+      "wage": {
+        "value": 85802,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-3032",
+      "employment": 2090,
+      "projected_employment": 2180,
+      "growth_pct": 4.3,
+      "total_openings": 2260,
+      "wage": {
+        "value": 62975,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7062",
+      "employment": 3140,
+      "projected_employment": 3230,
+      "growth_pct": 2.9,
+      "total_openings": 4210,
+      "wage": {
+        "value": 45623,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7065",
+      "employment": 2770,
+      "projected_employment": 3140,
+      "growth_pct": 13.4,
+      "total_openings": 5070,
+      "wage": {
+        "value": 42847,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Santa Rosa-Petaluma MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Santa Rosa-Petaluma MSA (Sonoma County). The source geography exactly matches the published MSA/CBSA labor market."
+    }
+  ],
+  "qa": {
+    "cbsa": "42220",
+    "label": "Santa Rosa-Petaluma MSA",
+    "catalog_size": 40,
+    "embedded_rows": 40,
+    "exact_msa_rows": 40,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 0,
+    "wage_rows": 40,
+    "projection_rows": 40,
+    "source_periods": [
+      "2023-2033 projections; wages 2025 Q1"
+    ],
+    "coverage_status": "exact_msa_core_complete",
+    "qa_status": "PASS",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

@@ -1,0 +1,54 @@
+name: Public Discovery acceptance
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "tests/browser_acceptance.py"
+      - "data/runtime/discovery/**"
+      - ".github/workflows/discovery-acceptance.yml"
+
+concurrency:
+  group: public-discovery-acceptance
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  discovery:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright==1.63.0
+          python -m playwright install --with-deps chromium
+      - name: Run Discovery desktop and mobile canary
+        env:
+          DISCOVERY_ONLY: "1"
+        run: python tests/browser_acceptance.py
+      - name: Write Discovery summary
+        if: always()
+        run: |
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          p=Path("qa/artifacts/browser-acceptance/results.json")
+          out=Path(os.environ["GITHUB_STEP_SUMMARY"])
+          lines=["## Universal Discovery acceptance",""]
+          if not p.exists():
+              lines.append("No results produced.")
+          else:
+              data=json.loads(p.read_text())
+              for row in data.get("results",[]):
+                  lines.append(f"- {row.get('status')}: {row.get('surface')} · {row.get('check')}")
+              lines.append(f"- Test exceptions: {len(data.get('failures',[]))}")
+          out.write_text("\n".join(lines)+"\n")
+          PY

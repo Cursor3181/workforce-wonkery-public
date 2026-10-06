@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "market_id": "49700",
+  "market": {
+    "label": "Yuba City MSA",
+    "source": null,
+    "basic": 24.51,
+    "contextOpts": [
+      {
+        "id": "sow-north-central-counties",
+        "label": "Capital"
+      }
+    ],
+    "eddArea": "0621049700",
+    "component_counties": [
+      "Sutter",
+      "Yuba"
+    ],
+    "edd_components": [
+      {
+        "label": "Yuba City MSA",
+        "geog_area": "0621049700",
+        "counties": [
+          "Sutter",
+          "Yuba"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$119,357 annual",
+      "fit": "context",
+      "evidence_geography": "Capital",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Capital. This is not a local-area opening estimate and is not used to rank occupations for North Central Counties."
+    },
+    {
+      "soc": "13-1111",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$84,018 annual",
+      "fit": "context",
+      "evidence_geography": "Capital",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Capital. This is not a local-area opening estimate and is not used to rank occupations for North Central Counties."
+    },
+    {
+      "soc": "13-2011",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$93,345 annual",
+      "fit": "context",
+      "evidence_geography": "Capital",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Capital. This is not a local-area opening estimate and is not used to rank occupations for North Central Counties."
+    },
+    {
+      "soc": "15-1232",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$108,004 annual",
+      "fit": "context",
+      "evidence_geography": "Capital",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Capital. This is not a local-area opening estimate and is not used to rank occupations for North Central Counties."
+    }
+  ],
+  "qa": {
+    "cbsa": "49700",
+    "label": "Yuba City MSA",
+    "catalog_size": 40,
+    "embedded_rows": 4,
+    "exact_msa_rows": 0,
+    "regional_context_rows": 4,
+    "profile_link_only_rows": 36,
+    "wage_rows": 4,
+    "projection_rows": 0,
+    "source_periods": [
+      "broader regional context"
+    ],
+    "coverage_status": "regional_context_partial",
+    "qa_status": "WARN",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

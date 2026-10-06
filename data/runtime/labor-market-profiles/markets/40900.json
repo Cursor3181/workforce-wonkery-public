@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "market_id": "40900",
+  "market": {
+    "label": "Sacramento-Roseville-Folsom MSA",
+    "source": null,
+    "basic": 28.89,
+    "contextOpts": [],
+    "eddArea": "0621040900",
+    "component_counties": [
+      "El Dorado",
+      "Placer",
+      "Sacramento",
+      "Yolo"
+    ],
+    "edd_components": [
+      {
+        "label": "Sacramento-Roseville-Folsom MSA",
+        "geog_area": "0621040900",
+        "counties": [
+          "El Dorado",
+          "Placer",
+          "Sacramento",
+          "Yolo"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 16290,
+      "projected_employment": 17810,
+      "growth_pct": 9.3,
+      "total_openings": 14930,
+      "wage": {
+        "value": 57.91,
+        "unit": "median hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "Sacramento-Roseville-Folsom MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": null
+    },
+    {
+      "soc": "13-1111",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": {
+        "value": 40.57,
+        "unit": "median hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "Sacramento-Roseville-Folsom MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": "EDD publishes a current MSA wage for this occupation, but an MSA projection is not available."
+    },
+    {
+      "soc": "13-2011",
+      "employment": 13740,
+      "projected_employment": 14250,
+      "growth_pct": 3.7,
+      "total_openings": 11170,
+      "wage": {
+        "value": 45.03,
+        "unit": "median hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "Sacramento-Roseville-Folsom MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": null
+    },
+    {
+      "soc": "15-1232",
+      "employment": 14780,
+      "projected_employment": 14230,
+      "growth_pct": -3.7,
+      "total_openings": 8960,
+      "wage": {
+        "value": 52.41,
+        "unit": "median hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "Sacramento-Roseville-Folsom MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": null
+    }
+  ],
+  "qa": {
+    "cbsa": "40900",
+    "label": "Sacramento-Roseville-Folsom MSA",
+    "catalog_size": 40,
+    "embedded_rows": 4,
+    "exact_msa_rows": 4,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 36,
+    "wage_rows": 4,
+    "projection_rows": 3,
+    "source_periods": [
+      "2022-2032 projections; wages 2026 Q1"
+    ],
+    "coverage_status": "exact_msa_partial",
+    "qa_status": "WARN",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

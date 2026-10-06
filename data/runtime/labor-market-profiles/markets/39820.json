@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "market_id": "39820",
+  "market": {
+    "label": "Redding MSA",
+    "source": null,
+    "basic": 24.54,
+    "contextOpts": [
+      {
+        "id": "sow-nortec",
+        "label": "North State"
+      }
+    ],
+    "eddArea": "0621039820",
+    "component_counties": [
+      "Shasta"
+    ],
+    "edd_components": [
+      {
+        "label": "Redding MSA",
+        "geog_area": "0621039820",
+        "counties": [
+          "Shasta"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$100,930 annual",
+      "fit": "context",
+      "evidence_geography": "North State",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North State. This is not a local-area opening estimate and is not used to rank occupations for NoRTEC."
+    },
+    {
+      "soc": "13-2011",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$80,589 annual",
+      "fit": "context",
+      "evidence_geography": "North State",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North State. This is not a local-area opening estimate and is not used to rank occupations for NoRTEC."
+    },
+    {
+      "soc": "25-2021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$93,749 annual",
+      "fit": "context",
+      "evidence_geography": "North State",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North State. This is not a local-area opening estimate and is not used to rank occupations for NoRTEC."
+    },
+    {
+      "soc": "25-3031",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$62,740 annual",
+      "fit": "context",
+      "evidence_geography": "North State",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North State. This is not a local-area opening estimate and is not used to rank occupations for NoRTEC."
+    }
+  ],
+  "qa": {
+    "cbsa": "39820",
+    "label": "Redding MSA",
+    "catalog_size": 40,
+    "embedded_rows": 4,
+    "exact_msa_rows": 0,
+    "regional_context_rows": 4,
+    "profile_link_only_rows": 36,
+    "wage_rows": 4,
+    "projection_rows": 0,
+    "source_periods": [
+      "broader regional context"
+    ],
+    "coverage_status": "regional_context_partial",
+    "qa_status": "WARN",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

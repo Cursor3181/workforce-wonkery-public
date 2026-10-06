@@ -1,0 +1,921 @@
+{
+  "schema_version": "1.0",
+  "source": "data/labor-market-profiles/runtime-source.json",
+  "market_count": 25,
+  "catalog_count": 40,
+  "catalog": [
+    {
+      "soc": "11-1021",
+      "title": "General and Operations Managers",
+      "sector": "management",
+      "skill_tier": "high"
+    },
+    {
+      "soc": "11-3021",
+      "title": "Computer and Information Systems Managers",
+      "sector": "technology",
+      "skill_tier": "high"
+    },
+    {
+      "soc": "13-1111",
+      "title": "Management Analysts",
+      "sector": null,
+      "skill_tier": "high"
+    },
+    {
+      "soc": "13-1161",
+      "title": "Market Research Analysts and Marketing Specialists",
+      "sector": "business",
+      "skill_tier": "high"
+    },
+    {
+      "soc": "13-2011",
+      "title": "Accountants and Auditors",
+      "sector": "business",
+      "skill_tier": "high"
+    },
+    {
+      "soc": "15-1232",
+      "title": "Computer User Support Specialists",
+      "sector": "technology",
+      "skill_tier": "middle"
+    },
+    {
+      "soc": "15-1252",
+      "title": "Software Developers",
+      "sector": null,
+      "skill_tier": "high"
+    },
+    {
+      "soc": "25-2021",
+      "title": "Elementary School Teachers, Except Special Education",
+      "sector": "education",
+      "skill_tier": "high"
+    },
+    {
+      "soc": "25-2031",
+      "title": "Secondary School Teachers, Except Special and Career/Technical Education",
+      "sector": "education",
+      "skill_tier": "high"
+    },
+    {
+      "soc": "25-3031",
+      "title": "Substitute Teachers, Short-Term",
+      "sector": "education",
+      "skill_tier": "high"
+    },
+    {
+      "soc": "25-9045",
+      "title": "Teaching Assistants, Except Postsecondary",
+      "sector": "education",
+      "skill_tier": "middle"
+    },
+    {
+      "soc": "29-1141",
+      "title": "Registered Nurses",
+      "sector": "healthcare",
+      "skill_tier": "high"
+    },
+    {
+      "soc": "29-1292",
+      "title": "Dental Hygienists",
+      "sector": "allied_health",
+      "skill_tier": null
+    },
+    {
+      "soc": "29-2034",
+      "title": "Radiologic Technologists",
+      "sector": "allied_health",
+      "skill_tier": null
+    },
+    {
+      "soc": "29-2055",
+      "title": "Surgical Technologists",
+      "sector": "allied_health",
+      "skill_tier": null
+    },
+    {
+      "soc": "29-2061",
+      "title": "Licensed Vocational Nurses",
+      "sector": "allied_health",
+      "skill_tier": null
+    },
+    {
+      "soc": "31-1120",
+      "title": "Home Health and Personal Care Aides",
+      "sector": "healthcare",
+      "skill_tier": "entry"
+    },
+    {
+      "soc": "31-1131",
+      "title": "Nursing Assistants",
+      "sector": "healthcare",
+      "skill_tier": "middle"
+    },
+    {
+      "soc": "31-2021",
+      "title": "Physical Therapist Assistants",
+      "sector": "allied_health",
+      "skill_tier": null
+    },
+    {
+      "soc": "31-9092",
+      "title": "Medical Assistants",
+      "sector": "healthcare",
+      "skill_tier": "middle"
+    },
+    {
+      "soc": "33-2011",
+      "title": "Firefighters",
+      "sector": "public_safety",
+      "skill_tier": "middle"
+    },
+    {
+      "soc": "35-3023",
+      "title": "Fast Food and Counter Workers",
+      "sector": "hospitality",
+      "skill_tier": "entry"
+    },
+    {
+      "soc": "35-3031",
+      "title": "Waiters and Waitresses",
+      "sector": "hospitality",
+      "skill_tier": "entry"
+    },
+    {
+      "soc": "41-2011",
+      "title": "Cashiers",
+      "sector": "retail",
+      "skill_tier": "entry"
+    },
+    {
+      "soc": "41-2031",
+      "title": "Retail Salespersons",
+      "sector": null,
+      "skill_tier": "entry"
+    },
+    {
+      "soc": "43-3031",
+      "title": "Bookkeeping, Accounting, and Auditing Clerks",
+      "sector": "business",
+      "skill_tier": "middle"
+    },
+    {
+      "soc": "45-2092",
+      "title": "Farmworkers and Laborers, Crop, Nursery, and Greenhouse",
+      "sector": "agriculture",
+      "skill_tier": "entry"
+    },
+    {
+      "soc": "47-1011",
+      "title": "Construction Trades and Extraction Supervisors",
+      "sector": "construction",
+      "skill_tier": null
+    },
+    {
+      "soc": "47-2031",
+      "title": "Carpenters",
+      "sector": "construction",
+      "skill_tier": null
+    },
+    {
+      "soc": "47-2111",
+      "title": "Electricians",
+      "sector": "construction",
+      "skill_tier": null
+    },
+    {
+      "soc": "47-2152",
+      "title": "Plumbers, Pipefitters, and Steamfitters",
+      "sector": "construction",
+      "skill_tier": null
+    },
+    {
+      "soc": "49-3011",
+      "title": "Aircraft Mechanics and Service Technicians",
+      "sector": "aviation",
+      "skill_tier": null
+    },
+    {
+      "soc": "49-3041",
+      "title": "Farm Equipment Mechanics",
+      "sector": "industrial_ag",
+      "skill_tier": null
+    },
+    {
+      "soc": "49-3042",
+      "title": "Mobile Heavy Equipment Mechanics, Except Engines",
+      "sector": "industrial_ag",
+      "skill_tier": null
+    },
+    {
+      "soc": "49-9041",
+      "title": "Industrial Machinery Mechanics",
+      "sector": "industrial_ag",
+      "skill_tier": null
+    },
+    {
+      "soc": "51-4121",
+      "title": "Welders, Cutters, Solderers, and Brazers",
+      "sector": "industrial_ag",
+      "skill_tier": null
+    },
+    {
+      "soc": "51-8031",
+      "title": "Water and Liquid Waste Treatment Plant Workers",
+      "sector": "water_utilities",
+      "skill_tier": null
+    },
+    {
+      "soc": "53-3032",
+      "title": "Heavy and Tractor-Trailer Truck Drivers",
+      "sector": "logistics",
+      "skill_tier": "middle"
+    },
+    {
+      "soc": "53-7062",
+      "title": "Laborers and Freight, Stock, and Material Movers, Hand",
+      "sector": null,
+      "skill_tier": "entry"
+    },
+    {
+      "soc": "53-7065",
+      "title": "Stockers and Order Fillers",
+      "sector": "logistics",
+      "skill_tier": "entry"
+    }
+  ],
+  "markets": {
+    "12540": {
+      "label": "Bakersfield-Delano MSA",
+      "source": null,
+      "basic": 24.07,
+      "contextOpts": [
+        {
+          "id": "sow-kern-inyo-mono",
+          "label": "San Joaquin Valley"
+        }
+      ],
+      "eddArea": "0621012540",
+      "component_counties": [
+        "Kern"
+      ],
+      "edd_components": [
+        {
+          "label": "Bakersfield-Delano MSA",
+          "geog_area": "0621012540",
+          "counties": [
+            "Kern"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "17020": {
+      "label": "Chico MSA",
+      "source": null,
+      "basic": 24.06,
+      "contextOpts": [
+        {
+          "id": "sow-nortec",
+          "label": "North State"
+        }
+      ],
+      "eddArea": "0621017020",
+      "component_counties": [
+        "Butte"
+      ],
+      "edd_components": [
+        {
+          "label": "Chico MSA",
+          "geog_area": "0621017020",
+          "counties": [
+            "Butte"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "20940": {
+      "label": "El Centro MSA",
+      "source": "imperial",
+      "basic": 22.37,
+      "contextOpts": [],
+      "eddArea": "0621020940",
+      "component_counties": [
+        "Imperial"
+      ],
+      "edd_components": [
+        {
+          "label": "El Centro MSA",
+          "geog_area": "0621020940",
+          "counties": [
+            "Imperial"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "23420": {
+      "label": "Fresno MSA",
+      "source": null,
+      "basic": 25.33,
+      "contextOpts": [
+        {
+          "id": "sow-fresno",
+          "label": "San Joaquin Valley"
+        }
+      ],
+      "eddArea": "0621023420",
+      "component_counties": [
+        "Fresno",
+        "Madera"
+      ],
+      "edd_components": [
+        {
+          "label": "Fresno MSA",
+          "geog_area": "0621023420",
+          "counties": [
+            "Fresno",
+            "Madera"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Current OMB/EDD Fresno MSA includes Fresno and Madera Counties."
+    },
+    "25260": {
+      "label": "Hanford-Corcoran MSA",
+      "source": "kings",
+      "basic": 24.16,
+      "contextOpts": [],
+      "eddArea": "0621025260",
+      "component_counties": [
+        "Kings"
+      ],
+      "edd_components": [
+        {
+          "label": "Hanford-Corcoran MSA",
+          "geog_area": "0621025260",
+          "counties": [
+            "Kings"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "31080": {
+      "label": "Los Angeles-Long Beach-Anaheim MSA",
+      "source": null,
+      "basic": 30.79,
+      "contextOpts": [
+        {
+          "id": "sow-los-angeles-county",
+          "label": "Los Angeles Basin"
+        },
+        {
+          "id": "sow-orange-county",
+          "label": "Orange"
+        }
+      ],
+      "eddArea": null,
+      "component_counties": [
+        "Los Angeles",
+        "Orange"
+      ],
+      "edd_components": [
+        {
+          "label": "Los Angeles-Long Beach-Glendale MD",
+          "geog_area": "0621031084",
+          "counties": [
+            "Los Angeles"
+          ]
+        },
+        {
+          "label": "Anaheim-Santa Ana-Irvine MD",
+          "geog_area": "0621011244",
+          "counties": [
+            "Orange"
+          ]
+        }
+      ],
+      "crosswalk_status": "component_divisions_required",
+      "geography_note": "EDD publishes occupation evidence for the two metropolitan divisions rather than one combined Los Angeles-Long Beach-Anaheim occupation series."
+    },
+    "32900": {
+      "label": "Merced MSA",
+      "source": "merced",
+      "basic": 24.36,
+      "contextOpts": [],
+      "eddArea": "0621032900",
+      "component_counties": [
+        "Merced"
+      ],
+      "edd_components": [
+        {
+          "label": "Merced MSA",
+          "geog_area": "0621032900",
+          "counties": [
+            "Merced"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "33700": {
+      "label": "Modesto MSA",
+      "source": "stanislaus",
+      "basic": 25.2,
+      "contextOpts": [],
+      "eddArea": "0621033700",
+      "component_counties": [
+        "Stanislaus"
+      ],
+      "edd_components": [
+        {
+          "label": "Modesto MSA",
+          "geog_area": "0621033700",
+          "counties": [
+            "Stanislaus"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "34900": {
+      "label": "Napa MSA",
+      "source": null,
+      "basic": 31.44,
+      "contextOpts": [
+        {
+          "id": "sow-workforce-alliance-north-bay",
+          "label": "North Bay"
+        }
+      ],
+      "eddArea": "0621034900",
+      "component_counties": [
+        "Napa"
+      ],
+      "edd_components": [
+        {
+          "label": "Napa MSA",
+          "geog_area": "0621034900",
+          "counties": [
+            "Napa"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "37100": {
+      "label": "Oxnard-Thousand Oaks-Ventura MSA",
+      "source": "ventura",
+      "basic": 31.41,
+      "contextOpts": [],
+      "eddArea": "0621037100",
+      "component_counties": [
+        "Ventura"
+      ],
+      "edd_components": [
+        {
+          "label": "Oxnard-Thousand Oaks-Ventura MSA",
+          "geog_area": "0621037100",
+          "counties": [
+            "Ventura"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "39820": {
+      "label": "Redding MSA",
+      "source": null,
+      "basic": 24.54,
+      "contextOpts": [
+        {
+          "id": "sow-nortec",
+          "label": "North State"
+        }
+      ],
+      "eddArea": "0621039820",
+      "component_counties": [
+        "Shasta"
+      ],
+      "edd_components": [
+        {
+          "label": "Redding MSA",
+          "geog_area": "0621039820",
+          "counties": [
+            "Shasta"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "40140": {
+      "label": "Riverside-San Bernardino-Ontario MSA",
+      "source": null,
+      "basic": 28.26,
+      "contextOpts": [],
+      "eddArea": "0621040140",
+      "component_counties": [
+        "Riverside",
+        "San Bernardino"
+      ],
+      "edd_components": [
+        {
+          "label": "Riverside-San Bernardino-Ontario MSA",
+          "geog_area": "0621040140",
+          "counties": [
+            "Riverside",
+            "San Bernardino"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "40900": {
+      "label": "Sacramento-Roseville-Folsom MSA",
+      "source": null,
+      "basic": 28.89,
+      "contextOpts": [],
+      "eddArea": "0621040900",
+      "component_counties": [
+        "El Dorado",
+        "Placer",
+        "Sacramento",
+        "Yolo"
+      ],
+      "edd_components": [
+        {
+          "label": "Sacramento-Roseville-Folsom MSA",
+          "geog_area": "0621040900",
+          "counties": [
+            "El Dorado",
+            "Placer",
+            "Sacramento",
+            "Yolo"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "41500": {
+      "label": "Salinas MSA",
+      "source": "monterey",
+      "basic": 33.44,
+      "contextOpts": [],
+      "eddArea": "0621041500",
+      "component_counties": [
+        "Monterey"
+      ],
+      "edd_components": [
+        {
+          "label": "Salinas MSA",
+          "geog_area": "0621041500",
+          "counties": [
+            "Monterey"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "41740": {
+      "label": "San Diego-Chula Vista-Carlsbad MSA",
+      "source": "san-diego",
+      "basic": 32.88,
+      "contextOpts": [],
+      "eddArea": "0621041740",
+      "component_counties": [
+        "San Diego"
+      ],
+      "edd_components": [
+        {
+          "label": "San Diego-Chula Vista-Carlsbad MSA",
+          "geog_area": "0621041740",
+          "counties": [
+            "San Diego"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "41860": {
+      "label": "San Francisco-Oakland-Fremont MSA",
+      "source": null,
+      "basic": 33.71,
+      "contextOpts": [
+        {
+          "id": "sow-alameda",
+          "label": "East Bay"
+        },
+        {
+          "id": "sow-san-francisco",
+          "label": "Bay-Peninsula"
+        },
+        {
+          "id": "sow-workforce-alliance-north-bay",
+          "label": "North Bay"
+        }
+      ],
+      "eddArea": null,
+      "component_counties": [
+        "Alameda",
+        "Contra Costa",
+        "Marin",
+        "San Francisco",
+        "San Mateo"
+      ],
+      "edd_components": [
+        {
+          "label": "Oakland-Fremont-Berkeley MD",
+          "geog_area": "0621036084",
+          "counties": [
+            "Alameda",
+            "Contra Costa"
+          ]
+        },
+        {
+          "label": "San Francisco-San Mateo-Redwood City MD",
+          "geog_area": "0621041884",
+          "counties": [
+            "San Francisco",
+            "San Mateo"
+          ]
+        },
+        {
+          "label": "San Rafael MD",
+          "geog_area": "0621042034",
+          "counties": [
+            "Marin"
+          ]
+        }
+      ],
+      "crosswalk_status": "component_divisions_required",
+      "geography_note": "EDD publishes occupation evidence for the three metropolitan divisions rather than one combined San Francisco-Oakland-Fremont occupation series."
+    },
+    "41940": {
+      "label": "San Jose-Sunnyvale-Santa Clara MSA",
+      "source": null,
+      "basic": 37.93,
+      "contextOpts": [],
+      "eddArea": "0621041940",
+      "component_counties": [
+        "Santa Clara",
+        "San Benito"
+      ],
+      "edd_components": [
+        {
+          "label": "San Jose-Sunnyvale-Santa Clara MSA",
+          "geog_area": "0621041940",
+          "counties": [
+            "Santa Clara",
+            "San Benito"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "42020": {
+      "label": "San Luis Obispo-Paso Robles MSA",
+      "source": "san-luis-obispo",
+      "basic": 29.72,
+      "contextOpts": [],
+      "eddArea": "0621042020",
+      "component_counties": [
+        "San Luis Obispo"
+      ],
+      "edd_components": [
+        {
+          "label": "San Luis Obispo-Paso Robles MSA",
+          "geog_area": "0621042020",
+          "counties": [
+            "San Luis Obispo"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "42100": {
+      "label": "Santa Cruz-Watsonville MSA",
+      "source": "santa-cruz",
+      "basic": 42.98,
+      "contextOpts": [],
+      "eddArea": "0621042100",
+      "component_counties": [
+        "Santa Cruz"
+      ],
+      "edd_components": [
+        {
+          "label": "Santa Cruz-Watsonville MSA",
+          "geog_area": "0621042100",
+          "counties": [
+            "Santa Cruz"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "42200": {
+      "label": "Santa Maria-Santa Barbara MSA",
+      "source": "santa-barbara",
+      "basic": 35.78,
+      "contextOpts": [],
+      "eddArea": "0621042200",
+      "component_counties": [
+        "Santa Barbara"
+      ],
+      "edd_components": [
+        {
+          "label": "Santa Maria-Santa Barbara MSA",
+          "geog_area": "0621042200",
+          "counties": [
+            "Santa Barbara"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "42220": {
+      "label": "Santa Rosa-Petaluma MSA",
+      "source": "sonoma",
+      "basic": 31.3,
+      "contextOpts": [],
+      "eddArea": "0621042220",
+      "component_counties": [
+        "Sonoma"
+      ],
+      "edd_components": [
+        {
+          "label": "Santa Rosa-Petaluma MSA",
+          "geog_area": "0621042220",
+          "counties": [
+            "Sonoma"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "44700": {
+      "label": "Stockton-Lodi MSA",
+      "source": "san-joaquin",
+      "basic": 26.03,
+      "contextOpts": [],
+      "eddArea": "0621044700",
+      "component_counties": [
+        "San Joaquin"
+      ],
+      "edd_components": [
+        {
+          "label": "Stockton-Lodi MSA",
+          "geog_area": "0621044700",
+          "counties": [
+            "San Joaquin"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "46700": {
+      "label": "Vallejo MSA",
+      "source": "solano",
+      "basic": 27.87,
+      "contextOpts": [],
+      "eddArea": "0621046700",
+      "component_counties": [
+        "Solano"
+      ],
+      "edd_components": [
+        {
+          "label": "Vallejo MSA",
+          "geog_area": "0621046700",
+          "counties": [
+            "Solano"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "47300": {
+      "label": "Visalia MSA",
+      "source": "tulare",
+      "basic": 24.46,
+      "contextOpts": [],
+      "eddArea": "0621047300",
+      "component_counties": [
+        "Tulare"
+      ],
+      "edd_components": [
+        {
+          "label": "Visalia MSA",
+          "geog_area": "0621047300",
+          "counties": [
+            "Tulare"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    },
+    "49700": {
+      "label": "Yuba City MSA",
+      "source": null,
+      "basic": 24.51,
+      "contextOpts": [
+        {
+          "id": "sow-north-central-counties",
+          "label": "Capital"
+        }
+      ],
+      "eddArea": "0621049700",
+      "component_counties": [
+        "Sutter",
+        "Yuba"
+      ],
+      "edd_components": [
+        {
+          "label": "Yuba City MSA",
+          "geog_area": "0621049700",
+          "counties": [
+            "Sutter",
+            "Yuba"
+          ]
+        }
+      ],
+      "crosswalk_status": "verified_current_edd_metropolitan_list",
+      "geography_note": "Matches a current EDD metropolitan area."
+    }
+  },
+  "evidence_hierarchy": [
+    {
+      "rank": 1,
+      "status": "exact_msa",
+      "grade": "A",
+      "label": "Exact MSA/CBSA evidence"
+    },
+    {
+      "rank": 2,
+      "status": "component_county",
+      "grade": "B",
+      "label": "Component-county evidence"
+    },
+    {
+      "rank": 3,
+      "status": "closest_official",
+      "grade": "C",
+      "label": "Closest official geography"
+    },
+    {
+      "rank": 4,
+      "status": "regional_context",
+      "grade": "D",
+      "label": "Broader regional context"
+    },
+    {
+      "rank": 5,
+      "status": "unavailable",
+      "grade": "U",
+      "label": "No embedded metric; exact EDD profile link only"
+    }
+  ],
+  "source_snapshot": {
+    "long_term_projections_dataset": "California EDD Long-Term Occupational Employment Projections",
+    "long_term_projections_dataset_last_updated": "2026-07-02",
+    "wage_sources": "EDD/OEWS vintages vary by embedded source; row-level source_period controls",
+    "snapshot_date": "2026-09-21"
+  },
+  "publication": {
+    "catalog_scope": "maintained_decision_set_40",
+    "full_edd_universe_ingest_status": "not_yet_published",
+    "runtime_external_api_dependency": false,
+    "runtime_sharding": "wordpress-rest-v1"
+  },
+  "legacyAliases": {
+    "31460": {
+      "label": "Madera MSA",
+      "redirect_to": "23420",
+      "note": "Madera County is part of the current Fresno MSA."
+    }
+  },
+  "deployment": "wordpress/runtime-assets/labor-market-profiles-20261004.json"
+}

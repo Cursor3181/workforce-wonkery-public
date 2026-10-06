@@ -1,0 +1,642 @@
+{
+  "schema_version": "1.0",
+  "market_id": "46700",
+  "market": {
+    "label": "Vallejo MSA",
+    "source": "solano",
+    "basic": 27.87,
+    "contextOpts": [],
+    "eddArea": "0621046700",
+    "component_counties": [
+      "Solano"
+    ],
+    "edd_components": [
+      {
+        "label": "Vallejo MSA",
+        "geog_area": "0621046700",
+        "counties": [
+          "Solano"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 2280,
+      "projected_employment": 2440,
+      "growth_pct": 7,
+      "total_openings": 2060,
+      "wage": {
+        "value": 117723,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "11-3021",
+      "employment": 210,
+      "projected_employment": 250,
+      "growth_pct": 19,
+      "total_openings": 190,
+      "wage": {
+        "value": 169669,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1111",
+      "employment": 760,
+      "projected_employment": 860,
+      "growth_pct": 13.2,
+      "total_openings": 740,
+      "wage": {
+        "value": 95325,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1161",
+      "employment": 330,
+      "projected_employment": 360,
+      "growth_pct": 9.1,
+      "total_openings": 330,
+      "wage": {
+        "value": 75494,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-2011",
+      "employment": 850,
+      "projected_employment": 910,
+      "growth_pct": 7.1,
+      "total_openings": 730,
+      "wage": {
+        "value": 95040,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1232",
+      "employment": 360,
+      "projected_employment": 370,
+      "growth_pct": 2.8,
+      "total_openings": 240,
+      "wage": {
+        "value": 81948,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1252",
+      "employment": 320,
+      "projected_employment": 380,
+      "growth_pct": 18.8,
+      "total_openings": 240,
+      "wage": {
+        "value": 138227,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2021",
+      "employment": 1300,
+      "projected_employment": 1400,
+      "growth_pct": 7.7,
+      "total_openings": 990,
+      "wage": {
+        "value": 100869,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2031",
+      "employment": 790,
+      "projected_employment": 850,
+      "growth_pct": 7.6,
+      "total_openings": 560,
+      "wage": {
+        "value": 102862,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-3031",
+      "employment": 660,
+      "projected_employment": 740,
+      "growth_pct": 12.1,
+      "total_openings": 910,
+      "wage": {
+        "value": 63315,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-9045",
+      "employment": 1400,
+      "projected_employment": 1500,
+      "growth_pct": 7.1,
+      "total_openings": 1810,
+      "wage": {
+        "value": 46172,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1141",
+      "employment": 4280,
+      "projected_employment": 4810,
+      "growth_pct": 12.4,
+      "total_openings": 2870,
+      "wage": {
+        "value": 197701,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1292",
+      "employment": 180,
+      "projected_employment": 210,
+      "growth_pct": 16.7,
+      "total_openings": 160,
+      "wage": {
+        "value": 138104,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2034",
+      "employment": 210,
+      "projected_employment": 250,
+      "growth_pct": 19,
+      "total_openings": 150,
+      "wage": {
+        "value": 173614,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2055",
+      "employment": 120,
+      "projected_employment": 140,
+      "growth_pct": 16.7,
+      "total_openings": 90,
+      "wage": {
+        "value": 104228,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2061",
+      "employment": 780,
+      "projected_employment": 840,
+      "growth_pct": 7.7,
+      "total_openings": 700,
+      "wage": {
+        "value": 82565,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1120",
+      "employment": 7770,
+      "projected_employment": 10350,
+      "growth_pct": 33.2,
+      "total_openings": 15770,
+      "wage": {
+        "value": 34483,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1131",
+      "employment": 850,
+      "projected_employment": 910,
+      "growth_pct": 7.1,
+      "total_openings": 1280,
+      "wage": {
+        "value": 48943,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-2021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Vallejo MSA (Solano County); no broader value is substituted."
+    },
+    {
+      "soc": "31-9092",
+      "employment": 1220,
+      "projected_employment": 1500,
+      "growth_pct": 23,
+      "total_openings": 2020,
+      "wage": {
+        "value": 77317,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "33-2011",
+      "employment": 330,
+      "projected_employment": 340,
+      "growth_pct": 3,
+      "total_openings": 260,
+      "wage": {
+        "value": 107430,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3023",
+      "employment": 4600,
+      "projected_employment": 5140,
+      "growth_pct": 11.7,
+      "total_openings": 11840,
+      "wage": {
+        "value": 38751,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3031",
+      "employment": 1850,
+      "projected_employment": 1950,
+      "growth_pct": 5.4,
+      "total_openings": 3990,
+      "wage": {
+        "value": 37209,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2011",
+      "employment": 3680,
+      "projected_employment": 3520,
+      "growth_pct": -4.3,
+      "total_openings": 6680,
+      "wage": {
+        "value": 38078,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2031",
+      "employment": 4060,
+      "projected_employment": 4200,
+      "growth_pct": 3.4,
+      "total_openings": 6120,
+      "wage": {
+        "value": 38293,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "43-3031",
+      "employment": 1290,
+      "projected_employment": 1260,
+      "growth_pct": -2.3,
+      "total_openings": 1410,
+      "wage": {
+        "value": 60720,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "45-2092",
+      "employment": 650,
+      "projected_employment": 550,
+      "growth_pct": -15.4,
+      "total_openings": 820,
+      "wage": {
+        "value": 40888,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-1011",
+      "employment": 1100,
+      "projected_employment": 1200,
+      "growth_pct": 9.1,
+      "total_openings": 970,
+      "wage": {
+        "value": 104586,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2031",
+      "employment": 1220,
+      "projected_employment": 1300,
+      "growth_pct": 6.6,
+      "total_openings": 1060,
+      "wage": {
+        "value": 82928,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2111",
+      "employment": 670,
+      "projected_employment": 790,
+      "growth_pct": 17.9,
+      "total_openings": 760,
+      "wage": {
+        "value": 82321,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2152",
+      "employment": 490,
+      "projected_employment": 550,
+      "growth_pct": 12.2,
+      "total_openings": 500,
+      "wage": {
+        "value": 79582,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3011",
+      "employment": 100,
+      "projected_employment": 100,
+      "growth_pct": 0,
+      "total_openings": 80,
+      "wage": {
+        "value": 92067,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3041",
+      "employment": 60,
+      "projected_employment": 50,
+      "growth_pct": -16.7,
+      "total_openings": 40,
+      "wage": {
+        "value": 78090,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3042",
+      "employment": 350,
+      "projected_employment": 380,
+      "growth_pct": 8.6,
+      "total_openings": 330,
+      "wage": {
+        "value": 82178,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-9041",
+      "employment": 540,
+      "projected_employment": 630,
+      "growth_pct": 16.7,
+      "total_openings": 540,
+      "wage": {
+        "value": 87949,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-4121",
+      "employment": 340,
+      "projected_employment": 360,
+      "growth_pct": 5.9,
+      "total_openings": 370,
+      "wage": {
+        "value": 64349,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-8031",
+      "employment": 190,
+      "projected_employment": 180,
+      "growth_pct": -5.3,
+      "total_openings": 160,
+      "wage": {
+        "value": 104311,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-3032",
+      "employment": 2360,
+      "projected_employment": 2720,
+      "growth_pct": 15.3,
+      "total_openings": 2940,
+      "wage": {
+        "value": 61663,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7062",
+      "employment": 2210,
+      "projected_employment": 2360,
+      "growth_pct": 6.8,
+      "total_openings": 3100,
+      "wage": {
+        "value": 47026,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7065",
+      "employment": 2580,
+      "projected_employment": 2870,
+      "growth_pct": 11.2,
+      "total_openings": 4620,
+      "wage": {
+        "value": 41085,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Vallejo MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Vallejo MSA (Solano County). The source geography exactly matches the published MSA/CBSA labor market."
+    }
+  ],
+  "qa": {
+    "cbsa": "46700",
+    "label": "Vallejo MSA",
+    "catalog_size": 40,
+    "embedded_rows": 40,
+    "exact_msa_rows": 40,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 0,
+    "wage_rows": 39,
+    "projection_rows": 39,
+    "source_periods": [
+      "2023-2033 projections; wages 2025 Q1"
+    ],
+    "coverage_status": "exact_msa_core_complete",
+    "qa_status": "PASS",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

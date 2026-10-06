@@ -1,0 +1,636 @@
+{
+  "schema_version": "1.0",
+  "market_id": "41500",
+  "market": {
+    "label": "Salinas MSA",
+    "source": "monterey",
+    "basic": 33.44,
+    "contextOpts": [],
+    "eddArea": "0621041500",
+    "component_counties": [
+      "Monterey"
+    ],
+    "edd_components": [
+      {
+        "label": "Salinas MSA",
+        "geog_area": "0621041500",
+        "counties": [
+          "Monterey"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": 2450,
+      "projected_employment": 2660,
+      "growth_pct": 8.6,
+      "total_openings": 2180,
+      "wage": {
+        "value": 112661,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "11-3021",
+      "employment": 260,
+      "projected_employment": 300,
+      "growth_pct": 15.4,
+      "total_openings": 220,
+      "wage": {
+        "value": 166929,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1111",
+      "employment": 690,
+      "projected_employment": 760,
+      "growth_pct": 10.1,
+      "total_openings": 640,
+      "wage": {
+        "value": 97036,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-1161",
+      "employment": 410,
+      "projected_employment": 450,
+      "growth_pct": 9.8,
+      "total_openings": 400,
+      "wage": {
+        "value": 69790,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "13-2011",
+      "employment": 1190,
+      "projected_employment": 1270,
+      "growth_pct": 6.7,
+      "total_openings": 970,
+      "wage": {
+        "value": 86433,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1232",
+      "employment": 380,
+      "projected_employment": 370,
+      "growth_pct": -2.6,
+      "total_openings": 220,
+      "wage": {
+        "value": 71399,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "15-1252",
+      "employment": 290,
+      "projected_employment": 330,
+      "growth_pct": 13.8,
+      "total_openings": 190,
+      "wage": {
+        "value": 137950,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2021",
+      "employment": 1690,
+      "projected_employment": 1730,
+      "growth_pct": 2.4,
+      "total_openings": 1170,
+      "wage": {
+        "value": 104053,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-2031",
+      "employment": 1260,
+      "projected_employment": 1290,
+      "growth_pct": 2.4,
+      "total_openings": 830,
+      "wage": {
+        "value": 100992,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "25-3031",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Salinas MSA (Monterey County); no broader value is substituted."
+    },
+    {
+      "soc": "25-9045",
+      "employment": 1880,
+      "projected_employment": 1940,
+      "growth_pct": 3.2,
+      "total_openings": 2390,
+      "wage": {
+        "value": 47671,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1141",
+      "employment": 2940,
+      "projected_employment": 3090,
+      "growth_pct": 5.1,
+      "total_openings": 1650,
+      "wage": {
+        "value": 138751,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-1292",
+      "employment": 150,
+      "projected_employment": 170,
+      "growth_pct": 13.3,
+      "total_openings": 120,
+      "wage": {
+        "value": 125367,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2034",
+      "employment": 140,
+      "projected_employment": 150,
+      "growth_pct": 7.1,
+      "total_openings": 80,
+      "wage": {
+        "value": 103724,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2055",
+      "employment": 140,
+      "projected_employment": 150,
+      "growth_pct": 7.1,
+      "total_openings": 90,
+      "wage": {
+        "value": 83088,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "29-2061",
+      "employment": 600,
+      "projected_employment": 630,
+      "growth_pct": 5,
+      "total_openings": 510,
+      "wage": {
+        "value": 82790,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1120",
+      "employment": 6780,
+      "projected_employment": 8800,
+      "growth_pct": 29.8,
+      "total_openings": 13450,
+      "wage": {
+        "value": 34535,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-1131",
+      "employment": 960,
+      "projected_employment": 980,
+      "growth_pct": 2.1,
+      "total_openings": 1360,
+      "wage": {
+        "value": 48850,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "31-2021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Salinas MSA (Monterey County); no broader value is substituted."
+    },
+    {
+      "soc": "31-9092",
+      "employment": 890,
+      "projected_employment": 1030,
+      "growth_pct": 15.7,
+      "total_openings": 1280,
+      "wage": {
+        "value": 48881,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "33-2011",
+      "employment": 580,
+      "projected_employment": 590,
+      "growth_pct": 1.7,
+      "total_openings": 440,
+      "wage": {
+        "value": 81565,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3023",
+      "employment": 4400,
+      "projected_employment": 5180,
+      "growth_pct": 17.7,
+      "total_openings": 11560,
+      "wage": {
+        "value": 38504,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "35-3031",
+      "employment": 3500,
+      "projected_employment": 3900,
+      "growth_pct": 11.4,
+      "total_openings": 7710,
+      "wage": {
+        "value": 36396,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2011",
+      "employment": 3970,
+      "projected_employment": 3800,
+      "growth_pct": -4.3,
+      "total_openings": 7260,
+      "wage": {
+        "value": 37291,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "41-2031",
+      "employment": 3740,
+      "projected_employment": 3800,
+      "growth_pct": 1.6,
+      "total_openings": 5410,
+      "wage": {
+        "value": 37802,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "43-3031",
+      "employment": 1750,
+      "projected_employment": 1740,
+      "growth_pct": -0.6,
+      "total_openings": 1990,
+      "wage": {
+        "value": 59668,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "45-2092",
+      "employment": 37000,
+      "projected_employment": 42270,
+      "growth_pct": 14.2,
+      "total_openings": 63830,
+      "wage": {
+        "value": 38479,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-1011",
+      "employment": 550,
+      "projected_employment": 610,
+      "growth_pct": 10.9,
+      "total_openings": 480,
+      "wage": {
+        "value": 95013,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2031",
+      "employment": 1590,
+      "projected_employment": 1780,
+      "growth_pct": 11.9,
+      "total_openings": 1390,
+      "wage": {
+        "value": 76453,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2111",
+      "employment": 470,
+      "projected_employment": 540,
+      "growth_pct": 14.9,
+      "total_openings": 500,
+      "wage": {
+        "value": 80179,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "47-2152",
+      "employment": 400,
+      "projected_employment": 430,
+      "growth_pct": 7.5,
+      "total_openings": 370,
+      "wage": {
+        "value": 66478,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3011",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": null,
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "This SOC is not published in the exact EDD projection file for Salinas MSA (Monterey County); no broader value is substituted."
+    },
+    {
+      "soc": "49-3041",
+      "employment": 590,
+      "projected_employment": 750,
+      "growth_pct": 27.1,
+      "total_openings": 700,
+      "wage": {
+        "value": 48021,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-3042",
+      "employment": 250,
+      "projected_employment": 250,
+      "growth_pct": 0,
+      "total_openings": 200,
+      "wage": {
+        "value": 77217,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "49-9041",
+      "employment": 410,
+      "projected_employment": 490,
+      "growth_pct": 19.5,
+      "total_openings": 440,
+      "wage": {
+        "value": 73479,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-4121",
+      "employment": 250,
+      "projected_employment": 260,
+      "growth_pct": 4,
+      "total_openings": 260,
+      "wage": {
+        "value": 59609,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "51-8031",
+      "employment": 140,
+      "projected_employment": 130,
+      "growth_pct": -7.1,
+      "total_openings": 110,
+      "wage": {
+        "value": 92964,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-3032",
+      "employment": 2790,
+      "projected_employment": 3050,
+      "growth_pct": 9.3,
+      "total_openings": 3190,
+      "wage": {
+        "value": 55548,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7062",
+      "employment": 4280,
+      "projected_employment": 4830,
+      "growth_pct": 12.9,
+      "total_openings": 6290,
+      "wage": {
+        "value": 37398,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    },
+    {
+      "soc": "53-7065",
+      "employment": 1940,
+      "projected_employment": 2230,
+      "growth_pct": 14.9,
+      "total_openings": 3540,
+      "wage": {
+        "value": 39538,
+        "unit": "median annual"
+      },
+      "fit": "exact",
+      "evidence_geography": "Salinas MSA",
+      "source_period": "2023-2033 projections; wages 2025 Q1",
+      "note": "Direct EDD occupation projection for Salinas MSA (Monterey County). The source geography exactly matches the published MSA/CBSA labor market."
+    }
+  ],
+  "qa": {
+    "cbsa": "41500",
+    "label": "Salinas MSA",
+    "catalog_size": 40,
+    "embedded_rows": 40,
+    "exact_msa_rows": 40,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 0,
+    "wage_rows": 37,
+    "projection_rows": 37,
+    "source_periods": [
+      "2023-2033 projections; wages 2025 Q1"
+    ],
+    "coverage_status": "exact_msa_core_complete",
+    "qa_status": "PASS",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

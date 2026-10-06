@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "market_id": "41940",
+  "market": {
+    "label": "San Jose-Sunnyvale-Santa Clara MSA",
+    "source": null,
+    "basic": 37.93,
+    "contextOpts": [],
+    "eddArea": "0621041940",
+    "component_counties": [
+      "Santa Clara",
+      "San Benito"
+    ],
+    "edd_components": [
+      {
+        "label": "San Jose-Sunnyvale-Santa Clara MSA",
+        "geog_area": "0621041940",
+        "counties": [
+          "Santa Clara",
+          "San Benito"
+        ]
+      }
+    ],
+    "crosswalk_status": "verified_current_edd_metropolitan_list",
+    "geography_note": "Matches a current EDD metropolitan area."
+  },
+  "observations": [
+    {
+      "soc": "11-3021",
+      "employment": 21480,
+      "projected_employment": 24540,
+      "growth_pct": 14.2,
+      "total_openings": 17740,
+      "wage": {
+        "value": 156.27,
+        "unit": "mean hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Jose-Sunnyvale-Santa Clara MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": null
+    },
+    {
+      "soc": "13-1111",
+      "employment": 9210,
+      "projected_employment": 10000,
+      "growth_pct": 8.6,
+      "total_openings": 8520,
+      "wage": {
+        "value": 66.81,
+        "unit": "median hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Jose-Sunnyvale-Santa Clara MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": null
+    },
+    {
+      "soc": "13-1161",
+      "employment": 11960,
+      "projected_employment": 13330,
+      "growth_pct": 11.5,
+      "total_openings": 12690,
+      "wage": {
+        "value": 69.39,
+        "unit": "median hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Jose-Sunnyvale-Santa Clara MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": null
+    },
+    {
+      "soc": "13-2011",
+      "employment": 13500,
+      "projected_employment": 14840,
+      "growth_pct": 9.9,
+      "total_openings": 12140,
+      "wage": {
+        "value": 59.49,
+        "unit": "median hourly"
+      },
+      "fit": "exact",
+      "evidence_geography": "San Jose-Sunnyvale-Santa Clara MSA",
+      "source_period": "2022-2032 projections; wages 2026 Q1",
+      "note": null
+    }
+  ],
+  "qa": {
+    "cbsa": "41940",
+    "label": "San Jose-Sunnyvale-Santa Clara MSA",
+    "catalog_size": 40,
+    "embedded_rows": 4,
+    "exact_msa_rows": 4,
+    "regional_context_rows": 0,
+    "profile_link_only_rows": 36,
+    "wage_rows": 4,
+    "projection_rows": 4,
+    "source_periods": [
+      "2022-2032 projections; wages 2026 Q1"
+    ],
+    "coverage_status": "exact_msa_partial",
+    "qa_status": "WARN",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}

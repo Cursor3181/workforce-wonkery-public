@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "market_id": "40140",
+  "label": "Riverside-San Bernardino-Ontario MSA",
+  "release": "Workforce Wonkery Public Data v1.19",
+  "rows": [
+    [
+      "11-1021",
+      49.99,
+      19670,
+      11.7,
+      20720,
+      23150,
+      0
+    ],
+    [
+      "25-3031",
+      30.04,
+      13710,
+      13.7,
+      9720,
+      11050,
+      0
+    ],
+    [
+      "13-2011",
+      41.02,
+      8370,
+      10.9,
+      9170,
+      10170,
+      0
+    ]
+  ]
+}

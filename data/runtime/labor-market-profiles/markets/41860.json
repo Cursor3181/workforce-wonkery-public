@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "market_id": "41860",
+  "market": {
+    "label": "San Francisco-Oakland-Fremont MSA",
+    "source": null,
+    "basic": 33.71,
+    "contextOpts": [
+      {
+        "id": "sow-alameda",
+        "label": "East Bay"
+      },
+      {
+        "id": "sow-san-francisco",
+        "label": "Bay-Peninsula"
+      },
+      {
+        "id": "sow-workforce-alliance-north-bay",
+        "label": "North Bay"
+      }
+    ],
+    "eddArea": null,
+    "component_counties": [
+      "Alameda",
+      "Contra Costa",
+      "Marin",
+      "San Francisco",
+      "San Mateo"
+    ],
+    "edd_components": [
+      {
+        "label": "Oakland-Fremont-Berkeley MD",
+        "geog_area": "0621036084",
+        "counties": [
+          "Alameda",
+          "Contra Costa"
+        ]
+      },
+      {
+        "label": "San Francisco-San Mateo-Redwood City MD",
+        "geog_area": "0621041884",
+        "counties": [
+          "San Francisco",
+          "San Mateo"
+        ]
+      },
+      {
+        "label": "San Rafael MD",
+        "geog_area": "0621042034",
+        "counties": [
+          "Marin"
+        ]
+      }
+    ],
+    "crosswalk_status": "component_divisions_required",
+    "geography_note": "EDD publishes occupation evidence for the three metropolitan divisions rather than one combined San Francisco-Oakland-Fremont occupation series."
+  },
+  "observations": [
+    {
+      "soc": "11-1021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$137,029 annual",
+      "fit": "context",
+      "evidence_geography": "East Bay",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from East Bay. This is not a local-area opening estimate and is not used to rank occupations for Alameda County."
+    },
+    {
+      "soc": "13-1111",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$110,282 annual",
+      "fit": "context",
+      "evidence_geography": "East Bay",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from East Bay. This is not a local-area opening estimate and is not used to rank occupations for Alameda County."
+    },
+    {
+      "soc": "15-1252",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$176,513 annual",
+      "fit": "context",
+      "evidence_geography": "East Bay",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from East Bay. This is not a local-area opening estimate and is not used to rank occupations for Alameda County."
+    },
+    {
+      "soc": "25-3031",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$72,849 annual",
+      "fit": "context",
+      "evidence_geography": "East Bay",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from East Bay. This is not a local-area opening estimate and is not used to rank occupations for Alameda County."
+    },
+    {
+      "soc": "11-3021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$285,801 annual",
+      "fit": "context",
+      "evidence_geography": "Bay-Peninsula",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Bay-Peninsula. This is not a local-area opening estimate and is not used to rank occupations for San Francisco."
+    },
+    {
+      "soc": "13-1161",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$139,070 annual",
+      "fit": "context",
+      "evidence_geography": "Bay-Peninsula",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from Bay-Peninsula. This is not a local-area opening estimate and is not used to rank occupations for San Francisco."
+    },
+    {
+      "soc": "13-2011",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$98,338 annual",
+      "fit": "context",
+      "evidence_geography": "North Bay",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North Bay. This is not a local-area opening estimate and is not used to rank occupations for Workforce Alliance of the North Bay."
+    },
+    {
+      "soc": "25-2021",
+      "employment": null,
+      "projected_employment": null,
+      "growth_pct": null,
+      "total_openings": null,
+      "wage": "$101,903 annual",
+      "fit": "context",
+      "evidence_geography": "North Bay",
+      "source_period": "broader regional context",
+      "note": "Regional occupation context from North Bay. This is not a local-area opening estimate and is not used to rank occupations for Workforce Alliance of the North Bay."
+    }
+  ],
+  "qa": {
+    "cbsa": "41860",
+    "label": "San Francisco-Oakland-Fremont MSA",
+    "catalog_size": 40,
+    "embedded_rows": 8,
+    "exact_msa_rows": 0,
+    "regional_context_rows": 8,
+    "profile_link_only_rows": 32,
+    "wage_rows": 8,
+    "projection_rows": 0,
+    "source_periods": [
+      "broader regional context"
+    ],
+    "coverage_status": "regional_context_partial",
+    "qa_status": "WARN",
+    "critical_flags": [],
+    "warning_flags": []
+  }
+}
