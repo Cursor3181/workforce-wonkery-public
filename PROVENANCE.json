@@ -913,7 +913,7 @@
       "target": "docs/methodology/editorial-standard-feature-briefs.md"
     },
     {
-      "sha256": "a21598c43af353ba941d521db9b2329c3cf4c3bc361469e656b66b75f9b87b99",
+      "sha256": "14c4851ee3999e56d9d8ce63fed35775973d2bb60569f23931935061c8e6e9ee",
       "source": "public-companion/templates/.github/workflows/public-ci.yml",
       "target": ".github/workflows/public-ci.yml"
     },
@@ -958,7 +958,7 @@
       "target": "tests/validate_public_export.py"
     }
   ],
-  "source_commit": "f824a0d22f0edbf61cdb76a72bb7c82d2693690c",
+  "source_commit": "c3381b985ba7b21c09fc3591c5fb5aa4b7a6504d",
   "source_repository": "Cursor3181/workforce-wonkery",
   "target_repository": "Cursor3181/workforce-wonkery-public"
 }

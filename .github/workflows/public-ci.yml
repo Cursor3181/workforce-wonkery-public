@@ -53,6 +53,82 @@ jobs:
             echo "- Public JSON parsed and runtime hashes checked"
             echo "- Exported JavaScript syntax checked"
             echo "- Exported WordPress PHP linted"
-            echo
-            echo "These checks run in the public repository so standard GitHub-hosted runner time is not charged to the private Workforce Wonkery Actions allowance."
           } >> "$GITHUB_STEP_SUMMARY"
+
+  live-structure:
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check governed public surfaces
+        run: |
+          set -o pipefail
+          python tests/site_structure_check.py | tee /tmp/site-structure.log
+      - name: Write structural summary
+        if: always()
+        run: |
+          {
+            echo "## Live structural smoke"
+            echo
+            echo '~~~text'
+            test -f /tmp/site-structure.log && cat /tmp/site-structure.log || echo "Structural check did not run."
+            echo '~~~'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+  discovery:
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright==1.63.0
+          python -m playwright install --with-deps chromium
+      - name: Run Discovery desktop and mobile canary
+        env:
+          DISCOVERY_ONLY: "1"
+        run: python tests/browser_acceptance.py
+      - name: Upload Discovery evidence
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-discovery-acceptance
+          path: qa/artifacts/browser-acceptance
+          if-no-files-found: warn
+          retention-days: 7
+
+  browser-acceptance:
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: |
+          python -m pip install --upgrade pip
+          pip install playwright==1.63.0
+          python -m playwright install --with-deps chromium
+      - name: Run full public-site browser acceptance
+        run: python tests/browser_acceptance.py
+      - name: Upload browser evidence
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-browser-acceptance
+          path: qa/artifacts/browser-acceptance
+          if-no-files-found: warn
+          retention-days: 7
