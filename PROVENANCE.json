@@ -915,27 +915,27 @@
     {
       "sha256": "a21598c43af353ba941d521db9b2329c3cf4c3bc361469e656b66b75f9b87b99",
       "source": "public-companion/templates/.github/workflows/public-ci.yml",
-      "target": "github/workflows/public-ci.yml"
+      "target": ".github/workflows/public-ci.yml"
     },
     {
       "sha256": "959691885a5e6c193c025768ab72cd3e9a4122ebbe0b712f3c4fe290cdda7611",
       "source": "public-companion/templates/.github/workflows/live-browser-acceptance.yml",
-      "target": "github/workflows/live-browser-acceptance.yml"
+      "target": ".github/workflows/live-browser-acceptance.yml"
     },
     {
       "sha256": "deec6762ad999c3d947f7c6d6798f30fd98213d2c6e2964f8b9780e0377ab38a",
       "source": "public-companion/templates/.github/workflows/site-structure-check.yml",
-      "target": "github/workflows/site-structure-check.yml"
+      "target": ".github/workflows/site-structure-check.yml"
     },
     {
       "sha256": "806f75844ebbc9729b434808f380bfa584288d4767465199fd3d132ae8cfb843",
       "source": "public-companion/templates/.github/workflows/discovery-acceptance.yml",
-      "target": "github/workflows/discovery-acceptance.yml"
+      "target": ".github/workflows/discovery-acceptance.yml"
     },
     {
       "sha256": "f405531338fc2423276284a2b2987bad40c3960080137d44224e222a4a58b2f1",
       "source": "public-companion/templates/.github/workflows/promote-private-sync.yml",
-      "target": "github/workflows/promote-private-sync.yml"
+      "target": ".github/workflows/promote-private-sync.yml"
     },
     {
       "sha256": "ad90818eb9dbc40898e8f59e89e08f0085b9ea6f1b1550559dfb6a0c24715094",
@@ -958,7 +958,7 @@
       "target": "tests/validate_public_export.py"
     }
   ],
-  "source_commit": "38d3bf5a4a7a66d16e1b35f2035110c6f00c7fd7",
+  "source_commit": "f824a0d22f0edbf61cdb76a72bb7c82d2693690c",
   "source_repository": "Cursor3181/workforce-wonkery",
   "target_repository": "Cursor3181/workforce-wonkery-public"
 }
