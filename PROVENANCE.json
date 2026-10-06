@@ -1,6 +1,6 @@
 {
   "export_mode": "allowlist",
-  "file_count": 191,
+  "file_count": 217,
   "files": [
     {
       "sha256": "cc8c3fef0fc148012263283e968cb0ddcc8019d4065547a2ee16cb195b95622e",
@@ -828,6 +828,136 @@
       "target": "data/geography/us-states.json"
     },
     {
+      "sha256": "bfe38e8b366da94fa763a92b3dd8cbd3e54a6254aaa566ef26a22609b265e906",
+      "source": "data/sector-partnerships/runtime-source/index.json",
+      "target": "data/sector-partnerships/runtime-source/index.json"
+    },
+    {
+      "sha256": "5872a3a8e725eb986375858634d1d95847f5fd3579c9effb694f7c94a8c31bb0",
+      "source": "data/sector-partnerships/runtime-source/markets/12540.html",
+      "target": "data/sector-partnerships/runtime-source/markets/12540.html"
+    },
+    {
+      "sha256": "9d4f185794e7c5f5b3386bca2b0771753c7b09acbd16acd1d91b69e275be29c9",
+      "source": "data/sector-partnerships/runtime-source/markets/17020.html",
+      "target": "data/sector-partnerships/runtime-source/markets/17020.html"
+    },
+    {
+      "sha256": "e5e187adb6f416a1ea8bee826e5fe8ee17fc91c9c2aeb4950584354329b3dd3f",
+      "source": "data/sector-partnerships/runtime-source/markets/20940.html",
+      "target": "data/sector-partnerships/runtime-source/markets/20940.html"
+    },
+    {
+      "sha256": "d61d8a409f3f10be1d793fc961b205e91d0717749e65b7d1c6e759fbcc42270a",
+      "source": "data/sector-partnerships/runtime-source/markets/23420.html",
+      "target": "data/sector-partnerships/runtime-source/markets/23420.html"
+    },
+    {
+      "sha256": "21b7955f750ced79bf9cf49b09a1df3f8d3bb3242e79bdf8246a0604932df2a6",
+      "source": "data/sector-partnerships/runtime-source/markets/25260.html",
+      "target": "data/sector-partnerships/runtime-source/markets/25260.html"
+    },
+    {
+      "sha256": "62d7f23d092e77300fecb729bed256bb9ed0764d54d86712a0e847b79063abc0",
+      "source": "data/sector-partnerships/runtime-source/markets/31080.html",
+      "target": "data/sector-partnerships/runtime-source/markets/31080.html"
+    },
+    {
+      "sha256": "f57011d6d699f745c31351eb27df50c4b05ed4e053597991d987802f72391378",
+      "source": "data/sector-partnerships/runtime-source/markets/32900.html",
+      "target": "data/sector-partnerships/runtime-source/markets/32900.html"
+    },
+    {
+      "sha256": "22e42d54dfe83cef6467b7f339150888483737ba6432f72bf5867e4075d6bb95",
+      "source": "data/sector-partnerships/runtime-source/markets/33700.html",
+      "target": "data/sector-partnerships/runtime-source/markets/33700.html"
+    },
+    {
+      "sha256": "712d4a2223191c66d75e140c31182bd801a9f3e6b21307d781f24b69afdb8766",
+      "source": "data/sector-partnerships/runtime-source/markets/34900.html",
+      "target": "data/sector-partnerships/runtime-source/markets/34900.html"
+    },
+    {
+      "sha256": "56e732f9b09badf50f6cc5b9a219a7308c047109913d04f069ec4a94f368d382",
+      "source": "data/sector-partnerships/runtime-source/markets/37100.html",
+      "target": "data/sector-partnerships/runtime-source/markets/37100.html"
+    },
+    {
+      "sha256": "c3e8f6d6d5a9bc55a4850917a04532ca18866f587cdd10ec1c62041006f5d2d9",
+      "source": "data/sector-partnerships/runtime-source/markets/39820.html",
+      "target": "data/sector-partnerships/runtime-source/markets/39820.html"
+    },
+    {
+      "sha256": "d958c6d8bbc084d0f91dadc7e1710da0b1d3b39d5fe15c8e0968cc8359165bc3",
+      "source": "data/sector-partnerships/runtime-source/markets/40140.html",
+      "target": "data/sector-partnerships/runtime-source/markets/40140.html"
+    },
+    {
+      "sha256": "51a24f80b1d7fbf905972c1b999b8150df2dcba3a624d7622cc36ad21fe168ab",
+      "source": "data/sector-partnerships/runtime-source/markets/40900.html",
+      "target": "data/sector-partnerships/runtime-source/markets/40900.html"
+    },
+    {
+      "sha256": "7e286beb4fc36476496525f7097f74179dbef82ee47f22388d49ba300be7b254",
+      "source": "data/sector-partnerships/runtime-source/markets/41500.html",
+      "target": "data/sector-partnerships/runtime-source/markets/41500.html"
+    },
+    {
+      "sha256": "282429780f7a798b009457165e90b0b7c5689e5759c7c9282030bdb1ef6133fc",
+      "source": "data/sector-partnerships/runtime-source/markets/41740.html",
+      "target": "data/sector-partnerships/runtime-source/markets/41740.html"
+    },
+    {
+      "sha256": "a17f74281d13f6bda1b1753f5577d7d1ebd0844162aa22dbaafc25a305695bc8",
+      "source": "data/sector-partnerships/runtime-source/markets/41860.html",
+      "target": "data/sector-partnerships/runtime-source/markets/41860.html"
+    },
+    {
+      "sha256": "bce12148a1b4aa3d854aae7d0c71cc02b02f7e0ab77b4d43fe6e9bac5c0a1a3e",
+      "source": "data/sector-partnerships/runtime-source/markets/41940.html",
+      "target": "data/sector-partnerships/runtime-source/markets/41940.html"
+    },
+    {
+      "sha256": "c1576d959c6d4966cfa964066de55df6f94abbd07d017fc3c2674f006c64dd7b",
+      "source": "data/sector-partnerships/runtime-source/markets/42020.html",
+      "target": "data/sector-partnerships/runtime-source/markets/42020.html"
+    },
+    {
+      "sha256": "d95bc99f83ce47196324251bac2ef7fcf39e5c5004a9136fe0afba21196ffefb",
+      "source": "data/sector-partnerships/runtime-source/markets/42100.html",
+      "target": "data/sector-partnerships/runtime-source/markets/42100.html"
+    },
+    {
+      "sha256": "bd2e00ff611f8390fb2129067ce76822dd5717945c4624d252b8c6770a2c4fca",
+      "source": "data/sector-partnerships/runtime-source/markets/42200.html",
+      "target": "data/sector-partnerships/runtime-source/markets/42200.html"
+    },
+    {
+      "sha256": "1e562d49fda5953b0bc29c061dc212472a50798f1f6306095e71bf61a1ad8612",
+      "source": "data/sector-partnerships/runtime-source/markets/42220.html",
+      "target": "data/sector-partnerships/runtime-source/markets/42220.html"
+    },
+    {
+      "sha256": "f5994f51fcd557e94bb240e7a2cd67ad40bfb46c324186b8c0edd081b6a19772",
+      "source": "data/sector-partnerships/runtime-source/markets/44700.html",
+      "target": "data/sector-partnerships/runtime-source/markets/44700.html"
+    },
+    {
+      "sha256": "cba27b5a6af8d6653407b2c1b8039529214fa00e0f2089ee58d14bf3c662521e",
+      "source": "data/sector-partnerships/runtime-source/markets/46700.html",
+      "target": "data/sector-partnerships/runtime-source/markets/46700.html"
+    },
+    {
+      "sha256": "bf82c63bea462769e89b0b3c6b0ef20cadca39380d6ced84d95c9f7d0602c768",
+      "source": "data/sector-partnerships/runtime-source/markets/47300.html",
+      "target": "data/sector-partnerships/runtime-source/markets/47300.html"
+    },
+    {
+      "sha256": "246716a6699df107e46b9d27fa5ddcee59753f743c65477253bd7abe52a791fb",
+      "source": "data/sector-partnerships/runtime-source/markets/49700.html",
+      "target": "data/sector-partnerships/runtime-source/markets/49700.html"
+    },
+    {
       "sha256": "e78c5c2b8e43ffb321224502ab6d8e1a4650f0980b177b1b82ccd871e897377d",
       "source": "wordpress/css/README.md",
       "target": "src/wordpress/css/README.md"
@@ -938,7 +1068,7 @@
       "target": ".github/workflows/promote-private-sync.yml"
     },
     {
-      "sha256": "ad90818eb9dbc40898e8f59e89e08f0085b9ea6f1b1550559dfb6a0c24715094",
+      "sha256": "f021edbdcb5729042a9382226884e0df15e139547187c9b08eca3f10428a24ab",
       "source": "public-companion/tests/browser_acceptance.py",
       "target": "tests/browser_acceptance.py"
     },
@@ -958,7 +1088,7 @@
       "target": "tests/validate_public_export.py"
     }
   ],
-  "source_commit": "c3381b985ba7b21c09fc3591c5fb5aa4b7a6504d",
+  "source_commit": "f69569dbd20175868703ca8e4a10221015215a92",
   "source_repository": "Cursor3181/workforce-wonkery",
   "target_repository": "Cursor3181/workforce-wonkery-public"
 }

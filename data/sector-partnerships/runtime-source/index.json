@@ -1,0 +1,1215 @@
+{
+  "schema_version": "1.0",
+  "source": "wordpress/snapshots/public/sector-partnerships.txt pre-cutover market markup",
+  "source_page_id": 5035,
+  "source_modified": "2026-09-29T15:58:58",
+  "market_count": 25,
+  "unique_case_count": 74,
+  "market_appearances": 94,
+  "discovery_card_count": 35,
+  "market_order": [
+    "12540",
+    "17020",
+    "20940",
+    "23420",
+    "25260",
+    "31080",
+    "32900",
+    "33700",
+    "34900",
+    "37100",
+    "39820",
+    "40140",
+    "40900",
+    "41500",
+    "41740",
+    "41860",
+    "41940",
+    "42020",
+    "42100",
+    "42200",
+    "42220",
+    "44700",
+    "46700",
+    "47300",
+    "49700"
+  ],
+  "markets": {
+    "12540": {
+      "market_id": "12540",
+      "label": "Bakersfield-Delano MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/12540.html",
+      "case_count": 3,
+      "deep_count": 2,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-KERN-MFG-01",
+          "title": "Kern Advanced Manufacturing",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 1,
+          "employer": 2
+        },
+        {
+          "id": "SP-KERN-AERO-01",
+          "title": "Kern Aerospace & Defense",
+          "family": "Aerospace & defense",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 1,
+          "employer": 2
+        },
+        {
+          "id": "SP-KERN-ENERGY-01",
+          "title": "Kern Energy & Carbon Management",
+          "family": "Energy & utilities",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 2
+        }
+      ]
+    },
+    "17020": {
+      "market_id": "17020",
+      "label": "Chico MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/17020.html",
+      "case_count": 3,
+      "deep_count": 2,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-BUTTE-MFG-01",
+          "title": "Butte / Chico Manufacturing",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 1,
+          "employer": 3
+        },
+        {
+          "id": "SP-NORTH-ELEC-01",
+          "title": "Northern California Electrical Construction & Electrification",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 4
+        },
+        {
+          "id": "SP-BUTTE-HEALTH-01",
+          "title": "Clinical nursing workforce & simulation-based training",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        }
+      ]
+    },
+    "20940": {
+      "market_id": "20940",
+      "label": "El Centro MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/20940.html",
+      "case_count": 2,
+      "deep_count": 0,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-IMP-LITHIUM-01",
+          "title": "Imperial County Lithium Valley",
+          "family": "Other",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 3
+        },
+        {
+          "id": "SP-SOCAL-QUANTUM-01",
+          "title": "Quantum workforce & advanced technology",
+          "family": "Technology & digital",
+          "group": "strengthen",
+          "stage": "",
+          "worker": 0,
+          "employer": 0
+        }
+      ]
+    },
+    "23420": {
+      "market_id": "23420",
+      "label": "Fresno MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/23420.html",
+      "case_count": 3,
+      "deep_count": 2,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-CV-MFG-01",
+          "title": "Central Valley Advanced Manufacturing & Industrial Technology",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 1,
+          "employer": 3
+        },
+        {
+          "id": "SP-CV-ELEC-01",
+          "title": "Central Valley Electrical Construction & Electrification",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 4
+        },
+        {
+          "id": "SP-CSJ-AGTECH-01",
+          "title": "AgTech & agricultural systems workforce",
+          "family": "Agriculture & food",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 0,
+          "employer": 0
+        }
+      ]
+    },
+    "25260": {
+      "market_id": "25260",
+      "label": "Hanford-Corcoran MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/25260.html",
+      "case_count": 4,
+      "deep_count": 1,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-CV-MFG-01",
+          "title": "Central Valley Advanced Manufacturing & Industrial Technology",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 1,
+          "employer": 3
+        },
+        {
+          "id": "SP-CV-ELEC-01",
+          "title": "Central Valley Electrical Construction & Electrification",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 4
+        },
+        {
+          "id": "SP-TK-HEALTH-01",
+          "title": "Tulare-Kings Healthcare Workforce",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-CSJ-AGTECH-01",
+          "title": "AgTech & agricultural systems workforce",
+          "family": "Agriculture & food",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 0,
+          "employer": 0
+        }
+      ]
+    },
+    "31080": {
+      "market_id": "31080",
+      "label": "Los Angeles-Long Beach-Anaheim MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/31080.html",
+      "case_count": 6,
+      "deep_count": 1,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-LB-SPACE-01",
+          "title": "Long Beach Space & Aerospace Advanced Manufacturing",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 2
+        },
+        {
+          "id": "SP-LA-CONST-01",
+          "title": "Construction & green infrastructure workforce",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "",
+          "worker": 0,
+          "employer": 0
+        },
+        {
+          "id": "SP-LA-AME-01",
+          "title": "Arts, media & entertainment workforce pathways & resilience",
+          "family": "Technology & digital",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 0,
+          "employer": 0
+        },
+        {
+          "id": "SP-SOCAL-QUANTUM-01",
+          "title": "Quantum workforce & advanced technology",
+          "family": "Technology & digital",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-LA-GOODS-01",
+          "title": "San Pedro Bay goods movement & zero-emission workforce",
+          "family": "Transportation & logistics",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 4
+        },
+        {
+          "id": "SP-ANA-HOSP-01",
+          "title": "Anaheim Resort hospitality workforce stability, housing & advancement",
+          "family": "Other",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 1,
+          "employer": 4
+        }
+      ]
+    },
+    "32900": {
+      "market_id": "32900",
+      "label": "Merced MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/32900.html",
+      "case_count": 1,
+      "deep_count": 3,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-CSJ-AGTECH-01",
+          "title": "AgTech & agricultural systems workforce",
+          "family": "Agriculture & food",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 0,
+          "employer": 0
+        }
+      ]
+    },
+    "33700": {
+      "market_id": "33700",
+      "label": "Modesto MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/33700.html",
+      "case_count": 4,
+      "deep_count": 2,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-STAN-HEALTH-01",
+          "title": "Stanislaus Healthcare Workforce",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 2
+        },
+        {
+          "id": "SP-STAN-CONST-01",
+          "title": "Stanislaus Construction & Skilled Trades",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-STAN-MFG-01",
+          "title": "Stanislaus Advanced Manufacturing & Industrial Technology",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 1,
+          "employer": 3
+        },
+        {
+          "id": "SP-STAN-AGFOOD-01",
+          "title": "Stanislaus Agriculture & Food Workforce",
+          "family": "Agriculture & food",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        }
+      ]
+    },
+    "34900": {
+      "market_id": "34900",
+      "label": "Napa MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/34900.html",
+      "case_count": 3,
+      "deep_count": 1,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-NAPA-WINE-01",
+          "title": "Napa Winegrowing & Vineyard Workforce",
+          "family": "Other",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-NAPA-HOSP-01",
+          "title": "Napa Hospitality, Tourism & Leisure",
+          "family": "Other",
+          "group": "redesign",
+          "stage": "Redesign / monitor",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-BAY-CONST-01",
+          "title": "Union construction pathways & workforce coordination",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 3
+        }
+      ]
+    },
+    "37100": {
+      "market_id": "37100",
+      "label": "Oxnard-Thousand Oaks-Ventura MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/37100.html",
+      "case_count": 3,
+      "deep_count": 1,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-VC-BIO-01",
+          "title": "Biomanufacturing & life-science technician pathways",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 0,
+          "employer": 0
+        },
+        {
+          "id": "SP-VC-MFG-01",
+          "title": "Advanced manufacturing & industrial technology",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-VC-HEALTH-01",
+          "title": "Clinical laboratory workforce & shared hospital placements",
+          "family": "Other",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 4
+        }
+      ]
+    },
+    "39820": {
+      "market_id": "39820",
+      "label": "Redding MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/39820.html",
+      "case_count": 5,
+      "deep_count": 2,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-SHASTA-MFG-01",
+          "title": "Shasta Manufacturing",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 1,
+          "employer": 3
+        },
+        {
+          "id": "SP-SHASTA-HEALTH-01",
+          "title": "Shasta Healthcare Workforce",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 1,
+          "employer": 2
+        },
+        {
+          "id": "SP-SHASTA-FOREST-01",
+          "title": "Shasta Forest Operations, Logging & Fuels-Reduction",
+          "family": "Other",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 4
+        },
+        {
+          "id": "SP-NORTH-ELEC-01",
+          "title": "Northern California Electrical Construction & Electrification",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 4
+        },
+        {
+          "id": "SP-SHASTA-EDU-01",
+          "title": "Shasta Educator Workforce",
+          "family": "Education",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 2
+        }
+      ]
+    },
+    "40140": {
+      "market_id": "40140",
+      "label": "Riverside-San Bernardino-Ontario MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/40140.html",
+      "case_count": 5,
+      "deep_count": 2,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-IE-LOG-01",
+          "title": "Inland Empire Logistics & Zero-Emission Freight",
+          "family": "Transportation & logistics",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 2
+        },
+        {
+          "id": "SP-IE-HEALTH-01",
+          "title": "Inland Empire Healthcare Workforce",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 2
+        },
+        {
+          "id": "SP-IE-MFG-01",
+          "title": "Inland Empire Advanced Manufacturing & Industrial Technology",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 4
+        },
+        {
+          "id": "SP-IE-CYBER-01",
+          "title": "Cybersecurity apprenticeship & workforce pathways",
+          "family": "Technology & digital",
+          "group": "strengthen",
+          "stage": "",
+          "worker": 0,
+          "employer": 0
+        },
+        {
+          "id": "SP-GPS-HOSP-01",
+          "title": "Hospitality career advancement & tourism workforce",
+          "family": "Other",
+          "group": "redesign",
+          "stage": "Redesign / monitor",
+          "worker": 2,
+          "employer": 4
+        }
+      ]
+    },
+    "40900": {
+      "market_id": "40900",
+      "label": "Sacramento-Roseville-Folsom MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/40900.html",
+      "case_count": 5,
+      "deep_count": 0,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-SAC-MBH-01",
+          "title": "Sacramento Mental & Behavioral Health Workforce",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 3,
+          "employer": 2
+        },
+        {
+          "id": "SP-SAC-MFG-01",
+          "title": "Sacramento Advanced Manufacturing",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-CAP-BIO-01",
+          "title": "Biotech & biomanufacturing workforce",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 0,
+          "employer": 0
+        },
+        {
+          "id": "SP-CAP-SEMI-01",
+          "title": "Semiconductor manufacturing & engineering talent",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Organizing",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-CAP-ELEC-01",
+          "title": "Electrical construction & clean-energy infrastructure workforce",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "",
+          "worker": 0,
+          "employer": 0
+        }
+      ]
+    },
+    "41500": {
+      "market_id": "41500",
+      "label": "Salinas MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/41500.html",
+      "case_count": 5,
+      "deep_count": 1,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-SCC-HEALTH-01",
+          "title": "Healthcare",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 3,
+          "employer": 3
+        },
+        {
+          "id": "SP-MB-CONST-01",
+          "title": "Construction, electrification & infrastructure",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 2
+        },
+        {
+          "id": "SP-MB-AAM-01",
+          "title": "AAM & advanced manufacturing",
+          "family": "Manufacturing & industrial technology",
+          "group": "validate",
+          "stage": "Organizing",
+          "worker": 2,
+          "employer": 2
+        },
+        {
+          "id": "SP-MB-AGTECH-01",
+          "title": "AgTech, automation & precision agriculture",
+          "family": "Agriculture & food",
+          "group": "validate",
+          "stage": "Validation",
+          "worker": 1,
+          "employer": 2
+        },
+        {
+          "id": "SP-MB-HOSP-01",
+          "title": "Hospitality career pathways & leadership advancement",
+          "family": "Other",
+          "group": "redesign",
+          "stage": "Redesign / monitor",
+          "worker": 2,
+          "employer": 4
+        }
+      ]
+    },
+    "41740": {
+      "market_id": "41740",
+      "label": "San Diego-Chula Vista-Carlsbad MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/41740.html",
+      "case_count": 7,
+      "deep_count": 1,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-SD-LIFE-01",
+          "title": "Life sciences & biotech",
+          "family": "Other",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 2
+        },
+        {
+          "id": "SP-SD-CONST-01",
+          "title": "San Diego Construction, Electrification & Infrastructure",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 3
+        },
+        {
+          "id": "SP-SD-CYBER-01",
+          "title": "San Diego Cybersecurity & Defense Technology",
+          "family": "Technology & digital",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-SD-BH-01",
+          "title": "San Diego Behavioral Health Workforce",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 2
+        },
+        {
+          "id": "SP-SD-WATER-01",
+          "title": "San Diego Water & Wastewater Utility",
+          "family": "Energy & utilities",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 4
+        },
+        {
+          "id": "SP-SD-MARITIME-01",
+          "title": "San Diego Ship Repair & Maritime Manufacturing",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 4
+        },
+        {
+          "id": "SP-SOCAL-QUANTUM-01",
+          "title": "Quantum workforce & advanced technology",
+          "family": "Technology & digital",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        }
+      ]
+    },
+    "41860": {
+      "market_id": "41860",
+      "label": "San Francisco-Oakland-Fremont MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/41860.html",
+      "case_count": 5,
+      "deep_count": 0,
+      "deep_done": false,
+      "cases": [
+        {
+          "id": "SP-BAY-HEALTH-01",
+          "title": "Healthcare workforce pathways & advancement",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 4
+        },
+        {
+          "id": "SP-SV-HEALTH-01",
+          "title": "Healthcare workforce pathways & advancement",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 3,
+          "employer": 3
+        },
+        {
+          "id": "SP-BAY-MFG-01",
+          "title": "Advanced manufacturing workforce & talent pipeline",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 4
+        },
+        {
+          "id": "SP-BAY-CONST-01",
+          "title": "Union construction pathways & workforce coordination",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 3
+        },
+        {
+          "id": "SP-BAY-MARITIME-01",
+          "title": "Bay Area maritime industrial workforce",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 3,
+          "employer": 3
+        }
+      ]
+    },
+    "41940": {
+      "market_id": "41940",
+      "label": "San Jose-Sunnyvale-Santa Clara MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/41940.html",
+      "case_count": 4,
+      "deep_count": 0,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-SV-SEMI-01",
+          "title": "Silicon Valley Semiconductor Manufacturing",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-SV-TECH-01",
+          "title": "Silicon Valley Technology, AI & Digital Services",
+          "family": "Technology & digital",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 2
+        },
+        {
+          "id": "SP-SV-CONST-01",
+          "title": "Construction careers & skilled-trades pathways",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "",
+          "worker": 0,
+          "employer": 0
+        },
+        {
+          "id": "SP-SV-HEALTH-01",
+          "title": "Healthcare workforce pathways & advancement",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 3,
+          "employer": 3
+        }
+      ]
+    },
+    "42020": {
+      "market_id": "42020",
+      "label": "San Luis Obispo-Paso Robles MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/42020.html",
+      "case_count": 3,
+      "deep_count": 2,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-SLO-HEALTH-01",
+          "title": "San Luis Obispo Healthcare Workforce",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 2
+        },
+        {
+          "id": "SP-CC-AERO-01",
+          "title": "Central Coast Space & Aerospace",
+          "family": "Aerospace & defense",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-CC-ELEC-01",
+          "title": "Central Coast Electrical Construction & Electrification",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 4
+        }
+      ]
+    },
+    "42100": {
+      "market_id": "42100",
+      "label": "Santa Cruz-Watsonville MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/42100.html",
+      "case_count": 8,
+      "deep_count": 1,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-SCC-HEALTH-01",
+          "title": "Healthcare",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 3,
+          "employer": 3
+        },
+        {
+          "id": "SP-MB-CONST-01",
+          "title": "Construction, electrification & infrastructure",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 2
+        },
+        {
+          "id": "SP-MB-AAM-01",
+          "title": "AAM & advanced manufacturing",
+          "family": "Manufacturing & industrial technology",
+          "group": "validate",
+          "stage": "Organizing",
+          "worker": 2,
+          "employer": 2
+        },
+        {
+          "id": "SP-SCC-AG-01",
+          "title": "Broad agriculture & food production",
+          "family": "Agriculture & food",
+          "group": "redesign",
+          "stage": "Redesign / monitor",
+          "worker": 0,
+          "employer": 0
+        },
+        {
+          "id": "SP-MB-AGTECH-01",
+          "title": "AgTech, automation & precision agriculture",
+          "family": "Agriculture & food",
+          "group": "validate",
+          "stage": "Validation",
+          "worker": 1,
+          "employer": 2
+        },
+        {
+          "id": "SP-SCC-HOSP-01",
+          "title": "Leisure & hospitality",
+          "family": "Other",
+          "group": "redesign",
+          "stage": "Redesign / monitor",
+          "worker": 0,
+          "employer": 0
+        },
+        {
+          "id": "SP-SCC-EDU-01",
+          "title": "Santa Cruz Educator Workforce",
+          "family": "Education",
+          "group": "redesign",
+          "stage": "Redesign / monitor",
+          "worker": 2,
+          "employer": 2
+        },
+        {
+          "id": "SP-SCC-TECH-01",
+          "title": "Innovation & technology talent pathways",
+          "family": "Technology & digital",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        }
+      ]
+    },
+    "42200": {
+      "market_id": "42200",
+      "label": "Santa Maria-Santa Barbara MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/42200.html",
+      "case_count": 4,
+      "deep_count": 1,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-CC-AERO-01",
+          "title": "Central Coast Space & Aerospace",
+          "family": "Aerospace & defense",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-CC-ELEC-01",
+          "title": "Central Coast Electrical Construction & Electrification",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 4
+        },
+        {
+          "id": "SP-SB-MICRO-01",
+          "title": "Microelectronics, photonics & quantum-enabling fabrication workforce",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Organizing",
+          "worker": 0,
+          "employer": 0
+        },
+        {
+          "id": "SP-SB-HOSP-01",
+          "title": "Santa Barbara South Coast hospitality career pathways & advancement",
+          "family": "Other",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 4
+        }
+      ]
+    },
+    "42220": {
+      "market_id": "42220",
+      "label": "Santa Rosa-Petaluma MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/42220.html",
+      "case_count": 2,
+      "deep_count": 2,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-SONOMA-AG-01",
+          "title": "Sonoma Agriculture Workforce",
+          "family": "Agriculture & food",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-SON-HEALTH-01",
+          "title": "Healthcare career pathways & workforce advancement",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 0,
+          "employer": 0
+        }
+      ]
+    },
+    "44700": {
+      "market_id": "44700",
+      "label": "Stockton-Lodi MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/44700.html",
+      "case_count": 1,
+      "deep_count": 3,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-SJ-HEALTH-01",
+          "title": "San Joaquin Healthcare Workforce",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        }
+      ]
+    },
+    "46700": {
+      "market_id": "46700",
+      "label": "Vallejo MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/46700.html",
+      "case_count": 2,
+      "deep_count": 3,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-SOL-CNA-01",
+          "title": "Long-term care CNA career mobility & retention",
+          "family": "Other",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 0,
+          "employer": 0
+        },
+        {
+          "id": "SP-BAY-MARITIME-01",
+          "title": "Bay Area maritime industrial workforce",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 3,
+          "employer": 3
+        }
+      ]
+    },
+    "47300": {
+      "market_id": "47300",
+      "label": "Visalia MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/47300.html",
+      "case_count": 5,
+      "deep_count": 1,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-CV-MFG-01",
+          "title": "Central Valley Advanced Manufacturing & Industrial Technology",
+          "family": "Manufacturing & industrial technology",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 1,
+          "employer": 3
+        },
+        {
+          "id": "SP-CV-ELEC-01",
+          "title": "Central Valley Electrical Construction & Electrification",
+          "family": "Construction & infrastructure",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 4,
+          "employer": 4
+        },
+        {
+          "id": "SP-TULARE-AG-01",
+          "title": "Tulare Agriculture & Ag-Adjacent Workforce",
+          "family": "Agriculture & food",
+          "group": "strengthen",
+          "stage": "Organizing",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-TK-HEALTH-01",
+          "title": "Tulare-Kings Healthcare Workforce",
+          "family": "Healthcare",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 3
+        },
+        {
+          "id": "SP-CSJ-AGTECH-01",
+          "title": "AgTech & agricultural systems workforce",
+          "family": "Agriculture & food",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 0,
+          "employer": 0
+        }
+      ]
+    },
+    "49700": {
+      "market_id": "49700",
+      "label": "Yuba City MSA",
+      "source": "data/sector-partnerships/runtime-source/markets/49700.html",
+      "case_count": 1,
+      "deep_count": 1,
+      "deep_done": true,
+      "cases": [
+        {
+          "id": "SP-YS-EDU-01",
+          "title": "Yuba-Sutter Educator Workforce",
+          "family": "Education",
+          "group": "strengthen",
+          "stage": "Active · strengthen",
+          "worker": 2,
+          "employer": 2
+        }
+      ]
+    }
+  },
+  "public_guard": {
+    "unique_case_ids": [
+      "SP-ANA-HOSP-01",
+      "SP-BAY-CONST-01",
+      "SP-BAY-HEALTH-01",
+      "SP-BAY-MARITIME-01",
+      "SP-BAY-MFG-01",
+      "SP-BUTTE-HEALTH-01",
+      "SP-BUTTE-MFG-01",
+      "SP-CAP-BIO-01",
+      "SP-CAP-ELEC-01",
+      "SP-CAP-SEMI-01",
+      "SP-CC-AERO-01",
+      "SP-CC-ELEC-01",
+      "SP-CSJ-AGTECH-01",
+      "SP-CV-ELEC-01",
+      "SP-CV-MFG-01",
+      "SP-GPS-HOSP-01",
+      "SP-IE-CYBER-01",
+      "SP-IE-HEALTH-01",
+      "SP-IE-LOG-01",
+      "SP-IE-MFG-01",
+      "SP-IMP-LITHIUM-01",
+      "SP-KERN-AERO-01",
+      "SP-KERN-ENERGY-01",
+      "SP-KERN-MFG-01",
+      "SP-LA-AME-01",
+      "SP-LA-CONST-01",
+      "SP-LA-GOODS-01",
+      "SP-LB-SPACE-01",
+      "SP-MB-AAM-01",
+      "SP-MB-AGTECH-01",
+      "SP-MB-CONST-01",
+      "SP-MB-HOSP-01",
+      "SP-NAPA-HOSP-01",
+      "SP-NAPA-WINE-01",
+      "SP-NORTH-ELEC-01",
+      "SP-SAC-MBH-01",
+      "SP-SAC-MFG-01",
+      "SP-SB-HOSP-01",
+      "SP-SB-MICRO-01",
+      "SP-SCC-AG-01",
+      "SP-SCC-EDU-01",
+      "SP-SCC-HEALTH-01",
+      "SP-SCC-HOSP-01",
+      "SP-SCC-TECH-01",
+      "SP-SD-BH-01",
+      "SP-SD-CONST-01",
+      "SP-SD-CYBER-01",
+      "SP-SD-LIFE-01",
+      "SP-SD-MARITIME-01",
+      "SP-SD-WATER-01",
+      "SP-SHASTA-EDU-01",
+      "SP-SHASTA-FOREST-01",
+      "SP-SHASTA-HEALTH-01",
+      "SP-SHASTA-MFG-01",
+      "SP-SJ-HEALTH-01",
+      "SP-SLO-HEALTH-01",
+      "SP-SOCAL-QUANTUM-01",
+      "SP-SOL-CNA-01",
+      "SP-SON-HEALTH-01",
+      "SP-SONOMA-AG-01",
+      "SP-STAN-AGFOOD-01",
+      "SP-STAN-CONST-01",
+      "SP-STAN-HEALTH-01",
+      "SP-STAN-MFG-01",
+      "SP-SV-CONST-01",
+      "SP-SV-HEALTH-01",
+      "SP-SV-SEMI-01",
+      "SP-SV-TECH-01",
+      "SP-TK-HEALTH-01",
+      "SP-TULARE-AG-01",
+      "SP-VC-BIO-01",
+      "SP-VC-HEALTH-01",
+      "SP-VC-MFG-01",
+      "SP-YS-EDU-01"
+    ],
+    "unique_case_count": 74,
+    "market_appearances": 94
+  }
+}

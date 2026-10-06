@@ -562,15 +562,17 @@ def test_occupation_explorer(context, mobile=False):
     record(surface,"market URL state","PASS",page.url)
 
     page.evaluate("history.back()")
-    page.wait_for_function("document.querySelector('#occ-geo').value === '42100'")
+    page.wait_for_function("() => new URLSearchParams(location.search).get('geo') === '42100'",timeout=15000)
+    page.wait_for_function("() => document.querySelector('#occ-geo')?.value === '42100'",timeout=15000)
     record(surface,"Back restores occupation market","PASS",page.url)
     page.evaluate("history.forward()")
-    page.wait_for_function("document.querySelector('#occ-geo').value === '41500'")
+    page.wait_for_function("() => new URLSearchParams(location.search).get('geo') === '41500'",timeout=15000)
+    page.wait_for_function("() => document.querySelector('#occ-geo')?.value === '41500'",timeout=15000)
     record(surface,"Forward restores occupation market","PASS",page.url)
 
     saved_url=page.url
     page.reload(wait_until="domcontentloaded")
-    page.wait_for_function("document.querySelector('#occ-geo').value === '41500'")
+    page.wait_for_function("() => document.querySelector('#occ-geo')?.value === '41500'",timeout=15000)
     assert page.url==saved_url
     record(surface,"occupation URL-state restoration after reload","PASS",page.url)
 
