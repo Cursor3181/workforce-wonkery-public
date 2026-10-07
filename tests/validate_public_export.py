@@ -63,9 +63,9 @@ def validate_provenance() -> None:
     if not path.exists():
         fail("PROVENANCE.json is missing")
     data = json.loads(path.read_text(encoding="utf-8"))
-    if data.get("source_repository") != "Cursor3181/workforce-wonkery":
+    if data.get("source_repository") != "Workforce-Wonkery/workforce-wonkery":
         fail("unexpected source repository")
-    if data.get("target_repository") != "Cursor3181/workforce-wonkery-public":
+    if data.get("target_repository") != "Workforce-Wonkery/workforce-wonkery-public":
         fail("unexpected target repository")
     files = data.get("files", [])
     if data.get("file_count") != len(files):

@@ -1,7 +1,303 @@
 {
   "schema_version": "1.0",
-  "count": 222,
+  "count": 234,
   "records": [
+    {
+      "id": 7233,
+      "title": "SB 1159 — California Draws a Line Between Human Public Participation and Autonomous AI",
+      "date": "2026-10-03",
+      "link": "https://workforcewonkery.com/2026/10/03/sb-1159-ai-public-participation-government-workforce/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "technology-ai",
+          "name": "Technology & AI"
+        },
+        {
+          "slug": "planning-governance",
+          "name": "Planning & Governance"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB1159",
+      "search": "sb 1159 — california draws a line between human public participation and autonomous ai 2026-10-03 california legislation california-legislation technology & ai technology-ai planning & governance planning-governance"
+    },
+    {
+      "id": 7232,
+      "title": "SB 503 — California Adds Bias Monitoring Duties for AI Clinical Decision Support",
+      "date": "2026-10-03",
+      "link": "https://workforcewonkery.com/2026/10/03/sb-503-ai-clinical-decision-support-bias-health-workforce/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "technology-ai",
+          "name": "Technology & AI"
+        },
+        {
+          "slug": "sector-industry-initiatives",
+          "name": "Sector & Industry Initiatives"
+        },
+        {
+          "slug": "civil-rights-equity-accessibility",
+          "name": "Civil Rights, Equity & Accessibility"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB503",
+      "search": "sb 503 — california adds bias monitoring duties for ai clinical decision support 2026-10-03 california legislation california-legislation technology & ai technology-ai sector & industry initiatives sector-industry-initiatives civil rights, equity & accessibility civil-rights-equity-accessibility"
+    },
+    {
+      "id": 7231,
+      "title": "AB 1979 — California Keeps Licensed Clinical Judgment in the Loop When AI Is Used",
+      "date": "2026-10-03",
+      "link": "https://workforcewonkery.com/2026/10/03/ab-1979-ai-clinical-judgment-health-care-workforce/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "technology-ai",
+          "name": "Technology & AI"
+        },
+        {
+          "slug": "sector-industry-initiatives",
+          "name": "Sector & Industry Initiatives"
+        },
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1979",
+      "search": "ab 1979 — california keeps licensed clinical judgment in the loop when ai is used 2026-10-03 california legislation california-legislation technology & ai technology-ai sector & industry initiatives sector-industry-initiatives training & education training-education"
+    },
+    {
+      "id": 7230,
+      "title": "WSIN26-18 — California Sets the PY 2025 WIOA Performance Assessment Frame",
+      "date": "2026-10-03",
+      "link": "https://workforcewonkery.com/2026/10/03/wsin26-18-wioa-performance-accountability-py-2025-california/",
+      "categories": [
+        {
+          "slug": "edd-information-notices",
+          "name": "EDD Information Notices"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "wioa",
+          "name": "WIOA"
+        },
+        {
+          "slug": "performance-accountability",
+          "name": "Performance & Accountability"
+        }
+      ],
+      "official_source": "https://edd.ca.gov/en/jobs_and_training/Information_Notices/wsin26-18/",
+      "search": "wsin26-18 — california sets the py 2025 wioa performance assessment frame 2026-10-03 edd information notices edd-information-notices wioa wioa performance & accountability performance-accountability"
+    },
+    {
+      "id": 7093,
+      "title": "AB 2392 — California Sets a New Standard for GenAI Training and Procurement in Public Higher Education",
+      "date": "2026-10-01",
+      "link": "https://workforcewonkery.com/2026/10/01/ab-2392-genai-training-procurement-higher-ed/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "technology-ai",
+          "name": "Technology & AI"
+        },
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        },
+        {
+          "slug": "fiscal-administrative",
+          "name": "Fiscal & Administrative"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2392",
+      "search": "ab 2392 — california sets a new standard for genai training and procurement in public higher education 2026-10-01 california legislation california-legislation technology & ai technology-ai training & education training-education fiscal & administrative fiscal-administrative"
+    },
+    {
+      "id": 7091,
+      "title": "AB 1904 — California Creates a Credentialed Educator Apprenticeship Framework",
+      "date": "2026-10-01",
+      "link": "https://workforcewonkery.com/2026/10/01/ab-1904-credentialed-educator-apprenticeships/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "apprenticeship",
+          "name": "Apprenticeship"
+        },
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        },
+        {
+          "slug": "sector-industry-initiatives",
+          "name": "Sector & Industry Initiatives"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1904",
+      "search": "ab 1904 — california creates a credentialed educator apprenticeship framework 2026-10-01 california legislation california-legislation apprenticeship apprenticeship training & education training-education sector & industry initiatives sector-industry-initiatives"
+    },
+    {
+      "id": 7088,
+      "title": "AB 1331 + AB 1883 — California Draws New Lines Around Workplace Surveillance",
+      "date": "2026-10-01",
+      "link": "https://workforcewonkery.com/2026/10/01/ab-1331-ab-1883-workplace-surveillance-ai/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "technology-ai",
+          "name": "Technology & AI"
+        },
+        {
+          "slug": "employer-services-work-based-learning",
+          "name": "Employer Services & Work-Based Learning"
+        },
+        {
+          "slug": "civil-rights-equity-accessibility",
+          "name": "Civil Rights, Equity & Accessibility"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1331",
+      "search": "ab 1331 + ab 1883 — california draws new lines around workplace surveillance 2026-10-01 california legislation california-legislation technology & ai technology-ai employer services & work-based learning employer-services-work-based-learning civil rights, equity & accessibility civil-rights-equity-accessibility"
+    },
+    {
+      "id": 7087,
+      "title": "SB 951 — Cal/WARN Notices Will Identify AI-Driven Worker Displacement",
+      "date": "2026-10-01",
+      "link": "https://workforcewonkery.com/2026/10/01/sb-951-cal-warn-ai-technology-displacement/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "technology-ai",
+          "name": "Technology & AI"
+        },
+        {
+          "slug": "dislocated-workers-rapid-response",
+          "name": "Dislocated Workers & Rapid Response"
+        },
+        {
+          "slug": "employer-services-work-based-learning",
+          "name": "Employer Services & Work-Based Learning"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB951",
+      "search": "sb 951 — cal/warn notices will identify ai-driven worker displacement 2026-10-01 california legislation california-legislation technology & ai technology-ai dislocated workers & rapid response dislocated-workers-rapid-response employer services & work-based learning employer-services-work-based-learning"
+    },
+    {
+      "id": 7086,
+      "title": "SB 947 — California Requires Human Review When AI Drives Discipline or Termination",
+      "date": "2026-10-01",
+      "link": "https://workforcewonkery.com/2026/10/01/sb-947-ai-employment-decisions-human-review/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "technology-ai",
+          "name": "Technology & AI"
+        },
+        {
+          "slug": "employer-services-work-based-learning",
+          "name": "Employer Services & Work-Based Learning"
+        },
+        {
+          "slug": "civil-rights-equity-accessibility",
+          "name": "Civil Rights, Equity & Accessibility"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB947",
+      "search": "sb 947 — california requires human review when ai drives discipline or termination 2026-10-01 california legislation california-legislation technology & ai technology-ai employer services & work-based learning employer-services-work-based-learning civil rights, equity & accessibility civil-rights-equity-accessibility"
+    },
+    {
+      "id": 7468,
+      "title": "AB 1697 — California Delays and Redraws Its Stay-or-Pay Restrictions",
+      "date": "2026-09-30",
+      "link": "https://workforcewonkery.com/2026/09/30/ab-1697-stay-or-pay-employment-contracts/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "employer-services-work-based-learning",
+          "name": "Employer Services & Work-Based Learning"
+        },
+        {
+          "slug": "training-education",
+          "name": "Training & Education"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB1697",
+      "search": "ab 1697 — california delays and redraws its stay-or-pay restrictions 2026-09-30 california legislation california-legislation employer services & work-based learning employer-services-work-based-learning training & education training-education"
+    },
+    {
+      "id": 7467,
+      "title": "AB 2646 — California Creates a New Wage Floor for Certain Agricultural Workers",
+      "date": "2026-09-30",
+      "link": "https://workforcewonkery.com/2026/09/30/ab-2646-agricultural-worker-wage-floor/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "farmworkers",
+          "name": "Farmworkers"
+        },
+        {
+          "slug": "employer-services-work-based-learning",
+          "name": "Employer Services & Work-Based Learning"
+        },
+        {
+          "slug": "sector-industry-initiatives",
+          "name": "Sector & Industry Initiatives"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB2646",
+      "search": "ab 2646 — california creates a new wage floor for certain agricultural workers 2026-09-30 california legislation california-legislation farmworkers farmworkers employer services & work-based learning employer-services-work-based-learning sector & industry initiatives sector-industry-initiatives"
+    },
     {
       "id": 6997,
       "title": "AB 2495 — California Expands Protections Against Immigration-Related Workplace Coercion",
@@ -489,6 +785,34 @@
       ],
       "official_source": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2157",
       "search": "ab 2157 — california removes the sunset on its oil-and-gas worker transition program 2026-09-21 california legislation california-legislation cross-system workforce policy cross-system-workforce-policy sector & industry initiatives sector-industry-initiatives"
+    },
+    {
+      "id": 7469,
+      "title": "AB 187 — The Employment Trailer Bill Hides Two Workforce Changes",
+      "date": "2026-09-18",
+      "link": "https://workforcewonkery.com/2026/09/18/ab-187-employment-trailer-bill-workforce-changes/",
+      "categories": [
+        {
+          "slug": "california-legislation",
+          "name": "California Legislation"
+        }
+      ],
+      "topics": [
+        {
+          "slug": "farmworkers",
+          "name": "Farmworkers"
+        },
+        {
+          "slug": "employer-services-work-based-learning",
+          "name": "Employer Services & Work-Based Learning"
+        },
+        {
+          "slug": "fiscal-administrative",
+          "name": "Fiscal & Administrative"
+        }
+      ],
+      "official_source": "https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260AB187",
+      "search": "ab 187 — the employment trailer bill hides two workforce changes 2026-09-18 california legislation california-legislation farmworkers farmworkers employer services & work-based learning employer-services-work-based-learning fiscal & administrative fiscal-administrative"
     },
     {
       "id": 2040,
