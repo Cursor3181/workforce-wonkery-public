@@ -400,6 +400,26 @@ def test_discovery(context, mobile=False):
     record(surface,"acronym expansion","PASS" if ok else "FAIL",result_text[:500])
     assert ok
 
+    run_query("rapid response")
+    build=page.locator("#wwd-build-decision")
+    expect(build).to_be_visible()
+    build.click()
+    brief=page.locator("#wwd-decision")
+    expect(brief).to_be_visible()
+    expect(brief).to_contain_text("Decision brief: rapid response")
+    expect(brief).to_contain_text("Evidence to review")
+    expect(brief).to_contain_text("Questions to resolve")
+    expect(brief).to_contain_text("What this does not establish")
+    expect(brief).to_contain_text("Search rank is relevance, not evidence strength")
+    chips=brief.locator(".wwd-coverage-chip")
+    evidence_links=brief.locator(".wwd-evidence-sources a")
+    ok=chips.count()==3 and evidence_links.count()>=2
+    record(surface,"decision brief evidence coverage","PASS" if ok else "FAIL",f"chips={chips.count()}, source links={evidence_links.count()}")
+    assert ok
+    page.locator("#wwd-decision-copy").click()
+    expect(page.locator("#wwd-decision-status")).to_contain_text("Copied with source links and evidence limits.")
+    record(surface,"decision brief copy output","PASS")
+
     global_form=page.locator("form.ww-global-search, .ww-global-search form").first
     global_input=global_form.locator('input[type="search"]')
     action=global_form.get_attribute("action") or ""

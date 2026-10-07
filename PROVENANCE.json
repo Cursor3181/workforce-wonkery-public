@@ -1,6 +1,6 @@
 {
   "export_mode": "allowlist",
-  "file_count": 217,
+  "file_count": 218,
   "files": [
     {
       "sha256": "cc8c3fef0fc148012263283e968cb0ddcc8019d4065547a2ee16cb195b95622e",
@@ -998,6 +998,11 @@
       "target": "docs/intelligence-graph.md"
     },
     {
+      "sha256": "9e5caffb7fb9eee908b383377a7138515364745bace50bd37c443d29d4febe88",
+      "source": "docs/discovery-decision-brief.md",
+      "target": "docs/discovery-decision-brief.md"
+    },
+    {
       "sha256": "5bb6d08ee51d6a512d9fb7b8f798ef75b2c7faca23ff2acb2ab37d49d9d9e9e1",
       "source": "docs/nationalization-foundation.md",
       "target": "docs/nationalization-foundation.md"
@@ -1068,7 +1073,7 @@
       "target": ".github/workflows/promote-private-sync.yml"
     },
     {
-      "sha256": "f021edbdcb5729042a9382226884e0df15e139547187c9b08eca3f10428a24ab",
+      "sha256": "8d000b65b156adba6bb5f8ef87472074b668389556e2d47f793e37078d42d9d4",
       "source": "public-companion/tests/browser_acceptance.py",
       "target": "tests/browser_acceptance.py"
     },
@@ -1088,7 +1093,7 @@
       "target": "tests/validate_public_export.py"
     }
   ],
-  "source_commit": "d8a8202e28d67d6e1f8068607135b54c0e52c1bd",
+  "source_commit": "c4b30b3ba8445b0e0cbf79d81ca52c6e976c6dba",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }
