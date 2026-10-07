@@ -44,7 +44,7 @@ The Lens never auto-detects location. State, area, and role are explicit user ch
 
 Exposes the national selector model, current published California labor-market areas, role taxonomy, and readiness metadata.
 
-Phase 1 deliberately sets `public_ui_enabled: false`. The live California experience does not change merely because the national model exists.
+The foundation originally kept the selector dark. The public Workforce Lens is now active, while California remains the only deep jurisdiction and other jurisdictions use transparent national fallback.
 
 Generated public assets are committed with the foundation so GitHub contract checks remain reproducible before merge.
 
@@ -64,9 +64,13 @@ Every other state begins as `schema_ready`. This means the geography and routing
 
 Phase 1 does not change the homepage, show a state selector, redirect visitors, infer a visitor's location, replace California URLs, alter existing WordPress publication, or introduce a runtime AI dependency.
 
-## Next phase
+## Current reader phase
 
-Phase 2 should activate a compact state/area/role control in Universal Discovery and Workforce Deadlines, rank exact-local then state then national context, preserve an explicit All U.S. option, and pilot one non-California State Desk before broader rollout.
+The state/territory, local-area, and role Lens is active across the public shell, Universal Discovery, Policy sorting, Labor Market Profiles, and Workforce Deadlines.
+
+**My Briefing** extends that Lens into proactive decision support on `/for-me/`: it prioritizes relevant deadlines and governed records, detects new or changed source records on the same device, surfaces local market signals where deep coverage exists, and turns those signals into bounded questions that can be opened in the Decision Brief Builder.
+
+The next nationalization step is still substantive coverage: pilot one non-California Jurisdiction Desk before treating another jurisdiction as deep.
 
 ## 2026-10-06 reader launch reconciliation
 

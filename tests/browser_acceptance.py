@@ -314,6 +314,67 @@ def choose_two_market_values(page, selector):
     assert len(vals)>=2
     return vals
 
+def test_workforce_lens_briefing(context, mobile=False):
+    surface="My Briefing"
+    page=context.new_page()
+    page.add_init_script("""() => {
+      localStorage.setItem('ww_workforce_lens_v1', JSON.stringify({
+        version:1,
+        country_code:'US',
+        jurisdiction_code:'CA',
+        state_code:'CA',
+        jurisdiction_label:'California',
+        area_id:'42100',
+        area_label:'Santa Cruz-Watsonville MSA',
+        role_id:'director',
+        role_label:'Director / Executive'
+      }));
+      localStorage.removeItem('ww_workforce_briefing_snapshot_v1');
+    }""")
+    general(page,surface,BASE+"/for-me/",mobile)
+    page.wait_for_function(
+        "() => document.querySelector('#ww-lens-page')?.dataset.briefingState === 'ready'",
+        timeout=30000,
+    )
+    expect(page.locator("#wwl-active-summary")).to_contain_text("Santa Cruz-Watsonville MSA")
+    expect(page.locator("#wwl-active-summary")).to_contain_text("Director / Executive")
+
+    attention=page.locator("#wwl-attention-list .wwl-item")
+    ok=attention.count()>=3
+    record(surface,"needs-attention briefing","PASS" if ok else "FAIL",f"items={attention.count()}")
+    assert ok
+    expect(page.locator("#wwl-attention-list")).to_contain_text("AI workforce review")
+
+    changed=page.locator("#wwl-changed-list .wwl-item")
+    ok=changed.count()>=1
+    record(surface,"first-visit change baseline","PASS" if ok else "FAIL",f"items={changed.count()}")
+    assert ok
+
+    signals=page.locator("#wwl-signal-list .wwl-signal")
+    ok=signals.count()>=3
+    record(surface,"local market signals","PASS" if ok else "FAIL",f"signals={signals.count()}")
+    assert ok
+    expect(page.locator("#wwl-signal-list")).to_contain_text("Living-wage benchmark")
+    expect(page.locator("#wwl-signal-list")).to_contain_text("Source:")
+
+    questions=page.locator("#wwl-question-list .wwl-question")
+    ok=questions.count()>=2
+    record(surface,"decision questions","PASS" if ok else "FAIL",f"questions={questions.count()}")
+    assert ok
+    decision_links=page.locator('#wwl-question-list a[href*="/discover/?q="]')
+    assert decision_links.count()>=2
+    record(surface,"Decision Brief handoff","PASS",f"links={decision_links.count()}")
+
+    trust=page.locator(".wwl-trust")
+    expect(trust).to_contain_text("does not make a runtime AI request")
+    record(surface,"briefing trust boundary","PASS")
+
+    no_horizontal_overflow(page,surface)
+    runtime_clean(page,surface,fail_console=True)
+    screenshot(page,f"my-briefing-{'mobile' if mobile else 'desktop'}.png")
+    page.close()
+
+
 def test_data(context, mobile=False):
     surface="Data"
     page=context.new_page()
@@ -866,7 +927,7 @@ def run():
             elif os.getenv("GOVQ047_ONLY") == "1":
                 tests = [test_homepage,test_policy,test_data,test_registry]
             else:
-                tests = [test_homepage,test_policy,test_data,test_discovery,test_contextual_navigation,test_labor_market_profiles,test_occupation_explorer,test_registry,test_examples,test_santa_cruz,test_foundations,test_sector_partnership_explorer,test_wae_map]
+                tests = [test_homepage,test_policy,test_data,test_workforce_lens_briefing,test_discovery,test_contextual_navigation,test_labor_market_profiles,test_occupation_explorer,test_registry,test_examples,test_santa_cruz,test_foundations,test_sector_partnership_explorer,test_wae_map]
             for fn in tests:
                 try:
                     fn(context,mobile)

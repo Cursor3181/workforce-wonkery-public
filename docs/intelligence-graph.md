@@ -173,13 +173,16 @@ Live desktop and mobile acceptance covers an AB 1534 policy brief and the Workfo
 
 ## Next visitor uses
 
-The graph can now be extended to support:
+Two of the earlier visitor-use goals are now active:
 
-- geography-specific contextual modules inside labor-market tools;
+- Universal Discovery supports bounded policy-to-data-to-practice Decision Briefs.
+- **My Briefing** on `/for-me/` answers "what should I pay attention to?" for the reader's saved geography and role by combining governed deadlines, recent Policy/Practice/Report records, device-local change detection, and local Labor Market Profile signals.
+
+The graph can still be extended to support:
+
+- deeper geography-specific contextual modules inside labor-market tools;
 - selected occupation-to-training pathways;
-- policy-to-data-to-practice decision paths;
-- better Universal Discovery ranking using graph relationships;
-- regional "what should we pay attention to?" briefs;
+- graph-aware Universal Discovery ranking beyond the current additive Lens boost; and
 - bounded change propagation after new policy or source releases.
 
 ## Safety rule
