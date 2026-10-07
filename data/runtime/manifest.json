@@ -1,44 +1,44 @@
 {
   "schema_version": "2.0",
   "source_generated": "2026-09-28",
-  "asset_set_sha256": "077d62c5cd0aa18fe91cfdc9582c3801eb49a28dfe6f02c9e169e423bef857ff",
+  "asset_set_sha256": "2be4f33674b4bd9c210678ce736fea8073c769c3f7ace1fe0bd4291f401fa8a8",
   "asset_count": 159,
   "assets": [
     {
       "path": "discovery/manifest.json",
-      "bytes": 4475,
+      "bytes": 4511,
       "records": 1405,
-      "sha256": "2fd9624460d72319b534bcedf9722e2a62c96d62d9cf0dca605529dd03180225"
+      "sha256": "7efb2d95abc06898e31eb7ec342f0f2d17aec3cb64f3e5da3a146e520aa43d4e"
     },
     {
       "path": "discovery/shards/occupation-11-29.json",
-      "bytes": 203763,
+      "bytes": 225667,
       "records": 296,
-      "sha256": "0328747d2090cf47e7772fb358197ff82dbf2821a25ba1a52ffd5902ff186997"
+      "sha256": "d816aa3742bc50f523ddb9fe2caba0f8bc8f683154123d2dc767f4f52962da61"
     },
     {
       "path": "discovery/shards/occupation-31-59.json",
-      "bytes": 237205,
+      "bytes": 262217,
       "records": 338,
-      "sha256": "ce6e343a3deddaff874d60cc3f834c287295300ce690e983738e8ee16e79a2dc"
+      "sha256": "9f04fcf4938a8d59b5c727eabdbd69895b221a44a8ed9de74940e3002c3df238"
     },
     {
       "path": "discovery/shards/policy.json",
-      "bytes": 269608,
+      "bytes": 275315,
       "records": 240,
-      "sha256": "d7143c9281ec9e5b1cab48024b66b75c85df9595301fc6acb078314f97d52d67"
+      "sha256": "2ab099bf44efdc7cef61f22e06ca4132bbada5b8e1700a0c9b170a38048df244"
     },
     {
       "path": "discovery/shards/practice.json",
-      "bytes": 48223,
+      "bytes": 51337,
       "records": 68,
-      "sha256": "b2d7bb2450057a16c6fe1931c1fcf4f0a3ec670444542c196e27189687539221"
+      "sha256": "92d9835b60fc34a918b4e9c746add3cf5388c882833bdb5008795ab9097bd02e"
     },
     {
       "path": "discovery/shards/regional.json",
-      "bytes": 88280,
+      "bytes": 94802,
       "records": 113,
-      "sha256": "b59f282cbb218e4b0ce829c821831962b66b0d709d576c986d742d21550b51ac"
+      "sha256": "f6c1ab4324e4a6c4b4569cf9c5d3fef5edbabdcde7933ac0a0ab8b3e3e6a0d61"
     },
     {
       "path": "discovery/shards/sector.json",
@@ -48,9 +48,9 @@
     },
     {
       "path": "discovery/shards/site.json",
-      "bytes": 157747,
+      "bytes": 160122,
       "records": 256,
-      "sha256": "a3b0c77bf1f416b9777c295cb1dac49b37f3403f1bbff0c7c0facddae0dcb59a"
+      "sha256": "740ad77635a8d41cc4122059b20cfad92fcb605dfd6351fa495d6109b4721f85"
     },
     {
       "path": "intelligence-graph/context/0.json",
@@ -150,9 +150,9 @@
     },
     {
       "path": "intelligence-graph/entities/access_equity.json",
-      "bytes": 29998,
+      "bytes": 30014,
       "records": 47,
-      "sha256": "d45df87af4951c33f7ecae26ca1eb27014bc798bbe0171610b34e58b2d3eb176"
+      "sha256": "fd77444c42dd46eeedab96f2797caba7b79a6552be8b0a381314bbb9a1d33531"
     },
     {
       "path": "intelligence-graph/entities/agency.json",
@@ -168,9 +168,9 @@
     },
     {
       "path": "intelligence-graph/entities/data_tool.json",
-      "bytes": 3688,
+      "bytes": 3736,
       "records": 6,
-      "sha256": "650a3a66eb01382f6202069111fe8c1a482acb495ff63526dad9a04c95fc3fde"
+      "sha256": "c6cf86ad49802b7bc86cb4467a419a2fc20b9e2df8076f28692feb205b1190b1"
     },
     {
       "path": "intelligence-graph/entities/funding_source.json",
@@ -180,9 +180,9 @@
     },
     {
       "path": "intelligence-graph/entities/geography.json",
-      "bytes": 85654,
+      "bytes": 85854,
       "records": 138,
-      "sha256": "07d7d9c178bfadbd7cb89fdecd01c43f2dc9c804baa53f101e1b7c67e08d314b"
+      "sha256": "766aa9652bb0544a1b28c141bb1421643f4fc30d047198fcd5d4e7f88346e80f"
     },
     {
       "path": "intelligence-graph/entities/geography_type.json",
@@ -192,21 +192,21 @@
     },
     {
       "path": "intelligence-graph/entities/methodology.json",
-      "bytes": 635,
+      "bytes": 645,
       "records": 1,
-      "sha256": "339741d001fcf2d5ce86ad0e45768fc8afdbb8452289d5762e3563f6005467e5"
+      "sha256": "4fbec9ff3ed600626b1175c0686b4f9c31779c34c24121f29f2056474c02c004"
     },
     {
       "path": "intelligence-graph/entities/occupation-11-29.json",
-      "bytes": 185708,
+      "bytes": 188076,
       "records": 296,
-      "sha256": "025160b043e3aed2ea1ad59390a7fad4c7378a9f9d07082562561272ded137cc"
+      "sha256": "1f5f2583f1bfcb8c6ecb1da0b010c5d8b4c67489a56e2d89d4ad786be5cc245f"
     },
     {
       "path": "intelligence-graph/entities/occupation-31-59.json",
-      "bytes": 214315,
+      "bytes": 217019,
       "records": 338,
-      "sha256": "5a2c3e743e0a705d0fe16cb8bf1b49b74f79f2f8d2e146fef42b3b6776f449dc"
+      "sha256": "b8d93bb1ca1fef3221292a0f1cdaa570c6cec1df49c96174849839dfb680cc6b"
     },
     {
       "path": "intelligence-graph/entities/organization_type.json",
@@ -216,27 +216,27 @@
     },
     {
       "path": "intelligence-graph/entities/page.json",
-      "bytes": 139258,
+      "bytes": 139486,
       "records": 252,
-      "sha256": "30370dc84324cc9fc3428b14ff5fcd9efa5dfee03b9471ffa8c70ecef6c5c328"
+      "sha256": "32e0568c9acb2f849ef19a7c230d3d85e42222ec86514d651825900e144e053f"
     },
     {
       "path": "intelligence-graph/entities/policy.json",
-      "bytes": 151089,
+      "bytes": 151671,
       "records": 237,
-      "sha256": "675fedfce42bbc947cc9e065c1cf7fd64c1330f0943ef9782d12d1ea04273ef2"
+      "sha256": "9059953b858d6190659404c7d5c49c8ceba7f72f712f8162e95131d47b0fc2bc"
     },
     {
       "path": "intelligence-graph/entities/policy_digest.json",
-      "bytes": 2054,
+      "bytes": 2078,
       "records": 3,
-      "sha256": "4bd3e3c445228d34aaac7c45f175050525c51a56b4a88c47fd4a21dbfe866732"
+      "sha256": "c7cdde7c4ac57b7cb9912dc40a33812bba6c91d04e4555cce4e919547a7ecdb9"
     },
     {
       "path": "intelligence-graph/entities/practice.json",
-      "bytes": 38858,
+      "bytes": 39196,
       "records": 68,
-      "sha256": "ac7e40d11319eb5d6080391ce1a0cf6696ff4a0c951f5d1dc510fa4b8328877d"
+      "sha256": "8052da55192353100f78b802acf89c580ec7d28d1e4b408a6b8f713f59edbf4f"
     },
     {
       "path": "intelligence-graph/entities/program.json",
@@ -246,9 +246,9 @@
     },
     {
       "path": "intelligence-graph/entities/report.json",
-      "bytes": 1289,
+      "bytes": 1305,
       "records": 2,
-      "sha256": "ac729a3542adbddc763ad65e93e9121117c990075aea9e96224b04d63dacb7b9"
+      "sha256": "cda7f5a49a211574fd4beba19f6260bdd63fd47f584abbc10e9cbdc165f4b5d5"
     },
     {
       "path": "intelligence-graph/entities/sector_partnership.json",
@@ -258,9 +258,9 @@
     },
     {
       "path": "intelligence-graph/entities/training_opportunity.json",
-      "bytes": 20599,
+      "bytes": 20623,
       "records": 35,
-      "sha256": "1cbf1845be29744f5035b643009c2cd0585a5cd18a7fea457add26f910b38db1"
+      "sha256": "52ccadd6e809be2ddb8d53d2a1b4e565ef7d030081193630ec5413989ea15139"
     },
     {
       "path": "intelligence-graph/impact-index.json",
@@ -272,7 +272,7 @@
       "path": "intelligence-graph/manifest.json",
       "bytes": 11321,
       "records": 1532,
-      "sha256": "ef0471494a3617dbe2a0505efd4f6b7ed0e8af133e16631fbc5b4dc45e4d13d5"
+      "sha256": "50fb9359e11a14a5678ed4c23dc5bd09039172a6b2d53a19b3a22c8a5e04ec3f"
     },
     {
       "path": "intelligence-graph/reader/0.json",
