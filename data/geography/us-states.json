@@ -1,5 +1,17 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
+  "canonical_collection": "jurisdictions",
+  "workforce_system": {
+    "id": "geography:us-workforce-system",
+    "level": "workforce_system",
+    "name": "United States workforce system",
+    "code": "US-WIOA",
+    "slug": "united-states-workforce-system",
+    "aliases": [
+      "U.S. workforce system",
+      "WIOA workforce system"
+    ]
+  },
   "country": {
     "id": "geography:us",
     "level": "country",
@@ -12,7 +24,999 @@
       "US",
       "USA",
       "United States of America"
-    ]
+    ],
+    "parent_id": "geography:us-workforce-system",
+    "political_type": "country",
+    "country_code": "US"
+  },
+  "jurisdiction_counts": {
+    "total": 57,
+    "states": 50,
+    "federal_districts": 1,
+    "territories": 5,
+    "associated_workforce_jurisdictions": 1,
+    "wioa_states": 52,
+    "wioa_outlying_areas": 4,
+    "wioa_outlying_area_special": 1
+  },
+  "authority_sources": {
+    "wioa_definitions": "https://www.law.cornell.edu/uscode/text/29/3102",
+    "dol_state_performance": "https://www.dol.gov/agencies/eta/performance/results/states",
+    "wioa_state_plan_portal": "https://wioaplans.dol.gov/",
+    "census_geographic_codes": "https://www.census.gov/library/reference/code-lists/ansi.2010.html"
+  },
+  "jurisdictions": [
+    {
+      "id": "geography:state:al",
+      "level": "state",
+      "name": "Alabama",
+      "abbr": "AL",
+      "fips": "01",
+      "slug": "alabama",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Alabama"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ak",
+      "level": "state",
+      "name": "Alaska",
+      "abbr": "AK",
+      "fips": "02",
+      "slug": "alaska",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Alaska"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:az",
+      "level": "state",
+      "name": "Arizona",
+      "abbr": "AZ",
+      "fips": "04",
+      "slug": "arizona",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Arizona"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ar",
+      "level": "state",
+      "name": "Arkansas",
+      "abbr": "AR",
+      "fips": "05",
+      "slug": "arkansas",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Arkansas"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ca",
+      "level": "state",
+      "name": "California",
+      "abbr": "CA",
+      "fips": "06",
+      "slug": "california",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of California"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:co",
+      "level": "state",
+      "name": "Colorado",
+      "abbr": "CO",
+      "fips": "08",
+      "slug": "colorado",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Colorado"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ct",
+      "level": "state",
+      "name": "Connecticut",
+      "abbr": "CT",
+      "fips": "09",
+      "slug": "connecticut",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Connecticut"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:de",
+      "level": "state",
+      "name": "Delaware",
+      "abbr": "DE",
+      "fips": "10",
+      "slug": "delaware",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Delaware"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:dc",
+      "level": "state",
+      "name": "District of Columbia",
+      "abbr": "DC",
+      "fips": "11",
+      "slug": "district-of-columbia",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of District of Columbia"
+      ],
+      "political_type": "federal_district",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "Federal district"
+    },
+    {
+      "id": "geography:state:fl",
+      "level": "state",
+      "name": "Florida",
+      "abbr": "FL",
+      "fips": "12",
+      "slug": "florida",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Florida"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ga",
+      "level": "state",
+      "name": "Georgia",
+      "abbr": "GA",
+      "fips": "13",
+      "slug": "georgia",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Georgia"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:hi",
+      "level": "state",
+      "name": "Hawaii",
+      "abbr": "HI",
+      "fips": "15",
+      "slug": "hawaii",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Hawaii"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:id",
+      "level": "state",
+      "name": "Idaho",
+      "abbr": "ID",
+      "fips": "16",
+      "slug": "idaho",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Idaho"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:il",
+      "level": "state",
+      "name": "Illinois",
+      "abbr": "IL",
+      "fips": "17",
+      "slug": "illinois",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Illinois"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:in",
+      "level": "state",
+      "name": "Indiana",
+      "abbr": "IN",
+      "fips": "18",
+      "slug": "indiana",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Indiana"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ia",
+      "level": "state",
+      "name": "Iowa",
+      "abbr": "IA",
+      "fips": "19",
+      "slug": "iowa",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Iowa"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ks",
+      "level": "state",
+      "name": "Kansas",
+      "abbr": "KS",
+      "fips": "20",
+      "slug": "kansas",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Kansas"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ky",
+      "level": "state",
+      "name": "Kentucky",
+      "abbr": "KY",
+      "fips": "21",
+      "slug": "kentucky",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Kentucky"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:la",
+      "level": "state",
+      "name": "Louisiana",
+      "abbr": "LA",
+      "fips": "22",
+      "slug": "louisiana",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Louisiana"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:me",
+      "level": "state",
+      "name": "Maine",
+      "abbr": "ME",
+      "fips": "23",
+      "slug": "maine",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Maine"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:md",
+      "level": "state",
+      "name": "Maryland",
+      "abbr": "MD",
+      "fips": "24",
+      "slug": "maryland",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Maryland"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ma",
+      "level": "state",
+      "name": "Massachusetts",
+      "abbr": "MA",
+      "fips": "25",
+      "slug": "massachusetts",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Massachusetts"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:mi",
+      "level": "state",
+      "name": "Michigan",
+      "abbr": "MI",
+      "fips": "26",
+      "slug": "michigan",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Michigan"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:mn",
+      "level": "state",
+      "name": "Minnesota",
+      "abbr": "MN",
+      "fips": "27",
+      "slug": "minnesota",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Minnesota"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ms",
+      "level": "state",
+      "name": "Mississippi",
+      "abbr": "MS",
+      "fips": "28",
+      "slug": "mississippi",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Mississippi"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:mo",
+      "level": "state",
+      "name": "Missouri",
+      "abbr": "MO",
+      "fips": "29",
+      "slug": "missouri",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Missouri"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:mt",
+      "level": "state",
+      "name": "Montana",
+      "abbr": "MT",
+      "fips": "30",
+      "slug": "montana",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Montana"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ne",
+      "level": "state",
+      "name": "Nebraska",
+      "abbr": "NE",
+      "fips": "31",
+      "slug": "nebraska",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Nebraska"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:nv",
+      "level": "state",
+      "name": "Nevada",
+      "abbr": "NV",
+      "fips": "32",
+      "slug": "nevada",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Nevada"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:nh",
+      "level": "state",
+      "name": "New Hampshire",
+      "abbr": "NH",
+      "fips": "33",
+      "slug": "new-hampshire",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of New Hampshire"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:nj",
+      "level": "state",
+      "name": "New Jersey",
+      "abbr": "NJ",
+      "fips": "34",
+      "slug": "new-jersey",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of New Jersey"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:nm",
+      "level": "state",
+      "name": "New Mexico",
+      "abbr": "NM",
+      "fips": "35",
+      "slug": "new-mexico",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of New Mexico"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ny",
+      "level": "state",
+      "name": "New York",
+      "abbr": "NY",
+      "fips": "36",
+      "slug": "new-york",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of New York"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:nc",
+      "level": "state",
+      "name": "North Carolina",
+      "abbr": "NC",
+      "fips": "37",
+      "slug": "north-carolina",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of North Carolina"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:nd",
+      "level": "state",
+      "name": "North Dakota",
+      "abbr": "ND",
+      "fips": "38",
+      "slug": "north-dakota",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of North Dakota"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:oh",
+      "level": "state",
+      "name": "Ohio",
+      "abbr": "OH",
+      "fips": "39",
+      "slug": "ohio",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Ohio"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ok",
+      "level": "state",
+      "name": "Oklahoma",
+      "abbr": "OK",
+      "fips": "40",
+      "slug": "oklahoma",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Oklahoma"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:or",
+      "level": "state",
+      "name": "Oregon",
+      "abbr": "OR",
+      "fips": "41",
+      "slug": "oregon",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Oregon"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:pa",
+      "level": "state",
+      "name": "Pennsylvania",
+      "abbr": "PA",
+      "fips": "42",
+      "slug": "pennsylvania",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Pennsylvania"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ri",
+      "level": "state",
+      "name": "Rhode Island",
+      "abbr": "RI",
+      "fips": "44",
+      "slug": "rhode-island",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Rhode Island"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:sc",
+      "level": "state",
+      "name": "South Carolina",
+      "abbr": "SC",
+      "fips": "45",
+      "slug": "south-carolina",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of South Carolina"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:sd",
+      "level": "state",
+      "name": "South Dakota",
+      "abbr": "SD",
+      "fips": "46",
+      "slug": "south-dakota",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of South Dakota"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:tn",
+      "level": "state",
+      "name": "Tennessee",
+      "abbr": "TN",
+      "fips": "47",
+      "slug": "tennessee",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Tennessee"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:tx",
+      "level": "state",
+      "name": "Texas",
+      "abbr": "TX",
+      "fips": "48",
+      "slug": "texas",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Texas"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:ut",
+      "level": "state",
+      "name": "Utah",
+      "abbr": "UT",
+      "fips": "49",
+      "slug": "utah",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Utah"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:vt",
+      "level": "state",
+      "name": "Vermont",
+      "abbr": "VT",
+      "fips": "50",
+      "slug": "vermont",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Vermont"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:va",
+      "level": "state",
+      "name": "Virginia",
+      "abbr": "VA",
+      "fips": "51",
+      "slug": "virginia",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Virginia"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:wa",
+      "level": "state",
+      "name": "Washington",
+      "abbr": "WA",
+      "fips": "53",
+      "slug": "washington",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Washington"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:wv",
+      "level": "state",
+      "name": "West Virginia",
+      "abbr": "WV",
+      "fips": "54",
+      "slug": "west-virginia",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of West Virginia"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:wi",
+      "level": "state",
+      "name": "Wisconsin",
+      "abbr": "WI",
+      "fips": "55",
+      "slug": "wisconsin",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Wisconsin"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:state:wy",
+      "level": "state",
+      "name": "Wyoming",
+      "abbr": "WY",
+      "fips": "56",
+      "slug": "wyoming",
+      "parent_id": "geography:us",
+      "aliases": [
+        "State of Wyoming"
+      ],
+      "political_type": "state",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "States"
+    },
+    {
+      "id": "geography:territory:pr",
+      "level": "territory",
+      "name": "Puerto Rico",
+      "abbr": "PR",
+      "fips": "72",
+      "slug": "puerto-rico",
+      "parent_id": "geography:us",
+      "aliases": [
+        "Commonwealth of Puerto Rico"
+      ],
+      "political_type": "territory",
+      "wioa_type": "state",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "Territories"
+    },
+    {
+      "id": "geography:territory:as",
+      "level": "territory",
+      "name": "American Samoa",
+      "abbr": "AS",
+      "fips": "60",
+      "slug": "american-samoa",
+      "parent_id": "geography:us",
+      "aliases": [],
+      "political_type": "territory",
+      "wioa_type": "outlying_area",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "Territories"
+    },
+    {
+      "id": "geography:territory:gu",
+      "level": "territory",
+      "name": "Guam",
+      "abbr": "GU",
+      "fips": "66",
+      "slug": "guam",
+      "parent_id": "geography:us",
+      "aliases": [],
+      "political_type": "territory",
+      "wioa_type": "outlying_area",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "Territories"
+    },
+    {
+      "id": "geography:territory:mp",
+      "level": "territory",
+      "name": "Northern Mariana Islands",
+      "abbr": "MP",
+      "fips": "69",
+      "slug": "northern-mariana-islands",
+      "parent_id": "geography:us",
+      "aliases": [
+        "Commonwealth of the Northern Mariana Islands",
+        "CNMI"
+      ],
+      "political_type": "territory",
+      "wioa_type": "outlying_area",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "Territories"
+    },
+    {
+      "id": "geography:territory:vi",
+      "level": "territory",
+      "name": "U.S. Virgin Islands",
+      "abbr": "VI",
+      "fips": "78",
+      "slug": "us-virgin-islands",
+      "parent_id": "geography:us",
+      "aliases": [
+        "United States Virgin Islands",
+        "Virgin Islands of the United States"
+      ],
+      "political_type": "territory",
+      "wioa_type": "outlying_area",
+      "workforce_jurisdiction": true,
+      "country_code": "US",
+      "selector_group": "Territories"
+    },
+    {
+      "id": "geography:associated:pw",
+      "level": "associated_jurisdiction",
+      "name": "Palau",
+      "abbr": "PW",
+      "fips": "70",
+      "slug": "palau",
+      "parent_id": "geography:us-workforce-system",
+      "aliases": [
+        "Republic of Palau"
+      ],
+      "political_type": "freely_associated_state",
+      "wioa_type": "outlying_area_special",
+      "workforce_jurisdiction": true,
+      "country_code": "PW",
+      "selector_group": "Associated workforce jurisdiction"
+    }
+  ],
+  "compatibility": {
+    "states_field": "Legacy 50 states plus District of Columbia collection retained temporarily for pre-nationalization consumers. New code must use jurisdictions.",
+    "state_code_field": "Legacy alias only. New code should use jurisdiction_code."
   },
   "states": [
     {
