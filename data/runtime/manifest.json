@@ -1,7 +1,7 @@
 {
   "schema_version": "2.0",
   "source_generated": "2026-09-28",
-  "asset_set_sha256": "8af85b4e44d53b8ae4261e25b5ffac74d2a32ba45e8dec81bc7a84401a68b0df",
+  "asset_set_sha256": "077d62c5cd0aa18fe91cfdc9582c3801eb49a28dfe6f02c9e169e423bef857ff",
   "asset_count": 159,
   "assets": [
     {
@@ -954,9 +954,9 @@
     },
     {
       "path": "workforce-lens/runtime.json",
-      "bytes": 99655,
+      "bytes": 99654,
       "records": 146,
-      "sha256": "95a06af85574b03dbfc66bac32426723d960237ab9a985cf4f7d0d0269259457"
+      "sha256": "8b86b50223dd86ebf72a193d781b58e7d2714c0da252399e6f12c200e1ab584d"
     }
   ]
 }

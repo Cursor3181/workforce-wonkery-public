@@ -538,7 +538,7 @@
       "target": "data/runtime/labor-market-profiles/markets/49700.json"
     },
     {
-      "sha256": "14157637f115b63885c317428fff475f6cdaf3cc2b7f5e7a1013456c3d9ac435",
+      "sha256": "76cc71368d62c92eff38adec1532e1934bc623964936acc6cdc4a4f321e3152e",
       "source": "generated/public/manifest.json",
       "target": "data/runtime/manifest.json"
     },
@@ -818,7 +818,7 @@
       "target": "data/runtime/wae/context-seed.json"
     },
     {
-      "sha256": "95a06af85574b03dbfc66bac32426723d960237ab9a985cf4f7d0d0269259457",
+      "sha256": "8b86b50223dd86ebf72a193d781b58e7d2714c0da252399e6f12c200e1ab584d",
       "source": "generated/public/workforce-lens/runtime.json",
       "target": "data/runtime/workforce-lens/runtime.json"
     },
@@ -998,7 +998,7 @@
       "target": "docs/intelligence-graph.md"
     },
     {
-      "sha256": "333cbe72dec3598693756a4680e73c23f3006e022ee8aa082e1e4020f41ca2c9",
+      "sha256": "5bb6d08ee51d6a512d9fb7b8f798ef75b2c7faca23ff2acb2ab37d49d9d9e9e1",
       "source": "docs/nationalization-foundation.md",
       "target": "docs/nationalization-foundation.md"
     },
@@ -1088,7 +1088,7 @@
       "target": "tests/validate_public_export.py"
     }
   ],
-  "source_commit": "4445490e7c7d0080f480fe61fbcb63e78e88cda6",
+  "source_commit": "a955ac4ac853103e8fe312fdfe13a7de8627e598",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }

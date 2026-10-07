@@ -67,3 +67,7 @@ Phase 1 does not change the homepage, show a state selector, redirect visitors, 
 ## Next phase
 
 Phase 2 should activate a compact state/area/role control in Universal Discovery and Workforce Deadlines, rank exact-local then state then national context, preserve an explicit All U.S. option, and pilot one non-California State Desk before broader rollout.
+
+## 2026-10-06 reader launch reconciliation
+
+The canonical Workforce Lens now models 57 workforce jurisdictions while preserving the existing California deep experience. The public selector is user-controlled, does not geolocate, and stores the selected jurisdiction, local area where governed, and reader role in the browser. California remains the only deep jurisdiction; incomplete jurisdictions use transparent national fallback rather than relabeling national content as jurisdiction-specific.
