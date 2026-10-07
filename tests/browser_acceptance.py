@@ -317,7 +317,7 @@ def choose_two_market_values(page, selector):
 def test_workforce_lens_briefing(context, mobile=False):
     surface="My Briefing"
     page=context.new_page()
-    page.add_init_script("""() => {
+    page.add_init_script("""(() => {
       localStorage.setItem('ww_workforce_lens_v1', JSON.stringify({
         version:1,
         country_code:'US',
@@ -330,7 +330,7 @@ def test_workforce_lens_briefing(context, mobile=False):
         role_label:'Director / Executive'
       }));
       localStorage.removeItem('ww_workforce_briefing_snapshot_v1');
-    }""")
+    })();""")
     general(page,surface,BASE+"/for-me/",mobile)
     page.wait_for_function(
         "() => document.querySelector('#ww-lens-page')?.dataset.briefingState === 'ready'",
