@@ -932,7 +932,7 @@ def run():
             elif os.getenv("GOVQ047_ONLY") == "1":
                 tests = [test_homepage,test_policy,test_data,test_registry]
             else:
-                tests = [test_homepage,test_policy,test_data,test_workforce_lens_briefing,test_discovery,test_contextual_navigation,test_labor_market_profiles,test_occupation_explorer,test_registry,test_examples,test_santa_cruz,test_foundations,test_sector_partnership_explorer,test_wae_map]
+                tests = [test_homepage,test_policy,test_data,test_discovery,test_contextual_navigation,test_labor_market_profiles,test_occupation_explorer,test_registry,test_examples,test_santa_cruz,test_foundations,test_sector_partnership_explorer,test_wae_map]
             for fn in tests:
                 try:
                     fn(context,mobile)

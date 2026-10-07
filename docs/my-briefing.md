@@ -1,10 +1,14 @@
 # My Briefing
 
-Status: implementation candidate, October 6, 2026.
+Status: development retained; public surface paused October 6, 2026.
+
+## Public status
+
+My Briefing is currently **paused from the public site** at the owner's request. The source, runtime design, and development contracts remain in GitHub so the product can be improved before relaunch. Public navigation, sitewide Lens prompts, and page publication are disabled while this state is `paused`.
 
 ## Purpose
 
-My Briefing turns the existing **For Me / Workforce Lens** page into a proactive reader briefing.
+My Briefing is designed to turn the **For Me / Workforce Lens** page into a proactive reader briefing.
 
 The page answers a bounded question:
 

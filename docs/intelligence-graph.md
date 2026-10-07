@@ -173,10 +173,10 @@ Live desktop and mobile acceptance covers an AB 1534 policy brief and the Workfo
 
 ## Next visitor uses
 
-Two of the earlier visitor-use goals are now active:
+One of the earlier visitor-use goals is active and one is retained for development:
 
 - Universal Discovery supports bounded policy-to-data-to-practice Decision Briefs.
-- **My Briefing** on `/for-me/` answers "what should I pay attention to?" for the reader's saved geography and role by combining governed deadlines, recent Policy/Practice/Report records, device-local change detection, and local Labor Market Profile signals.
+- **My Briefing** remains implemented in source but is paused from the public site until its reader experience is developed further.
 
 The graph can still be extended to support:
 

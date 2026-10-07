@@ -66,9 +66,9 @@ Phase 1 does not change the homepage, show a state selector, redirect visitors, 
 
 ## Current reader phase
 
-The state/territory, local-area, and role Lens is active across the public shell, Universal Discovery, Policy sorting, Labor Market Profiles, and Workforce Deadlines.
+The national Workforce Lens foundation remains built and governed, but the **public For Me / My Briefing experience is paused** while the product is developed further. The public header and navigation do not expose the Lens, and the paused shell clears previously stored Lens preferences so hidden personalization does not continue without a visible control.
 
-**My Briefing** extends that Lens into proactive decision support on `/for-me/`: it prioritizes relevant deadlines and governed records, detects new or changed source records on the same device, surfaces local market signals where deep coverage exists, and turns those signals into bounded questions that can be opened in the Decision Brief Builder.
+The underlying geography, role, fallback, and Jurisdiction Desk models remain available for development and future relaunch.
 
 The next nationalization step is still substantive coverage: pilot one non-California Jurisdiction Desk before treating another jurisdiction as deep.
 

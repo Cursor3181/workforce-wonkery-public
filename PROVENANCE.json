@@ -993,7 +993,7 @@
       "target": "src/wordpress/plugins/workforce-wonkery-deadlines-feed/workforce-wonkery-deadlines-feed.php"
     },
     {
-      "sha256": "7eea7507a78d9c55e27819b1c0f31114a49ada6c3c1e680685e684ea8091d293",
+      "sha256": "08dd9a73621e8e77856a5971ee15a8aef80e1a7f48aa5c3ffa1f7e7bb4f5d3b9",
       "source": "docs/intelligence-graph.md",
       "target": "docs/intelligence-graph.md"
     },
@@ -1003,12 +1003,12 @@
       "target": "docs/discovery-decision-brief.md"
     },
     {
-      "sha256": "d2b4d5627f0e4b4bbde1c9f3efad730c736fa2ba623030eaf21bb62232498c8d",
+      "sha256": "06786389f6e9a95162cebe4f5f5f6d3ba4bbf395f7ed18fa8e45bb12cd8eee2d",
       "source": "docs/my-briefing.md",
       "target": "docs/my-briefing.md"
     },
     {
-      "sha256": "c4b7af559fa94f52ac5339280f0fca6a6dee3959397f6ed38e985a4e6b16d9a0",
+      "sha256": "42a663e86f1d2d7346d0709fde801e25c1ceeb8b9e5b804ee224f22035d0d234",
       "source": "docs/nationalization-foundation.md",
       "target": "docs/nationalization-foundation.md"
     },
@@ -1078,7 +1078,7 @@
       "target": ".github/workflows/promote-private-sync.yml"
     },
     {
-      "sha256": "7c4ad57cb2fd9723a3df6aab99d6887e17b8f3ff3a20dae285fafb7b52b53a60",
+      "sha256": "cf21cef1cbc04dee1ca9c2b3f66848d3e945181507e4d28b1b6622ad5fb76cc1",
       "source": "public-companion/tests/browser_acceptance.py",
       "target": "tests/browser_acceptance.py"
     },
@@ -1098,7 +1098,7 @@
       "target": "tests/validate_public_export.py"
     }
   ],
-  "source_commit": "70e88e8afeb5114da13b54d0b2fc71d92e064a31",
+  "source_commit": "f837da1c14a7d77a205f98ae8362d3691eea37b1",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }
