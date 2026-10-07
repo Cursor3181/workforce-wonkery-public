@@ -372,6 +372,11 @@ def test_workforce_lens_briefing(context, mobile=False):
     no_horizontal_overflow(page,surface)
     runtime_clean(page,surface,fail_console=True)
     screenshot(page,f"my-briefing-{'mobile' if mobile else 'desktop'}.png")
+    page.evaluate("""() => {
+      localStorage.removeItem('ww_workforce_lens_v1');
+      localStorage.removeItem('ww-reader-role');
+      localStorage.removeItem('ww_workforce_briefing_snapshot_v1');
+    }""")
     page.close()
 
 

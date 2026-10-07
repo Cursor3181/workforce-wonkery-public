@@ -1078,7 +1078,7 @@
       "target": ".github/workflows/promote-private-sync.yml"
     },
     {
-      "sha256": "a0c7f661b65264c1850fcbe10a249e7b309003ea2067279c25d00cecf89a862e",
+      "sha256": "7c4ad57cb2fd9723a3df6aab99d6887e17b8f3ff3a20dae285fafb7b52b53a60",
       "source": "public-companion/tests/browser_acceptance.py",
       "target": "tests/browser_acceptance.py"
     },
@@ -1098,7 +1098,7 @@
       "target": "tests/validate_public_export.py"
     }
   ],
-  "source_commit": "88a25beae112346c0f365bc4ca2e9326c93555c2",
+  "source_commit": "70e88e8afeb5114da13b54d0b2fc71d92e064a31",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }
