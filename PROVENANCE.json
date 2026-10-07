@@ -38,7 +38,7 @@
       "target": "data/runtime/discovery/shards/occupation-31-59.json"
     },
     {
-      "sha256": "2ab099bf44efdc7cef61f22e06ca4132bbada5b8e1700a0c9b170a38048df244",
+      "sha256": "c5bdb65230bc5dac28504793f1042ab036ae21d855135a2f1a57d8521c8cd0c1",
       "source": "generated/public/discovery/shards/policy.json",
       "target": "data/runtime/discovery/shards/policy.json"
     },
@@ -203,7 +203,7 @@
       "target": "data/runtime/intelligence-graph/entities/page.json"
     },
     {
-      "sha256": "9059953b858d6190659404c7d5c49c8ceba7f72f712f8162e95131d47b0fc2bc",
+      "sha256": "97f448688ce381d0c1f7be59b740b37be717f001cf9611046fd35981a8406166",
       "source": "generated/public/intelligence-graph/entities/policy.json",
       "target": "data/runtime/intelligence-graph/entities/policy.json"
     },
@@ -243,7 +243,7 @@
       "target": "data/runtime/intelligence-graph/impact-index.json"
     },
     {
-      "sha256": "50fb9359e11a14a5678ed4c23dc5bd09039172a6b2d53a19b3a22c8a5e04ec3f",
+      "sha256": "73b038776e78a8effcfb1834396e4574d7874153cf9d7e8eeaa1f7459e6b9865",
       "source": "generated/public/intelligence-graph/manifest.json",
       "target": "data/runtime/intelligence-graph/manifest.json"
     },
@@ -538,7 +538,7 @@
       "target": "data/runtime/labor-market-profiles/markets/49700.json"
     },
     {
-      "sha256": "28665f3cf87b2595bc448836ac01980849bca5069f2e0f818260509bf47d3954",
+      "sha256": "2c96514b0ff189895133f66f4f7fe152592e3bea6bd7665edfe3b641d59d447c",
       "source": "generated/public/manifest.json",
       "target": "data/runtime/manifest.json"
     },
@@ -643,27 +643,27 @@
       "target": "data/runtime/occupation-explorer/runtime.json"
     },
     {
-      "sha256": "28feaf5e2e8be0a49e47c5254edeb9a766e385271047b9ace0a1dfd4d86375a3",
+      "sha256": "902ca22c6ec4532b7aa8b0a813d27597a1e7383ec925f5304d5703d00a31db66",
       "source": "generated/public/policy/backfill-queue.json",
       "target": "data/runtime/policy/backfill-queue.json"
     },
     {
-      "sha256": "03ef3f1af7c8fcd31ec99a432e4430dcfc2ab147095bbf8105fb8f4acecb0ad7",
+      "sha256": "ba8273829584cbd92ddd4e4db0277c85f50c58e97556cbdf094a64aafe1344ac",
       "source": "generated/public/policy/backfill-queue.md",
       "target": "data/runtime/policy/backfill-queue.md"
     },
     {
-      "sha256": "dfa5b90c979e9705ef70726a387e30a10ca85049ea226d38837b47d60afc9c10",
+      "sha256": "0bf41afa89a695f8328df7acd081742d351b7ffd881cae286e2ad4549ae5a82f",
       "source": "generated/public/policy/deadlines.ics",
       "target": "data/runtime/policy/deadlines.ics"
     },
     {
-      "sha256": "09ddb525e2ef3adb100026e2ed8771776a666367ed3041bd3bd2abce28e1ae01",
+      "sha256": "bf79f5c45915e2391e305f3697f59de7d5bfa9ab308bbaa11d2b0f4faa611070",
       "source": "generated/public/policy/deadlines.json",
       "target": "data/runtime/policy/deadlines.json"
     },
     {
-      "sha256": "8abf940e010004c4cc27b77da584909f5d63519561a654f524b1783776916c49",
+      "sha256": "038d3c8742ed224c5d72f1ce472ad1276dc44344295a2a3281b8bd67e5ce4740",
       "source": "generated/public/policy/records.json",
       "target": "data/runtime/policy/records.json"
     },
@@ -1003,7 +1003,7 @@
       "target": "docs/nationalization-foundation.md"
     },
     {
-      "sha256": "6d65d8b6bc7b4e8d11ab0871ca93ec9370c6659a1ed2755d14916a1e9837f1e0",
+      "sha256": "67f68f211cea7210832e5330a7463f42cc37238be736ba4c5d2d10e8d234ba6d",
       "source": "docs/policy-living-records.md",
       "target": "docs/policy-living-records.md"
     },
@@ -1088,7 +1088,7 @@
       "target": "tests/validate_public_export.py"
     }
   ],
-  "source_commit": "6fe07982d85433895540ee0fda744e9815d01506",
+  "source_commit": "d8a8202e28d67d6e1f8068607135b54c0e52c1bd",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }

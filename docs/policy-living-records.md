@@ -17,7 +17,7 @@ The Intelligence Graph may still make conceptual or geographic connections. Thos
 - `generated/public/policy/deadlines.ics`
 - enriched Universal Discovery policy records with status, key date, document type, jurisdiction, and official source
 
-Initial governed records are AB 1534, WSIN26-17, and EO N-6-26. Other published briefs remain indexed living records and can be enriched incrementally without changing URLs.
+Governed coverage is expanded in prioritized sprints. As of October 6, 2026, 23 records have verified lifecycle data; the remaining briefs stay indexed living records and can be enriched incrementally without changing URLs.
 
 ## Reader roles
 
@@ -25,7 +25,7 @@ Director, Fiscal, Program, and Board member are the initial role lenses. Role ac
 
 ## Reader module
 
-The single policy template now includes `wordpress/fragments/policy-living-record.html`. It looks up the current brief by canonical URL against a hidden WordPress runtime page (`ww-runtime-policy-records`) containing the generated 222-record dataset.
+The single policy template now includes `wordpress/fragments/policy-living-record.html`. It looks up the current brief by canonical URL against a hidden WordPress runtime page (`ww-runtime-policy-records`) containing the generated 234-record dataset.
 
 All indexed briefs can show identity, document type, jurisdiction, and official source. Only `record_state=governed` records may show verified lifecycle status, timeline, key dates, authoritative relationships, and role-specific actions.
 
