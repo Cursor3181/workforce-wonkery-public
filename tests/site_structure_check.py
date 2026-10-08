@@ -57,6 +57,32 @@ def has_noindex(html):
             return True
     return False
 
+def policy_count_issue(html):
+    """Validate visible and fallback counts against the generated public floor.
+
+    Never freeze a specific brief total in the live structure manifest.
+    Readers may see newly published briefs before the next asset refresh.
+    """
+    visible = re.search(r'\bid\s*=\s*["\']ww-policy-total["\'][^>]*>\s*(\d+)\s*<', html, re.I)
+    fallback = re.search(r'\bAll\s+(\d+)\s+published\s+policy\s+briefs\s+remain\s+available\s+below', html, re.I)
+    if visible is None or fallback is None:
+        return "Policy Library visible total or accessible fallback total is missing"
+    shown, alternate = int(visible.group(1)), int(fallback.group(1))
+    if shown != alternate:
+        return f"Policy Library visible/fallback totals disagree: {shown} vs {alternate}"
+    public_index = ROOT / "data" / "runtime" / "policy" / "runtime.json"
+    private_index = ROOT / "generated" / "public" / "policy" / "runtime.json"
+    index_path = public_index if public_index.exists() else private_index
+    if not index_path.exists():
+        return "Policy Library generated runtime count is unavailable"
+    try:
+        minimum = int(json.loads(index_path.read_text(encoding="utf-8"))["count"])
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        return f"Policy Library runtime count is invalid: {exc}"
+    if shown < minimum:
+        return f"Policy Library displays {shown} briefs, below generated runtime floor {minimum}"
+    return None
+
 def main():
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     failures = []
@@ -77,6 +103,10 @@ def main():
             failures.append(f"{name}: robots noindex detected")
         if rendered_script_corruption(html):
             failures.append(f"{name}: HTML-encoded logical AND detected in executable script")
+        if name == "Policy Brief Library":
+            issue = policy_count_issue(html)
+            if issue:
+                failures.append(issue)
         lower = html.lower()
         for marker in surface.get("required_markers", []):
             if marker.lower() not in lower:
