@@ -1,0 +1,42 @@
+name: Public live accessibility audit
+on:
+  schedule:
+    - cron: "17 15 * * 1"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "tests/accessibility/**"
+      - ".github/workflows/accessibility-audit.yml"
+concurrency:
+  group: public-accessibility-audit
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install Pa11y CI
+        run: npm install --no-save --no-audit --no-fund pa11y-ci@3
+      - name: Run WCAG 2.1 AA audit
+        continue-on-error: true
+        run: |
+          mkdir -p artifacts/accessibility
+          npx pa11y-ci --config tests/accessibility/pa11y-ci.json --json > artifacts/accessibility/live-audit.json
+      - name: Summarize results
+        if: always()
+        run: node tests/accessibility/summarize-audit.mjs artifacts/accessibility/live-audit.json >> "$GITHUB_STEP_SUMMARY"
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-accessibility-audit
+          path: artifacts/accessibility/live-audit.json
+          if-no-files-found: warn
+          retention-days: 7

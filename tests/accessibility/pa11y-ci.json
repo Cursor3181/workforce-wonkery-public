@@ -1,0 +1,23 @@
+{
+  "defaults": {
+    "standard": "WCAG2AA",
+    "timeout": 30000,
+    "wait": 1000,
+    "chromeLaunchConfig": {
+      "args": [
+        "--no-sandbox",
+        "--disable-setuid-sandbox"
+      ]
+    }
+  },
+  "urls": [
+    "https://workforcewonkery.com/",
+    "https://workforcewonkery.com/policy-briefs/",
+    "https://workforcewonkery.com/data/",
+    "https://workforcewonkery.com/practice/",
+    "https://workforcewonkery.com/california-workforce-intelligence-report/",
+    "https://workforcewonkery.com/workforce-deadlines/",
+    "https://workforcewonkery.com/subscribe/",
+    "https://workforcewonkery.com/accessibility/"
+  ]
+}
