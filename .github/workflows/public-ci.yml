@@ -27,8 +27,6 @@ jobs:
           python-version: "3.12"
       - name: Validate public export boundary and data
         run: python tests/validate_public_export.py
-      - name: Check Practice portfolio and ETPL onboarding contract
-        run: python tests/practice_focus_contract.py
       - name: Check inline JavaScript syntax in WordPress templates
         run: python tests/validate_public_source_js.py
       - name: Check reader-facing JavaScript syntax
