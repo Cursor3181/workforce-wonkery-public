@@ -1,0 +1,259 @@
+<!-- wp:html -->
+<style>
+body.page-template-default{background:#fcfaf6}
+#ww-etpl{--paper:#fcfaf6;--ink:#111d20;--muted:#536064;--gold:#b97816;--green:#365d36;--teal:#075f70;--line:#ddd8cd;--soft:#f4efe4;--white:#fff;--serif:Georgia,'Times New Roman',serif;--sans:Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink);font:16px/1.55 var(--sans);width:100%}
+#ww-etpl *{box-sizing:border-box}
+#ww-etpl a{color:var(--teal)}
+#ww-etpl a:focus-visible{outline:3px solid #185cac;outline-offset:3px}
+#ww-etpl .wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
+#ww-etpl .hero{padding:64px 0 42px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#fcfaf6 0%,#f7f1e5 62%,#edf4ef 100%)}
+#ww-etpl .eyebrow{margin:0 0 10px;color:var(--gold);font:800 12px/1.4 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+#ww-etpl h1,#ww-etpl h2,#ww-etpl h3{font-family:var(--serif);letter-spacing:-.025em}
+#ww-etpl h1{font-size:clamp(42px,6vw,72px);line-height:1;margin:0 0 18px;max-width:900px}
+#ww-etpl .deck{font:22px/1.35 var(--serif);max-width:780px;margin:0;color:#344044}
+#ww-etpl .hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+#ww-etpl .button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;border-radius:4px;border:1px solid var(--teal);font-weight:700;text-decoration:none}
+#ww-etpl .button.primary{background:var(--teal);color:white}
+#ww-etpl .button.secondary{background:white;color:var(--teal)}
+#ww-etpl .section{padding:42px 0;border-bottom:1px solid var(--line)}
+#ww-etpl .section h2{font-size:34px;line-height:1.08;margin:0 0 8px}
+#ww-etpl .lede{max-width:820px;color:var(--muted);font:18px/1.5 var(--serif);margin:0 0 24px}
+#ww-etpl .role-grid,#ww-etpl .start-grid,#ww-etpl .task-grid,#ww-etpl .help-grid{display:grid;gap:14px}
+#ww-etpl .role-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+#ww-etpl .start-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+#ww-etpl .task-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+#ww-etpl .help-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+#ww-etpl .card{border:1px solid var(--line);background:rgba(255,255,255,.72);padding:20px;border-radius:5px}
+#ww-etpl .card strong{display:block;color:var(--green);font-size:14px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:7px}
+#ww-etpl .card h3{font-size:23px;line-height:1.1;margin:0 0 8px}
+#ww-etpl .card p{margin:0;color:#465154}
+#ww-etpl a.task-card{display:block;color:inherit;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
+#ww-etpl a.task-card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(17,29,32,.08);border-color:#b8c9c3}
+#ww-etpl a.task-card:focus-visible{outline:3px solid #185cac;outline-offset:3px}
+#ww-etpl .task-card .open{display:inline-block;margin-top:12px;color:var(--teal);font-weight:800;font-size:14px}
+#ww-etpl .step{position:relative;padding-top:48px}
+#ww-etpl .step:before{content:attr(data-step);position:absolute;top:17px;left:20px;width:25px;height:25px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--green);color:white;font-weight:800;font-size:12px}
+#ww-etpl .role-map{display:grid;grid-template-columns:repeat(5,1fr);gap:0;align-items:stretch}
+#ww-etpl .role-map div{position:relative;padding:20px 18px;background:white;border:1px solid var(--line);margin-right:-1px}
+#ww-etpl .role-map b{display:block;font-family:var(--serif);font-size:20px;margin-bottom:7px}
+#ww-etpl .role-map small{color:var(--muted)}
+#ww-etpl .notice{margin-top:20px;padding:16px 18px;border-left:4px solid var(--gold);background:#fff8e9}
+#ww-etpl .calendar{width:100%;border-collapse:collapse;background:white}
+#ww-etpl .calendar th,#ww-etpl .calendar td{padding:14px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+#ww-etpl .calendar th{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#5b6265;background:#f4efe4}
+#ww-etpl details{border:1px solid var(--line);background:white;border-radius:4px;padding:0 16px}
+#ww-etpl details+details{margin-top:9px}
+#ww-etpl summary{cursor:pointer;padding:15px 0;font-weight:750;color:#173b43}
+#ww-etpl details p{margin:0 0 15px;color:#465154}
+#ww-etpl .sources li{margin:8px 0}
+#ww-etpl .split{display:grid;grid-template-columns:1.05fr .95fr;gap:30px}
+#ww-etpl .tag{display:inline-block;padding:4px 8px;border-radius:999px;background:#edf3ee;color:#365d36;font-size:12px;font-weight:750;margin:0 6px 6px 0}
+#ww-etpl .footer-note{padding:28px 0 52px;color:#5d6668;font-size:14px}
+#ww-etpl .wave{margin-top:18px;padding:22px;border:1px solid var(--line);background:white}
+#ww-etpl .wave-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:14px}
+#ww-etpl .wave-num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:var(--ink,#111d20);color:white;font-weight:800}
+#ww-etpl .wave-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+#ww-etpl .wave-links a{display:block;padding:14px;border:1px solid var(--line);text-decoration:none;background:#fcfcfa;color:var(--ink)}
+#ww-etpl .wave-links a strong{display:block;color:var(--teal);text-transform:none;letter-spacing:0;font-size:15px;margin-bottom:4px}
+#ww-etpl .wave-links a span{display:block;color:var(--muted);font-size:13px;line-height:1.4}
+#ww-etpl .start-choice{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:18px}
+#ww-etpl .start-choice a{display:block;padding:22px;border:1px solid var(--line);background:white;text-decoration:none;color:var(--ink);border-radius:5px}
+#ww-etpl .start-choice a:hover{border-color:#9fbab4;box-shadow:0 7px 22px rgba(17,29,32,.07)}
+#ww-etpl .start-choice b{display:block;font:24px/1.1 var(--serif);margin:5px 0 8px}
+#ww-etpl .start-choice span{display:block;color:var(--muted);font-size:14px}
+#ww-etpl .start-choice .choice-kicker{font:800 11px/1.3 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+#ww-etpl a.step{display:block;color:inherit;text-decoration:none;transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease}
+#ww-etpl a.step:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(17,29,32,.08);border-color:#b8c9c3}
+#ww-etpl .step .next-link{display:inline-block;margin-top:11px;color:var(--teal);font-weight:800;font-size:13px}
+@media(max-width:700px){#ww-etpl .wave-links,#ww-etpl .start-choice{grid-template-columns:1fr}}
+@media(max-width:900px){
+ #ww-etpl .role-grid{grid-template-columns:repeat(2,1fr)}
+ #ww-etpl .start-grid{grid-template-columns:repeat(2,1fr)}
+ #ww-etpl .task-grid,#ww-etpl .help-grid,#ww-etpl .split{grid-template-columns:1fr}
+ #ww-etpl .role-map{grid-template-columns:1fr}
+ #ww-etpl .role-map div{margin:0 0 -1px 0}
+}
+@media(max-width:560px){
+ #ww-etpl .wrap{width:min(100% - 28px,1180px)}
+ #ww-etpl .hero{padding:40px 0 28px}
+ #ww-etpl .deck{font-size:19px}
+ #ww-etpl .role-grid,#ww-etpl .start-grid{grid-template-columns:1fr}
+ #ww-etpl .section{padding:32px 0}
+ #ww-etpl .section h2{font-size:29px}
+ #ww-etpl .calendar{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+ #ww-etpl .calendar thead{display:table-header-group}
+ #ww-etpl .calendar tr{display:table-row}
+ #ww-etpl .calendar td{display:table-cell;padding:12px;min-width:150px}
+}
+</style>
+
+<main id="ww-etpl">
+<section class="hero"><div class="wrap">
+<p class="eyebrow">Practice · ETPL Coordinator Desk</p>
+<h1>New to ETPL? Start here.</h1>
+<p class="deck">A practical operating guide for California ETPL coordinators. Learn the role, follow the provider lifecycle, handle common tasks, and know when to stop and verify the rule.</p>
+<div class="hero-actions">
+<a class="button primary" href="#choose-start">Choose where to start</a>
+<a class="button secondary" href="/practice/etpl-coordinator/decision-center/">I have a task right now</a>
+<a class="button secondary" href="/practice/etpl-coordinator/current-desk/">What needs attention now?</a>
+</div>
+</div></section>
+
+<section class="section" id="choose-start"><div class="wrap">
+<p class="eyebrow">Start with your need</p>
+<h2>You do not need to learn the whole ETPL to get unstuck.</h2>
+<p class="lede">Choose the situation that best matches why you are here. The Desk will reveal more detail only when you need it.</p>
+<div class="start-choice">
+<a href="#first-30-days"><span class="choice-kicker">I am new</span><b>Help me learn the job.</b><span>Follow the first-30-days path and build from vocabulary to real cases.</span></a>
+<a href="/practice/etpl-coordinator/decision-center/"><span class="choice-kicker">I have work in front of me</span><b>Help me route this issue.</b><span>Use the 60-Second Decision Center before opening the wrong workflow.</span></a>
+<a href="/practice/etpl-coordinator/ask/"><span class="choice-kicker">I am stuck</span><b>Help me find the right answer.</b><span>Search curated ETPL answers. The Desk will refuse to guess when the source or facts are not strong enough.</span></a>
+</div>
+<div class="notice"><strong>Need the current California picture?</strong> Open the <a href="/practice/etpl-coordinator/current-desk/">Current ETPL Desk</a> for active directives, reporting status, CalJOBS watch items, and recurring deadlines.</div>
+</div></section>
+
+<section class="section" id="desk-v2"><div class="wrap">
+<p class="eyebrow">Explore the full Desk</p>
+<h2>Build capability in three waves.</h2>
+<p class="lede">Use the waves as a map, not a requirement to read everything in order. Wave 1 supports today's work, Wave 2 builds judgment, and Wave 3 supports more independent practice.</p>
+
+<div class="wave">
+<div class="wave-head"><div><span class="eyebrow">Wave 1 · Operate the job</span><h3 style="margin:2px 0 0">Know what needs attention and how to do the work.</h3></div><span class="wave-num">1</span></div>
+<div class="wave-links">
+<a href="/practice/etpl-coordinator/current-desk/"><strong>Current ETPL Desk</strong><span>Current directive, reporting status, CalJOBS watch, recurring cycle, and trigger events.</span></a>
+<a href="/practice/etpl-coordinator/decision-center/"><strong>60-Second Decision Center</strong><span>Route the issue before opening a long policy or the wrong workflow.</span></a>
+<a href="/practice/etpl-coordinator/caljobs-guided-mode/"><strong>CalJOBS Guided Mode</strong><span>Task-specific provider, program, continued-eligibility, change, and reporting walkthroughs.</span></a>
+<a href="/practice/etpl-coordinator/toolkit/"><strong>ETPL Toolkit</strong><span>Copyable checklists, provider messages, and handoff tools.</span></a>
+</div></div>
+
+<div class="wave">
+<div class="wave-head"><div><span class="eyebrow">Wave 2 · Build judgment</span><h3 style="margin:2px 0 0">Move beyond compliance to better decisions and provider stewardship.</h3></div><span class="wave-num">2</span></div>
+<div class="wave-links">
+<a href="/practice/etpl-coordinator/practice-case-lab/"><strong>Practice Case Lab</strong><span>12 realistic scenarios from routine initial eligibility to appeals and participant-risk cases.</span></a>
+<a href="/practice/etpl-coordinator/training-quality-lens/"><strong>Training Quality + Consumer Choice Lens</strong><span>Separate eligibility, program quality, and participant fit.</span></a>
+<a href="/practice/etpl-coordinator/provider-management/"><strong>Provider Management Center</strong><span>Manage provider relationships, data quality, office hours, reporting readiness, and ongoing stewardship.</span></a>
+</div></div>
+
+<div class="wave">
+<div class="wave-head"><div><span class="eyebrow">Wave 3 · Become independent</span><h3 style="margin:2px 0 0">Build competency, distinguish authority, and get source-grounded answers.</h3></div><span class="wave-num">3</span></div>
+<div class="wave-links">
+<a href="/practice/etpl-coordinator/academy/"><strong>ETPL Coordinator Academy</strong><span>Six competency levels with a readiness assessment for managers and backups.</span></a>
+<a href="/practice/etpl-coordinator/policy-comparator/"><strong>State vs. Local Policy Comparator</strong><span>See whether federal, California, local policy, or operating practice controls the question.</span></a>
+<a href="/practice/etpl-coordinator/ask/"><strong>Ask the ETPL Desk · Beta</strong><span>Search curated ETPL answers and jump directly to the governing playbook without unsupported generation.</span></a>
+</div></div>
+
+<div class="notice"><strong>Boundary:</strong> Workforce Wonkery is the teacher, reference desk, toolkit, and practice environment. Real provider cases, sensitive records, internal task assignments, and participant information belong in the Local Board's approved operational systems.</div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<p class="eyebrow">The job in plain English</p>
+<h2>You maintain the bridge between training providers and the workforce system.</h2>
+<p class="lede">The role is not just data entry. Good ETPL coordination blends provider support, policy review, CalJOBS administration, performance reporting, and compliance judgment.</p>
+<div class="role-grid">
+<div class="card"><strong>Guide</strong><p>Help providers understand the process and what they need to submit.</p></div>
+<div class="card"><strong>Reviewer</strong><p>Check provider and program information against state, federal, and local requirements.</p></div>
+<div class="card"><strong>Data steward</strong><p>Keep CalJOBS information, status, costs, credentials, and performance records accurate.</p></div>
+<div class="card"><strong>Compliance steward</strong><p>Track continued eligibility, reporting issues, corrective action, and removal risks.</p></div>
+<div class="card"><strong>Connector</strong><p>Coordinate among providers, the local board, EDD, program staff, and other partners.</p></div>
+</div>
+<div class="notice"><strong>Important boundary:</strong> ETPL eligibility makes a program potentially available for WIOA-funded training. It does not by itself approve an individual participant for training or guarantee WIOA funding.</div>
+</div></section>
+
+<section class="section" id="who-decides"><div class="wrap">
+<p class="eyebrow">Who decides what?</p>
+<h2>Follow the responsibility chain.</h2>
+<p class="lede">When a question feels confusing, first identify whose decision it is.</p>
+<div class="role-map">
+<div><b>Federal</b><small>Sets the WIOA statutory and regulatory framework.</small></div>
+<div><b>California / EDD</b><small>Sets statewide ETPL policy and operates the state system and list.</small></div>
+<div><b>Local WDB / Coordinator</b><small>Administers local ETPL functions and applies applicable state and local requirements.</small></div>
+<div><b>Training provider</b><small>Supplies accurate eligibility, program, cost, credential, and performance information.</small></div>
+<div><b>Career planner + participant</b><small>Determine whether WIOA training is appropriate for the participant and select among eligible options.</small></div>
+</div>
+</div></section>
+
+<section class="section" id="first-30-days"><div class="wrap">
+<p class="eyebrow">New coordinator pathway</p>
+<h2>Your first 30 days</h2>
+<p class="lede">You do not need to memorize the whole ETPL before you can do useful work. Learn the system in the order you are most likely to need it.</p>
+<div class="start-grid">
+<a class="card step" data-step="1" href="#who-decides"><strong>Days 1–3</strong><h3>Understand the system</h3><p>Learn what the ETPL is, who decides what, how it connects to ITAs, and why provider eligibility is not participant training approval.</p><span class="next-link">Start with the responsibility map →</span></a>
+<a class="card step" data-step="2" href="/practice/etpl-coordinator/current-desk/"><strong>Week 1</strong><h3>Get your desk ready</h3><p>Confirm CalJOBS access, current EDD guidance, local policy, provider records, reporting responsibilities, and escalation contacts.</p><span class="next-link">Open Current ETPL Desk →</span></a>
+<a class="card step" data-step="3" href="/practice/etpl-coordinator/decision-center/"><strong>Weeks 2–3</strong><h3>Learn the lifecycle</h3><p>Route provider, program, continued eligibility, reporting, RAP, reciprocity, and compliance work before diving into details.</p><span class="next-link">Practice routing decisions →</span></a>
+<a class="card step" data-step="4" href="/practice/etpl-coordinator/practice-case-lab/"><strong>Week 4</strong><h3>Practice before you act</h3><p>Work realistic cases, compare your reasoning with the best route, and identify which high-consequence decisions should always be escalated.</p><span class="next-link">Open the Practice Case Lab →</span></a>
+</div>
+<p style="margin-top:16px"><a class="button secondary" href="/practice/etpl-coordinator/academy/">Use the Academy to track readiness →</a></p>
+</div></section>
+
+<section class="section" id="task-playbooks"><div class="wrap">
+<p class="eyebrow">Task playbooks</p>
+<h2>I need to do something now.</h2>
+<p class="lede">Each playbook follows the same pattern: when to use it, what to have ready, the short path, the detailed steps, common mistakes, escalation points, and controlling sources.</p>
+<div class="task-grid">
+<a class="card task-card" href="/practice/quickstarts/quickstart-review-new-training-provider/"><strong>Quickstart 1</strong><h3>Review a New Training Provider</h3><p>Start with routing, provider eligibility, operating authority, CalJOBS, program separation, and the EDD handoff.</p><span class="open">Open playbook →</span></a>
+<a class="card task-card" href="/practice/quickstarts/quickstart-review-new-training-program/"><strong>Quickstart 2</strong><h3>Review a New Training Program</h3><p>Check the exact program, location, credential, costs, occupational connection, and new-program performance pathway.</p><span class="open">Open playbook →</span></a>
+<a class="card task-card" href="/practice/quickstarts/quickstart-process-continued-etpl-eligibility/"><strong>Quickstart 3</strong><h3>Process Continued Eligibility</h3><p>Work the March/May/June cycle, annual reporting, performance measures, exemptions, and relisting correctly.</p><span class="open">Open playbook →</span></a>
+<a class="card task-card" href="/practice/quickstarts/quickstart-etpl-performance-data/"><strong>Quickstart 4</strong><h3>Help With Performance Data</h3><p>Determine the reporting cohort, keep All Student data distinct from WIOA-only data, protect PII, and verify submission.</p><span class="open">Open playbook →</span></a>
+<a class="card task-card" href="/practice/quickstarts/quickstart-resolve-etp-report-error/"><strong>Quickstart 5</strong><h3>Resolve an ETP Report Error</h3><p>Trace the exact EDD error to its source, assign the right correction, verify the system, and escalate State-side issues.</p><span class="open">Open playbook →</span></a>
+<a class="card task-card" href="/practice/quickstarts/quickstart-review-registered-apprenticeship-etpl/"><strong>Quickstart 6</strong><h3>Review a Registered Apprenticeship</h3><p>Use the RAP-specific State pathway without adding ordinary local eligibility or performance gates.</p><span class="open">Open playbook →</span></a>
+<a class="card task-card" href="/practice/quickstarts/quickstart-out-of-state-reciprocal-training/"><strong>Quickstart 7</strong><h3>Handle Out-of-State or Reciprocal Training</h3><p>Separate online State routing from reciprocity and verify the exact provider/program before WIOA funds are committed.</p><span class="open">Open playbook →</span></a>
+<a class="card task-card" href="/practice/quickstarts/quickstart-address-etpl-compliance-problem/"><strong>Quickstart 8</strong><h3>Address a Compliance Problem</h3><p>Verify facts, protect participants, identify State vs local authority, preserve appeal rights, and keep enforcement human-controlled.</p><span class="open">Open playbook →</span></a>
+</div>
+</div></section>
+
+<section class="section"><div class="wrap split">
+<div>
+<p class="eyebrow">Operating calendar</p>
+<h2>What should I be watching?</h2>
+<p class="lede">The exact dates can change through directives and information notices. Use this as a rhythm, then verify the current Workforce Deadlines and EDD source before acting.</p>
+<table class="calendar">
+<thead><tr><th>Cadence</th><th>Coordinator focus</th></tr></thead>
+<tbody>
+<tr><td><strong>Weekly</strong></td><td>Provider questions, pending applications, CalJOBS status problems, new EDD notices, and time-sensitive participant/provider issues.</td></tr>
+<tr><td><strong>Monthly</strong></td><td>Provider/program changes, stale records, local tracking, unresolved errors, and programs nearing a review point.</td></tr>
+<tr><td><strong>Annual / state window</strong></td><td>ETP performance reporting, continued eligibility activity, required provider updates, and state-directed reconciliation.</td></tr>
+<tr><td><strong>Event driven</strong></td><td>Loss of approval, closure, material cost or credential change, compliance finding, false information, ownership change, or other eligibility-impacting event.</td></tr>
+</tbody>
+</table>
+<p><a href="/workforce-deadlines/">Open Workforce Deadlines →</a></p>
+</div>
+<div>
+<p class="eyebrow">Before you contact the coordinator</p>
+<h2>A provider starter checklist</h2>
+<p class="lede">This can be shared with training providers to reduce back-and-forth.</p>
+<div class="card">
+<span class="tag">Provider identity</span><span class="tag">Program details</span><span class="tag">Credential</span><span class="tag">Costs</span><span class="tag">Approvals</span><span class="tag">Performance data</span>
+<p style="margin-top:10px">Ask providers to have their legal/provider information, program name and location, credential awarded, total cost, required approvals or licenses, and performance/reporting information ready before review begins.</p>
+</div>
+</div>
+</div></section>
+
+<section class="section" id="troubleshooting"><div class="wrap">
+<p class="eyebrow">What do I do if…?</p>
+<h2>Troubleshooting without guessing</h2>
+<p class="lede">Use these as triage prompts. High-consequence eligibility or removal decisions should always be checked against the current official source and local policy.</p>
+<details><summary>A provider wants to get on the ETPL. Where do I start?</summary><p>Start with the provider, not the individual course. Confirm which provider pathway applies, what approvals and information are required, and whether the provider record is ready before reviewing programs.</p></details>
+<details><summary>A program is already in CalJOBS, but something is wrong.</summary><p>Identify whether the problem is provider data, program data, performance data, system permissions, status, or a state-side issue. Correct only what your role is authorized to change and document the unresolved item before escalation.</p></details>
+<details><summary>A career planner says a participant wants a program that is not on the ETPL.</summary><p>Do not treat this as an automatic yes or no. Determine whether the program is actually required to be on the ETPL, whether reciprocity or another exception applies, and whether local training policy allows the proposed path.</p></details>
+<details><summary>The provider is missing performance information.</summary><p>Determine which reporting requirement and program year apply. Missing required data can affect continued eligibility, so use the current EDD notice and reporting instructions rather than relying on last year's dates.</p></details>
+<details><summary>The provider changed tuition, credential, ownership, or approval status.</summary><p>Treat material changes as a review trigger. Determine what must be updated in CalJOBS, whether eligibility is affected, and whether EDD or another approving body must act before the record is treated as current.</p></details>
+<details><summary>I cannot tell whether this is a local decision or an EDD decision.</summary><p>Use the responsibility chain above, then check the controlling directive. If the directive does not clearly delegate the decision to the local area, escalate rather than inventing a local rule.</p></details>
+</div></section>
+
+<section class="section"><div class="wrap">
+<p class="eyebrow">Source stack</p>
+<h2>Know which rule controls.</h2>
+<p class="lede">Workforce Wonkery should translate the rule, not replace it. Use the newest applicable authority when sources conflict.</p>
+<ul class="sources">
+<li><strong>California ETPL directive:</strong> <a href="https://edd.ca.gov/siteassets/files/jobs_and_training/pubs/wsd25-02.pdf">WSD25-02</a> and its attachments.</li>
+<li><strong>Federal ETPL framework:</strong> <a href="https://www.dol.gov/agencies/eta/advisories/training-and-employment-guidance-letter-no-08-19">TEGL 08-19</a> and Change 1.</li>
+<li><strong>Current EDD notices:</strong> use relevant WSINs for reporting windows, implementation details, and time-sensitive instructions.</li>
+<li><strong>Reciprocity:</strong> <a href="/2023/01/17/wsd22-08-etpl-reciprocal-agreements/">WSD22-08 brief</a>.</li>
+<li><strong>Participant training decision:</strong> <a href="/practice/quickstarts/quickstart-approve-training-request/">Approve a Training Request</a>.</li>
+<li><strong>Policy updates:</strong> <a href="/policy-briefs/?policy_topic=etpl#ww-policy-library">ETPL Policy Briefs</a>.</li>
+</ul>
+<div class="notice"><strong>Rule of thumb:</strong> If the decision can affect a provider's eligibility, a participant's access to funding, a formal removal, repayment, or an appeal right, verify the current official authority before acting.</div>
+</div></section>
+
+<section class="footer-note"><div class="wrap">ETPL Coordinator Desk · Workforce Wonkery Practice · California focus. This guide is operational support, not a substitute for current EDD directives, federal requirements, local policy, or legal advice.</div></section>
+</main>
+<!-- /wp:html -->
