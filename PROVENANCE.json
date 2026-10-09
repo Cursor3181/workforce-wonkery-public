@@ -3,7 +3,7 @@
   "file_count": 216,
   "files": [
     {
-      "sha256": "1306bb7edcaaad58551bb8e2c8e0315aa5eac5c1fd9a4e37aaf2330542a9305e",
+      "sha256": "e4f195ea1f9d830eb5a206f1f7d93b8c670f1d76d374e0381fa69ff9d9748441",
       "source": "public-companion/templates/README.md",
       "target": "README.md"
     },
@@ -1018,7 +1018,7 @@
       "target": "docs/methodology/editorial-standard-feature-briefs.md"
     },
     {
-      "sha256": "7a5ba363a10a4b26afa96471c6fd379c89f27dd50cd1cf1572cee292c3eb9eea",
+      "sha256": "275ae5a6f5e155c8144251e0ea84f2c00fd4dbb12552cf8db8c3e951ec89d1d5",
       "source": "public-companion/templates/.github/workflows/public-ci.yml",
       "target": ".github/workflows/public-ci.yml"
     },
@@ -1083,7 +1083,7 @@
       "target": ".github/workflows/accessibility-audit.yml"
     }
   ],
-  "source_commit": "2123b97c110925061ce8268da7081885ef13b5e2",
+  "source_commit": "8c5a8eb8b388ca83849d9b48757fbecaf9546dfb",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }

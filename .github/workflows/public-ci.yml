@@ -58,6 +58,9 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
   live-structure:
+    # PRs change source, not the live WordPress site. Live checks run on
+    # validated sync/main pushes and scheduled public smoke workflows.
+    if: github.event_name != 'pull_request'
     needs: validate
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -82,6 +85,9 @@ jobs:
           } >> "$GITHUB_STEP_SUMMARY"
 
   discovery:
+    # PRs change source, not the live WordPress site. Live checks run on
+    # validated sync/main pushes and scheduled public smoke workflows.
+    if: github.event_name != 'pull_request'
     needs: validate
     runs-on: ubuntu-latest
     timeout-minutes: 10
@@ -110,6 +116,9 @@ jobs:
           retention-days: 7
 
   browser-acceptance:
+    # PRs change source, not the live WordPress site. Live checks run on
+    # validated sync/main pushes and scheduled public smoke workflows.
+    if: github.event_name != 'pull_request'
     needs: validate
     runs-on: ubuntu-latest
     timeout-minutes: 20

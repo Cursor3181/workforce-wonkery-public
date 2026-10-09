@@ -10,6 +10,10 @@ This is the public development home for Workforce Wonkery reader-facing WordPres
 - **Private-owned generated outputs:** `data/`, public methodology exports, and the `PROVENANCE.json` manifest are exported from the protected Workforce Wonkery control repository. Public changes to generated files must be reconciled back into their source, not edited in place.
 - **Protected production operations:** the separate private repository owns research under review, governance records, production WordPress transactions, deployment credentials, and newsletter delivery safeguards.
 
+## Faster source validation
+
+Public pull requests validate the exported data boundary, syntax (including inline WordPress JavaScript), and CodeQL findings without repeatedly testing the unchanged live WordPress site. The complete live-browser suite still runs on trusted `sync/private-main` and `main` commits, on manual dispatch, and through its existing weekly scheduled workflow. Live structure also has its separate daily check. This keeps the public-source review focused while preserving release and production checks.
+
 ## How a website change reaches readers
 
 1. Propose a change to `src/wordpress/` on a public branch.
