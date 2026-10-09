@@ -1,0 +1,100 @@
+<!-- wp:html -->
+<style id="ww-sector-decision-v3">
+.spb-market-chapter{padding:72px clamp(22px,5vw,72px);border-bottom:1px solid var(--line);background:#fbfdfe}
+.spb-market-chapter .spb-chapter-head{margin-bottom:30px}
+.spb-market-story-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px}
+.spb-market-story-card{min-width:0;padding:0 0 26px;border-bottom:1px solid var(--line)}
+.spb-market-story-card h3{margin:0;font-size:clamp(25px,2.6vw,34px);line-height:1.12}
+.spb-market-story-card .spb-market-name{margin:0 0 7px;font-size:10px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#a84700}
+.spb-market-story-card p{margin:13px 0 0;font-size:15px;line-height:1.7;color:#435f71}
+.spb-market-data-block{margin-top:24px}
+.spb-market-data-block>h4,.spb-sector-data-block>h4,.spb-market-signals>h4{margin:0 0 12px;font:700 21px/1.2 Georgia,'Times New Roman',serif;color:var(--navy)}
+.spb-market-stat-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.spb-market-stat{padding:15px 13px 15px 0;min-width:0}
+.spb-market-stat+.spb-market-stat{padding-left:13px;border-left:1px solid var(--line)}
+.spb-market-stat strong{display:block;font:700 23px/1.1 Georgia,'Times New Roman',serif;color:var(--navy)}
+.spb-market-stat span{display:block;margin-top:4px;font-size:9.5px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:#6e8290}
+.spb-market-stat small{display:block;margin-top:4px;font-size:9.5px;line-height:1.4;color:#718391}
+.spb-industry-lens{margin-top:24px;padding:18px 20px;border-left:5px solid #075f70;background:#eef7f8}
+.spb-industry-lens .spb-industry-label{font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:#075f70}
+.spb-industry-lens h4{margin:5px 0 0;font-size:23px}
+.spb-industry-metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin-top:14px;border-top:1px solid #cfe1e4}
+.spb-industry-metrics div{padding:12px 10px 4px 0}
+.spb-industry-metrics div+div{padding-left:10px;border-left:1px solid #cfe1e4}
+.spb-industry-metrics strong{display:block;font:700 19px/1.15 Georgia,'Times New Roman',serif;color:var(--navy)}
+.spb-industry-metrics span{display:block;margin-top:3px;font-size:9.5px;color:#587185}
+.spb-industry-note{margin:12px 0 0!important;font-size:11px!important;line-height:1.55!important;color:#647b8b!important}
+.spb-sector-data-block{margin-top:32px}
+.spb-sector-data-block .spb-metrics{margin-top:0}
+.spb-market-signals{margin-top:34px}
+.spb-market-signal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.spb-market-signal{padding:18px 19px;border:1px solid var(--line);background:#fff}
+.spb-market-signal b{display:block;font-size:9px;letter-spacing:.07em;text-transform:uppercase;color:#8d2437}
+.spb-market-signal p{margin:7px 0 0;font:700 17px/1.35 Georgia,'Times New Roman',serif;color:var(--navy)}
+.spb-market-signal a{display:inline-block;margin-top:10px;font-size:10.5px;font-weight:800;text-decoration:none}
+.spb-decision-meaning{margin-top:34px;padding:20px 22px;border-left:5px solid #d49b25;background:#fff8ef}
+.spb-decision-meaning b{display:block;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#986714}
+.spb-decision-meaning p{margin:7px 0 0;font-size:13.5px;line-height:1.65;color:#526b7c}
+.spb-market-source-links{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:18px}
+.spb-market-source-links a{font-size:10.5px;font-weight:800;text-decoration:none}
+@media(max-width:900px){.spb-market-stat-grid,.spb-industry-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.spb-market-stat:nth-child(odd),.spb-industry-metrics div:nth-child(odd){padding-left:0;border-left:0}.spb-market-stat:nth-child(n+3),.spb-industry-metrics div:nth-child(n+3){border-top:1px solid var(--line)}.spb-market-signal-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.spb-market-chapter{padding-top:44px;padding-bottom:44px}.spb-market-stat-grid,.spb-industry-metrics{grid-template-columns:1fr}.spb-market-stat+.spb-market-stat,.spb-industry-metrics div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+</style>
+<script id="ww-sector-decision-v3-script">
+(function(){
+ const root=document.querySelector('.spb'), dataEl=document.getElementById('ww-sector-decision-data-v3');
+ if(!root||!dataEl||root.dataset.decisionV3)return;
+ let data;try{data=JSON.parse(dataEl.textContent||'{}');}catch(e){return;}
+ const caseChapter=document.getElementById('spb-case'), path=document.getElementById('spb-path'), evidence=document.getElementById('spb-evidence');
+ if(!caseChapter||!path||!evidence||!Array.isArray(data.markets)||!data.markets.length)return;
+ root.dataset.decisionV3='3.0';
+ const esc=s=>String(s??'');
+ const section=document.createElement('section');section.className='spb-market-chapter';section.id='spb-market-case';
+ section.insertAdjacentHTML('afterbegin','<div class="spb-chapter-head"><div class="spb-chapter-no">01</div><div><div class="spb-kicker">Market story + decision evidence</div><h2>What is happening in this market?</h2><p>Start with the local economic story, then separate broad market context from the sector-specific evidence that supports the partnership decision.</p></div></div>');
+ const stories=document.createElement('div');stories.className='spb-market-story-grid';
+ data.markets.forEach((m,idx)=>{
+   const card=document.createElement('article');card.className='spb-market-story-card';
+   const ps=(m.paras||[]).slice(0,data.markets.length>1?2:4);
+   card.innerHTML='<div class="spb-market-name"></div><h3></h3>';
+   card.querySelector('.spb-market-name').textContent=m.market||'Labor market';
+   card.querySelector('h3').textContent=m.headline||'Local market context';
+   ps.forEach(t=>{const p=document.createElement('p');p.textContent=t;card.append(p);});
+   const block=document.createElement('div');block.className='spb-market-data-block';
+   const h=document.createElement('h4');h.textContent='Market conditions';block.append(h);
+   const grid=document.createElement('div');grid.className='spb-market-stat-grid';
+   const stats=[...(m.clues||[]).slice(0,4),...(m.cost?[{label:'Living wage',value:m.cost,note:'1 adult · 0 children'}]:[])];
+   stats.slice(0,5).forEach(x=>{const d=document.createElement('div');d.className='spb-market-stat';const strong=document.createElement('strong');strong.textContent=x.value||'—';const span=document.createElement('span');span.textContent=x.label||'';const small=document.createElement('small');small.textContent=x.note||'';d.append(strong,span,small);grid.append(d);});
+   block.append(grid);card.append(block);
+   if(m.industry&&Array.isArray(m.industry.metrics)){
+     const lens=document.createElement('div');lens.className='spb-industry-lens';
+     lens.innerHTML='<div class="spb-industry-label">Closest published industry lens</div><h4></h4><div class="spb-industry-metrics"></div><p class="spb-industry-note">This broader industry lens provides market context. It does not, by itself, prove that the specific sector partnership is warranted.</p>';
+     lens.querySelector('h4').textContent=m.industry.title||'Industry context';
+     const mg=lens.querySelector('.spb-industry-metrics');
+     m.industry.metrics.slice(0,5).forEach(x=>{const d=document.createElement('div');const st=document.createElement('strong');st.textContent=x.value||'—';const sp=document.createElement('span');sp.textContent=x.label||'';d.append(st,sp);mg.append(d);});
+     card.append(lens);
+   }
+   const links=document.createElement('div');links.className='spb-market-source-links';
+   const a=document.createElement('a');const msaCode=String(m.code||'').replace(/[^a-zA-Z0-9_-]/g,'');a.href='/data/labor-market-profiles/#msa-'+encodeURIComponent(msaCode);a.textContent='Open full '+(m.market||'labor market')+' profile →';links.append(a);card.append(links);
+   stories.append(card);
+ });
+ section.append(stories);
+ const metrics=root.querySelector('.spb-metrics');
+ if(metrics){
+   const sb=document.createElement('div');sb.className='spb-sector-data-block';const h=document.createElement('h4');h.textContent='Sector-specific evidence already in this case';sb.append(h,metrics);section.append(sb);
+ }
+ const signals=(data.markets||[]).flatMap(m=>(m.signals||[]).map(s=>({...s,market:m.market}))).slice(0,4);
+ if(signals.length){
+   const wrap=document.createElement('div');wrap.className='spb-market-signals';const h=document.createElement('h4');h.textContent='Current signals worth watching';const grid=document.createElement('div');grid.className='spb-market-signal-grid';
+   signals.forEach(s=>{const card=document.createElement('article');card.className='spb-market-signal';const b=document.createElement('b');b.textContent=[s.date,s.market].filter(Boolean).join(' · ');const p=document.createElement('p');p.textContent=s.title||'';card.append(b,p);if(s.url){const a=document.createElement('a');a.href=s.url;a.target='_blank';a.rel='noopener noreferrer';a.textContent='Open source →';card.append(a);}grid.append(card);});
+   wrap.append(h,grid);section.append(wrap);
+ }
+ const meaning=document.createElement('div');meaning.className='spb-decision-meaning';meaning.innerHTML='<b>How to use this evidence</b><p>The market data establishes scale, direction, cost pressures, and recent change. It does not prove that a sector partnership is the right response. The next chapter tests whether employers share a problem, whether workers gain value, whether existing infrastructure can own the work, and what evidence is still missing.</p>';section.append(meaning);
+ caseChapter.before(section);
+ const renum=(el,n)=>{const x=el.querySelector('.spb-chapter-no');if(x)x.textContent=n;};
+ renum(caseChapter,'02');renum(path,'03');renum(evidence,'04');
+ const caseHead=caseChapter.querySelector('.spb-chapter-head h2');if(caseHead)caseHead.textContent='Does the partnership case hold up?';
+ const rail=root.querySelector('.spb-editorial-rail');
+ if(rail)rail.innerHTML='<b>In this brief</b><a href="#spb-quick"><strong>Quick read</strong>The decision</a><a href="#spb-market-case"><strong>01</strong>Market story + data</a><a href="#spb-case"><strong>02</strong>Partnership case</a><a href="#spb-path"><strong>03</strong>Action sequence</a><a href="#spb-evidence"><strong>04</strong>Evidence & sources</a>';
+})();
+</script>
+<!-- /wp:html -->

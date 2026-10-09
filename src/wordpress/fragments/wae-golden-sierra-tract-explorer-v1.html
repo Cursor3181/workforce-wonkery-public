@@ -1,0 +1,429 @@
+<style>
+#weq-gs-tract-v1{scroll-margin-top:22px}
+#weq-gs-tract-v1 .gs-map-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:18px;align-items:start;margin:16px 0}
+#weq-gs-tract-v1 .gs-map-callout{padding:15px 16px;border-left:4px solid var(--orange);background:var(--warm);font-size:14px;line-height:1.6;color:#5d5148}
+#weq-gs-tract-v1 .gs-map-question{margin:20px 0 16px;padding:17px;border:1px solid var(--line);border-radius:11px;background:#fff}
+#weq-gs-tract-v1 .gs-map-question h3{font-size:24px;margin:3px 0 6px}
+#weq-gs-tract-v1 .gs-map-question p{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important;margin:0 0 11px!important}
+#weq-gs-tract-v1 label{display:block;margin:0 0 6px;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+#weq-gs-tract-v1 select,#weq-gs-tract-v1 input{width:100%;min-height:48px;padding:10px 12px;border:1px solid #b9cbd5;border-radius:7px;background:#fff;color:var(--navy);font:700 15px Inter,Arial,sans-serif}
+#weq-gs-tract-v1 select:focus-visible,#weq-gs-tract-v1 input:focus-visible{outline:3px solid #005b91;outline-offset:2px}
+#weq-gs-tract-v1 .gs-map-controls{display:grid;grid-template-columns:minmax(175px,.72fr) minmax(150px,.65fr) minmax(250px,1.1fr) minmax(230px,1fr);gap:12px;margin:12px 0 8px}
+#weq-gs-tract-v1 .gs-map-status{margin:7px 0 12px;font-size:13px;line-height:1.5;color:var(--muted)}
+#weq-gs-tract-v1 .gs-map-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,.72fr);gap:16px;align-items:start}
+#weq-gs-tract-v1 .gs-map-box{border:1px solid #9fcfd0;border-radius:12px;background:#f2fbfa;padding:14px}
+#weq-gs-tract-v1 svg{display:block;width:100%;height:auto;min-height:430px}
+#weq-gs-tract-v1 .gs-tract path{fill:#d7e6ed;stroke:#fff;stroke-width:1.1;cursor:pointer;transition:fill .16s ease,stroke-width .12s ease}
+#weq-gs-tract-v1 .gs-tract:hover path,#weq-gs-tract-v1 .gs-tract:focus path{stroke:var(--navy);stroke-width:2.6}
+#weq-gs-tract-v1 .gs-tract:focus-visible{outline:none}
+#weq-gs-tract-v1 .gs-tract.is-selected path{stroke:var(--orange);stroke-width:4;filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)}
+#weq-gs-tract-v1 .gs-map-legend{margin-top:10px}
+#weq-gs-tract-v1 .gs-map-legend-label{font-size:13px;font-weight:850;color:var(--ink);margin-bottom:6px}
+#weq-gs-tract-v1 .gs-map-gradient{height:12px;border-radius:999px;background:linear-gradient(90deg,#E8F8F7,#B9E6E1,#72C9BE,#2BA99B,#0B7C78,#07485B);border:1px solid #9fcfd0}
+#weq-gs-tract-v1 .gs-map-legend-values{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted);margin-top:5px}
+#weq-gs-tract-v1 .gs-map-coverage{font-size:12px;line-height:1.5;color:var(--muted);margin-top:7px}
+#weq-gs-tract-v1 .gs-map-gate{display:inline-block;margin-top:6px;padding:4px 8px;border:1px solid var(--line);border-radius:999px;font-size:11px;font-weight:850;letter-spacing:.04em;text-transform:uppercase}
+#weq-gs-tract-v1 .gs-map-gate.strong{background:#edf7f1;color:#1f6844}
+#weq-gs-tract-v1 .gs-map-gate.partial{background:#fff7e8;color:#855900}
+#weq-gs-tract-v1 .gs-map-gate.limited{background:#f6eeee;color:#8a3535}
+#weq-gs-tract-v1 .gs-map-note{font-size:12px!important;line-height:1.55!important;color:var(--muted)!important;margin:9px 0 0!important}
+#weq-gs-tract-v1 .gs-map-panel{border:1px solid var(--line);border-top:4px solid #0B7C78;border-radius:10px;background:#fff;padding:16px 18px}
+#weq-gs-tract-v1 .gs-map-panel-kicker{font-size:11px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;color:#0B7C78}
+#weq-gs-tract-v1 .gs-map-panel h3{font-size:24px;margin:5px 0 5px}
+#weq-gs-tract-v1 .gs-map-panel p{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important}
+#weq-gs-tract-v1 .gs-map-question-read{margin:10px 0;padding:10px 11px;border-radius:7px;background:#F0FBF9;border:1px solid #B7DDD8}
+#weq-gs-tract-v1 .gs-map-question-read span{display:block;font-size:11px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:#4c7186;margin-bottom:3px}
+#weq-gs-tract-v1 .gs-map-question-read strong{display:block;font-size:14px;line-height:1.45;color:var(--navy)}
+#weq-gs-tract-v1 .gs-map-reading{padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:11px 0}
+#weq-gs-tract-v1 .gs-map-reading span{display:block;font-size:13px;font-weight:800;color:var(--ink)}
+#weq-gs-tract-v1 .gs-map-reading strong{display:block;font-size:30px;line-height:1.1;color:var(--navy);margin:4px 0}
+#weq-gs-tract-v1 .gs-map-reading small{display:block;font-size:12px;line-height:1.5;color:var(--muted)}
+#weq-gs-tract-v1 .gs-map-details{margin:18px 0 0}
+#weq-gs-tract-v1 .gs-map-details[hidden]{display:none}
+#weq-gs-tract-v1 .gs-map-details-head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:10px}
+#weq-gs-tract-v1 .gs-map-details-head h3{font-size:24px;margin:3px 0 0}
+#weq-gs-tract-v1 .gs-map-details-head p{font-size:14px!important;line-height:1.55!important;color:var(--muted)!important;margin:0!important;max-width:560px}
+#weq-gs-tract-v1 .gs-map-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+#weq-gs-tract-v1 .gs-map-card{border:1px solid var(--line);border-radius:9px;background:#fff;padding:14px;min-width:0}
+#weq-gs-tract-v1 .gs-map-card-kicker{font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:#0B7C78;margin-bottom:7px}
+#weq-gs-tract-v1 .gs-map-card h4{font-size:18px;margin:0 0 7px;color:var(--navy)}
+#weq-gs-tract-v1 .gs-map-card p,#weq-gs-tract-v1 .gs-map-card li{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important}
+#weq-gs-tract-v1 .gs-map-card ul{margin:6px 0 0;padding-left:18px}
+#weq-gs-tract-v1 .gs-map-card li{margin:4px 0}
+#weq-gs-tract-v1 .gs-map-who-row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid #edf1f3;font-size:13px;line-height:1.4}
+#weq-gs-tract-v1 .gs-map-who-row:first-of-type{border-top:0}
+#weq-gs-tract-v1 .gs-map-who-row span{color:var(--muted)}
+#weq-gs-tract-v1 .gs-map-who-row strong{color:var(--ink);white-space:nowrap}
+#weq-gs-tract-v1 .gs-map-lens{border-radius:7px;background:#F0FBF9;border:1px solid #B7DDD8;padding:11px}
+#weq-gs-tract-v1 .gs-map-lens b{display:block;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#a84700;margin:0 0 4px}
+#weq-gs-tract-v1 .gs-map-lens p{margin:0 0 10px!important}
+#weq-gs-tract-v1 .gs-map-lens p:last-child{margin-bottom:0!important}
+#weq-gs-tract-v1 .gs-map-evidence-row{padding:8px 0;border-top:1px solid #edf1f3}
+#weq-gs-tract-v1 .gs-map-evidence-row:first-of-type{border-top:0}
+#weq-gs-tract-v1 .gs-map-evidence-row span{display:block;font-size:11px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+#weq-gs-tract-v1 .gs-map-evidence-row strong{display:block;font-size:13px;line-height:1.45;color:var(--ink);margin-top:2px}
+#weq-gs-tract-v1 .gs-map-other{margin-top:14px;border:1px solid var(--line);border-radius:9px;background:#fff;padding:14px}
+#weq-gs-tract-v1 .gs-map-other-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:7px}
+#weq-gs-tract-v1 .gs-map-other-head strong{font-size:15px;color:var(--navy)}
+#weq-gs-tract-v1 .gs-map-other-head span{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+#weq-gs-tract-v1 .gs-map-other-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px 12px}
+#weq-gs-tract-v1 .gs-map-other-item{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid #edf1f3;font-size:13px;line-height:1.45}
+#weq-gs-tract-v1 .gs-map-other-item span{color:var(--muted);max-width:68%}
+#weq-gs-tract-v1 .gs-map-other-item strong{text-align:right;color:var(--ink)}
+#weq-gs-tract-v1 .gs-map-brief{margin-top:14px;border:1px solid #d8e5eb;border-radius:9px;background:#fff}
+#weq-gs-tract-v1 .gs-map-brief summary{cursor:pointer;padding:12px 14px;font-size:15px;font-weight:900;color:#005b91}
+#weq-gs-tract-v1 .gs-map-brief-body{padding:0 14px 14px}
+#weq-gs-tract-v1 .gs-map-brief-block{padding:9px 0;border-top:1px solid #edf1f3}
+#weq-gs-tract-v1 .gs-map-brief-block b{display:block;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#a84700;margin-bottom:4px}
+#weq-gs-tract-v1 .gs-map-brief-block p{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important;margin:0!important}
+#weq-gs-tract-v1 .gs-map-copy{appearance:none;border:1px solid #7ca5ba;border-radius:6px;background:#eef6f9;color:#005b91;font:800 13px Inter,Arial,sans-serif;padding:8px 10px;cursor:pointer;margin-top:8px}
+#weq-gs-tract-v1 .gs-map-about{margin-top:14px;border-top:1px solid var(--line)}
+#weq-gs-tract-v1 .gs-map-about summary{cursor:pointer;padding:12px 0;font-size:14px;font-weight:850;color:#005b91}
+#weq-gs-tract-v1 .gs-map-about p{font-size:13px!important;line-height:1.6!important;color:var(--muted)!important}
+@media(prefers-reduced-motion:reduce){#weq-gs-tract-v1 .gs-tract path{transition:none}}
+@media(max-width:1000px){#weq-gs-tract-v1 .gs-map-detail-grid{grid-template-columns:1fr 1fr}#weq-gs-tract-v1 .gs-map-card:last-child{grid-column:1/-1}#weq-gs-tract-v1 .gs-map-other-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){#weq-gs-tract-v1 .gs-map-controls{grid-template-columns:1fr 1fr}#weq-gs-tract-v1 .gs-map-search{grid-column:1/-1}}
+@media(max-width:850px){#weq-gs-tract-v1 .gs-map-intro,#weq-gs-tract-v1 .gs-map-layout,#weq-gs-tract-v1 .gs-map-detail-grid,#weq-gs-tract-v1 .gs-map-other-grid{grid-template-columns:1fr}#weq-gs-tract-v1 .gs-map-card:last-child{grid-column:auto}#weq-gs-tract-v1 .gs-map-details-head{display:block}#weq-gs-tract-v1 .gs-map-details-head p{margin-top:5px!important}}
+@media(max-width:600px){#weq-gs-tract-v1 .gs-map-controls{grid-template-columns:1fr}#weq-gs-tract-v1 .gs-map-search{grid-column:auto}#weq-gs-tract-v1 svg{min-height:320px}#weq-gs-tract-v1 .gs-map-reading strong{font-size:27px}}
+</style>
+<section id="neighborhood-equity" class="weq-section">
+<div id="weq-gs-tract-v1">
+<div class="weq-kicker">Neighborhood Equity &amp; Access · Golden Sierra pilot</div>
+<h2>Explore neighborhood conditions.</h2>
+<div class="gs-map-intro">
+<div>
+<p>Start with a workforce question, choose a Golden Sierra county, then use the map to see how the selected condition varies within that county. Select a census tract for a quick read, community context, and decision prompts.</p>
+<p><strong>This is not WIOA performance data.</strong> This first Golden Sierra release uses public CalEnviroScreen 5.0 tract data only. American Community Survey precision measures will be added after their separate static-data validation gate.</p>
+</div>
+<div class="gs-map-callout"><strong>Read the map carefully:</strong> darker shading means a larger value for the selected layer. It does not mean a neighborhood is better, worse, more deserving, or ranked. Race and ethnicity are shown only as descriptive community composition and are never used as a priority signal.</div>
+</div>
+
+<div class="gs-map-question">
+<div class="weq-kicker">Start here</div>
+<h3>What are you trying to understand?</h3>
+<p>Choose a workforce question and the map will open the most relevant evidence currently cleared for this pilot.</p>
+<label for="gs-map-question-select">Choose a question</label>
+<select id="gs-map-question-select">
+<option value="" selected>Select a workforce question</option>
+<option value="outreach">Where should we investigate whether outreach or language access needs attention?</option>
+<option value="training">Where should we examine adult education, bridge, or training connections?</option>
+<option value="employment">Where should we look more closely at job matching or reemployment barriers?</option>
+<option value="household">Where might household financial pressure make training or job search harder to sustain?</option>
+<option value="housing">Where might household costs make training or job search harder to sustain?</option>
+<option value="environment">What workforce question, if any, is supported by environmental context?</option>
+<option value="composition">Who lives here, and what should we understand before designing outreach or services?</option>
+</select>
+</div>
+
+<div class="gs-map-controls">
+<div><label for="gs-map-county">Map area</label><select id="gs-map-county"><option value="Placer" selected>Placer County</option><option value="El Dorado">El Dorado County</option><option value="Alpine">Alpine County</option></select></div>
+<div><label for="gs-map-mode">Map view</label><select id="gs-map-mode"><option value="conditions" selected>Conditions &amp; access</option><option value="composition">Community composition</option></select></div>
+<div id="gs-map-condition-field"><label for="gs-map-metric">Condition to explore</label><select id="gs-map-metric">
+<option value="poverty" selected>Income below 2× federal poverty level</option>
+<option value="unemployment">Unemployment</option>
+<option value="education">Adults 25+ without a high school education</option>
+<option value="language">Limited-English-speaking households</option>
+<option value="housing">Low-income households with severe housing cost burden</option>
+<option value="pollution">Pollution burden percentile</option>
+</select></div>
+<div id="gs-map-composition-field" hidden><label for="gs-map-composition">Community composition</label><select id="gs-map-composition">
+<option value="hispanic" selected>Hispanic or Latino (any race)</option>
+<option value="white">White (Non-Hispanic)</option>
+<option value="black">Black or African American (Non-Hispanic)</option>
+<option value="native">Native American (Non-Hispanic)</option>
+<option value="asian">Asian (Non-Hispanic)</option>
+<option value="pacific">Pacific Islander (Non-Hispanic)</option>
+<option value="other">Other / multiple races (Non-Hispanic)</option>
+</select></div>
+<div class="gs-map-search"><label for="gs-map-search">Find a community or tract</label><input id="gs-map-search" type="search" list="gs-map-place-list" placeholder="Try Placerville, Auburn, or a tract number" autocomplete="off"><datalist id="gs-map-place-list"></datalist></div>
+</div>
+
+<p id="gs-map-status" class="gs-map-status" aria-live="polite">Starting Golden Sierra county map…</p>
+
+<div class="gs-map-layout">
+<div class="gs-map-box">
+<svg id="gs-map-svg" viewBox="0 0 720 540" role="img" aria-labelledby="gs-map-title gs-map-desc">
+<title id="gs-map-title">Golden Sierra census tract map</title>
+<desc id="gs-map-desc">Golden Sierra census tracts shaded by the selected public condition. Hatched tracts have no published value for the selected layer.</desc>
+<defs><pattern id="gs-map-no-data" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#eef2f4"></rect><line x1="0" y1="0" x2="0" y2="8" stroke="#aebbc2" stroke-width="3"></line></pattern></defs>
+<g id="gs-map-layer"></g>
+</svg>
+<div class="gs-map-legend">
+<div id="gs-map-legend-label" class="gs-map-legend-label">Income below 2× federal poverty level</div>
+<div class="gs-map-gradient"></div>
+<div class="gs-map-legend-values"><span id="gs-map-min">—</span><span id="gs-map-mid">Darker = larger value</span><span id="gs-map-max">—</span></div>
+<div id="gs-map-coverage" class="gs-map-coverage">Coverage will appear after the public layer loads.</div>
+<span id="gs-map-gate" class="gs-map-gate">Loading</span>
+<p class="gs-map-note">Values are shaded within Golden Sierra for the selected layer. This is descriptive context, not a priority score.</p>
+</div>
+</div>
+
+<aside id="gs-map-panel" class="gs-map-panel">
+<div class="gs-map-panel-kicker">Quick read</div>
+<h3>Select a census tract</h3>
+<p>Choose a tract on the map or search by CalEnviroScreen's approximate-location label. The selected tract will remain outlined while you explore other layers.</p>
+</aside>
+</div>
+
+<div id="gs-map-details" class="gs-map-details" hidden></div>
+
+<details class="gs-map-about">
+<summary>About this first Golden Sierra map release</summary>
+<p><strong>Source:</strong> California Office of Environmental Health Hazard Assessment / CalEPA, CalEnviroScreen 5.0, released July 1, 2026. The browser requests the public CalEnviroScreen feature layer for Alpine, El Dorado, and Placer counties and draws the current tract geometry directly.</p>
+<p><strong>Phase 1 scope:</strong> six workforce-relevant condition measures and seven descriptive community-composition measures. No WIOA participant, service, case-management, or outcome records are used. No composite equity score or neighborhood ranking is produced.</p>
+<p><strong>Next enrichment gate:</strong> add the same validated 2020–2024 American Community Survey tract precision measures used by the Santa Cruz reference only after a Golden Sierra static package passes coverage, margin-of-error, geography, and public-packaging QA.</p>
+</details>
+</div>
+</section>
+<script>
+(function(){
+  const root=document.getElementById('weq-gs-tract-v1');
+  if(!root)return;
+  const bootStatus=document.getElementById('gs-map-status');
+  if(bootStatus)bootStatus.textContent='Starting Golden Sierra county map…';
+
+  const sourceBase='https://services1.arcgis.com/PCHfdHz4GlDNAhBb/arcgis/rest/services/calenviroscreen50results_F_070126_gdb/FeatureServer/2/query';
+  const fields=['tract','ApproxLoc','county','Population','Poverty','Unemployment','Education','Linguistic_Isol','HousBurd','Pollution_Pctl','Hispanic','white','black','Native_American','asian','Pacific_Islander','Other_Multiple'].join(',');
+  function countyUrl(county){
+    return sourceBase+'?where='+encodeURIComponent("county='"+county+"'")+'&outFields='+encodeURIComponent(fields)+'&returnGeometry=true&outSR=4326&f=geojson';
+  }
+
+  const metricMeta={
+    poverty:{label:'Income below 2× federal poverty level',field:'Poverty',unit:'percent',question:'Where might household financial pressure make training or job search harder to sustain?',meaning:'A larger tract estimate is a reason to examine whether participation costs, unpaid time, or basic-needs pressures may matter. It is not evidence that residents cannot participate.',next:'Check paid-training design, supportive services, benefits coordination, schedules, and local service-use evidence.'},
+    unemployment:{label:'Unemployment',field:'Unemployment',unit:'percent',question:'Where should we look more closely at job matching or reemployment barriers?',meaning:'A larger tract estimate can prompt a closer look at reemployment and job matching. It does not show who is eligible for or reached by WIOA.',next:'Check current job-search patterns, sector demand, service reach, and whether residents are represented in local workforce data.'},
+    education:{label:'Adults 25+ without a high school education',field:'Education',unit:'percent',question:'Where should we examine adult education, bridge, or training connections?',meaning:'Educational attainment can identify a pathway-design question, but it does not establish training demand or program fit.',next:'Check adult education, bridge and short-term training capacity, entry requirements, schedules, language access, and outreach evidence.'},
+    language:{label:'Limited-English-speaking households',field:'Linguistic_Isol',unit:'percent',question:'Where should we investigate whether outreach or language access needs attention?',meaning:'A larger estimate is a reason to investigate language access. It does not identify which languages residents use or prove current services are inadequate.',next:'Check detailed language-use evidence, translated materials, bilingual navigation capacity, and trusted community-partner input.'},
+    housing:{label:'Low-income households with severe housing cost burden',field:'HousBurd',unit:'percent',question:'Where might household costs make training or job search harder to sustain?',meaning:'Housing cost burden can frame a participation-cost question. It does not prove housing costs cause workforce nonparticipation.',next:'Check supportive services, paid training, schedule flexibility, housing/basic-needs partnerships, and participant feedback.'},
+    pollution:{label:'Pollution burden percentile',field:'Pollution_Pctl',unit:'percentile',question:'What workforce question, if any, is supported by environmental context?',meaning:'Pollution burden is environmental context, not a workforce access or performance measure.',next:'Use underlying environmental indicators and appropriate expertise if a workforce decision asserts a specific connection. Do not allocate workforce resources from this percentile alone.'}
+  };
+
+  const compositionMeta={
+    hispanic:{label:'Hispanic or Latino (any race)',field:'Hispanic'},
+    white:{label:'White (Non-Hispanic)',field:'white'},
+    black:{label:'Black or African American (Non-Hispanic)',field:'black'},
+    native:{label:'Native American (Non-Hispanic)',field:'Native_American'},
+    asian:{label:'Asian (Non-Hispanic)',field:'asian'},
+    pacific:{label:'Pacific Islander (Non-Hispanic)',field:'Pacific_Islander'},
+    other:{label:'Other / multiple races (Non-Hispanic)',field:'Other_Multiple'}
+  };
+
+  const questionMap={
+    outreach:{mode:'conditions',metric:'language'},
+    training:{mode:'conditions',metric:'education'},
+    employment:{mode:'conditions',metric:'unemployment'},
+    household:{mode:'conditions',metric:'poverty'},
+    housing:{mode:'conditions',metric:'housing'},
+    environment:{mode:'conditions',metric:'pollution'},
+    composition:{mode:'composition',composition:'hispanic'}
+  };
+
+  const colors=['#E8F8F7','#B9E6E1','#72C9BE','#2BA99B','#0B7C78','#07485B'];
+  const state={features:new Map(),selected:null,mode:'conditions',metric:'poverty',composition:'hispanic',question:''};
+
+  const svg=root.querySelector('#gs-map-svg');
+  const layer=root.querySelector('#gs-map-layer');
+  const status=root.querySelector('#gs-map-status');
+  const panel=root.querySelector('#gs-map-panel');
+  const details=root.querySelector('#gs-map-details');
+  const countySelect=root.querySelector('#gs-map-county');
+  const modeSelect=root.querySelector('#gs-map-mode');
+  const metricSelect=root.querySelector('#gs-map-metric');
+  const compositionSelect=root.querySelector('#gs-map-composition');
+  const conditionField=root.querySelector('#gs-map-condition-field');
+  const compositionField=root.querySelector('#gs-map-composition-field');
+  const questionSelect=root.querySelector('#gs-map-question-select');
+  const search=root.querySelector('#gs-map-search');
+  const datalist=root.querySelector('#gs-map-place-list');
+  const legendLabel=root.querySelector('#gs-map-legend-label');
+  const legendMin=root.querySelector('#gs-map-min');
+  const legendMax=root.querySelector('#gs-map-max');
+  const coverageEl=root.querySelector('#gs-map-coverage');
+  const gateEl=root.querySelector('#gs-map-gate');
+
+  function esc(value){const el=document.createElement('div');el.textContent=String(value??'');return el.innerHTML;}
+  function geoid(value){const digits=String(value??'').replace(/\D/g,'');return digits?digits.padStart(11,'0'):'';}
+  function tractLabel(g){const raw=g.slice(-6),n=Number(raw)/100;return Number.isInteger(n)?String(n):n.toFixed(2).replace(/0+$/,'').replace(/\.$/,'');}
+  function num(value){const n=Number(value);return Number.isFinite(n)?n:null;}
+  function fmt(value,unit){if(value===null||value===undefined||!Number.isFinite(Number(value)))return 'No published value';const n=Number(value);return unit==='percentile'?n.toFixed(1)+' percentile':n.toFixed(1)+'%';}
+  function rings(geometry){if(!geometry)return[];if(geometry.type==='Polygon')return geometry.coordinates||[];if(geometry.type==='MultiPolygon')return (geometry.coordinates||[]).flat();return[];}
+  function featureValue(feature){
+    const p=feature.properties||{};
+    if(state.mode==='composition')return num(p[compositionMeta[state.composition].field]);
+    return num(p[metricMeta[state.metric].field]);
+  }
+  function activeMeta(){return state.mode==='composition'?{...compositionMeta[state.composition],unit:'percent'}:metricMeta[state.metric];}
+  function allValues(){return [...state.features.values()].map(featureValue).filter(v=>v!==null);}
+  function median(values){if(!values.length)return null;const a=[...values].sort((x,y)=>x-y),m=Math.floor(a.length/2);return a.length%2?a[m]:(a[m-1]+a[m])/2;}
+  function coverageGate(available,total){if(!available)return['limited','No data'];const ratio=available/total;if(ratio>=.9)return['strong','Strong coverage'];if(ratio>=.75)return['partial','Partial coverage'];return['limited','Limited coverage'];}
+  function colorFor(value,min,max){if(value===null)return'url(#gs-map-no-data)';if(max<=min)return colors[3];const t=Math.max(0,Math.min(1,(value-min)/(max-min)));return colors[Math.min(colors.length-1,Math.floor(t*colors.length))];}
+  function context(feature){
+    const p=feature.properties||{},approx=String(p.ApproxLoc||'').trim(),county=String(p.county||'').trim();
+    if(approx){if(county)return approx+' · '+county+' County';}
+    if(approx)return approx;
+    if(county)return county+' County';
+    return 'Golden Sierra';
+  }
+  function compare(value,med,unit){
+    if(value===null||med===null)return'No descriptive comparison is available.';
+    const diff=value-med;
+    const label=Math.abs(diff)<0.05?'about the same as':diff>0?'above':'below';
+    return 'The selected value is '+label+' the '+countySelect.value+' County tract median ('+fmt(med,unit)+'). This is descriptive context, not a ranking or priority score.';
+  }
+
+  function buildGeometry(){
+    const coords=[];
+    for(const f of state.features.values())for(const ring of rings(f.geometry))for(const pt of ring)if(Array.isArray(pt)){if(pt.length>=2)coords.push(pt);}
+    if(!coords.length)throw new Error('No Golden Sierra tract geometry was returned.');
+    const xs=coords.map(p=>p[0]),ys=coords.map(p=>p[1]);
+    const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);
+    const W=720,H=540,pad=24,scale=Math.min((W-pad*2)/(maxX-minX),(H-pad*2)/(maxY-minY));
+    const drawW=(maxX-minX)*scale,drawH=(maxY-minY)*scale,ox=(W-drawW)/2,oy=(H-drawH)/2;
+    const project=pt=>[ox+(pt[0]-minX)*scale,H-(oy+(pt[1]-minY)*scale)];
+    const pathFor=ring=>ring.map((pt,i)=>{const q=project(pt);return(i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1);}).join(' ')+' Z';
+    layer.innerHTML=[...state.features.entries()].map(([g,f])=>{
+      const d=rings(f.geometry).map(pathFor).join(' ');
+      const label='Census tract '+tractLabel(g)+', '+context(f);
+      return '<g class="gs-tract" tabindex="0" role="button" data-geoid="'+g+'" aria-label="'+esc('Select '+label)+'"><path data-geoid="'+g+'" d="'+d+'" fill-rule="evenodd"><title>'+esc(label)+'</title></path></g>';
+    }).join('');
+    root.querySelectorAll('.gs-tract').forEach(el=>{
+      el.addEventListener('click',()=>selectTract(el.dataset.geoid));
+      el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectTract(el.dataset.geoid);}});
+    });
+  }
+
+  function rebuildSearch(){
+    datalist.innerHTML=[...state.features.entries()].sort((a,b)=>context(a[1]).localeCompare(context(b[1]))).map(([g,f])=>'<option value="'+esc(context(f)+' — Tract '+tractLabel(g))+'"></option>').join('');
+  }
+
+  function paint(){
+    const meta=activeMeta(),values=allValues(),min=values.length?Math.min(...values):null,max=values.length?Math.max(...values):null,med=median(values),total=state.features.size,available=values.length;
+    root.querySelectorAll('.gs-tract path').forEach(path=>{
+      const f=state.features.get(path.dataset.geoid),v=f?featureValue(f):null;
+      path.style.fill=colorFor(v,min,max);
+    });
+    root.querySelectorAll('.gs-tract').forEach(el=>el.classList.toggle('is-selected',el.dataset.geoid===state.selected));
+    legendLabel.textContent=meta.label;
+    legendMin.textContent=fmt(min,meta.unit);
+    legendMax.textContent=fmt(max,meta.unit);
+    coverageEl.textContent='Published values for '+available+' of '+total+' mapped populated tracts. Missing values are hatched and are not treated as zero.';
+    const gate=coverageGate(available,total);gateEl.className='gs-map-gate '+gate[0];gateEl.textContent=gate[1];
+    if(state.selected)renderSelected(med,available,total);
+  }
+
+  function compositionRows(feature){
+    const p=feature.properties||{};
+    return Object.values(compositionMeta).map(m=>'<div class="gs-map-who-row"><span>'+esc(m.label)+'</span><strong>'+esc(fmt(num(p[m.field]),'percent'))+'</strong></div>').join('');
+  }
+
+  function otherConditions(feature){
+    const p=feature.properties||{};
+    return Object.values(metricMeta).map(m=>'<div class="gs-map-other-item"><span>'+esc(m.label)+'</span><strong>'+esc(fmt(num(p[m.field]),m.unit))+'</strong></div>').join('');
+  }
+
+  function decisionBrief(feature,value,meta,med){
+    const p=feature.properties||{},place=context(feature),q=state.question||meta.question||'What should we investigate next?';
+    return '<details class="gs-map-brief"><summary>Decision brief</summary><div class="gs-map-brief-body">'+
+      '<div class="gs-map-brief-block"><b>Question</b><p>'+esc(q)+'</p></div>'+
+      '<div class="gs-map-brief-block"><b>Place</b><p>'+esc(place+' · Census Tract '+tractLabel(state.selected))+'</p></div>'+
+      '<div class="gs-map-brief-block"><b>Evidence observed</b><p>'+esc(meta.label+': '+fmt(value,meta.unit)+'. '+compare(value,med,meta.unit))+'</p></div>'+
+      '<div class="gs-map-brief-block"><b>Evidence still needed</b><p>'+esc(meta.next||'Validate the tract signal with current operational, community, service-reach, and program-capacity evidence.')+'</p></div>'+
+      '<div class="gs-map-brief-block"><b>What this does not tell us</b><p>This tract evidence does not establish WIOA reach, service quality, program outcomes, causation, or where resources should be allocated.</p></div>'+
+      '<button type="button" class="gs-map-copy">Copy brief</button></div></details>';
+  }
+
+  function renderSelected(med,available,total){
+    const feature=state.features.get(state.selected);if(!feature)return;
+    const p=feature.properties||{},place=context(feature),meta=activeMeta(),value=featureValue(feature),q=state.question||(state.mode==='conditions'?meta.question:'Who lives here, and what should we understand before designing outreach or services?');
+    panel.innerHTML='<div class="gs-map-panel-kicker">Quick read</div><h3>'+esc(place)+'</h3><p>Census Tract '+esc(tractLabel(state.selected))+' · '+esc(Number.isFinite(Number(p.Population))?Number(p.Population).toLocaleString()+' residents in the published source':'population not published')+'</p>'+
+      '<div class="gs-map-question-read"><span>Question</span><strong>'+esc(q)+'</strong></div>'+
+      '<div class="gs-map-reading"><span>'+esc(meta.label)+'</span><strong>'+esc(fmt(value,meta.unit))+'</strong><small>'+esc(compare(value,med,meta.unit))+'</small></div>'+
+      '<p>Select another tract or layer to compare context. The selected outline stays visible while you explore.</p>';
+
+    if(state.mode==='composition'){
+      details.innerHTML='<div class="gs-map-details-head"><div><div class="weq-kicker">Context and next steps</div><h3>'+esc(place)+'</h3></div><p>Community composition is descriptive context only. It is not a need score, risk score, or resource-allocation rule.</p></div>'+
+        '<div class="gs-map-detail-grid"><div class="gs-map-card"><div class="gs-map-card-kicker">Community</div><h4>Who lives here?</h4>'+compositionRows(feature)+'<p>Hispanic or Latino is an ethnicity and can include people of any race. Race categories shown here are non-Hispanic.</p></div>'+
+        '<div class="gs-map-card"><div class="gs-map-card-kicker">How to use this</div><h4>Design context, not a priority signal</h4><p>Use composition to ask whether outreach, language access, trusted messengers, or service design should be checked with local communities. Do not infer individual identity or service need from tract composition.</p></div>'+
+        '<div class="gs-map-card"><div class="gs-map-card-kicker">Guardrails</div><h4>What this does not tell us</h4><ul><li>It does not show WIOA participation or outcomes.</li><li>It does not establish that a service is culturally or linguistically adequate.</li><li>Race or ethnicity must not be used as a tie-breaker for tract prioritization.</li></ul></div></div>';
+      details.hidden=false;return;
+    }
+
+    details.innerHTML='<div class="gs-map-details-head"><div><div class="weq-kicker">Context and next steps</div><h3>'+esc(place)+'</h3></div><p>Use the condition as a prompt for investigation. The map is designed to make the next evidence question clearer, not to produce a conclusion.</p></div>'+
+      '<div class="gs-map-detail-grid">'+
+      '<div class="gs-map-card"><div class="gs-map-card-kicker">Community</div><h4>Who lives here?</h4>'+compositionRows(feature)+'<p>Composition is descriptive context and is not used in the Decision Lens.</p></div>'+
+      '<div class="gs-map-card"><div class="gs-map-card-kicker">Decision support</div><h4>Decision Lens</h4><div class="gs-map-lens"><b>What stands out</b><p>'+esc(meta.label+': '+fmt(value,meta.unit)+'. '+compare(value,med,meta.unit))+'</p><b>What it could mean</b><p>'+esc(meta.meaning)+'</p><b>Examine next</b><p>'+esc(meta.next)+'</p></div></div>'+
+      '<div class="gs-map-card"><div class="gs-map-card-kicker">Evidence</div><h4>How strong is this signal?</h4><div class="gs-map-evidence-row"><span>Source</span><strong>CalEnviroScreen 5.0 · OEHHA / CalEPA</strong></div><div class="gs-map-evidence-row"><span>Coverage</span><strong>'+available+' of '+total+' mapped populated tracts</strong></div><div class="gs-map-evidence-row"><span>Uncertainty</span><strong>Published CalEnviroScreen tract fields do not expose tract margins of error in this reader.</strong></div><div class="gs-map-evidence-row"><span>Use</span><strong>Neighborhood context and decision framing only</strong></div></div></div>'+
+      '<div class="gs-map-other"><div class="gs-map-other-head"><strong>Other available conditions</strong><span>Same tract</span></div><div class="gs-map-other-grid">'+otherConditions(feature)+'</div></div>'+
+      decisionBrief(feature,value,meta,med);
+    details.hidden=false;
+
+    const btn=details.querySelector('.gs-map-copy');
+    if(btn)btn.addEventListener('click',async()=>{
+      const blocks=[...details.querySelectorAll('.gs-map-brief-block')].map(b=>b.innerText.trim()).join('\n\n');
+      try{await navigator.clipboard.writeText(blocks);btn.textContent='Copied';setTimeout(()=>btn.textContent='Copy brief',1600);}catch(e){btn.textContent='Copy unavailable';}
+    });
+  }
+
+  function selectTract(g){
+    if(!state.features.has(g))return;
+    state.selected=g;paint();
+    const selected=root.querySelector('.gs-tract[data-geoid="'+g+'"]');
+    if(selected)selected.scrollIntoView({block:'nearest',inline:'nearest'});
+  }
+
+  function syncMode(){
+    state.mode=modeSelect.value;
+    conditionField.hidden=state.mode!=='conditions';
+    compositionField.hidden=state.mode!=='composition';
+    paint();
+  }
+
+  countySelect.addEventListener('change',()=>{search.value='';load();});
+  modeSelect.addEventListener('change',syncMode);
+  metricSelect.addEventListener('change',()=>{state.metric=metricSelect.value;state.question=metricMeta[state.metric].question;questionSelect.value='';paint();});
+  compositionSelect.addEventListener('change',()=>{state.composition=compositionSelect.value;state.question='Who lives here, and what should we understand before designing outreach or services?';questionSelect.value='';paint();});
+  questionSelect.addEventListener('change',()=>{
+    const q=questionMap[questionSelect.value];if(!q)return;
+    state.question=questionSelect.options[questionSelect.selectedIndex].textContent;
+    state.mode=q.mode;modeSelect.value=q.mode;
+    if(q.metric){state.metric=q.metric;metricSelect.value=q.metric;}
+    if(q.composition){state.composition=q.composition;compositionSelect.value=q.composition;}
+    conditionField.hidden=state.mode!=='conditions';compositionField.hidden=state.mode!=='composition';paint();
+    root.querySelector('.gs-map-layout').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+
+  search.addEventListener('change',()=>{
+    const raw=search.value.trim().toLowerCase();if(!raw)return;
+    let found=null;
+    for(const [g,f] of state.features){const hay=(context(f)+' — Tract '+tractLabel(g)).toLowerCase();if(hay===raw||hay.includes(raw)||g.includes(raw.replace(/\D/g,''))){found=g;break;}}
+    if(found)selectTract(found);
+  });
+
+  async function load(){
+    const county=countySelect.value;
+    state.features.clear();state.selected=null;layer.innerHTML='';details.hidden=true;
+    status.textContent='Loading '+county+' County tract geography and conditions…';
+    panel.innerHTML='<div class="gs-map-panel-kicker">Quick read</div><h3>Select a census tract</h3><p>Choose a tract on the map or search by CalEnviroScreen’s approximate-location label. The selected tract will remain outlined while you explore other layers.</p>';
+    try{
+      const response=await fetch(countyUrl(county),{headers:{'Accept':'application/json'}});
+      if(!response.ok)throw new Error(response.status+' '+response.statusText);
+      const data=await response.json();
+      for(const feature of (data.features||[])){
+        const p=feature.properties||{},g=geoid(p.tract),pop=num(p.Population);
+        if(!g)continue;
+        if(pop!==null){if(pop<=0)continue;}
+        state.features.set(g,feature);
+      }
+      if(!state.features.size)throw new Error('No populated '+county+' County tracts were returned.');
+      buildGeometry();rebuildSearch();paint();
+      status.textContent='Map ready: '+state.features.size+' populated '+county+' County tracts loaded from CalEnviroScreen 5.0. Choose another county from Map area to explore the rest of Golden Sierra.';
+    }catch(error){
+      status.textContent=county+' County tract data could not be loaded right now.';
+      panel.innerHTML='<div class="gs-map-panel-kicker">Map unavailable</div><h3>'+esc(county)+' County did not load</h3><p>Choose another Golden Sierra county or refresh to retry. No private or participant data are involved.</p>';
+      coverageEl.textContent='No map coverage is being shown for '+county+' County.';
+      gateEl.className='gs-map-gate limited';gateEl.textContent='Unavailable';
+      console.error('Golden Sierra tract explorer:',error);
+    }
+  }
+  load();
+})();
+</script>
