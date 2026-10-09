@@ -1,0 +1,286 @@
+<!-- wp:html -->
+<style id="ww-policy-living-record-styles">
+#ww-policy-living-record{--paper:#fcfaf6;--ink:#111d20;--muted:#4d5558;--gold:#d49b25;--gold-dark:#986714;--policy:#8d2437;--teal:#075f70;--line:#dedbd3;--soft:#f4f1e9;max-width:1200px;margin:0 auto 16px;padding:0 24px;color:var(--ink);font:15px/1.5 Arial,Helvetica,sans-serif}
+#ww-policy-living-record[hidden]{display:none}
+#ww-policy-living-record *{box-sizing:border-box}
+#ww-policy-living-record a{color:var(--teal);text-underline-offset:3px}
+#ww-policy-living-record :is(a,button,select,summary):focus-visible{outline:3px solid #185cac;outline-offset:3px}
+#ww-policy-living-record .wwplr-sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+#ww-policy-living-record .wwplr-shell{border-top:3px solid var(--policy);border-bottom:1px solid var(--line);background:var(--paper);padding:10px 0 11px}
+#ww-policy-living-record .wwplr-strip{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px}
+#ww-policy-living-record .wwplr-kicker{margin:0;color:var(--gold-dark);font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}
+#ww-policy-living-record h2,#ww-policy-living-record h3{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.025em;color:var(--ink)}
+#ww-policy-living-record h3{margin:0 0 10px;font-size:19px}
+#ww-policy-living-record .wwplr-status{display:inline-flex;align-items:center;min-height:28px;padding:4px 9px;border:1px solid #c8b7bb;border-radius:999px;background:#fbf5f6;color:var(--policy);font-size:11px;font-weight:800;white-space:nowrap}
+#ww-policy-living-record .wwplr-status-indexed{border-color:var(--line);background:var(--soft);color:var(--muted)}
+#ww-policy-living-record .wwplr-key-summary{display:inline-flex;align-items:center;gap:5px;min-height:28px;color:var(--muted);font-size:11px;white-space:nowrap}
+#ww-policy-living-record .wwplr-key-summary-label{font-weight:800;color:var(--ink)}
+#ww-policy-living-record .wwplr-official{margin-left:auto;white-space:nowrap;font-size:11px;font-weight:800}
+#ww-policy-living-record .wwplr-work-actions{display:flex;align-items:center;gap:6px;margin:0}
+#ww-policy-living-record .wwplr-work-button{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:5px 9px;border:1px solid var(--line);border-radius:4px;background:#fff;color:var(--teal);font:800 11px/1.15 Arial,Helvetica,sans-serif;text-align:center;cursor:pointer;white-space:nowrap}
+#ww-policy-living-record .wwplr-work-button:hover{border-color:var(--teal)}
+#ww-policy-living-record .wwplr-details{min-width:max-content;color:var(--ink)}
+#ww-policy-living-record .wwplr-details[hidden]{display:none}
+#ww-policy-living-record .wwplr-details summary{display:flex;align-items:center;min-height:32px;padding:4px 8px;border-radius:4px;color:var(--teal);font-size:11px;font-weight:800;cursor:pointer;list-style:none;white-space:nowrap}
+#ww-policy-living-record .wwplr-details summary::-webkit-details-marker{display:none}
+#ww-policy-living-record .wwplr-details summary::after{content:" ▾";margin-left:4px}
+#ww-policy-living-record .wwplr-details[open]{flex-basis:100%;width:100%;min-width:0;margin-top:5px}
+#ww-policy-living-record .wwplr-details[open] summary{width:max-content}
+#ww-policy-living-record .wwplr-details[open] summary::after{content:" ▴"}
+#ww-policy-living-record .wwplr-details-body{margin-top:8px;padding-top:14px;border-top:1px solid var(--line)}
+#ww-policy-living-record .wwplr-meta{display:flex;flex-wrap:wrap;gap:5px 14px;margin:0 0 14px;color:var(--muted);font-size:11px}
+#ww-policy-living-record .wwplr-grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,.75fr);gap:26px}
+#ww-policy-living-record .wwplr-panel{padding-top:14px;border-top:1px solid var(--line)}
+#ww-policy-living-record .wwplr-main>.wwplr-panel:first-of-type,#ww-policy-living-record .wwplr-grid>aside>.wwplr-panel:first-child{padding-top:0;border-top:0}
+#ww-policy-living-record .wwplr-key{margin:0 0 14px;padding:11px 13px;border-left:3px solid var(--gold);background:var(--soft)}
+#ww-policy-living-record .wwplr-key-label{margin:0 0 2px;color:var(--policy);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+#ww-policy-living-record .wwplr-key strong{display:block;font:700 16px/1.3 Georgia,'Times New Roman',serif}
+#ww-policy-living-record .wwplr-key time{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+#ww-policy-living-record .wwplr-timeline{list-style:none;margin:0;padding:0}
+#ww-policy-living-record .wwplr-timeline li{position:relative;margin:0;padding:0 0 14px 20px;border-left:1px solid var(--line)}
+#ww-policy-living-record .wwplr-timeline li:last-child{padding-bottom:0}
+#ww-policy-living-record .wwplr-timeline li:before{content:"";position:absolute;left:-5px;top:5px;width:9px;height:9px;border-radius:50%;background:var(--gold)}
+#ww-policy-living-record .wwplr-timeline time{display:block;color:var(--muted);font-size:11px}
+#ww-policy-living-record .wwplr-timeline strong{display:block;margin-top:2px}
+#ww-policy-living-record .wwplr-source{display:inline-block;font-size:11px;font-weight:800}
+#ww-policy-living-record .wwplr-relations{list-style:none;margin:0;padding:0}
+#ww-policy-living-record .wwplr-relations li{padding:7px 0;border-bottom:1px solid var(--line)}
+#ww-policy-living-record .wwplr-relations li:last-child{border-bottom:0}
+#ww-policy-living-record .wwplr-role-row{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+#ww-policy-living-record .wwplr-role-row label{font-size:12px;font-weight:800}
+#ww-policy-living-record select{min-height:38px;padding:6px 30px 6px 9px;border:1px solid #aeb3af;background:#fff}
+#ww-policy-living-record .wwplr-actions{margin:0;padding-left:20px}
+#ww-policy-living-record .wwplr-actions li{margin:5px 0}
+#ww-policy-living-record .wwplr-note{margin:0;color:var(--muted);font-size:12px}
+#ww-policy-living-record .wwplr-footer{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:11px;color:var(--muted)}
+/* Living records default to a compact utility strip. Governed detail stays behind disclosure. */
+#ww-policy-work-print{display:none}
+@media print{
+ @page{size:letter;margin:.55in}
+ html.ww-policy-printing body>:not(#ww-policy-work-print){display:none!important}
+ html.ww-policy-printing body>#ww-policy-work-print{display:block!important}
+ html.ww-policy-printing #ww-policy-work-print{position:static!important;width:100%;max-width:none;margin:0;padding:0;color:#111d20;background:#fff;font:10.5pt/1.35 Arial,Helvetica,sans-serif}
+ html.ww-policy-printing #ww-policy-work-print h1{margin:0 0 6pt;font:700 21pt/1.08 Georgia,'Times New Roman',serif}
+ html.ww-policy-printing #ww-policy-work-print h2{margin:14pt 0 5pt;font:700 13pt/1.15 Georgia,'Times New Roman',serif}
+ html.ww-policy-printing #ww-policy-work-print p{margin:4pt 0}
+ html.ww-policy-printing #ww-policy-work-print ul{margin:4pt 0 8pt;padding-left:18pt}
+ html.ww-policy-printing #ww-policy-work-print .wwpow-kicker{margin:0 0 8pt;color:#8d2437;font-size:8pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
+ html.ww-policy-printing #ww-policy-work-print .wwpow-meta{display:flex;flex-wrap:wrap;gap:4pt 12pt;padding:7pt 0;border-top:1px solid #dedbd3;border-bottom:1px solid #dedbd3;color:#4d5558;font-size:8.5pt}
+ html.ww-policy-printing #ww-policy-work-print .wwpow-grid{display:grid;grid-template-columns:1fr 1fr;gap:10pt 22pt;margin-top:10pt}
+ html.ww-policy-printing #ww-policy-work-print .wwpow-field{break-inside:avoid}
+ html.ww-policy-printing #ww-policy-work-print .wwpow-label{display:block;margin-bottom:2pt;color:#8d2437;font-size:8pt;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+ html.ww-policy-printing #ww-policy-work-print .wwpow-footer{margin-top:14pt;padding-top:7pt;border-top:1px solid #dedbd3;color:#4d5558;font-size:8pt}
+}
+@media(max-width:760px){
+ #ww-policy-living-record{padding:0 16px}
+ #ww-policy-living-record .wwplr-strip{gap:7px 9px}
+ #ww-policy-living-record .wwplr-official{margin-left:0}
+ #ww-policy-living-record .wwplr-key-summary{flex-basis:100%;order:4}
+ #ww-policy-living-record .wwplr-work-actions{order:5;width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+ #ww-policy-living-record .wwplr-work-button{min-height:38px;white-space:normal}
+ #ww-policy-living-record .wwplr-details{order:6}
+ #ww-policy-living-record .wwplr-details[open]{flex-basis:100%}
+ #ww-policy-living-record .wwplr-grid{grid-template-columns:1fr}
+}
+</style>
+
+<section id="ww-policy-living-record" hidden aria-labelledby="wwplr-title">
+<div class="wwplr-shell">
+<div class="wwplr-strip">
+<p class="wwplr-kicker">Living record</p>
+<h2 class="wwplr-sr-only" id="wwplr-title">Policy record</h2>
+<span class="wwplr-status" id="wwplr-status"></span>
+<span class="wwplr-key-summary" id="wwplr-key-summary" hidden></span>
+<a class="wwplr-source wwplr-official" id="wwplr-official" target="_blank" rel="noopener noreferrer">Official source ↗</a>
+<div class="wwplr-work-actions" aria-label="Work-ready outputs">
+<button class="wwplr-work-button" id="wwplr-copy-memo" type="button">Memo</button>
+<button class="wwplr-work-button" id="wwplr-copy-citation" type="button">Citation</button>
+<button class="wwplr-work-button" id="wwplr-print" type="button">Print/PDF</button>
+</div>
+<details class="wwplr-details" id="wwplr-details" hidden>
+<summary><span id="wwplr-details-label">View details</span></summary>
+<div class="wwplr-details-body">
+<div class="wwplr-meta" id="wwplr-meta"></div>
+<div class="wwplr-grid">
+<div class="wwplr-main" id="wwplr-main">
+<div class="wwplr-key" id="wwplr-key" hidden></div>
+<div class="wwplr-panel" id="wwplr-timeline-panel" hidden><h3>Status timeline</h3><ol class="wwplr-timeline" id="wwplr-timeline"></ol></div>
+<div class="wwplr-panel" id="wwplr-relations-panel" hidden><h3>Related authority</h3><ul class="wwplr-relations" id="wwplr-relations"></ul></div>
+</div>
+<aside>
+<div class="wwplr-panel" id="wwplr-actions-panel" hidden>
+<h3>What this means for your role</h3>
+<div class="wwplr-role-row"><label for="wwplr-role">Role</label><select id="wwplr-role"></select></div>
+<ul class="wwplr-actions" id="wwplr-actions"></ul>
+</div>
+<div class="wwplr-panel"><h3>Authority</h3><p class="wwplr-note" id="wwplr-authority-note"></p></div>
+</aside>
+</div>
+<div class="wwplr-footer" id="wwplr-footer"></div>
+</div>
+</details>
+<p class="wwplr-sr-only" id="wwplr-work-status" role="status" aria-live="polite"></p>
+</div>
+</div>
+</section>
+<section id="ww-policy-work-print" aria-hidden="true"></section>
+
+<script id="ww-policy-living-record-config" type="application/json">{"schema_version":"1.0","runtime_slug":"ww-runtime-policy-records","runtime_rest":"/wp-json/wp/v2/pages?slug=ww-runtime-policy-records&status=publish&_fields=id,modified,content","runtime_script_id":"ww-policy-records-runtime","role_storage_key":"ww-reader-role"}</script>
+<script id="ww-policy-living-record-app">
+(function(){
+'use strict';
+const root=document.getElementById('ww-policy-living-record');if(!root||root.dataset.ready)return;root.dataset.ready='1';
+const cfg=JSON.parse(document.getElementById('ww-policy-living-record-config').textContent);
+const title=document.getElementById('wwplr-title'),status=document.getElementById('wwplr-status'),keySummary=document.getElementById('wwplr-key-summary'),details=document.getElementById('wwplr-details'),detailsLabel=document.getElementById('wwplr-details-label'),meta=document.getElementById('wwplr-meta'),key=document.getElementById('wwplr-key'),timelinePanel=document.getElementById('wwplr-timeline-panel'),timeline=document.getElementById('wwplr-timeline'),relationsPanel=document.getElementById('wwplr-relations-panel'),relations=document.getElementById('wwplr-relations'),actionsPanel=document.getElementById('wwplr-actions-panel'),role=document.getElementById('wwplr-role'),actions=document.getElementById('wwplr-actions'),official=document.getElementById('wwplr-official'),authorityNote=document.getElementById('wwplr-authority-note'),footer=document.getElementById('wwplr-footer'),copyMemo=document.getElementById('wwplr-copy-memo'),copyCitation=document.getElementById('wwplr-copy-citation'),printButton=document.getElementById('wwplr-print'),workStatus=document.getElementById('wwplr-work-status'),printSheet=document.getElementById('ww-policy-work-print');
+const roleLabels={director:'Director',fiscal:'Fiscal',program:'Program',board_member:'Board member'};
+
+function pathOf(url){try{return new URL(url,location.origin).pathname.replace(/\/+$/,'')||'/'}catch(e){return''}}
+function longDate(v){if(!/^\d{4}-\d{2}-\d{2}$/.test(String(v||'')))return v||'';const d=new Date(v+'T12:00:00');return new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric'}).format(d)}
+function typeLabel(v){return String(v||'').replace(/_/g,' ').replace(/\b\w/g,m=>m.toUpperCase())}
+function recordDisplayTitle(rec){
+ const t=String((rec&&rec.title)||'').trim(),id=String((rec&&rec.identifier)||'').trim();if(!id)return t;
+ const a=t.toLowerCase(),b=id.toLowerCase(),next=t.charAt(id.length);
+ return a===b||(a.startsWith(b)&&(!next||/[\s:—–-]/.test(next)))?t:id+' — '+t;
+}
+function addMeta(text){if(!text)return;const s=document.createElement('span');s.textContent=text;meta.appendChild(s)}
+function addFooter(text){if(!text)return;const s=document.createElement('span');s.textContent=text;footer.appendChild(s)}
+function decodePage(html,id){const t=document.createElement('template');t.innerHTML=html;const s=t.content.querySelector('#'+id);if(!s)throw new Error('Policy record runtime payload missing');return JSON.parse(s.textContent.replace(/&amp;/g,'&'))}
+async function loadRuntime(){const res=await fetch(cfg.runtime_rest,{headers:{Accept:'application/json'}});if(!res.ok)throw new Error('HTTP '+res.status);const rows=await res.json();if(!Array.isArray(rows)||!rows.length)throw new Error('Policy record runtime page not found');return decodePage((rows[0].content&&rows[0].content.rendered)||'',cfg.runtime_script_id)}
+function currentRecord(payload){const here=pathOf(location.href);return (payload.records||[]).find(x=>pathOf(x.brief_url)===here)||null}
+
+function renderKey(rec){
+ if(!rec.key_date||!rec.key_date.date)return;
+ const date=longDate(rec.key_date.date),label=rec.key_date.label||'Key date';
+ keySummary.innerHTML='';
+ const compactLabel=document.createElement('span');compactLabel.className='wwplr-key-summary-label';compactLabel.textContent='Key date:';
+ const compactTime=document.createElement('time');compactTime.dateTime=rec.key_date.date;compactTime.textContent=date;
+ keySummary.append(compactLabel,compactTime);keySummary.title=date+' · '+label;keySummary.hidden=false;
+ key.innerHTML='';
+ const p=document.createElement('p');p.className='wwplr-key-label';p.textContent='Key date';
+ const strong=document.createElement('strong');strong.textContent=label;
+ const time=document.createElement('time');time.dateTime=rec.key_date.date;time.textContent=date;
+ key.append(p,strong,time);key.hidden=false;
+}
+function renderTimeline(rec){
+ if(!Array.isArray(rec.timeline)||!rec.timeline.length)return;
+ timeline.innerHTML='';
+ rec.timeline.forEach(item=>{
+   const li=document.createElement('li'),time=document.createElement('time'),strong=document.createElement('strong'),a=document.createElement('a');
+   time.dateTime=item.date||'';time.textContent=longDate(item.date);strong.textContent=item.label||typeLabel(item.kind);
+   li.append(time,strong);
+   if(item.source){a.href=item.source;a.target='_blank';a.rel='noopener noreferrer';a.className='wwplr-source';a.textContent='Source ↗';li.appendChild(a)}
+   timeline.appendChild(li);
+ });
+ timelinePanel.hidden=false;
+}
+function renderRelations(rec){
+ if(!Array.isArray(rec.relationships)||!rec.relationships.length)return;
+ relations.innerHTML='';
+ rec.relationships.forEach(item=>{
+   const li=document.createElement('li'),strong=document.createElement('strong'),span=document.createElement('span'),a=document.createElement('a');
+   strong.textContent=typeLabel(item.type)+': ';span.textContent=item.label||item.target_identifier||'Related authority';li.append(strong,span);
+   if(item.source){a.href=item.source;a.target='_blank';a.rel='noopener noreferrer';a.className='wwplr-source';a.textContent=' Source ↗';li.appendChild(a)}
+   relations.appendChild(li);
+ });
+ relationsPanel.hidden=false;
+}
+function availableRoles(rec){return Object.keys(rec.role_actions||{}).filter(k=>Array.isArray(rec.role_actions[k])&&rec.role_actions[k].length)}
+function selectedRole(rec){
+ const roles=availableRoles(rec);if(!roles.length)return'';
+ if(role&&roles.includes(role.value))return role.value;
+ let saved='';try{saved=localStorage.getItem(cfg.role_storage_key)||''}catch(e){}
+ return roles.includes(saved)?saved:roles[0];
+}
+function memoText(rec,payload){
+ const governed=rec.record_state==='governed',rid=rec.identifier||('Policy '+rec.id),lines=['Workforce Wonkery — Memo Summary','','Issue: '+recordDisplayTitle(rec)];
+ lines.push('Current status: '+((rec.status&&rec.status.label)||(governed?'Governed record':'Lifecycle enrichment pending; verify the official source.')));
+ if(rec.key_date&&rec.key_date.date)lines.push('Key date: '+longDate(rec.key_date.date)+' — '+(rec.key_date.label||'Key date'));
+ const sr=selectedRole(rec),roleActions=sr?(rec.role_actions||{})[sr]||[]:[];
+ if(roleActions.length){lines.push('');lines.push('Local consideration ('+(roleLabels[sr]||typeLabel(sr))+'):');roleActions.forEach(x=>lines.push('• '+x))}
+ lines.push('');lines.push('Authority: '+[rec.document_type,rec.jurisdiction].filter(Boolean).join(' · '));
+ if(rec.official_source)lines.push('Official source: '+rec.official_source);
+ if(rec.brief_url)lines.push('Workforce Wonkery brief: '+rec.brief_url);
+ if(rec.last_verified)lines.push('Record verified: '+longDate(rec.last_verified));
+ else if(payload&&payload.last_reviewed)lines.push('Registry reviewed: '+longDate(payload.last_reviewed));
+ lines.push('');lines.push('Note: Workforce Wonkery is an informational resource. The official source controls.');
+ return lines.join('\n');
+}
+function citationText(rec){
+ const rid=rec.identifier?rec.identifier+'. ':'';return 'Workforce Wonkery. “'+rec.title+'.” '+rid+(rec.brief_url||location.href)+(rec.official_source?' Official source: '+rec.official_source:'');
+}
+async function copyText(value,button,label){
+ try{
+   if(navigator.clipboard&&navigator.clipboard.writeText)await navigator.clipboard.writeText(value);
+   else{const ta=document.createElement('textarea');ta.value=value;ta.setAttribute('readonly','');ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();document.execCommand('copy');ta.remove()}
+   button.textContent='Copied';workStatus.textContent=label+' copied to clipboard.';setTimeout(()=>button.textContent=button.dataset.label,1600);
+ }catch(e){workStatus.textContent='Copy was blocked by the browser. Select the text from the print view instead.'}
+}
+function printField(parent,label,value){
+ if(!value)return;const wrap=document.createElement('div');wrap.className='wwpow-field';const l=document.createElement('span');l.className='wwpow-label';l.textContent=label;const p=document.createElement('p');p.textContent=value;wrap.append(l,p);parent.appendChild(wrap);
+}
+function buildPrintSheet(rec,payload){
+ printSheet.innerHTML='';
+ const kicker=document.createElement('p');kicker.className='wwpow-kicker';kicker.textContent='Workforce Wonkery · Policy. Data. Practice. Decoded.';
+ const h=document.createElement('h1');h.textContent=recordDisplayTitle(rec);
+ const m=document.createElement('div');m.className='wwpow-meta';
+ [rec.document_type,rec.jurisdiction,rec.last_verified?'Verified '+longDate(rec.last_verified):'Registry reviewed '+longDate(payload.last_reviewed||'')].filter(Boolean).forEach(x=>{const s=document.createElement('span');s.textContent=x;m.appendChild(s)});
+ const grid=document.createElement('div');grid.className='wwpow-grid';
+ printField(grid,'Current status',(rec.status&&rec.status.label)||(rec.record_state==='governed'?'Governed record':'Lifecycle enrichment pending; verify the official source.'));
+ if(rec.key_date&&rec.key_date.date)printField(grid,'Key date',longDate(rec.key_date.date)+' — '+(rec.key_date.label||'Key date'));
+ const sr=selectedRole(rec),roleActions=sr?(rec.role_actions||{})[sr]||[]:[];
+ if(roleActions.length){const wrap=document.createElement('div');wrap.className='wwpow-field';const l=document.createElement('span');l.className='wwpow-label';l.textContent='Local consideration · '+(roleLabels[sr]||typeLabel(sr));const ul=document.createElement('ul');roleActions.forEach(x=>{const li=document.createElement('li');li.textContent=x;ul.appendChild(li)});wrap.append(l,ul);grid.appendChild(wrap)}
+ printField(grid,'Official authority',rec.official_source||'See official source linked from the brief.');
+ if(Array.isArray(rec.timeline)&&rec.timeline.length){const wrap=document.createElement('div');wrap.className='wwpow-field';const l=document.createElement('span');l.className='wwpow-label';l.textContent='Lifecycle';const ul=document.createElement('ul');rec.timeline.slice(-5).forEach(x=>{const li=document.createElement('li');li.textContent=longDate(x.date)+' — '+(x.label||typeLabel(x.kind));ul.appendChild(li)});wrap.append(l,ul);grid.appendChild(wrap)}
+ const foot=document.createElement('p');foot.className='wwpow-footer';foot.textContent='Workforce Wonkery brief: '+(rec.brief_url||location.href)+' · Informational resource. Official source controls.';
+ printSheet.append(kicker,h,m,grid,foot);
+}
+function beginPrint(rec,payload){
+ buildPrintSheet(rec,payload);
+ const parent=printSheet.parentNode,next=printSheet.nextSibling;
+ document.body.appendChild(printSheet);printSheet.setAttribute('aria-hidden','false');document.documentElement.classList.add('ww-policy-printing');
+ let cleaned=false;
+ const cleanup=()=>{if(cleaned)return;cleaned=true;document.documentElement.classList.remove('ww-policy-printing');printSheet.setAttribute('aria-hidden','true');if(parent){if(next&&next.parentNode===parent)parent.insertBefore(printSheet,next);else parent.appendChild(printSheet)}};
+ window.addEventListener('afterprint',cleanup,{once:true});setTimeout(()=>window.print(),40);setTimeout(()=>{if(document.documentElement.classList.contains('ww-policy-printing'))cleanup()},30000);
+}
+function bindWorkOutputs(rec,payload){
+ copyMemo.dataset.label='Memo';copyCitation.dataset.label='Citation';printButton.dataset.label='Print/PDF';
+ copyMemo.addEventListener('click',()=>copyText(memoText(rec,payload),copyMemo,'Memo summary'));
+ copyCitation.addEventListener('click',()=>copyText(citationText(rec),copyCitation,'Citation'));
+ printButton.addEventListener('click',()=>beginPrint(rec,payload));
+}
+function bindDetails(){
+ if(!details||!detailsLabel)return;
+ const sync=()=>{detailsLabel.textContent=details.open?'Hide details':'View details'};
+ details.addEventListener('toggle',sync);sync();
+}
+function renderActions(rec){
+ const roles=availableRoles(rec);if(!roles.length)return;
+ role.innerHTML='';roles.forEach(k=>{const o=document.createElement('option');o.value=k;o.textContent=roleLabels[k]||typeLabel(k);role.appendChild(o)});
+ let saved='';try{saved=localStorage.getItem(cfg.role_storage_key)||''}catch(e){}
+ if(roles.includes(saved))role.value=saved;
+ const draw=()=>{actions.innerHTML='';(rec.role_actions[role.value]||[]).forEach(text=>{const li=document.createElement('li');li.textContent=text;actions.appendChild(li)});try{localStorage.setItem(cfg.role_storage_key,role.value)}catch(e){}};
+ role.addEventListener('change',draw);draw();actionsPanel.hidden=false;
+}
+function render(rec,payload){
+ const governed=rec.record_state==='governed';
+ root.hidden=false;
+ root.classList.toggle('is-indexed-compact',!governed);
+ root.classList.toggle('is-governed',governed);
+ title.textContent=rec.identifier||'Policy record';
+ status.textContent=(rec.status&&rec.status.label)||(governed?'Governed record':'Indexed record');
+ if(!rec.status)status.classList.add('wwplr-status-indexed');
+ addMeta(rec.identifier);addMeta(rec.document_type);addMeta(rec.jurisdiction);
+ if(rec.last_verified)addMeta('Verified '+longDate(rec.last_verified));
+ official.href=rec.official_source||'#';official.hidden=!rec.official_source;
+ authorityNote.textContent=governed?'Lifecycle fields shown here are sourced to authoritative records. The official source controls.':'This brief is in the governed policy index, but its lifecycle has not yet been independently structured. Check the official source for current authority.';
+ details.hidden=!governed;
+ renderKey(rec);renderTimeline(rec);renderRelations(rec);renderActions(rec);
+ addFooter('Record: '+(rec.identifier||('Policy '+rec.id)));
+ addFooter(governed?'Governed lifecycle':'Lifecycle enrichment pending');
+ if(payload.last_reviewed)addFooter('Registry reviewed '+longDate(payload.last_reviewed));
+ bindWorkOutputs(rec,payload);bindDetails();
+}
+loadRuntime().then(payload=>{const rec=currentRecord(payload);if(rec)render(rec,payload)}).catch(err=>console.warn('Workforce Wonkery living record unavailable',err));
+})();
+</script>
+<!-- /wp:html -->
