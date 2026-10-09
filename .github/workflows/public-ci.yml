@@ -27,6 +27,8 @@ jobs:
           python-version: "3.12"
       - name: Validate public export boundary and data
         run: python tests/validate_public_export.py
+      - name: Check inline JavaScript syntax in WordPress templates
+        run: python tests/validate_public_source_js.py
       - name: Check reader-facing JavaScript syntax
         shell: bash
         run: |
@@ -51,7 +53,7 @@ jobs:
             echo
             echo "- Repository boundary and provenance checked"
             echo "- Public JSON parsed and runtime hashes checked"
-            echo "- Exported JavaScript syntax checked"
+            echo "- Exported and inline JavaScript syntax checked"
             echo "- Exported WordPress PHP linted"
           } >> "$GITHUB_STEP_SUMMARY"
 

@@ -1,9 +1,9 @@
 {
   "export_mode": "allowlist",
-  "file_count": 222,
+  "file_count": 216,
   "files": [
     {
-      "sha256": "cc8c3fef0fc148012263283e968cb0ddcc8019d4065547a2ee16cb195b95622e",
+      "sha256": "1306bb7edcaaad58551bb8e2c8e0315aa5eac5c1fd9a4e37aaf2330542a9305e",
       "source": "public-companion/templates/README.md",
       "target": "README.md"
     },
@@ -958,41 +958,6 @@
       "target": "data/sector-partnerships/runtime-source/markets/49700.html"
     },
     {
-      "sha256": "e78c5c2b8e43ffb321224502ab6d8e1a4650f0980b177b1b82ccd871e897377d",
-      "source": "wordpress/css/README.md",
-      "target": "src/wordpress/css/README.md"
-    },
-    {
-      "sha256": "5bc4a7b337e22992bfc63da33d93aab38b11c1fc1d9e6a505882d4dab3f277d8",
-      "source": "wordpress/css/policy-editorial.css",
-      "target": "src/wordpress/css/policy-editorial.css"
-    },
-    {
-      "sha256": "09200e5f7ea46084157f3f0ff3d54df8a5c47d830629dbdceb650c1012406e94",
-      "source": "wordpress/css/site-shell.css",
-      "target": "src/wordpress/css/site-shell.css"
-    },
-    {
-      "sha256": "2a5a741bb83dc83810cf473a2104008f7ae5b12a92e4d900bc4ce0f7d46c96d2",
-      "source": "wordpress/javascript/README.md",
-      "target": "src/wordpress/javascript/README.md"
-    },
-    {
-      "sha256": "1ab665312ebf75a05717bfd92405d50efc52810c34a3f17fd64bde3b9111a9b7",
-      "source": "wordpress/javascript/occupation-explorer-wpcode.js",
-      "target": "src/wordpress/javascript/occupation-explorer-wpcode.js"
-    },
-    {
-      "sha256": "c24cce5ee12cb3e9d2901ce8f75e6c0e9fb611b1c2011df7b1e87f1ad612d2a6",
-      "source": "wordpress/javascript/workforce-lens-runtime.js",
-      "target": "src/wordpress/javascript/workforce-lens-runtime.js"
-    },
-    {
-      "sha256": "18374a15db82a37a684a7e6d0c84f1a5c2cf65c72357393516d6a47210acd100",
-      "source": "wordpress/plugins/workforce-wonkery-deadlines-feed/workforce-wonkery-deadlines-feed.php",
-      "target": "src/wordpress/plugins/workforce-wonkery-deadlines-feed/workforce-wonkery-deadlines-feed.php"
-    },
-    {
       "sha256": "08dd9a73621e8e77856a5971ee15a8aef80e1a7f48aa5c3ffa1f7e7bb4f5d3b9",
       "source": "docs/intelligence-graph.md",
       "target": "docs/intelligence-graph.md"
@@ -1053,7 +1018,7 @@
       "target": "docs/methodology/editorial-standard-feature-briefs.md"
     },
     {
-      "sha256": "14c4851ee3999e56d9d8ce63fed35775973d2bb60569f23931935061c8e6e9ee",
+      "sha256": "7a5ba363a10a4b26afa96471c6fd379c89f27dd50cd1cf1572cee292c3eb9eea",
       "source": "public-companion/templates/.github/workflows/public-ci.yml",
       "target": ".github/workflows/public-ci.yml"
     },
@@ -1073,7 +1038,7 @@
       "target": ".github/workflows/discovery-acceptance.yml"
     },
     {
-      "sha256": "f405531338fc2423276284a2b2987bad40c3960080137d44224e222a4a58b2f1",
+      "sha256": "b3eb4b707e1899391a43b829a8e39a0fab79997e0c18cbe282fbce1895bfb646",
       "source": "public-companion/templates/.github/workflows/promote-private-sync.yml",
       "target": ".github/workflows/promote-private-sync.yml"
     },
@@ -1108,12 +1073,17 @@
       "target": "tests/validate_public_export.py"
     },
     {
+      "sha256": "652a86249bc20c13ede9b28cf57f2f023643295d3758d708efb21606b707873d",
+      "source": "public-companion/tests/validate_public_source_js.py",
+      "target": "tests/validate_public_source_js.py"
+    },
+    {
       "sha256": "8a34445bf50b9f08fe960a6a4786a1ae8918e3e3930744dc5ae0263b824ce4c4",
       "source": "public-companion/templates/.github/workflows/accessibility-audit.yml",
       "target": ".github/workflows/accessibility-audit.yml"
     }
   ],
-  "source_commit": "8f25dadf11b89b598be9d0756ec6174b179c73c8",
+  "source_commit": "b4645569ae556206c413a47284593ab0c40456ab",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }

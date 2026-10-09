@@ -1,43 +1,33 @@
-# Workforce Wonkery Public
+# Workforce Wonkery Website
 
 **Policy. Data. Practice. Decoded.**
 
-This repository is the public companion to Workforce Wonkery. It contains selected reader-facing code, public runtime data, and reusable methodology from the project behind workforcewonkery.com.
+This is the public development home for Workforce Wonkery reader-facing WordPress source, public datasets, accessible testing, and reusable documentation.
 
-## What is here
+## Repository ownership
 
-- public data used by Workforce Wonkery tools
-- selected WordPress CSS, JavaScript, and plugin code
-- selected methodology and design documentation
-- reusable editorial standards for workforce-development analysis
+- **Public-owned website source:** `src/wordpress/` contains the source of approved website pages, shared components, CSS, JavaScript, and selected WordPress plugin code. Changes are reviewed through public pull requests.
+- **Private-owned generated outputs:** `data/`, public methodology exports, and the `PROVENANCE.json` manifest are exported from the protected Workforce Wonkery control repository. Public changes to generated files must be reconciled back into their source, not edited in place.
+- **Protected production operations:** the separate private repository owns research under review, governance records, production WordPress transactions, deployment credentials, and newsletter delivery safeguards.
 
-## What is not here
+## How a website change reaches readers
 
-The private Workforce Wonkery control repository remains the source of truth for internal governance, QA, research, drafts, publication controls, automation instructions, and operational history.
+1. Propose a change to `src/wordpress/` on a public branch.
+2. Run CI, including the relevant browser, accessibility, syntax, and data checks, and receive review.
+3. Merge into public `main`. **This is not a WordPress deployment.**
+4. Manually import the exact approved public main commit using the private workflow `Import approved public website source`.
+5. Review the generated private pull request, pass the private source and publication gates, then use the governed Publisher to update WordPress and verify the live site.
 
-This public repository intentionally excludes those materials.
+The existing WordPress website remains the public publication platform. No public pull request or public CI job receives production publishing credentials.
 
-## How this repository is produced
+## Data sync and provenance
 
-Content is exported from the private control repository through an explicit allowlist. Files are not copied here simply because they exist in the private repository.
+The private exporter uses an explicit allowlist and records generated files in `PROVENANCE.json`. It cannot write to, overwrite, or delete the public-owned `src/wordpress/` tree. Public `main` and the generated sync branch must not diverge for unrelated reasons, or promotion stops for review.
 
-Each release should include a provenance record showing the source commit used for the export.
+## Contribution, security and licensing
 
-## Use and licensing
+See `CONTRIBUTING.md`, `SECURITY.md`, and `LICENSE-NOTICE.md`. Do not commit private information or credentials. Visibility is not an open-source license; reuse requires separate authorization until a license is adopted.
 
-Public visibility does not by itself grant an open-source license. See `LICENSE-NOTICE.md`.
+## Migration status
 
-## Security
-
-Please see `SECURITY.md` before reporting a possible security issue.
-
-## Contributing
-
-Suggestions, corrections, and public-facing improvements are welcome. See `CONTRIBUTING.md`.
-
-
-## Continuous integration
-
-Public-only validation runs here, including public data checks and live-site browser/structure acceptance. This keeps public testing separate from the private Workforce Wonkery control plane.
-
-This repository is generated from an explicit allowlist in the private source-of-truth repository. If a public pull request changes generated or mirrored material, the accepted change must be reconciled back into the private source before the next sync.
+The public-first model is being introduced through coordinated pull requests. Until those pull requests are merged and verified, the earlier private-first sync and production workflow remain authoritative.
