@@ -1,0 +1,696 @@
+<style>
+#weq-wae-map-v2{scroll-margin-top:22px}
+#weq-wae-map-v2 .wae-map-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:18px;align-items:start;margin:16px 0}
+#weq-wae-map-v2 .wae-map-callout{padding:15px 16px;border-left:4px solid var(--orange);background:var(--warm);font-size:14px;line-height:1.6;color:#5d5148}
+#weq-wae-map-v2 .wae-map-question{margin:20px 0 16px;padding:17px;border:1px solid var(--line);border-radius:11px;background:#fff}
+#weq-wae-map-v2 .wae-map-question h3{font-size:24px;margin:3px 0 6px}
+#weq-wae-map-v2 .wae-map-question p{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important;margin:0 0 11px!important}
+#weq-wae-map-v2 label{display:block;margin:0 0 6px;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+#weq-wae-map-v2 select,#weq-wae-map-v2 input{width:100%;min-height:48px;padding:10px 12px;border:1px solid #b9cbd5;border-radius:7px;background:#fff;color:var(--navy);font:700 15px Inter,Arial,sans-serif}
+#weq-wae-map-v2 select:focus-visible,#weq-wae-map-v2 input:focus-visible{outline:3px solid #005b91;outline-offset:2px}
+#weq-wae-map-v2 .wae-map-controls{display:grid;grid-template-columns:minmax(175px,.72fr) minmax(150px,.65fr) minmax(250px,1.1fr) minmax(230px,1fr);gap:12px;margin:12px 0 8px}#weq-wae-map-v2 .wae-map-area-name{display:flex;align-items:center;min-height:48px;padding:10px 12px;border:1px solid #c9d9e1;border-radius:7px;background:#f6fafb;color:var(--navy);font:800 15px Inter,Arial,sans-serif}
+#weq-wae-map-v2 .wae-map-status{margin:7px 0 12px;font-size:13px;line-height:1.5;color:var(--muted)}
+#weq-wae-map-v2 .wae-map-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,.72fr);gap:16px;align-items:start}
+#weq-wae-map-v2 .wae-map-box{border:1px solid #9fcfd0;border-radius:12px;background:#f2fbfa;padding:14px}
+#weq-wae-map-v2 .wae-map-zoom{display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap;margin:0 0 9px}
+#weq-wae-map-v2 .wae-map-zoom-label{margin-right:auto;font-size:12px;font-weight:800;color:var(--muted)}
+#weq-wae-map-v2 .wae-map-zoom button{appearance:none;min-width:44px;min-height:44px;padding:8px 11px;border:1px solid #8fb3c3;border-radius:7px;background:#fff;color:#005b91;font:850 14px Inter,Arial,sans-serif;cursor:pointer}
+#weq-wae-map-v2 .wae-map-zoom button:disabled{cursor:default;opacity:.48;background:#f6f8f9}
+#weq-wae-map-v2 .wae-map-zoom-level{min-width:48px;text-align:center;font-size:12px;font-weight:900;color:var(--navy)}
+#weq-wae-map-v2 .wae-map-viewport{overflow:visible;border-radius:8px;-webkit-overflow-scrolling:touch}
+#weq-wae-map-v2 .wae-map-viewport.is-zoomed{overflow:auto;overscroll-behavior:contain;border:1px solid #c9dfe4;background:#fff}
+#weq-wae-map-v2 .wae-map-viewport.is-zoomed svg{max-width:none}
+#weq-wae-map-v2 svg{display:block;width:100%;height:auto;min-height:430px}
+#weq-wae-map-v2 .wae-tract path{fill:#d7e6ed;stroke:#fff;stroke-width:1.1;cursor:pointer;transition:fill .16s ease,stroke-width .12s ease}
+#weq-wae-map-v2 .wae-tract:hover path,#weq-wae-map-v2 .wae-tract:focus path{stroke:var(--navy);stroke-width:2.6}
+#weq-wae-map-v2 .wae-tract:focus-visible{outline:none}
+#weq-wae-map-v2 .wae-tract.is-selected path{stroke:var(--orange);stroke-width:4;filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)}
+#weq-wae-map-v2 .wae-map-legend{margin-top:10px}
+#weq-wae-map-v2 .wae-map-legend-label{font-size:13px;font-weight:850;color:var(--ink);margin-bottom:6px}
+#weq-wae-map-v2 .wae-map-gradient{height:12px;border-radius:999px;background:linear-gradient(90deg,#E8F8F7,#B9E6E1,#72C9BE,#2BA99B,#0B7C78,#07485B);border:1px solid #9fcfd0}
+#weq-wae-map-v2 .wae-map-legend-values{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted);margin-top:5px}
+#weq-wae-map-v2 .wae-map-coverage{font-size:12px;line-height:1.5;color:var(--muted);margin-top:7px}
+#weq-wae-map-v2 .wae-map-gate{display:inline-block;margin-top:6px;padding:4px 8px;border:1px solid var(--line);border-radius:999px;font-size:11px;font-weight:850;letter-spacing:.04em;text-transform:uppercase}
+#weq-wae-map-v2 .wae-map-gate.strong{background:#edf7f1;color:#1f6844}
+#weq-wae-map-v2 .wae-map-gate.partial{background:#fff7e8;color:#855900}
+#weq-wae-map-v2 .wae-map-gate.limited{background:#f6eeee;color:#8a3535}
+#weq-wae-map-v2 .wae-map-note{font-size:12px!important;line-height:1.55!important;color:var(--muted)!important;margin:9px 0 0!important}
+#weq-wae-map-v2 .wae-map-panel{border:1px solid var(--line);border-top:4px solid #0B7C78;border-radius:10px;background:#fff;padding:16px 18px}
+#weq-wae-map-v2 .wae-map-panel-kicker{font-size:11px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;color:#0B7C78}
+#weq-wae-map-v2 .wae-map-panel h3{font-size:24px;margin:5px 0 5px}
+#weq-wae-map-v2 .wae-map-panel p{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important}
+#weq-wae-map-v2 .wae-map-location-note{margin:9px 0 11px!important;padding:9px 10px;border:1px solid #d9e6eb;border-radius:7px;background:#f7fafb;color:#415c6d!important}
+#weq-wae-map-v2 .wae-map-location-note strong{color:var(--navy)}
+#weq-wae-map-v2 .wae-map-question-read{margin:10px 0;padding:10px 11px;border-radius:7px;background:#F0FBF9;border:1px solid #B7DDD8}
+#weq-wae-map-v2 .wae-map-question-read span{display:block;font-size:11px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:#4c7186;margin-bottom:3px}
+#weq-wae-map-v2 .wae-map-question-read strong{display:block;font-size:14px;line-height:1.45;color:var(--navy)}
+#weq-wae-map-v2 .wae-map-reading{padding:13px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:11px 0}
+#weq-wae-map-v2 .wae-map-reading span{display:block;font-size:13px;font-weight:800;color:var(--ink)}
+#weq-wae-map-v2 .wae-map-reading strong{display:block;font-size:30px;line-height:1.1;color:var(--navy);margin:4px 0}
+#weq-wae-map-v2 .wae-map-reading small{display:block;font-size:12px;line-height:1.5;color:var(--muted)}
+#weq-wae-map-v2 .wae-map-details{margin:18px 0 0}
+#weq-wae-map-v2 .wae-map-details[hidden]{display:none}
+#weq-wae-map-v2 .wae-map-details-head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin-bottom:10px}
+#weq-wae-map-v2 .wae-map-details-head h3{font-size:24px;margin:3px 0 0}
+#weq-wae-map-v2 .wae-map-details-head p{font-size:14px!important;line-height:1.55!important;color:var(--muted)!important;margin:0!important;max-width:560px}
+#weq-wae-map-v2 .wae-map-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+#weq-wae-map-v2 .wae-map-card{border:1px solid var(--line);border-radius:9px;background:#fff;padding:14px;min-width:0}
+#weq-wae-map-v2 .wae-map-card-kicker{font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:#0B7C78;margin-bottom:7px}
+#weq-wae-map-v2 .wae-map-card h4{font-size:18px;margin:0 0 7px;color:var(--navy)}
+#weq-wae-map-v2 .wae-map-card p,#weq-wae-map-v2 .wae-map-card li{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important}
+#weq-wae-map-v2 .wae-map-card ul{margin:6px 0 0;padding-left:18px}
+#weq-wae-map-v2 .wae-map-card li{margin:4px 0}
+#weq-wae-map-v2 .wae-map-who-row{display:flex;justify-content:space-between;gap:10px;padding:7px 0;border-top:1px solid #edf1f3;font-size:13px;line-height:1.4}
+#weq-wae-map-v2 .wae-map-who-row:first-of-type{border-top:0}
+#weq-wae-map-v2 .wae-map-who-row span{color:var(--muted)}
+#weq-wae-map-v2 .wae-map-who-row strong{color:var(--ink);white-space:nowrap}
+#weq-wae-map-v2 .wae-map-lens{border-radius:7px;background:#F0FBF9;border:1px solid #B7DDD8;padding:11px}
+#weq-wae-map-v2 .wae-map-lens b{display:block;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#a84700;margin:0 0 4px}
+#weq-wae-map-v2 .wae-map-lens p{margin:0 0 10px!important}
+#weq-wae-map-v2 .wae-map-lens p:last-child{margin-bottom:0!important}
+#weq-wae-map-v2 .wae-map-evidence-row{padding:8px 0;border-top:1px solid #edf1f3}
+#weq-wae-map-v2 .wae-map-evidence-row:first-of-type{border-top:0}
+#weq-wae-map-v2 .wae-map-evidence-row span{display:block;font-size:11px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+#weq-wae-map-v2 .wae-map-evidence-row strong{display:block;font-size:13px;line-height:1.45;color:var(--ink);margin-top:2px}
+#weq-wae-map-v2 .wae-map-other{margin-top:14px;border:1px solid var(--line);border-radius:9px;background:#fff;padding:14px}
+#weq-wae-map-v2 .wae-map-other-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:7px}
+#weq-wae-map-v2 .wae-map-other-head strong{font-size:15px;color:var(--navy)}
+#weq-wae-map-v2 .wae-map-other-head span{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+#weq-wae-map-v2 .wae-map-other-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px 12px}
+#weq-wae-map-v2 .wae-map-other-item{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid #edf1f3;font-size:13px;line-height:1.45}
+#weq-wae-map-v2 .wae-map-other-item span{color:var(--muted);max-width:68%}
+#weq-wae-map-v2 .wae-map-other-item strong{text-align:right;color:var(--ink)}
+#weq-wae-map-v2 .wae-map-brief{margin-top:14px;border:1px solid #d8e5eb;border-radius:9px;background:#fff}
+#weq-wae-map-v2 .wae-map-brief summary{cursor:pointer;padding:12px 14px;font-size:15px;font-weight:900;color:#005b91}
+#weq-wae-map-v2 .wae-map-brief-body{padding:0 14px 14px}
+#weq-wae-map-v2 .wae-map-brief-block{padding:9px 0;border-top:1px solid #edf1f3}
+#weq-wae-map-v2 .wae-map-brief-block b{display:block;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#a84700;margin-bottom:4px}
+#weq-wae-map-v2 .wae-map-brief-block p{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important;margin:0!important}
+#weq-wae-map-v2 .wae-map-copy{appearance:none;border:1px solid #7ca5ba;border-radius:6px;background:#eef6f9;color:#005b91;font:800 13px Inter,Arial,sans-serif;padding:8px 10px;cursor:pointer;margin-top:8px}
+#weq-wae-map-v2 .wae-map-about{margin-top:14px;border-top:1px solid var(--line)}
+#weq-wae-map-v2 .wae-map-about summary{cursor:pointer;padding:12px 0;font-size:14px;font-weight:850;color:#005b91}
+#weq-wae-map-v2 .wae-map-about p{font-size:13px!important;line-height:1.6!important;color:var(--muted)!important}
+@media(prefers-reduced-motion:reduce){#weq-wae-map-v2 .wae-tract path{transition:none}}
+@media(max-width:1000px){#weq-wae-map-v2 .wae-map-detail-grid{grid-template-columns:1fr 1fr}#weq-wae-map-v2 .wae-map-card:last-child{grid-column:1/-1}#weq-wae-map-v2 .wae-map-other-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){#weq-wae-map-v2 .wae-map-controls{grid-template-columns:1fr 1fr}#weq-wae-map-v2 .wae-map-search{grid-column:1/-1}}
+@media(max-width:850px){#weq-wae-map-v2 .wae-map-intro,#weq-wae-map-v2 .wae-map-layout,#weq-wae-map-v2 .wae-map-detail-grid,#weq-wae-map-v2 .wae-map-other-grid{grid-template-columns:1fr}#weq-wae-map-v2 .wae-map-card:last-child{grid-column:auto}#weq-wae-map-v2 .wae-map-details-head{display:block}#weq-wae-map-v2 .wae-map-details-head p{margin-top:5px!important}}
+@media(max-width:600px){#weq-wae-map-v2 .wae-map-controls{grid-template-columns:1fr}#weq-wae-map-v2 .wae-map-search{grid-column:auto}#weq-wae-map-v2 svg{min-height:320px}#weq-wae-map-v2 .wae-map-reading strong{font-size:27px}}
+</style>
+<section id="neighborhood-equity" class="weq-section">
+<div id="weq-wae-map-v2">
+<div class="weq-kicker">Neighborhood Equity &amp; Access · {{AREA_NAME}} pilot</div>
+<h2>Explore neighborhood conditions.</h2>
+<div class="wae-map-intro">
+<div>
+<p>Start with a workforce question, then use the map to see how the selected condition varies across {{AREA_NAME}}. Select a census tract for a quick read, community context, and decision prompts.</p>
+<p><strong>This is not WIOA performance data.</strong> This {{AREA_SHORT_NAME}} tract release uses public CalEnviroScreen 5.0 data filtered to the workforce area's incorporated-city boundaries using 2020 Census geography.</p>
+</div>
+<div class="wae-map-callout"><strong>Read the map carefully:</strong> darker shading means a larger value for the selected layer. It does not mean a neighborhood is better, worse, more deserving, or ranked. Race and ethnicity are shown only as descriptive community composition and are never used as a priority signal.</div>
+</div>
+
+<div class="wae-map-question">
+<div class="weq-kicker">Start here</div>
+<h3>What are you trying to understand?</h3>
+<p>Choose a workforce question and the map will open the most relevant evidence currently cleared for this pilot.</p>
+<label for="wae-map-question-select">Choose a question</label>
+<select id="wae-map-question-select">
+<option value="" selected>Select a workforce question</option>
+<option value="outreach">Where should we investigate whether outreach or language access needs attention?</option>
+<option value="training">Where should we examine adult education, bridge, or training connections?</option>
+<option value="employment">Where should we look more closely at job matching or reemployment barriers?</option>
+<option value="household">Where might household financial pressure make training or job search harder to sustain?</option>
+<option value="housing">Where might household costs make training or job search harder to sustain?</option>
+<option value="environment">What workforce question, if any, is supported by environmental context?</option>
+<option value="composition">Who lives here, and what should we understand before designing outreach or services?</option>
+</select>
+</div>
+
+<div class="wae-map-controls">
+<div><label for="wae-map-area">Map area</label><select id="wae-map-area">{{MAP_AREA_OPTIONS_HTML}}</select><select id="wae-map-county" hidden><option value="{{COUNTY_NAME}}" selected>{{COUNTY_NAME}} County</option></select></div>
+<div><label for="wae-map-mode">Map view</label><select id="wae-map-mode"><option value="conditions" selected>Conditions &amp; access</option><option value="composition">Community composition</option></select></div>
+<div id="wae-map-condition-field"><label for="wae-map-metric">Condition to explore</label><select id="wae-map-metric">
+<option value="poverty" selected>Income below 2× federal poverty level</option>
+<option value="unemployment">Unemployment</option>
+<option value="education">Adults 25+ without a high school education</option>
+<option value="language">Limited-English-speaking households</option>
+<option value="housing">Low-income households with severe housing cost burden</option>
+<option value="pollution">Pollution burden percentile</option>
+</select></div>
+<div id="wae-map-composition-field" hidden><label for="wae-map-composition">Community composition</label><select id="wae-map-composition">
+<option value="hispanic" selected>Hispanic or Latino (any race)</option>
+<option value="white">White (Non-Hispanic)</option>
+<option value="black">Black or African American (Non-Hispanic)</option>
+<option value="native">Native American (Non-Hispanic)</option>
+<option value="asian">Asian (Non-Hispanic)</option>
+<option value="pacific">Pacific Islander (Non-Hispanic)</option>
+<option value="other">Other / multiple races (Non-Hispanic)</option>
+</select></div>
+<div class="wae-map-search"><label for="wae-map-search">Find a community or tract</label><input id="wae-map-search" type="search" list="wae-map-place-list" placeholder="{{SEARCH_PLACEHOLDER}}" autocomplete="off"><datalist id="wae-map-place-list"></datalist></div>
+</div>
+
+<p id="wae-map-status" class="wae-map-status" aria-live="polite">Starting {{AREA_SHORT_NAME}} map…</p>
+
+<div class="wae-map-layout">
+<div class="wae-map-box">
+<div class="wae-map-zoom" aria-label="Map zoom controls"><span class="wae-map-zoom-label">Map zoom</span><span id="wae-map-zoom-level" class="wae-map-zoom-level" aria-live="polite">100%</span><button id="wae-map-zoom-out" type="button" aria-label="Zoom out">−</button><button id="wae-map-zoom-in" type="button" aria-label="Zoom in">+</button><button id="wae-map-zoom-selected" type="button" disabled>Zoom selected</button><button id="wae-map-zoom-reset" type="button" disabled>Reset</button></div>
+<div id="wae-map-viewport" class="wae-map-viewport">
+<svg id="wae-map-svg" viewBox="0 0 720 540" role="img" aria-labelledby="wae-map-title wae-map-desc">
+<title id="wae-map-title">{{AREA_NAME}} census tract map</title>
+<desc id="wae-map-desc">{{AREA_NAME}} census tracts shaded by the selected public condition. Map area can show the full workforce area or an individual member city. Hatched tracts have no published value for the selected layer.</desc>
+<defs><pattern id="wae-map-no-data" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#eef2f4"></rect><line x1="0" y1="0" x2="0" y2="8" stroke="#aebbc2" stroke-width="3"></line></pattern></defs>
+<g id="wae-map-layer"></g>
+</svg>
+</div>
+<p class="wae-map-note">Zoom in to reach small tracts. When zoomed, drag or swipe the map to move around. Search remains available as an alternative.</p>
+<div class="wae-map-legend">
+<div id="wae-map-legend-label" class="wae-map-legend-label">Income below 2× federal poverty level</div>
+<div class="wae-map-gradient"></div>
+<div class="wae-map-legend-values"><span id="wae-map-min">—</span><span id="wae-map-mid">Darker = larger value</span><span id="wae-map-max">—</span></div>
+<div id="wae-map-coverage" class="wae-map-coverage">Coverage will appear after the public layer loads.</div>
+<span id="wae-map-gate" class="wae-map-gate">Loading</span>
+<p class="wae-map-note">Values are shaded within {{AREA_NAME}} for the selected layer. This is descriptive context, not a priority score.</p>
+</div>
+</div>
+
+<aside id="wae-map-panel" class="wae-map-panel">
+<div class="wae-map-panel-kicker">Quick read</div>
+<h3>Select a census tract</h3>
+<p>Choose a tract on the map or search by community, ZIP-area context, or tract number. The selected tract will remain outlined while you explore other layers.</p>
+</aside>
+</div>
+
+<div id="wae-map-details" class="wae-map-details" hidden></div>
+
+<details class="wae-map-about">
+<summary>About the {{AREA_SHORT_NAME}} tract explorer</summary>
+<p><strong>Source:</strong> California Office of Environmental Health Hazard Assessment / CalEPA, CalEnviroScreen 5.0, released July 1, 2026. {{SOURCE_SCOPE_TEXT}}</p><p><strong>Workforce geography:</strong> the browser uses 2020 U.S. Census incorporated-place boundaries for {{MEMBER_CITY_TEXT}}. A tract is assigned to the workforce area when the center of its displayed tract geometry falls inside a member-city boundary. Border tracts can cross city lines, so the tract number remains the precise data geography.</p>
+<p><strong>Location context:</strong> selected tracts are enriched with 2020 Census incorporated-place, census-designated-place, county-subdivision, and ZIP Code Tabulation Area context. Local official planning-area layers may override the generic label where a governed area-specific source is available. These labels describe the tract center and are not formal neighborhood or tract boundaries.</p>
+<p><strong>Phase 1 scope:</strong> six workforce-relevant condition measures and seven descriptive community-composition measures. No WIOA participant, service, case-management, or outcome records are used. No composite equity score or neighborhood ranking is produced.</p>
+<p><strong>Next enrichment gate:</strong> add validated 2020–2024 American Community Survey tract precision measures only after an {{AREA_SHORT_NAME}} static package passes coverage, margin-of-error, geography, and public-packaging QA.</p>
+</details>
+</div>
+</section>
+<script>
+(function(){
+  const root=document.getElementById('weq-wae-map-v2');
+  if(!root)return;
+  const bootStatus=document.getElementById('wae-map-status');
+  if(bootStatus)bootStatus.textContent='Starting {{AREA_SHORT_NAME}} map…';
+
+  const sourceBase='https://services1.arcgis.com/PCHfdHz4GlDNAhBb/arcgis/rest/services/calenviroscreen50results_F_070126_gdb/FeatureServer/2/query';
+  const fields=['tract','ApproxLoc','county','Population','Poverty','Unemployment','Education','Linguistic_Isol','HousBurd','Pollution_Pctl','Hispanic','white','black','Native_American','asian','Pacific_Islander','Other_Multiple'].join(',');
+  const jurisdictionPlaces={{PLACE_NAMES_JSON}};
+  const placeBoundaryLayer='https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/25';
+  let boundaryFeatures=[],countyFeatures=[];
+  function queryUrl(params){
+    const q=new URLSearchParams(params);
+    return sourceBase+'?'+q.toString();
+  }
+  function countyIdsUrl(county){
+    return queryUrl({where:"county='"+county+"'",returnIdsOnly:'true',f:'json'});
+  }
+  function countyChunkUrl(objectIds,simplify){
+    return queryUrl({objectIds:objectIds.join(','),outFields:fields,returnGeometry:'true',outSR:'4326',maxAllowableOffset:String(simplify),geometryPrecision:'5',f:'geojson'});
+  }
+  async function fetchJson(url,timeoutMs){
+    const controller=new AbortController();
+    const timer=setTimeout(()=>controller.abort(),timeoutMs||18000);
+    try{
+      const response=await fetch(url,{headers:{'Accept':'application/json'},signal:controller.signal});
+      if(!response.ok)throw new Error(response.status+' '+response.statusText);
+      const data=await response.json();
+      if(data ? data.error : false)throw new Error(data.error.message||'ArcGIS query error');
+      return data;
+    }finally{clearTimeout(timer);}
+  }
+  async function fetchCountyFeatures(county,onProgress){
+    const idData=await fetchJson(countyIdsUrl(county),15000);
+    const ids=Array.isArray(idData.objectIds)?idData.objectIds:[];
+    if(!ids.length)return[];
+    const chunks=[];for(let i=0;i<ids.length;i+=100)chunks.push(ids.slice(i,i+100));
+    const features=[],failedChunks=[];
+    for(let i=0;i<chunks.length;i++){
+      if(onProgress)onProgress(i+1,chunks.length);
+      let data;
+      try{data=await fetchJson(countyChunkUrl(chunks[i],0.00025),18000);}
+      catch(firstError){
+        try{data=await fetchJson(countyChunkUrl(chunks[i],0.0006),18000);}
+        catch(secondError){failedChunks.push(i+1);console.warn('WAE tract geometry batch unavailable after retry',county,i+1,secondError);continue;}
+      }
+      if(Array.isArray(data.features))features.push(...data.features);
+    }
+    features._waeLoad={failedChunks,totalChunks:chunks.length};
+    if(!features.length ? failedChunks.length : false)throw new Error('No tract geometry batches could be loaded for '+county+' County.');
+    return features;
+  }
+
+  const metricMeta={
+    poverty:{label:'Income below 2× federal poverty level',field:'Poverty',unit:'percent',question:'Where might household financial pressure make training or job search harder to sustain?',meaning:'A larger tract estimate is a reason to examine whether participation costs, unpaid time, or basic-needs pressures may matter. It is not evidence that residents cannot participate.',next:'Check paid-training design, supportive services, benefits coordination, schedules, and local service-use evidence.'},
+    unemployment:{label:'Unemployment',field:'Unemployment',unit:'percent',question:'Where should we look more closely at job matching or reemployment barriers?',meaning:'A larger tract estimate can prompt a closer look at reemployment and job matching. It does not show who is eligible for or reached by WIOA.',next:'Check current job-search patterns, sector demand, service reach, and whether residents are represented in local workforce data.'},
+    education:{label:'Adults 25+ without a high school education',field:'Education',unit:'percent',question:'Where should we examine adult education, bridge, or training connections?',meaning:'Educational attainment can identify a pathway-design question, but it does not establish training demand or program fit.',next:'Check adult education, bridge and short-term training capacity, entry requirements, schedules, language access, and outreach evidence.'},
+    language:{label:'Limited-English-speaking households',field:'Linguistic_Isol',unit:'percent',question:'Where should we investigate whether outreach or language access needs attention?',meaning:'A larger estimate is a reason to investigate language access. It does not identify which languages residents use or prove current services are inadequate.',next:'Check detailed language-use evidence, translated materials, bilingual navigation capacity, and trusted community-partner input.'},
+    housing:{label:'Low-income households with severe housing cost burden',field:'HousBurd',unit:'percent',question:'Where might household costs make training or job search harder to sustain?',meaning:'Housing cost burden can frame a participation-cost question. It does not prove housing costs cause workforce nonparticipation.',next:'Check supportive services, paid training, schedule flexibility, housing/basic-needs partnerships, and participant feedback.'},
+    pollution:{label:'Pollution burden percentile',field:'Pollution_Pctl',unit:'percentile',question:'What workforce question, if any, is supported by environmental context?',meaning:'Pollution burden is environmental context, not a workforce access or performance measure.',next:'Use underlying environmental indicators and appropriate expertise if a workforce decision asserts a specific connection. Do not allocate workforce resources from this percentile alone.'}
+  };
+
+  const compositionMeta={
+    hispanic:{label:'Hispanic or Latino (any race)',field:'Hispanic'},
+    white:{label:'White (Non-Hispanic)',field:'white'},
+    black:{label:'Black or African American (Non-Hispanic)',field:'black'},
+    native:{label:'Native American (Non-Hispanic)',field:'Native_American'},
+    asian:{label:'Asian (Non-Hispanic)',field:'asian'},
+    pacific:{label:'Pacific Islander (Non-Hispanic)',field:'Pacific_Islander'},
+    other:{label:'Other / multiple races (Non-Hispanic)',field:'Other_Multiple'}
+  };
+
+  const questionMap={
+    outreach:{mode:'conditions',metric:'language'},
+    training:{mode:'conditions',metric:'education'},
+    employment:{mode:'conditions',metric:'unemployment'},
+    household:{mode:'conditions',metric:'poverty'},
+    housing:{mode:'conditions',metric:'housing'},
+    environment:{mode:'conditions',metric:'pollution'},
+    composition:{mode:'composition',composition:'hispanic'}
+  };
+
+  const colors=['#E8F8F7','#B9E6E1','#72C9BE','#2BA99B','#0B7C78','#07485B'];
+  const state={features:new Map(),selected:null,mode:'conditions',metric:'poverty',composition:'hispanic',question:''};
+
+  const svg=root.querySelector('#wae-map-svg');
+  const layer=root.querySelector('#wae-map-layer');
+  const status=root.querySelector('#wae-map-status');
+  const panel=root.querySelector('#wae-map-panel');
+  const details=root.querySelector('#wae-map-details');
+  const countySelect=root.querySelector('#wae-map-county');
+  const areaSelect=root.querySelector('#wae-map-area');
+  const modeSelect=root.querySelector('#wae-map-mode');
+  const metricSelect=root.querySelector('#wae-map-metric');
+  const compositionSelect=root.querySelector('#wae-map-composition');
+  const conditionField=root.querySelector('#wae-map-condition-field');
+  const compositionField=root.querySelector('#wae-map-composition-field');
+  const questionSelect=root.querySelector('#wae-map-question-select');
+  const search=root.querySelector('#wae-map-search');
+  const datalist=root.querySelector('#wae-map-place-list');
+  const legendLabel=root.querySelector('#wae-map-legend-label');
+  const legendMin=root.querySelector('#wae-map-min');
+  const legendMax=root.querySelector('#wae-map-max');
+  const coverageEl=root.querySelector('#wae-map-coverage');
+  const gateEl=root.querySelector('#wae-map-gate');
+  const urlAreaSelect=(typeof areaSelect!=='undefined' ? areaSelect : false)?areaSelect:((typeof countySelect!=='undefined' ? countySelect : false)?countySelect:null);
+  const defaultUrlState={area:urlAreaSelect?.value||'',metric:metricSelect.value||'poverty',composition:compositionSelect.value||'hispanic'};
+  let pendingUrlTract='';
+  function hasWaeOption(select,value){return select?Array.from(select.options||[]).some(option=>option.value===value):false;}
+  function applyWaeUrlState(){
+    const params=new URLSearchParams(window.location.search);
+    if(urlAreaSelect){
+      const area=params.get('area');
+      urlAreaSelect.value=area?(hasWaeOption(urlAreaSelect,area)?area:defaultUrlState.area):defaultUrlState.area;
+    }
+    const composition=params.get('composition'),metric=params.get('metric');
+    if(composition ? hasWaeOption(compositionSelect,composition) : false){
+      state.mode='composition';modeSelect.value='composition';state.composition=composition;compositionSelect.value=composition;
+    }else{
+      state.mode='conditions';modeSelect.value='conditions';
+      state.metric=metric?(hasWaeOption(metricSelect,metric)?metric:defaultUrlState.metric):defaultUrlState.metric;metricSelect.value=state.metric;
+      state.composition=defaultUrlState.composition;compositionSelect.value=state.composition;
+    }
+    state.question=state.mode==='conditions'?(metricMeta[state.metric]?.question||''):'Who lives here, and what should we understand before designing outreach or services?';
+    questionSelect.value='';
+    pendingUrlTract=params.get('tract')||'';
+    state.selected=null;
+    conditionField.hidden=state.mode!=='conditions';
+    compositionField.hidden=state.mode!=='composition';
+  }
+  function writeWaeUrl(push){
+    const u=new URL(window.location.href);
+    if(urlAreaSelect ? urlAreaSelect.options.length>1 : false)u.searchParams.set('area',urlAreaSelect.value);else u.searchParams.delete('area');
+    if(state.mode==='composition'){u.searchParams.set('composition',state.composition);u.searchParams.delete('metric');}
+    else{u.searchParams.set('metric',state.metric);u.searchParams.delete('composition');}
+    if(state.selected)u.searchParams.set('tract',state.selected);else u.searchParams.delete('tract');
+    history[push?'pushState':'replaceState']({wae:true},'',u);
+  }
+  function restorePendingUrlTract(){
+    const g=pendingUrlTract;pendingUrlTract='';
+    if(!g)return;
+    if(state.features.has(g))selectTract(g,false);else writeWaeUrl(false);
+  }
+  function restoreWaeUrlState(){
+    const before=urlAreaSelect?.value||'';
+    applyWaeUrlState();
+    const after=urlAreaSelect?.value||'';
+    if(after!==before){
+      search.value='';
+      if(typeof applyArea==='function'){
+        try{applyArea();}catch(error){status.textContent='Selected map area could not be restored right now.';console.error('WAE URL state:',error);}
+      }else load();
+      return;
+    }
+    paint();
+    if(typeof updateZoomButtons==='function')updateZoomButtons();
+    restorePendingUrlTract();
+  }
+
+  const mapViewport=root.querySelector('#wae-map-viewport');
+  const zoomInBtn=root.querySelector('#wae-map-zoom-in');
+  const zoomOutBtn=root.querySelector('#wae-map-zoom-out');
+  const zoomSelectedBtn=root.querySelector('#wae-map-zoom-selected');
+  const zoomResetBtn=root.querySelector('#wae-map-zoom-reset');
+  const zoomLevelEl=root.querySelector('#wae-map-zoom-level');
+
+  let mapZoom=1,baseMapHeight=0;
+  function updateZoomButtons(){zoomLevelEl.textContent=Math.round(mapZoom*100)+'%';zoomOutBtn.disabled=mapZoom<=1.01;zoomResetBtn.disabled=mapZoom<=1.01;zoomInBtn.disabled=mapZoom>=5.95;zoomSelectedBtn.disabled=!state.selected;}
+  function setMapZoom(nextZoom,focus){
+    nextZoom=Math.max(1,Math.min(6,nextZoom));
+    const vpW=mapViewport.clientWidth||svg.getBoundingClientRect().width,vpH=mapViewport.clientHeight||svg.getBoundingClientRect().height;
+    const oldW=svg.scrollWidth||svg.getBoundingClientRect().width,oldH=svg.scrollHeight||svg.getBoundingClientRect().height;
+    const fx=focus?(Number.isFinite(focus.x)?focus.x:(mapViewport.scrollLeft+vpW/2)/Math.max(1,oldW)):(mapViewport.scrollLeft+vpW/2)/Math.max(1,oldW),fy=focus?(Number.isFinite(focus.y)?focus.y:(mapViewport.scrollTop+vpH/2)/Math.max(1,oldH)):(mapViewport.scrollTop+vpH/2)/Math.max(1,oldH);
+    if(mapZoom<=1.01)baseMapHeight=svg.getBoundingClientRect().height;
+    mapZoom=nextZoom;
+    if(mapZoom<=1.01){svg.style.width='100%';mapViewport.style.height='';mapViewport.classList.remove('is-zoomed');mapViewport.scrollLeft=0;mapViewport.scrollTop=0;updateZoomButtons();return;}
+    if(!baseMapHeight)baseMapHeight=svg.getBoundingClientRect().height;
+    mapViewport.style.height=Math.max(260,baseMapHeight)+'px';mapViewport.classList.add('is-zoomed');svg.style.width=(mapZoom*100)+'%';
+    requestAnimationFrame(()=>{const newW=svg.scrollWidth||svg.getBoundingClientRect().width,newH=svg.scrollHeight||svg.getBoundingClientRect().height;mapViewport.scrollLeft=Math.max(0,fx*newW-vpW/2);mapViewport.scrollTop=Math.max(0,fy*newH-vpH/2);updateZoomButtons();});
+  }
+  function resetMapZoom(){setMapZoom(1);}
+  function zoomToSelected(){if(!state.selected)return;const el=root.querySelector('.wae-tract[data-geoid="'+state.selected+'"]');if(!el)return;const b=el.getBBox();if(!b.width||!b.height)return;setMapZoom(Math.max(3,mapZoom),{x:(b.x+b.width/2)/720,y:(b.y+b.height/2)/540});}
+  zoomInBtn.addEventListener('click',()=>setMapZoom(mapZoom*1.5));zoomOutBtn.addEventListener('click',()=>setMapZoom(mapZoom/1.5));zoomResetBtn.addEventListener('click',resetMapZoom);zoomSelectedBtn.addEventListener('click',zoomToSelected);
+
+  function esc(value){const el=document.createElement('div');el.textContent=String(value??'');return el.innerHTML;}
+  function geoid(value){const digits=String(value??'').replace(/\D/g,'');return digits?digits.padStart(11,'0'):'';}
+  function tractLabel(g){const raw=g.slice(-6),n=Number(raw)/100;return Number.isInteger(n)?String(n):n.toFixed(2).replace(/0+$/,'').replace(/\.$/,'');}
+  function num(value){const n=Number(value);return Number.isFinite(n)?n:null;}
+  function fmt(value,unit){if(value===null||value===undefined||!Number.isFinite(Number(value)))return 'No published value';const n=Number(value);return unit==='percentile'?n.toFixed(1)+' percentile':n.toFixed(1)+'%';}
+  function rings(geometry){if(!geometry)return[];if(geometry.type==='Polygon')return geometry.coordinates||[];if(geometry.type==='MultiPolygon')return (geometry.coordinates||[]).flat();return[];}
+  function featureValue(feature){
+    const p=feature.properties||{};
+    if(state.mode==='composition')return num(p[compositionMeta[state.composition].field]);
+    return num(p[metricMeta[state.metric].field]);
+  }
+  function activeMeta(){return state.mode==='composition'?{...compositionMeta[state.composition],unit:'percent'}:metricMeta[state.metric];}
+  function allValues(){return [...state.features.values()].map(featureValue).filter(v=>v!==null);}
+  function median(values){if(!values.length)return null;const a=[...values].sort((x,y)=>x-y),m=Math.floor(a.length/2);return a.length%2?a[m]:(a[m-1]+a[m])/2;}
+  function coverageGate(available,total){if(!available)return['limited','No data'];const ratio=available/total;if(ratio>=.9)return['strong','Strong coverage'];if(ratio>=.75)return['partial','Partial coverage'];return['limited','Limited coverage'];}
+  function colorFor(value,min,max){if(value===null)return'url(#wae-map-no-data)';if(max<=min)return colors[3];const t=Math.max(0,Math.min(1,(value-min)/(max-min)));return colors[Math.min(colors.length-1,Math.floor(t*colors.length))];}
+  function pointInRing(point,ring){
+    const x=point[0],y=point[1];let inside=false;
+    for(let i=0,j=ring.length-1;i<ring.length;j=i++){
+      const xi=ring[i][0],yi=ring[i][1],xj=ring[j][0],yj=ring[j][1];
+      const hit=((yi>y)!==(yj>y)) ? (x<(xj-xi)*(y-yi)/((yj-yi)||1e-12)+xi) : false;
+      if(hit)inside=!inside;
+    }
+    return inside;
+  }
+  function geometryContainsPoint(geometry,point){
+    if(!geometry||!point)return false;
+    if(geometry.type==='Polygon'){
+      let inside=false;for(const ring of geometry.coordinates||[])if(pointInRing(point,ring))inside=!inside;return inside;
+    }
+    if(geometry.type==='MultiPolygon'){
+      for(const poly of geometry.coordinates||[]){let inside=false;for(const ring of poly||[])if(pointInRing(point,ring))inside=!inside;if(inside)return true;}return false;
+    }
+    return false;
+  }
+  function memberPlaceForFeature(feature){
+    const point=featureCenter(feature);if(!point)return'';
+    const match=boundaryFeatures.find(boundary=>geometryContainsPoint(boundary.geometry,point));
+    return String(match?.properties?.BASENAME||'').trim();
+  }
+  function activeAreaLabel(){
+    return areaSelect?.options?.[areaSelect.selectedIndex]?.textContent||'{{AREA_NAME}}';
+  }
+  function applyArea(){
+    const area=areaSelect?.value||'all';
+    state.features.clear();state.selected=null;layer.innerHTML='';details.hidden=true;resetMapZoom();
+    for(const feature of countyFeatures){
+      const member=String(feature?.properties?._waeMemberPlace||'');
+      if(!member)continue;
+      if(area!=='all' ? member!==area : false)continue;
+      const g=geoid(feature.properties?.tract),pop=num(feature.properties?.Population);
+      if(!g)continue;if(pop!==null ? pop<=0 : false)continue;
+      state.features.set(g,feature);
+    }
+    if(!state.features.size)throw new Error('No populated tracts were assigned to '+activeAreaLabel()+'.');
+    buildGeometry();rebuildSearch();paint();restorePendingUrlTract();
+    const loadState=countyFeatures?._waeLoad;
+    if(loadState?.failedChunks?.length){
+      status.textContent='Partial map: '+state.features.size+' populated tracts shown for '+activeAreaLabel()+'; '+loadState.failedChunks.length+' of '+loadState.totalChunks+' county geometry batches did not respond after retry. No values are inferred for missing tracts.';
+      gateEl.className='wae-map-gate partial';gateEl.textContent='Partial map';
+    }else status.textContent='Map ready: '+state.features.size+' populated tracts shown for '+activeAreaLabel()+'.';
+  }
+
+  const CONTEXT_CACHE_KEY='ww_wae_context_v2:'+window.location.pathname.replace(/\/+$/,'');
+  function restoredContextEntries(){
+    try{
+      const raw=JSON.parse(localStorage.getItem(CONTEXT_CACHE_KEY)||'{}');
+      if(raw ? (raw.version===2 ? (raw.entries ? typeof raw.entries==='object' : false) : false) : false)return Object.entries(raw.entries);
+    }catch(e){}
+    return [];
+  }
+  class PersistentContextMap extends Map{
+    constructor(){super(restoredContextEntries());}
+    set(key,value){
+      super.set(key,value);
+      try{
+        const entries={};
+        let kept=0;
+        for(const [k,v] of [...this.entries()].reverse()){
+          if(kept>=500)break;
+          entries[k]=v;kept++;
+        }
+        localStorage.setItem(CONTEXT_CACHE_KEY,JSON.stringify({version:2,entries}));
+      }catch(e){}
+      return this;
+    }
+  }
+  const contextCache=new PersistentContextMap(),contextFallback=new Map(),contextPending=new Map();
+  const censusPlaceLayer='https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/25';
+  const censusCdpLayer='https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/26';
+  const censusSubdivisionLayer='https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/22';
+  const censusZctaLayer='https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/PUMA_TAD_TAZ_UGA_ZCTA/MapServer/11';
+  function baseLocation(feature){
+    const p=feature.properties||{},member=String(p._waeMemberPlace||'').trim(),approx=String(p.ApproxLoc||'').trim(),county=String(p.county||'').trim();
+    if(member)return member;
+    if(approx){if(county)return approx+' · '+county+' County';return approx;}
+    if(county)return county+' County';
+    return '{{AREA_NAME}}';
+  }
+  function context(feature){const g=geoid(feature?.properties?.tract),cached=contextCache.get(g)||contextFallback.get(g);return cached?.primary||baseLocation(feature);}
+  function contextDescription(feature){const g=geoid(feature?.properties?.tract),cached=contextCache.get(g)||contextFallback.get(g);return cached?.description||'Loading more specific local geography for this tract…';}
+  function ringCenter(ring){
+    if(!Array.isArray(ring)||ring.length<3)return null;let area2=0,cx=0,cy=0;
+    for(let i=0;i<ring.length-1;i++){const a=ring[i],b=ring[i+1];if(!a||!b)continue;const cross=a[0]*b[1]-b[0]*a[1];area2+=cross;cx+=(a[0]+b[0])*cross;cy+=(a[1]+b[1])*cross;}
+    if(Math.abs(area2)>1e-12)return [cx/(3*area2),cy/(3*area2)];
+    const xs=ring.map(pt=>pt[0]),ys=ring.map(pt=>pt[1]);return [(Math.min(...xs)+Math.max(...xs))/2,(Math.min(...ys)+Math.max(...ys))/2];
+  }
+  function featureCenter(feature){
+    const rr=rings(feature?.geometry).filter(r=>Array.isArray(r)?r.length>=3:false);if(!rr.length)return null;let best=rr[0],bestArea=0;
+    rr.forEach(r=>{let a=0;for(let i=0;i<r.length-1;i++)a+=r[i][0]*r[i+1][1]-r[i+1][0]*r[i][1];a=Math.abs(a);if(a>bestArea){bestArea=a;best=r;}});return ringCenter(best);
+  }
+  function pointQueryUrl(layer,point,outFields){
+    const q=new URLSearchParams({geometry:point[0]+','+point[1],geometryType:'esriGeometryPoint',inSR:'4326',spatialRel:'esriSpatialRelIntersects',outFields,returnGeometry:'false',resultRecordCount:'1',f:'json'});
+    return layer+'/query?'+q.toString();
+  }
+  function firstAttribute(data,keys){
+    const f=Array.isArray(data?.features)?data.features[0]:null,a=f?.attributes||f?.properties||{};
+    for(const key of keys){const v=a?.[key];if(v!==null ? (v!==undefined ? Boolean(String(v).trim()) : false) : false)return String(v).trim();}return '';
+  }
+  async function enrichContext(g,feature){
+    if(!g||contextCache.has(g)||contextFallback.has(g))return;if(contextPending.has(g))return contextPending.get(g);
+    const task=(async()=>{
+      const point=featureCenter(feature),p=feature?.properties||{},approx=String(p.ApproxLoc||'').trim();
+      if(!point){contextCache.set(g,{primary:baseLocation(feature),description:'The tract number is the precise map geography. A more specific local-area label was not available for this tract.'});return;}
+      try{
+        const [placeR,cdpR,subR,zctaR]=await Promise.allSettled([
+          fetchJson(pointQueryUrl(censusPlaceLayer,point,'BASENAME,NAME'),9000),
+          fetchJson(pointQueryUrl(censusCdpLayer,point,'BASENAME,NAME'),9000),
+          fetchJson(pointQueryUrl(censusSubdivisionLayer,point,'BASENAME,NAME'),9000),
+          fetchJson(pointQueryUrl(censusZctaLayer,point,'ZCTA5,BASENAME,NAME'),9000)
+        ]);
+        const lookups=[placeR,cdpR,subR,zctaR],failedLookups=lookups.filter(r=>r.status==='rejected').length;
+        if(failedLookups===lookups.length){contextFallback.set(g,{primary:baseLocation(feature),description:'Live local-boundary context did not respond. The label shown comes from the published tract source; the tract number remains the precise map geography.'});return;}
+        const place=placeR.status==='fulfilled'?firstAttribute(placeR.value,['BASENAME','NAME']):'';
+        const cdp=cdpR.status==='fulfilled'?firstAttribute(cdpR.value,['BASENAME','NAME']):'';
+        const subdivision=subR.status==='fulfilled'?firstAttribute(subR.value,['BASENAME','NAME']).replace(/\s+CCD$/,''):'';
+        const zcta=zctaR.status==='fulfilled'?firstAttribute(zctaR.value,['ZCTA5','BASENAME','NAME']):'';
+        const locality=place||cdp||approx||subdivision||'{{AREA_NAME}}';let primary=locality;if(zcta ? primary.indexOf(zcta)<0 : false)primary+=' · '+zcta+' area';
+        const parts=[];
+        if(place)parts.push('The tract center falls within '+place+'.');else if(cdp)parts.push('The tract center falls within the '+cdp+' census-designated community.');else if(subdivision)parts.push('The tract center falls within the '+subdivision+' census county division.');
+        if(zcta)parts.push('Its center is in Census ZCTA '+zcta+', an approximate ZIP-area geography.');
+        if(approx){if(!primary.toLowerCase().includes(approx.toLowerCase()))parts.push('CalEnviroScreen identifies the approximate location as '+approx+'.');}
+        if(failedLookups)parts.push('Some live local-boundary lookups did not respond, so this description uses only the sources that returned.');
+        parts.push('A census tract can cross these local boundaries; the tract number remains the precise map geography.');
+        contextCache.set(g,{primary,description:parts.join(' '),place,cdp,subdivision,zcta,approx});
+      }catch(error){contextFallback.set(g,{primary:baseLocation(feature),description:'The current place label comes from CalEnviroScreen’s approximate-location field. The tract number remains the precise map geography.'});console.warn('{{AREA_SHORT_NAME}} tract location context unavailable',error);}
+    })().finally(()=>contextPending.delete(g));contextPending.set(g,task);return task;
+  }
+  function compare(value,med,unit){
+    if(value===null||med===null)return'No descriptive comparison is available.';
+    const diff=value-med;
+    const label=Math.abs(diff)<0.05?'about the same as':diff>0?'above':'below';
+    return 'The selected value is '+label+' the '+activeAreaLabel()+' tract median ('+fmt(med,unit)+'). This is descriptive context, not a ranking or priority score.';
+  }
+
+  function buildGeometry(){
+    const coords=[];
+    for(const f of state.features.values())for(const ring of rings(f.geometry))for(const pt of ring)if(Array.isArray(pt)){if(pt.length>=2)coords.push(pt);}
+    if(!coords.length)throw new Error('No {{AREA_NAME}} tract geometry was returned.');
+    const xs=coords.map(p=>p[0]),ys=coords.map(p=>p[1]);
+    const minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);
+    const W=720,H=540,pad=24,scale=Math.min((W-pad*2)/(maxX-minX),(H-pad*2)/(maxY-minY));
+    const drawW=(maxX-minX)*scale,drawH=(maxY-minY)*scale,ox=(W-drawW)/2,oy=(H-drawH)/2;
+    const project=pt=>[ox+(pt[0]-minX)*scale,H-(oy+(pt[1]-minY)*scale)];
+    const pathFor=ring=>ring.map((pt,i)=>{const q=project(pt);return(i?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1);}).join(' ')+' Z';
+    layer.innerHTML=[...state.features.entries()].map(([g,f])=>{
+      const d=rings(f.geometry).map(pathFor).join(' ');
+      const label='Census tract '+tractLabel(g)+', '+context(f);
+      return '<g class="wae-tract" tabindex="0" role="button" data-geoid="'+g+'" aria-label="'+esc('Select '+label)+'"><path data-geoid="'+g+'" d="'+d+'" fill-rule="evenodd" vector-effect="non-scaling-stroke"><title>'+esc(label)+'</title></path></g>';
+    }).join('');
+    root.querySelectorAll('.wae-tract').forEach(el=>{
+      el.addEventListener('click',()=>selectTract(el.dataset.geoid));
+      el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectTract(el.dataset.geoid);}});
+    });
+  }
+
+  function rebuildSearch(){
+    datalist.innerHTML=[...state.features.entries()].sort((a,b)=>context(a[1]).localeCompare(context(b[1]))).map(([g,f])=>'<option value="'+esc(context(f)+' — Tract '+tractLabel(g))+'"></option>').join('');
+  }
+
+  function paint(){
+    const meta=activeMeta(),values=allValues(),min=values.length?Math.min(...values):null,max=values.length?Math.max(...values):null,med=median(values),total=state.features.size,available=values.length;
+    root.querySelectorAll('.wae-tract path').forEach(path=>{
+      const f=state.features.get(path.dataset.geoid),v=f?featureValue(f):null;
+      path.style.fill=colorFor(v,min,max);
+    });
+    root.querySelectorAll('.wae-tract').forEach(el=>el.classList.toggle('is-selected',el.dataset.geoid===state.selected));
+    legendLabel.textContent=meta.label;
+    legendMin.textContent=fmt(min,meta.unit);
+    legendMax.textContent=fmt(max,meta.unit);
+    coverageEl.textContent='Published values for '+available+' of '+total+' mapped populated tracts. Missing values are hatched and are not treated as zero.';
+    const gate=coverageGate(available,total);gateEl.className='wae-map-gate '+gate[0];gateEl.textContent=gate[1];
+    if(state.selected)renderSelected(med,available,total);
+  }
+
+  function compositionRows(feature){
+    const p=feature.properties||{};
+    return Object.values(compositionMeta).map(m=>'<div class="wae-map-who-row"><span>'+esc(m.label)+'</span><strong>'+esc(fmt(num(p[m.field]),'percent'))+'</strong></div>').join('');
+  }
+
+  function otherConditions(feature){
+    const p=feature.properties||{};
+    return Object.values(metricMeta).map(m=>'<div class="wae-map-other-item"><span>'+esc(m.label)+'</span><strong>'+esc(fmt(num(p[m.field]),m.unit))+'</strong></div>').join('');
+  }
+
+  function decisionBrief(feature,value,meta,med){
+    const p=feature.properties||{},place=context(feature),q=state.question||meta.question||'What should we investigate next?';
+    return '<details class="wae-map-brief"><summary>Decision brief</summary><div class="wae-map-brief-body">'+
+      '<div class="wae-map-brief-block"><b>Question</b><p>'+esc(q)+'</p></div>'+
+      '<div class="wae-map-brief-block"><b>Place</b><p>'+esc(place+' · Census Tract '+tractLabel(state.selected))+'</p></div>'+
+      '<div class="wae-map-brief-block"><b>Evidence observed</b><p>'+esc(meta.label+': '+fmt(value,meta.unit)+'. '+compare(value,med,meta.unit))+'</p></div>'+
+      '<div class="wae-map-brief-block"><b>Evidence still needed</b><p>'+esc(meta.next||'Validate the tract signal with current operational, community, service-reach, and program-capacity evidence.')+'</p></div>'+
+      '<div class="wae-map-brief-block"><b>What this does not tell us</b><p>This tract evidence does not establish WIOA reach, service quality, program outcomes, causation, or where resources should be allocated.</p></div>'+
+      '<button type="button" class="wae-map-copy">Copy brief</button></div></details>';
+  }
+
+  function renderSelected(med,available,total){
+    const feature=state.features.get(state.selected);if(!feature)return;
+    const p=feature.properties||{},place=context(feature),meta=activeMeta(),value=featureValue(feature),q=state.question||(state.mode==='conditions'?meta.question:'Who lives here, and what should we understand before designing outreach or services?');
+    panel.innerHTML='<div class="wae-map-panel-kicker">Quick read</div><h3>'+esc(place)+'</h3><p>Census Tract '+esc(tractLabel(state.selected))+' · '+esc(Number.isFinite(Number(p.Population))?Number(p.Population).toLocaleString()+' residents in the published source':'population not published')+'</p>'+
+      '<p class="wae-map-location-note"><strong>Location context:</strong> '+esc(contextDescription(feature))+'</p>'+
+      '<div class="wae-map-question-read"><span>Question</span><strong>'+esc(q)+'</strong></div>'+
+      '<div class="wae-map-reading"><span>'+esc(meta.label)+'</span><strong>'+esc(fmt(value,meta.unit))+'</strong><small>'+esc(compare(value,med,meta.unit))+'</small></div>'+
+      '<p>Select another tract or layer to compare context. The selected outline stays visible while you explore.</p>';
+
+    if(state.mode==='composition'){
+      details.innerHTML='<div class="wae-map-details-head"><div><div class="weq-kicker">Context and next steps</div><h3>'+esc(place)+'</h3></div><p>Community composition is descriptive context only. It is not a need score, risk score, or resource-allocation rule.</p></div>'+
+        '<div class="wae-map-detail-grid"><div class="wae-map-card"><div class="wae-map-card-kicker">Community</div><h4>Who lives here?</h4>'+compositionRows(feature)+'<p>Hispanic or Latino is an ethnicity and can include people of any race. Race categories shown here are non-Hispanic.</p></div>'+
+        '<div class="wae-map-card"><div class="wae-map-card-kicker">How to use this</div><h4>Design context, not a priority signal</h4><p>Use composition to ask whether outreach, language access, trusted messengers, or service design should be checked with local communities. Do not infer individual identity or service need from tract composition.</p></div>'+
+        '<div class="wae-map-card"><div class="wae-map-card-kicker">Guardrails</div><h4>What this does not tell us</h4><ul><li>It does not show WIOA participation or outcomes.</li><li>It does not establish that a service is culturally or linguistically adequate.</li><li>Race or ethnicity must not be used as a tie-breaker for tract prioritization.</li></ul></div></div>';
+      details.hidden=false;return;
+    }
+
+    details.innerHTML='<div class="wae-map-details-head"><div><div class="weq-kicker">Context and next steps</div><h3>'+esc(place)+'</h3></div><p>Use the condition as a prompt for investigation. The map is designed to make the next evidence question clearer, not to produce a conclusion.</p></div>'+
+      '<div class="wae-map-detail-grid">'+
+      '<div class="wae-map-card"><div class="wae-map-card-kicker">Community</div><h4>Who lives here?</h4>'+compositionRows(feature)+'<p>Composition is descriptive context and is not used in the Decision Lens.</p></div>'+
+      '<div class="wae-map-card"><div class="wae-map-card-kicker">Decision support</div><h4>Decision Lens</h4><div class="wae-map-lens"><b>What stands out</b><p>'+esc(meta.label+': '+fmt(value,meta.unit)+'. '+compare(value,med,meta.unit))+'</p><b>What it could mean</b><p>'+esc(meta.meaning)+'</p><b>Examine next</b><p>'+esc(meta.next)+'</p></div></div>'+
+      '<div class="wae-map-card"><div class="wae-map-card-kicker">Evidence</div><h4>How strong is this signal?</h4><div class="wae-map-evidence-row"><span>Source</span><strong>CalEnviroScreen 5.0 · OEHHA / CalEPA</strong></div><div class="wae-map-evidence-row"><span>Coverage</span><strong>'+available+' of '+total+' mapped populated tracts</strong></div><div class="wae-map-evidence-row"><span>Uncertainty</span><strong>Published CalEnviroScreen tract fields do not expose tract margins of error in this reader.</strong></div><div class="wae-map-evidence-row"><span>Use</span><strong>Neighborhood context and decision framing only</strong></div></div></div>'+
+      '<div class="wae-map-other"><div class="wae-map-other-head"><strong>Other available conditions</strong><span>Same tract</span></div><div class="wae-map-other-grid">'+otherConditions(feature)+'</div></div>'+
+      decisionBrief(feature,value,meta,med);
+    details.hidden=false;
+
+    const btn=details.querySelector('.wae-map-copy');
+    if(btn)btn.addEventListener('click',async()=>{
+      const blocks=[...details.querySelectorAll('.wae-map-brief-block')].map(b=>b.innerText.trim()).join('\n\n');
+      try{await navigator.clipboard.writeText(blocks);btn.textContent='Copied';setTimeout(()=>btn.textContent='Copy brief',1600);}catch(e){btn.textContent='Copy unavailable';}
+    });
+  }
+
+  function selectTract(g,push){
+    if(!state.features.has(g))return;
+    state.selected=g;paint();updateZoomButtons();
+    const selected=root.querySelector('.wae-tract[data-geoid="'+g+'"]');
+    if(selected)selected.scrollIntoView({block:'nearest',inline:'nearest'});
+    const feature=state.features.get(g);enrichContext(g,feature).then(()=>{if(state.selected!==g)return;rebuildSearch();paint();});
+    writeWaeUrl(push!==false);
+  }
+
+  function syncMode(push){
+    state.mode=modeSelect.value;
+    conditionField.hidden=state.mode!=='conditions';
+    compositionField.hidden=state.mode!=='composition';
+    paint();
+    if(push)writeWaeUrl(true);
+  }
+
+  areaSelect.addEventListener('change',()=>{search.value='';state.selected=null;writeWaeUrl(true);try{applyArea();}catch(error){status.textContent='Selected map area could not be displayed right now.';console.error('WAE map-area filter:',error);}});
+  modeSelect.addEventListener('change',()=>syncMode(true));
+  metricSelect.addEventListener('change',()=>{state.metric=metricSelect.value;state.question=metricMeta[state.metric].question;questionSelect.value='';paint();writeWaeUrl(true);});
+  compositionSelect.addEventListener('change',()=>{state.composition=compositionSelect.value;state.question='Who lives here, and what should we understand before designing outreach or services?';questionSelect.value='';paint();writeWaeUrl(true);});
+  questionSelect.addEventListener('change',()=>{
+    const q=questionMap[questionSelect.value];if(!q)return;
+    state.question=questionSelect.options[questionSelect.selectedIndex].textContent;
+    state.mode=q.mode;modeSelect.value=q.mode;
+    if(q.metric){state.metric=q.metric;metricSelect.value=q.metric;}
+    if(q.composition){state.composition=q.composition;compositionSelect.value=q.composition;}
+    conditionField.hidden=state.mode!=='conditions';compositionField.hidden=state.mode!=='composition';paint();writeWaeUrl(true);
+    root.querySelector('.wae-map-layout').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+
+  search.addEventListener('change',()=>{
+    const raw=search.value.trim().toLowerCase();if(!raw)return;
+    let found=null;
+    for(const [g,f] of state.features){const hay=(context(f)+' — Tract '+tractLabel(g)).toLowerCase();if(hay===raw||hay.includes(raw)||g.includes(raw.replace(/\D/g,''))){found=g;break;}}
+    if(found)selectTract(found);
+  });
+
+  async function load(){
+    const county=countySelect.value;
+    state.features.clear();state.selected=null;layer.innerHTML='';details.hidden=true;resetMapZoom();
+    status.textContent='Loading {{AREA_SHORT_NAME}} workforce geography and tract conditions…';
+    panel.innerHTML='<div class="wae-map-panel-kicker">Quick read</div><h3>Select a census tract</h3><p>Choose a tract on the map or search by community, ZIP-area context, or tract number. The selected tract will remain outlined while you explore other layers.</p>';
+    try{
+      const results=await Promise.all([
+        fetchCountyFeatures(county,(part,total)=>{status.textContent='Loading '+county+' County tract geometry… '+part+' of '+total+' batches';}),
+        fetchBoundaryFeatures()
+      ]);
+      countyFeatures=results[0];boundaryFeatures=results[1];
+      for(const feature of countyFeatures){
+        const member=memberPlaceForFeature(feature);
+        if(feature.properties)feature.properties._waeMemberPlace=member;
+      }
+      applyArea();
+    }catch(error){
+      status.textContent='{{AREA_SHORT_NAME}} tract data could not be loaded right now.';
+      panel.innerHTML='<div class="wae-map-panel-kicker">Map unavailable</div><h3>{{AREA_SHORT_NAME}} did not load</h3><p>Refresh to retry. No private or participant data are involved.</p>';
+      coverageEl.textContent='No map coverage is being shown for {{AREA_SHORT_NAME}}.';
+      gateEl.className='wae-map-gate limited';gateEl.textContent='Unavailable';
+      console.error('{{AREA_SHORT_NAME}} tract explorer:',error);
+    }
+  }
+  applyWaeUrlState();
+  window.addEventListener('popstate',restoreWaeUrlState);
+  load();
+})();
+</script>
+
+
+

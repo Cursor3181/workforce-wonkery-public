@@ -1,0 +1,1282 @@
+<style>
+#weq-neighborhood-v2{scroll-margin-top:20px}
+.weq-v2-intro{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:18px;align-items:start;margin:18px 0}
+.weq-v2-callout{padding:16px 17px;border-left:4px solid var(--orange);background:var(--warm);font-size:15px;line-height:1.6;color:#5d5148}
+.weq-v2-question-start{margin:22px 0 18px;padding:18px;border:1px solid var(--line);border-radius:11px;background:#fff}
+.weq-v2-question-head{margin-bottom:13px}
+.weq-v2-question-head h3{font-size:24px;margin:3px 0 6px}.weq-v2-question-head p{font-size:15px!important;line-height:1.6!important;color:var(--muted)!important;margin:0!important}
+.weq-v2-question-picker{max-width:900px}
+.weq-v2-question-picker label{display:block;margin:0 0 6px;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.weq-v2-question-picker select{width:100%;min-height:50px;padding:11px 13px;border:1px solid #b9cbd5;border-radius:7px;background:#fff;color:var(--navy);font:700 16px Inter,Arial,sans-serif}
+.weq-v2-question-picker select:focus-visible{outline:3px solid #005b91;outline-offset:2px}
+.weq-v2-question-note{font-size:12px!important;line-height:1.5!important;color:var(--muted)!important;margin:8px 0 0!important}
+.weq-v2-manual-label{display:flex;align-items:center;gap:8px;margin:18px 0 0;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.weq-v2-manual-label:before,.weq-v2-manual-label:after{content:"";height:1px;background:var(--line);flex:1}
+.weq-v2-controls{display:grid;grid-template-columns:minmax(150px,.65fr) minmax(250px,1.2fr) minmax(250px,1fr);gap:12px;margin:11px 0 8px}
+.weq-v2-field label{display:block;margin:0 0 6px;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.weq-v2-field select,.weq-v2-field input{width:100%;min-height:48px;padding:10px 12px;border:1px solid #b9cbd5;border-radius:7px;background:#fff;color:var(--navy);font:700 16px Inter,Arial,sans-serif}
+.weq-v2-status{margin:8px 0 12px;font-size:13px;line-height:1.5;color:var(--muted)}
+.weq-v2-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(300px,.72fr);gap:16px;align-items:start}
+.weq-v2-mapbox{border:1px solid #9fcfd0;border-radius:12px;background:#f2fbfa;padding:14px}
+.weq-v2-mapbox svg{display:block;width:100%;height:auto;min-height:390px}
+.weq-v2-mapbox path[data-geoid]{fill:#d7e6ed;stroke:#fff;stroke-width:1.4;cursor:pointer;transition:fill .18s ease,stroke-width .12s ease}
+.weq-v2-mapbox .weq-tract-hit:hover path,.weq-v2-mapbox .weq-tract-hit:focus path{stroke:var(--navy);stroke-width:3}.weq-v2-mapbox .weq-tract-hit:focus-visible{outline:none}
+.weq-v2-mapbox .weq-tract-hit.is-selected path{stroke:var(--orange);stroke-width:4.5;filter:drop-shadow(0 0 1px #fff) drop-shadow(0 0 2px #fff)}
+.weq-v2-legend{margin-top:10px}
+.weq-v2-legend-label{font-size:13px;font-weight:800;color:var(--ink);margin-bottom:6px}
+.weq-v2-gradient{height:12px;border-radius:999px;background:linear-gradient(90deg,#E8F8F7,#B9E6E1,#72C9BE,#2BA99B,#0B7C78,#07485B);border:1px solid #9fcfd0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.45)}
+.weq-v2-legend-values{display:flex;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted);margin-top:5px}.weq-v2-coverage{font-size:12px;line-height:1.5;color:var(--muted);margin-top:7px}.weq-v2-nodata-key{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted);margin-top:7px}.weq-v2-gate{display:inline-block;margin-top:7px;padding:4px 8px;border:1px solid var(--line);border-radius:999px;font-size:11px;font-weight:850;letter-spacing:.04em;text-transform:uppercase}.weq-v2-gate.strong{background:#edf7f1;color:#1f6844}.weq-v2-gate.partial{background:#fff7e8;color:#855900}.weq-v2-gate.limited{background:#f6eeee;color:#8a3535}.weq-v2-gate.no_data{background:#f1f3f4;color:#61676b}.weq-v2-nodata-swatch{width:18px;height:12px;border:1px solid #aebbc2;border-radius:2px;background:repeating-linear-gradient(135deg,#eef2f4 0,#eef2f4 4px,#b8c3c9 4px,#b8c3c9 6px)}
+.weq-v2-map-note{font-size:13px;line-height:1.55;color:var(--muted);margin:9px 0 0}.weq-v2-coverage-rule{margin-top:9px;font-size:12px;color:var(--muted)}.weq-v2-coverage-rule summary{cursor:pointer;font-weight:800;color:#005b91}.weq-v2-coverage-rule p{font-size:12px!important;line-height:1.55!important;color:var(--muted)!important;margin:7px 0 0!important}
+.weq-v2-panel{border:1px solid var(--line);border-top:4px solid #0B7C78;border-radius:10px;background:#fff;padding:16px 18px 18px;min-height:0}
+.weq-v2-panel-kicker{font-size:11px;font-weight:900;letter-spacing:.07em;text-transform:uppercase;color:#0B7C78}
+.weq-v2-panel h3{font-size:25px;margin:5px 0 4px}
+.weq-v2-meta{font-size:12px!important;line-height:1.5!important;color:var(--muted)!important;margin:0 0 12px!important}
+.weq-v2-place{padding:12px 13px;border:1px solid var(--line);border-radius:7px;background:var(--soft);margin:10px 0}
+.weq-v2-place strong{display:block;font-size:14px;color:var(--navy);margin-bottom:4px}
+.weq-v2-place p{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important;margin:0!important}
+.weq-v2-panel-question{margin:0 0 11px;padding:10px 12px;border-radius:7px;background:#F0FBF9;border:1px solid #B7DDD8}
+.weq-v2-panel-question span{display:block;font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:#4c7186;margin-bottom:4px}
+.weq-v2-panel-question strong{display:block;font-size:15px;line-height:1.5;color:var(--navy)}
+.weq-v2-section-label{font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:14px 0 6px}
+.weq-v2-reading{padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:12px 0}
+.weq-v2-reading>span{display:block;font-size:14px;font-weight:800;color:var(--ink)}
+.weq-v2-reading>strong{display:block;font-size:31px;line-height:1.1;color:var(--navy);margin:4px 0}
+.weq-v2-reading small{display:block;font-size:12px;color:var(--muted);line-height:1.5}.weq-v2-method-note{margin-top:5px;font-style:italic}
+.weq-v2-moe{font-size:16px;font-weight:750;color:var(--muted)}.weq-v2-data-note{font-size:13px!important;line-height:1.55!important;color:var(--muted)!important;margin:8px 0 12px!important;padding:10px 11px;border:1px dashed var(--line);border-radius:6px;background:#fafcfd}
+.weq-v2-benchmark{display:flex;justify-content:space-between;gap:10px;padding:10px 12px;background:var(--blue);border-radius:7px;font-size:14px}
+.weq-v2-evidence-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:9px 0 12px}
+.weq-v2-evidence-cell{padding:8px 9px;border:1px solid var(--line);border-radius:6px;background:#fafcfd}
+.weq-v2-evidence-cell span{display:block;font-size:11px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.weq-v2-evidence-cell strong{display:block;font-size:13px;line-height:1.45;color:var(--ink);overflow-wrap:anywhere}
+.weq-v2-evidence-compact{margin:10px 0 11px;padding:10px 11px;border:1px solid var(--line);border-radius:7px;background:#fafcfd}
+.weq-v2-evidence-compact>span{display:block;font-size:11px;font-weight:900;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.weq-v2-evidence-compact>strong{display:block;font-size:13px;line-height:1.45;color:var(--ink)}
+.weq-v2-evidence-compact>small{display:block;margin-top:3px;font-size:12px;line-height:1.45;color:var(--muted)}
+.weq-v2-place-context{margin:0 0 14px;padding:11px 13px;border-left:3px solid #0B7C78;background:#F4FBFA;border-radius:0 7px 7px 0}
+.weq-v2-place-context strong{display:block;font-size:12px;color:var(--navy);margin-bottom:3px}
+.weq-v2-place-context span{display:block;font-size:13px;line-height:1.55;color:var(--muted)}
+.weq-v2-interpret{font-size:13px!important;line-height:1.55!important;color:#5d5148!important;background:var(--warm);border-left:3px solid var(--orange);padding:10px 11px;margin:10px 0 0!important}
+.weq-v2-other{border-top:1px solid var(--line);margin-top:12px}
+.weq-v2-other summary{cursor:pointer;padding:11px 0;font-size:14px;font-weight:850;color:#005b91}
+.weq-v2-other ul{list-style:none;padding:0;margin:0}
+.weq-v2-other li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid #edf1f3;font-size:13px}
+.weq-v2-other li span{color:var(--muted);max-width:68%}
+.weq-v2-other li strong{text-align:right;color:var(--ink)}
+.weq-v2-who{margin:12px 0;border:1px solid var(--line);border-radius:8px;background:#fff;padding:12px}
+.weq-v2-who-head{display:flex;justify-content:space-between;gap:10px;align-items:baseline;margin-bottom:7px}
+.weq-v2-who-head strong{font-size:15px;color:var(--navy)}.weq-v2-who-head span{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.weq-v2-who-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}
+.weq-v2-who-row{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-top:1px solid #edf1f3;font-size:13px;line-height:1.45}
+.weq-v2-who-row span{color:var(--muted)}.weq-v2-who-row strong{color:var(--ink);white-space:nowrap}
+.weq-v2-who-note{font-size:12px!important;line-height:1.55!important;color:var(--muted)!important;margin:9px 0 0!important}
+.weq-v2-composition-note{font-size:14px!important;line-height:1.6!important;color:#4c6170!important;background:#f8fbfc;border-left:3px solid #6d9eb5;padding:12px 13px;margin:12px 0!important}
+.weq-v2-decision{margin:12px 0;border:1px solid #cfe3ec;border-radius:8px;background:#f8fbfc;overflow:hidden}
+.weq-v2-decision-head{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:10px 12px;background:var(--blue);border-bottom:1px solid #cfe3ec}
+.weq-v2-decision-head strong{font-size:15px;color:var(--navy)}.weq-v2-decision-head span{font-size:11px;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.05em}
+.weq-v2-decision-block{padding:10px 12px;border-top:1px solid #e5eef2}.weq-v2-decision-block:first-of-type{border-top:0}
+.weq-v2-decision-block b{display:block;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#a84700;margin-bottom:4px}
+.weq-v2-decision-block p,.weq-v2-decision-block li{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important;margin-top:0}
+.weq-v2-decision-block p{margin-bottom:0!important}.weq-v2-decision-block ul{margin:5px 0 0;padding-left:17px}.weq-v2-decision-block li{margin:4px 0}
+.weq-v2-assets{margin-top:12px;border:1px solid var(--line);border-radius:8px;background:#fff}
+.weq-v2-assets summary{cursor:pointer;padding:11px 12px;font-size:15px;font-weight:850;color:#005b91}
+.weq-v2-assets-note{font-size:13px!important;line-height:1.55!important;color:var(--muted)!important;margin:0!important;padding:0 12px 10px}
+.weq-v2-brief{margin:12px 0;border:1px solid #d8e5eb;border-radius:8px;background:#fff}
+.weq-v2-brief summary{cursor:pointer;padding:11px 12px;font-size:15px;font-weight:900;color:#005b91}
+.weq-v2-brief-body{padding:0 12px 12px}.weq-v2-brief-block{padding:9px 0;border-top:1px solid #edf1f3}
+.weq-v2-brief-block:first-child{border-top:0}.weq-v2-brief-block b{display:block;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:#a84700;margin-bottom:4px}
+.weq-v2-brief-block p,.weq-v2-brief-block li{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important;margin-top:0}
+.weq-v2-brief-block p{margin-bottom:0!important}.weq-v2-brief-block ul{margin:4px 0 0;padding-left:16px}.weq-v2-brief-block li{margin:3px 0}
+.weq-v2-copy-brief{appearance:none;border:1px solid #7ca5ba;border-radius:6px;background:#eef6f9;color:#005b91;font:800 13px Inter,Arial,sans-serif;padding:8px 10px;cursor:pointer;margin-top:8px}
+.weq-v2-copy-brief:focus-visible{outline:3px solid #005b91;outline-offset:2px}
+.weq-v2-details{margin:18px 0 0;padding-top:4px}
+.weq-v2-details[hidden]{display:none}
+.weq-v2-details-head{display:flex;justify-content:space-between;gap:18px;align-items:end;margin:0 0 10px}
+.weq-v2-details-head h3{font-size:24px;margin:3px 0 0}.weq-v2-details-head p{font-size:14px!important;line-height:1.6!important;color:var(--muted)!important;margin:0!important;max-width:540px}
+.weq-v2-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;align-items:start}
+.weq-v2-detail-card{border:1px solid var(--line);border-radius:9px;background:#fff;padding:14px;min-width:0;overflow:visible}
+.weq-v2-detail-card-kicker{font-size:11px;font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:#0B7C78;margin-bottom:7px}
+.weq-v2-detail-card h4{font-size:18px;margin:0 0 7px;color:var(--navy);overflow-wrap:anywhere}
+.weq-v2-detail-card>.weq-v2-who{border:0;padding:0;margin:0}
+.weq-v2-detail-card>.weq-v2-decision{border:0;margin:0;border-radius:0}
+.weq-v2-detail-card>.weq-v2-decision .weq-v2-decision-head{margin:0 0 8px;border-radius:7px;display:flex;flex-wrap:wrap;align-items:flex-start;background:#F0FBF9;border-color:#B7DDD8}
+.weq-v2-detail-card>.weq-v2-assets{border:0;margin:0}
+.weq-v2-detail-card>.weq-v2-assets summary{padding:0 0 8px;white-space:normal;overflow-wrap:anywhere;line-height:1.35}
+.weq-v2-detail-card>.weq-v2-assets .weq-v2-assets-note{padding:0 0 8px}
+.weq-v2-detail-card>.weq-v2-assets .weq-v2-asset-list{padding:0}
+.weq-v2-detail-card>.weq-v2-composition-note{margin:0!important}
+.weq-v2-other-block{margin-top:14px;border:1px solid var(--line);border-radius:9px;background:#fff;padding:14px}
+.weq-v2-other-head{display:flex;justify-content:space-between;gap:12px;align-items:baseline;margin-bottom:8px}
+.weq-v2-other-head strong{font-size:15px;color:var(--navy)}.weq-v2-other-head span{font-size:11px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.weq-v2-other-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px 12px}
+.weq-v2-other-item{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid #edf1f3;font-size:13px;line-height:1.45}
+.weq-v2-other-item span{color:var(--muted);max-width:68%;overflow-wrap:anywhere}.weq-v2-other-item strong{text-align:right;color:var(--ink);white-space:normal;overflow-wrap:anywhere}
+.weq-v2-details>.weq-v2-brief{margin:14px 0 0}
+.weq-v2-detail-card .weq-v2-decision-head strong,.weq-v2-detail-card .weq-v2-decision-head span{min-width:0;white-space:normal;overflow-wrap:anywhere}
+.weq-v2-detail-card .weq-v2-decision-head span{margin-left:auto;text-align:right;max-width:55%}
+.weq-v2-detail-card .weq-v2-who-row span{min-width:0;overflow-wrap:anywhere}
+.weq-v2-detail-card .weq-v2-who-row strong{flex:0 0 auto}
+
+
+.weq-v2-asset-list{list-style:none;padding:0 12px 10px;margin:0}
+.weq-v2-asset{padding:9px 0;border-top:1px solid #edf1f3}.weq-v2-asset:first-child{border-top:0}
+.weq-v2-asset a{font-size:14px;font-weight:850;text-decoration:none}.weq-v2-asset small{display:block;font-size:12px;color:var(--muted);line-height:1.5;margin-top:3px}
+.weq-v2-asset-tag{display:inline-block;font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:.05em;color:#5d5148;background:var(--warm);border-radius:999px;padding:3px 7px;margin-right:6px}
+.weq-v2-sources{font-size:13px!important;line-height:1.6!important;color:var(--muted)!important;margin:0!important;padding:0 0 4px}.weq-v2-about-data{margin-top:14px;border-top:1px solid var(--line)}.weq-v2-about-data summary{cursor:pointer;padding:12px 0;font-size:14px;font-weight:850;color:#005b91}
+@media(prefers-reduced-motion:reduce){.weq-v2-mapbox path[data-geoid]{transition:none}}
+@media(max-width:1000px){.weq-v2-detail-grid{grid-template-columns:1fr 1fr}.weq-v2-detail-card:last-child{grid-column:1/-1}.weq-v2-other-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.weq-v2-controls{grid-template-columns:1fr 1fr}.weq-v2-search-field{grid-column:1/-1}.weq-v2-evidence-strip{grid-template-columns:1fr 1fr}}
+@media(max-width:850px){.weq-v2-intro,.weq-v2-layout,.weq-v2-detail-grid,.weq-v2-other-grid{grid-template-columns:1fr}.weq-v2-detail-card:last-child{grid-column:auto}.weq-v2-panel{min-height:auto}.weq-v2-who-grid{grid-template-columns:1fr}.weq-v2-details-head{display:block}.weq-v2-details-head p{margin-top:5px!important}}
+@media(max-width:600px){.weq-v2-controls,.weq-v2-evidence-strip{grid-template-columns:1fr}.weq-v2-search-field{grid-column:auto}.weq-v2-mapbox svg{min-height:300px}.weq-v2-reading>strong{font-size:27px}}
+</style>
+
+<section id="neighborhood-equity" class="weq-section">
+<div id="weq-neighborhood-v2">
+<div class="weq-kicker">Neighborhood Equity &amp; Access · Santa Cruz pilot</div>
+<h2>Explore neighborhood conditions.</h2>
+<div class="weq-v2-intro">
+<div>
+<p>Start with a workforce question, then use the map to see how the selected condition varies across Santa Cruz County. Select a tract for a quick read, decision prompts, community context, and access information.</p>
+<p><strong>This is not WIOA performance data.</strong> The tool separates neighborhood conditions, community composition, access assets, and interpretation so each type of evidence can inform a decision without being mistaken for a score or conclusion.</p>
+</div>
+<div class="weq-v2-callout"><strong>Read the map carefully:</strong> darker shading means a larger value for the selected layer. It does not mean a neighborhood is better, worse, more deserving, or ranked. Race and ethnicity are shown only as descriptive community composition. American Community Survey condition measures show the 90% margin of error when available.</div>
+</div>
+
+<div class="weq-v2-question-start">
+<div class="weq-v2-question-head">
+<div class="weq-kicker">Start here</div>
+<h3>What are you trying to understand?</h3>
+<p>Choose a workforce question and the map will open the most relevant governed evidence.</p>
+</div>
+<div class="weq-v2-question-picker">
+<label for="weq-v2-question-select">Choose a question</label>
+<select id="weq-v2-question-select" aria-describedby="weq-v2-question-note weq-v2-status">
+<option value="" selected>Select a workforce question</option>
+<option value="outreach" data-question-mode="conditions" data-question-metric="language" data-question-text="Where should we investigate whether outreach or language access needs attention?">Where should we investigate whether outreach or language access needs attention?</option>
+<option value="training" data-question-mode="conditions" data-question-metric="education" data-question-text="Where should we examine adult education, bridge, or training connections?">Where should we examine adult education, bridge, or training connections?</option>
+<option value="employment" data-question-mode="conditions" data-question-metric="unemployment" data-question-text="Where should we look more closely at job matching or reemployment barriers?">Where should we look more closely at job matching or reemployment barriers?</option>
+<option value="household" data-question-mode="conditions" data-question-metric="housing" data-question-text="Where might household costs make training or job search harder to sustain?">Where might household costs make training or job search harder to sustain?</option>
+<option value="transportation" data-question-mode="conditions" data-question-metric="no_vehicle" data-question-text="Where might transportation make workforce or training services harder to reach?">Where might transportation make workforce or training services harder to reach?</option>
+<option value="digital" data-question-mode="conditions" data-question-metric="no_broadband" data-question-text="Where should we examine alternatives to online-only workforce service?">Where should we examine alternatives to online-only workforce service?</option>
+<option value="youth" data-question-mode="conditions" data-question-metric="youth_disconnected" data-question-text="Where should staff examine youth reengagement or work-experience outreach?">Where should staff examine youth reengagement or work-experience outreach?</option>
+<option value="composition" data-question-mode="composition" data-question-composition="hispanic" data-question-text="Who lives here, and what should we understand before designing outreach or services?">Who lives here, and what should we understand before designing outreach or services?</option>
+</select>
+<p id="weq-v2-question-note" class="weq-v2-question-note">This selects relevant evidence. It does not choose a priority area.</p>
+</div>
+<div class="weq-v2-manual-label">Or explore the data directly</div>
+</div>
+
+<div class="weq-v2-controls">
+<div class="weq-v2-field">
+<label for="weq-v2-mode">Map view</label>
+<select id="weq-v2-mode" aria-describedby="weq-v2-status">
+<option value="conditions" selected>Conditions &amp; access</option>
+<option value="composition">Community composition</option>
+</select>
+</div>
+<div class="weq-v2-field" id="weq-v2-condition-field">
+<label for="weq-v2-metric">Condition to explore</label>
+<select id="weq-v2-metric" aria-describedby="weq-v2-status">
+<optgroup label="Economic conditions">
+<option value="poverty" selected>Income below 2× federal poverty level</option>
+<option value="unemployment">Unemployment</option>
+<option value="not_labor">Not in the labor force</option>
+</optgroup>
+<optgroup label="Education and workforce connection">
+<option value="education">Adults without a high school education</option>
+<option value="language">Limited-English-speaking households</option>
+<option value="youth_disconnected">Youth 16–19 not enrolled and not employed</option>
+</optgroup>
+<optgroup label="Access">
+<option value="no_vehicle">No vehicle available</option>
+<option value="no_broadband">No broadband Internet subscription</option>
+<option value="commute_60_plus">Workers commuting 60 minutes or more</option>
+</optgroup>
+<optgroup label="Household and caregiving">
+<option value="housing">Low-income households with severe housing cost burden</option>
+<option value="rent_burden">Renters paying 35%+ of income toward rent</option>
+<option value="overcrowding">Occupied housing units with more than 1 person per room</option>
+<option value="childcare_pressure">Children under 6 with all available parents in the labor force</option>
+</optgroup>
+<optgroup label="Other context">
+<option value="disability">Working-age adults with a disability</option>
+<option value="pollution">Pollution burden percentile</option>
+</optgroup>
+</select>
+</div>
+<div class="weq-v2-field" id="weq-v2-composition-field" hidden>
+<label for="weq-v2-composition">Community composition</label>
+<select id="weq-v2-composition" aria-describedby="weq-v2-status">
+<option value="hispanic" selected>Hispanic or Latino (any race)</option>
+<option value="white">White (Non-Hispanic)</option>
+<option value="black">Black or African American (Non-Hispanic)</option>
+<option value="native_american">Native American (Non-Hispanic)</option>
+<option value="asian">Asian (Non-Hispanic)</option>
+<option value="pacific_islander">Pacific Islander (Non-Hispanic)</option>
+<option value="other_multiple">Other / multiple races (Non-Hispanic)</option>
+</select>
+</div>
+<div class="weq-v2-field weq-v2-search-field">
+<label for="weq-v2-place-search">Find a community or tract</label>
+<input id="weq-v2-place-search" type="search" list="weq-v2-place-list" placeholder="Try Watsonville, Live Oak, or a tract number" autocomplete="off">
+<datalist id="weq-v2-place-list"></datalist>
+</div>
+</div>
+
+<p id="weq-v2-status" class="weq-v2-status" aria-live="polite">The embedded tract map is ready. Neighborhood conditions and community composition are loading.</p>
+
+<div class="weq-v2-layout">
+<div class="weq-v2-mapbox">
+<svg id="weq-v2-map" viewBox="0 0 720 470" role="img" aria-labelledby="weq-tract-map-title weq-tract-map-desc">
+<title id="weq-tract-map-title">Santa Cruz County census tract map</title>
+<desc id="weq-tract-map-desc">Santa Cruz County census tract boundaries. Tracts are shaded by the selected neighborhood condition when data are available. Hatched tracts have no published estimate for the selected condition.</desc>
+<defs><pattern id="weq-v2-no-data" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#eef2f4"></rect><line x1="0" y1="0" x2="0" y2="8" stroke="#aebbc2" stroke-width="3"></line></pattern></defs>
+<g id="weq-tract-static-layer">
+<a class="weq-tract-hit" href="#weq-tract-06087100100" aria-label="Select census tract 100100"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087100100" d="M328.1 315.5 L324.6 315.1 L309.2 314.5 L312.3 305.1 L315.5 304.6 L317.4 302.2 L318.3 296.1 L321.7 296.2 L322.3 293.4 L324.5 293.6 L322.9 296.9 L325.9 296.9 L327.3 306.0 L329.8 307.8 L330.3 310.9 L328.1 315.5 Z" fill-rule="evenodd"><title>Census tract 100100</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087100200" aria-label="Select census tract 100200"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087100200" d="M302.3 313.3 L328.1 315.5 L321.6 321.2 L308.6 321.7 L300.2 324.8 L297.8 318.1 L302.3 313.3 Z" fill-rule="evenodd"><title>Census tract 100200</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087100300" aria-label="Select census tract 100300"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087100300" d="M294.5 324.9 L288.0 327.0 L283.1 333.5 L277.4 327.3 L277.0 325.9 L279.4 325.8 L279.4 324.3 L281.9 323.4 L280.1 320.7 L281.7 318.5 L280.8 302.3 L279.9 305.6 L278.0 293.3 L280.2 292.4 L280.9 294.6 L289.7 300.9 L291.1 303.5 L290.6 306.2 L292.8 307.7 L294.5 312.0 L296.6 311.2 L300.1 316.9 L294.4 320.3 L294.5 324.9 Z" fill-rule="evenodd"><title>Census tract 100300</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087100400" aria-label="Select census tract 100400"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087100400" d="M279.4 325.8 L275.3 325.6 L271.3 321.6 L268.7 321.9 L268.8 323.1 L265.0 322.8 L264.1 309.5 L265.1 304.1 L261.6 299.9 L274.5 299.7 L279.2 301.6 L279.9 305.6 L280.8 302.3 L281.7 318.5 L280.1 320.7 L281.9 323.4 L279.4 324.3 L279.4 325.8 Z" fill-rule="evenodd"><title>Census tract 100400</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087100500" aria-label="Select census tract 100500"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087100500" d="M271.3 321.6 L277.0 325.9 L283.1 333.5 L282.9 337.0 L280.4 339.8 L281.4 342.0 L252.9 340.8 L254.9 335.5 L260.5 328.6 L262.4 323.0 L262.4 318.8 L263.9 317.3 L263.7 309.4 L265.0 307.1 L264.1 309.5 L265.0 322.8 L268.8 323.1 L268.7 321.9 L271.3 321.6 Z" fill-rule="evenodd"><title>Census tract 100500</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087100600" aria-label="Select census tract 100600"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087100600" d="M286.5 328.4 L294.5 324.9 L289.1 335.3 L284.9 340.4 L281.4 342.0 L280.4 339.8 L282.9 337.0 L283.1 333.5 L286.5 328.4 Z" fill-rule="evenodd"><title>Census tract 100600</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087100700" aria-label="Select census tract 100700"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087100700" d="M291.6 330.6 L294.4 326.2 L294.4 320.3 L297.8 318.1 L301.4 329.5 L294.3 331.5 L291.6 330.6 Z" fill-rule="evenodd"><title>Census tract 100700</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087100800" aria-label="Select census tract 100800"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087100800" d="M300.2 324.8 L311.1 321.7 L313.4 329.1 L313.5 335.7 L309.7 337.0 L308.8 335.5 L303.4 335.0 L301.6 333.3 L300.2 324.8 Z" fill-rule="evenodd"><title>Census tract 100800</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087100900" aria-label="Select census tract 100900"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087100900" d="M319.4 340.9 L309.8 338.5 L309.7 337.0 L313.5 335.7 L313.4 329.1 L311.1 321.7 L323.2 320.3 L322.4 327.5 L317.8 334.9 L319.6 338.4 L319.4 340.9 Z" fill-rule="evenodd"><title>Census tract 100900</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087101000" aria-label="Select census tract 101000"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087101000" d="M301.4 340.8 L300.4 343.6 L298.0 341.8 L295.3 342.5 L287.7 336.4 L291.6 330.6 L294.3 331.5 L301.4 329.5 L301.6 333.3 L303.4 335.0 L308.8 335.5 L309.7 337.0 L309.8 338.5 L301.4 340.8 Z" fill-rule="evenodd"><title>Census tract 101000</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087101100" aria-label="Select census tract 101100"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087101100" d="M300.4 343.6 L298.2 351.8 L286.4 353.5 L284.9 340.4 L287.7 336.4 L295.3 342.5 L298.0 341.8 L300.4 343.6 Z" fill-rule="evenodd"><title>Census tract 101100</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087101200" aria-label="Select census tract 101200"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087101200" d="M266.9 354.7 L256.7 352.2 L258.1 347.8 L254.1 345.5 L255.0 342.5 L252.9 340.8 L280.5 342.4 L284.9 340.4 L286.4 353.5 L266.9 354.7 Z" fill-rule="evenodd"><title>Census tract 101200</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087110100" aria-label="Select census tract 110100"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087110100" d="M520.2 383.7 L524.0 367.9 L530.8 371.8 L530.3 373.9 L532.2 378.0 L532.6 382.8 L529.9 385.7 L524.1 387.2 L519.6 392.2 L515.6 387.8 L520.2 383.7 Z" fill-rule="evenodd"><title>Census tract 110100</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087110200" aria-label="Select census tract 110200"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087110200" d="M524.0 367.9 L520.2 383.7 L515.6 387.8 L504.4 372.9 L509.3 368.4 L513.1 369.0 L517.1 366.7 L524.0 367.9 Z" fill-rule="evenodd"><title>Census tract 110200</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087110300" aria-label="Select census tract 110300"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087110300" d="M513.7 385.0 L519.6 392.2 L522.4 390.3 L522.3 393.5 L516.0 397.8 L505.0 387.8 L509.5 387.7 L513.7 385.0 Z" fill-rule="evenodd"><title>Census tract 110300</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087110400" aria-label="Select census tract 110400"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087110400" d="M486.4 383.2 L506.0 387.3 L505.0 387.8 L516.0 397.8 L517.7 397.6 L512.7 402.8 L506.6 414.5 L500.7 419.0 L499.3 408.5 L486.4 383.2 Z" fill-rule="evenodd"><title>Census tract 110400</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087110501" aria-label="Select census tract 110501"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087110501" d="M491.7 384.2 L497.1 372.6 L498.2 374.9 L498.9 380.3 L501.7 375.0 L501.3 377.8 L504.3 382.4 L508.6 378.6 L513.7 385.0 L508.2 387.7 L491.7 384.2 Z" fill-rule="evenodd"><title>Census tract 110501</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087110502" aria-label="Select census tract 110502"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087110502" d="M497.1 372.6 L502.4 363.8 L509.3 368.4 L504.4 372.9 L508.6 378.6 L504.3 382.4 L501.3 377.8 L501.7 375.0 L498.9 380.3 L497.1 372.6 Z" fill-rule="evenodd"><title>Census tract 110502</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087110600" aria-label="Select census tract 110600"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087110600" d="M502.4 363.9 L491.7 384.2 L486.4 383.2 L481.2 378.4 L484.1 373.1 L490.8 371.0 L490.3 369.9 L494.2 367.5 L498.4 362.2 L500.0 361.5 L502.4 363.9 Z" fill-rule="evenodd"><title>Census tract 110600</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087110700" aria-label="Select census tract 110700"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087110700" d="M479.4 358.3 L486.4 352.7 L491.0 355.7 L491.4 358.0 L498.4 362.2 L494.2 367.5 L490.3 369.9 L490.8 371.0 L484.1 373.1 L481.2 378.4 L477.1 375.4 L476.1 370.4 L472.9 367.0 L470.6 358.3 L479.4 358.3 Z" fill-rule="evenodd"><title>Census tract 110700</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087120200" aria-label="Select census tract 120200"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087120200" d="M86.8 196.2 L89.6 190.0 L71.8 156.1 L67.1 116.8 L90.3 117.0 L105.9 113.9 L126.8 113.7 L126.9 88.7 L147.4 88.6 L151.7 92.2 L159.9 101.5 L159.5 104.0 L165.2 107.8 L170.2 117.6 L176.3 120.2 L179.1 125.5 L182.3 126.7 L184.8 130.4 L187.4 131.0 L189.8 134.0 L191.0 148.7 L194.8 154.9 L194.2 157.4 L189.2 154.0 L184.5 154.4 L178.3 152.5 L178.6 154.5 L181.1 155.3 L176.6 156.8 L176.1 160.5 L174.6 160.4 L175.5 161.5 L171.0 161.7 L178.0 165.0 L181.9 164.6 L187.1 173.8 L193.0 180.0 L197.0 188.7 L205.0 195.3 L207.6 199.1 L205.5 203.5 L206.2 204.9 L209.0 204.1 L210.0 212.4 L208.7 212.5 L211.0 215.3 L213.6 224.8 L222.2 236.4 L221.8 239.3 L223.0 242.3 L220.8 244.1 L223.0 247.2 L228.0 250.0 L228.6 254.9 L233.5 258.2 L235.1 261.2 L234.2 264.7 L236.4 266.7 L237.6 272.3 L241.4 277.0 L244.3 277.0 L251.0 280.7 L259.6 288.6 L260.1 296.2 L265.1 304.1 L262.4 323.0 L260.5 328.6 L254.9 335.5 L252.9 340.8 L255.0 342.5 L254.1 345.5 L258.1 347.8 L258.4 349.3 L256.7 352.2 L235.5 347.0 L208.0 328.1 L196.4 322.2 L171.1 299.7 L155.8 289.2 L119.2 243.9 L112.6 230.8 L93.2 201.7 L86.8 196.2 Z" fill-rule="evenodd"><title>Census tract 120200</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087120301" aria-label="Select census tract 120301"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087120301" d="M271.6 140.2 L269.7 147.5 L267.1 151.9 L269.0 156.3 L276.5 163.0 L274.2 167.6 L274.8 175.6 L270.2 181.0 L270.7 188.0 L268.6 188.8 L266.7 194.6 L263.3 196.7 L261.3 200.4 L259.8 204.5 L261.6 207.5 L257.5 213.1 L256.3 219.0 L254.8 219.6 L255.3 218.4 L251.7 211.9 L251.6 208.2 L250.2 211.8 L247.2 211.1 L247.0 213.9 L244.4 212.5 L245.4 215.2 L248.1 215.7 L248.5 217.6 L241.7 218.6 L237.3 223.3 L241.1 227.7 L252.1 231.7 L253.6 234.8 L256.1 236.3 L256.7 243.7 L261.5 250.2 L261.7 259.2 L254.9 263.8 L253.3 267.4 L247.0 268.7 L244.8 267.6 L242.2 269.7 L238.8 266.5 L239.9 269.5 L238.4 269.9 L237.6 272.3 L236.4 266.7 L234.2 264.7 L235.1 261.2 L233.5 258.2 L228.6 254.9 L228.0 250.0 L223.0 247.2 L220.8 244.1 L223.0 242.3 L221.8 239.3 L222.2 236.4 L213.6 224.8 L211.0 215.3 L208.7 212.5 L210.0 212.4 L209.0 204.1 L206.2 204.9 L205.5 203.5 L207.6 199.1 L209.8 201.2 L214.4 201.8 L215.0 209.7 L216.1 210.4 L220.0 206.3 L225.8 204.0 L233.3 204.3 L237.3 200.7 L236.0 194.0 L232.6 192.9 L231.3 195.0 L229.5 194.8 L229.2 193.4 L230.8 191.4 L228.7 186.6 L235.0 182.9 L232.1 183.4 L231.8 180.3 L230.6 179.8 L229.2 180.6 L226.7 179.0 L226.1 180.2 L225.3 177.8 L222.3 177.4 L221.9 175.1 L230.0 174.1 L234.5 170.8 L237.1 170.9 L240.1 166.6 L243.7 165.5 L250.1 158.2 L250.9 154.2 L254.4 150.8 L254.8 141.8 L256.8 141.8 L259.8 138.9 L259.7 140.3 L261.2 140.9 L265.4 140.6 L267.9 138.4 L271.6 140.2 Z" fill-rule="evenodd"><title>Census tract 120301</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087120302" aria-label="Select census tract 120302"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087120302" d="M255.9 232.3 L258.8 236.3 L257.0 237.9 L256.9 244.2 L256.1 236.3 L253.6 234.8 L252.1 231.7 L241.1 227.7 L237.3 223.3 L241.7 218.6 L248.5 217.6 L248.1 215.7 L245.4 215.2 L244.4 212.5 L247.0 213.9 L247.2 211.1 L250.2 211.8 L251.6 208.2 L251.7 211.9 L255.3 218.4 L254.8 219.6 L257.6 221.1 L257.9 224.3 L256.1 225.4 L255.9 232.3 Z" fill-rule="evenodd"><title>Census tract 120302</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087120400" aria-label="Select census tract 120400"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087120400" d="M225.8 204.0 L218.1 207.5 L216.1 210.4 L215.0 209.7 L214.4 201.8 L209.8 201.2 L197.0 188.7 L193.0 180.0 L187.1 173.8 L181.9 164.6 L178.0 165.0 L171.0 161.7 L175.5 161.5 L174.6 160.4 L176.1 160.5 L176.6 156.8 L181.1 155.3 L178.6 154.5 L178.3 152.5 L184.5 154.4 L189.2 154.0 L194.2 157.4 L199.1 163.3 L203.9 164.9 L202.7 163.9 L203.9 158.9 L202.1 156.1 L205.9 144.4 L209.0 145.9 L208.4 143.8 L211.8 144.1 L212.0 140.4 L213.1 146.2 L215.9 145.9 L211.4 152.3 L211.0 155.6 L214.9 160.9 L218.2 154.9 L221.2 153.2 L237.4 151.4 L236.8 156.1 L240.1 166.6 L238.7 169.5 L227.1 175.2 L221.9 175.1 L222.3 177.4 L225.3 177.8 L226.1 180.2 L226.7 179.0 L229.2 180.6 L230.6 179.8 L231.8 180.3 L232.1 183.4 L235.0 182.9 L228.7 186.6 L230.8 191.4 L229.2 193.4 L229.5 194.8 L231.3 195.0 L232.6 192.9 L236.0 194.0 L237.3 200.7 L233.3 204.3 L225.8 204.0 Z" fill-rule="evenodd"><title>Census tract 120400</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087120500" aria-label="Select census tract 120500"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087120500" d="M318.2 143.9 L326.7 158.9 L331.1 159.4 L332.6 168.0 L340.9 177.6 L341.3 180.9 L338.9 182.9 L340.0 189.5 L338.0 195.1 L339.6 199.2 L337.7 202.1 L338.4 203.5 L329.4 200.6 L327.7 205.9 L318.2 206.3 L323.6 203.6 L326.8 203.7 L326.8 199.9 L327.9 199.4 L325.5 196.6 L326.2 194.1 L323.2 193.4 L322.7 191.9 L323.8 190.6 L321.3 184.2 L322.3 190.2 L320.5 192.9 L320.1 196.4 L317.5 197.7 L316.8 200.7 L302.6 197.6 L305.8 172.4 L297.4 168.2 L298.3 166.3 L294.7 164.9 L294.2 168.0 L290.7 166.6 L288.1 170.2 L285.4 168.7 L284.1 169.9 L284.1 172.8 L282.3 172.5 L277.6 178.4 L276.3 176.7 L271.7 178.5 L274.8 175.6 L274.2 167.6 L276.5 163.0 L269.0 156.3 L267.1 151.9 L269.7 147.5 L271.6 140.2 L268.1 138.4 L265.4 140.6 L261.2 140.9 L259.7 140.3 L259.8 138.9 L256.8 141.8 L254.2 142.4 L254.4 150.8 L250.9 154.2 L250.1 158.2 L243.7 165.5 L240.1 166.6 L236.8 156.1 L237.4 151.4 L221.2 153.2 L218.2 154.9 L214.9 160.9 L211.0 155.6 L211.4 152.3 L215.9 145.9 L213.1 146.2 L212.0 140.4 L211.8 144.1 L208.4 143.8 L209.0 145.9 L205.9 144.4 L202.1 156.1 L203.9 158.9 L202.7 163.9 L203.9 164.9 L199.1 163.3 L194.2 157.4 L194.8 154.9 L191.0 148.7 L189.8 134.0 L187.4 131.0 L184.8 130.4 L182.3 126.7 L179.1 125.5 L176.3 120.2 L170.2 117.6 L165.2 107.8 L159.5 104.0 L159.9 101.5 L147.4 88.6 L198.3 88.4 L199.3 73.9 L198.7 18.0 L201.5 23.2 L200.0 28.1 L212.0 38.6 L214.5 42.6 L217.5 44.7 L221.2 44.2 L224.2 47.0 L235.8 63.2 L236.9 69.6 L240.8 70.8 L245.5 74.6 L246.1 78.4 L248.3 80.6 L257.1 80.6 L258.5 83.2 L256.7 87.3 L259.8 84.2 L261.3 84.7 L264.0 87.2 L267.1 93.4 L269.3 94.0 L272.6 90.9 L276.0 91.1 L276.9 94.4 L282.0 98.9 L287.3 108.6 L295.3 113.8 L293.8 117.6 L294.5 123.3 L298.7 127.6 L297.8 129.6 L299.5 130.5 L298.0 133.1 L299.4 134.6 L299.0 136.9 L303.7 137.2 L305.5 139.2 L307.1 138.0 L309.5 142.2 L318.2 143.9 Z" fill-rule="evenodd"><title>Census tract 120500</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087120600" aria-label="Select census tract 120600"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087120600" d="M259.8 204.5 L263.3 196.7 L266.7 194.6 L268.6 188.8 L270.7 188.0 L270.2 181.0 L271.7 178.5 L276.3 176.7 L277.6 178.4 L282.3 172.5 L284.1 172.8 L284.1 169.9 L285.4 168.7 L288.1 170.2 L290.7 166.6 L294.2 168.0 L294.7 164.9 L298.3 166.3 L297.4 168.2 L305.8 172.4 L302.6 197.6 L316.8 200.7 L317.5 197.7 L320.1 196.4 L320.5 192.9 L322.3 190.2 L321.3 184.2 L323.8 190.6 L322.7 191.9 L323.2 193.4 L326.2 194.1 L325.5 196.6 L327.9 199.4 L326.8 199.9 L326.8 203.7 L323.6 203.6 L318.2 206.3 L314.4 211.1 L311.5 212.0 L309.4 210.3 L307.1 211.9 L305.1 210.1 L304.7 207.3 L303.2 208.0 L303.3 209.6 L301.1 207.7 L295.4 206.8 L293.5 208.1 L289.6 217.8 L285.7 220.8 L285.6 225.5 L283.1 232.3 L285.0 241.7 L283.4 247.0 L276.8 248.5 L271.6 247.6 L268.6 255.2 L261.5 250.2 L256.9 244.2 L257.0 237.9 L258.8 236.3 L255.9 232.3 L256.1 225.4 L257.9 224.3 L257.6 221.1 L254.8 219.6 L256.3 219.0 L257.5 213.1 L261.6 207.5 L259.8 204.5 Z" fill-rule="evenodd"><title>Census tract 120600</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087120700" aria-label="Select census tract 120700"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087120700" d="M261.7 259.2 L261.5 250.2 L268.6 255.2 L271.6 247.6 L276.8 248.5 L286.2 247.4 L289.1 250.5 L290.3 252.9 L289.0 255.9 L285.3 257.1 L283.4 253.2 L281.0 255.2 L281.9 261.2 L286.4 267.1 L292.5 288.5 L292.8 297.8 L296.7 305.0 L298.4 314.2 L296.6 311.2 L294.5 312.0 L292.8 307.7 L290.6 306.2 L291.1 303.5 L289.7 300.9 L280.9 294.6 L280.2 292.4 L278.0 293.3 L279.2 301.6 L274.5 299.7 L261.6 299.9 L258.5 287.0 L251.0 280.7 L244.3 277.0 L241.4 277.0 L237.6 272.3 L238.4 269.9 L239.9 269.5 L238.8 266.5 L242.2 269.7 L244.8 267.6 L247.0 268.7 L253.3 267.4 L254.9 263.8 L261.7 259.2 Z" fill-rule="evenodd"><title>Census tract 120700</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087120800" aria-label="Select census tract 120800"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087120800" d="M298.2 258.0 L302.9 267.6 L301.4 273.7 L298.8 277.5 L297.7 283.9 L303.0 295.6 L302.7 304.3 L304.6 309.3 L300.1 316.9 L297.5 311.3 L296.7 305.0 L292.8 297.8 L292.5 288.5 L286.4 267.1 L281.9 261.2 L281.0 255.2 L283.4 253.2 L285.3 257.1 L289.0 255.9 L290.3 252.9 L298.2 258.0 Z" fill-rule="evenodd"><title>Census tract 120800</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087120900" aria-label="Select census tract 120900"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087120900" d="M317.7 239.3 L305.4 265.5 L302.9 267.6 L298.2 258.0 L292.5 255.0 L286.2 247.4 L283.4 247.0 L285.0 241.7 L283.1 232.3 L285.6 225.5 L285.7 220.8 L289.6 217.8 L293.5 208.1 L295.4 206.8 L301.1 207.7 L303.3 209.6 L303.2 208.0 L304.7 207.3 L305.1 210.1 L307.1 211.9 L309.4 210.3 L311.5 212.0 L314.4 211.1 L318.2 206.3 L327.7 205.9 L329.4 200.6 L338.4 203.5 L339.3 206.8 L337.0 210.3 L337.6 214.2 L336.5 216.7 L338.4 221.0 L336.2 224.5 L329.4 228.2 L323.5 235.1 L317.7 239.3 Z" fill-rule="evenodd"><title>Census tract 120900</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121000" aria-label="Select census tract 121000"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087121000" d="M419.1 240.5 L416.2 244.4 L409.7 243.9 L410.4 248.2 L405.4 248.9 L402.5 247.1 L400.4 248.5 L396.1 243.7 L391.9 243.1 L388.5 240.4 L374.4 255.9 L369.3 258.8 L367.8 248.5 L362.7 238.9 L356.5 232.9 L355.1 234.0 L352.1 232.8 L351.6 226.9 L350.0 223.9 L347.8 223.3 L346.7 220.0 L343.0 217.6 L338.4 221.0 L336.5 216.7 L337.6 214.2 L337.0 210.3 L339.3 206.8 L337.7 202.1 L339.6 199.2 L338.0 195.1 L340.0 189.5 L338.9 182.9 L341.3 180.9 L340.9 177.6 L332.6 168.0 L331.5 161.5 L333.1 160.3 L335.7 162.7 L341.1 161.7 L349.4 170.6 L373.8 181.5 L375.4 180.2 L380.0 182.2 L390.8 190.2 L403.4 193.8 L407.0 197.0 L406.7 198.2 L409.4 198.5 L411.4 195.7 L423.1 201.2 L431.1 199.3 L429.7 204.1 L439.8 204.5 L443.8 207.4 L443.7 208.7 L451.5 212.2 L455.0 215.3 L459.7 215.8 L465.0 220.8 L465.2 225.6 L468.9 228.2 L471.6 234.1 L468.3 238.1 L457.6 235.7 L454.8 236.7 L454.9 238.2 L445.7 232.6 L446.2 238.3 L443.8 235.0 L439.3 235.8 L439.3 232.8 L434.0 232.2 L430.4 227.0 L426.9 226.3 L424.0 227.1 L424.0 230.7 L422.3 231.4 L420.4 234.9 L419.1 240.5 Z" fill-rule="evenodd"><title>Census tract 121000</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121100" aria-label="Select census tract 121100"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087121100" d="M347.3 265.7 L347.7 252.3 L349.3 247.7 L342.2 247.5 L337.5 249.3 L335.4 245.5 L334.2 239.2 L331.6 238.1 L332.9 235.5 L331.8 229.8 L336.1 225.6 L338.4 221.0 L343.0 217.6 L346.7 220.0 L347.8 223.3 L350.0 223.9 L351.6 226.9 L352.1 232.8 L355.1 234.0 L356.5 232.9 L362.7 238.9 L369.0 252.9 L368.5 257.5 L366.9 258.3 L363.8 265.3 L364.4 267.7 L361.3 271.9 L360.7 275.4 L359.2 276.1 L356.7 294.2 L357.4 296.8 L354.8 303.3 L353.7 315.0 L346.2 316.0 L344.0 315.5 L342.9 306.0 L344.4 296.7 L348.3 292.5 L350.1 287.5 L350.3 279.5 L345.4 268.6 L346.4 264.6 L347.3 265.7 Z" fill-rule="evenodd"><title>Census tract 121100</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121200" aria-label="Select census tract 121200"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087121200" d="M298.8 277.5 L317.7 239.3 L323.5 235.1 L329.4 228.2 L336.2 224.5 L331.8 229.8 L332.9 235.5 L331.6 238.1 L334.2 239.2 L335.4 245.5 L337.5 249.3 L342.2 247.5 L349.3 247.7 L347.7 252.3 L347.3 265.7 L346.4 264.6 L345.4 268.6 L350.3 279.5 L350.1 287.5 L348.3 292.5 L344.4 296.7 L343.2 295.8 L343.5 292.5 L341.4 290.0 L336.8 293.2 L332.2 299.6 L329.8 307.8 L327.3 306.0 L325.9 296.9 L322.9 296.9 L324.5 293.6 L322.3 293.4 L321.7 296.2 L318.3 296.1 L317.4 302.2 L315.5 304.6 L312.3 305.1 L309.2 314.5 L302.8 313.6 L304.6 309.3 L302.7 304.3 L303.1 296.4 L297.7 283.9 L298.8 277.5 Z" fill-rule="evenodd"><title>Census tract 121200</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121300" aria-label="Select census tract 121300"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087121300" d="M336.8 293.2 L341.4 290.0 L343.5 292.5 L343.2 295.8 L344.4 296.7 L342.9 310.8 L344.0 320.1 L328.4 315.6 L330.3 310.9 L329.1 308.0 L330.3 304.4 L336.8 293.2 Z" fill-rule="evenodd"><title>Census tract 121300</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121401" aria-label="Select census tract 121401"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087121401" d="M333.3 327.2 L323.3 322.8 L323.2 320.1 L328.1 315.5 L336.6 317.9 L336.3 321.2 L334.4 320.8 L333.3 327.2 Z" fill-rule="evenodd"><title>Census tract 121401</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121402" aria-label="Select census tract 121402"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087121402" d="M342.8 320.0 L339.4 329.8 L339.3 335.3 L331.7 333.8 L334.4 320.8 L336.3 321.2 L336.6 317.9 L342.8 320.0 Z" fill-rule="evenodd"><title>Census tract 121402</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121403" aria-label="Select census tract 121403"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087121403" d="M322.7 321.5 L333.3 327.2 L331.7 333.8 L317.8 334.9 L322.7 326.8 L322.7 321.5 Z" fill-rule="evenodd"><title>Census tract 121403</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121500" aria-label="Select census tract 121500"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087121500" d="M331.0 343.9 L319.4 340.9 L318.4 334.9 L327.8 333.5 L339.3 335.3 L335.0 341.5 L331.0 343.9 Z" fill-rule="evenodd"><title>Census tract 121500</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121600" aria-label="Select census tract 121600"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087121600" d="M358.0 331.8 L341.4 348.8 L339.0 348.9 L331.0 343.9 L337.1 339.5 L339.3 335.3 L353.0 334.3 L357.2 330.6 L358.0 331.8 Z" fill-rule="evenodd"><title>Census tract 121600</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121700" aria-label="Select census tract 121700"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087121700" d="M352.0 320.1 L357.2 330.6 L353.0 334.3 L339.3 335.3 L339.4 329.8 L342.8 319.8 L352.0 320.1 Z" fill-rule="evenodd"><title>Census tract 121700</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087121800" aria-label="Select census tract 121800"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087121800" d="M367.9 325.0 L358.0 331.8 L352.0 320.1 L374.3 319.3 L369.5 321.0 L367.9 325.0 Z" fill-rule="evenodd"><title>Census tract 121800</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087122001" aria-label="Select census tract 122001"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087122001" d="M358.6 315.9 L356.1 314.3 L353.7 315.0 L353.8 310.1 L357.4 296.8 L356.7 294.2 L359.2 276.1 L360.7 275.4 L361.3 271.9 L364.4 267.7 L363.8 265.3 L366.9 258.3 L368.5 257.5 L370.5 258.9 L374.4 255.9 L388.5 240.4 L391.9 243.1 L396.1 243.7 L400.4 248.5 L402.5 247.1 L405.4 248.9 L407.9 247.7 L412.6 248.4 L413.7 249.9 L412.1 252.0 L412.3 254.4 L409.4 253.2 L408.4 259.2 L405.5 257.4 L402.7 261.1 L403.4 263.5 L401.6 267.7 L405.2 266.3 L404.4 269.9 L402.3 271.3 L404.1 272.7 L398.8 275.5 L396.1 282.0 L394.0 296.1 L395.5 299.6 L394.6 301.1 L390.5 300.0 L389.4 304.2 L387.3 305.7 L386.9 309.3 L383.8 309.5 L382.3 312.1 L382.1 315.5 L375.7 312.8 L368.7 315.1 L358.6 315.9 Z" fill-rule="evenodd"><title>Census tract 122001</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087122002" aria-label="Select census tract 122002"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087122002" d="M426.7 307.0 L424.2 306.8 L425.5 308.1 L425.4 312.5 L421.4 314.6 L416.9 319.8 L400.0 324.4 L399.1 326.2 L397.4 326.0 L397.2 321.3 L393.7 311.5 L395.5 299.6 L394.0 296.1 L396.1 282.0 L398.8 275.5 L404.1 272.7 L402.3 271.3 L404.4 269.9 L405.2 266.3 L401.6 267.7 L403.4 263.5 L402.7 261.1 L405.5 257.4 L408.4 259.2 L409.4 253.2 L412.3 254.4 L412.1 252.0 L413.7 249.9 L409.4 247.2 L409.7 243.9 L416.2 244.4 L419.0 240.9 L418.7 238.8 L420.4 237.3 L422.3 231.4 L424.0 230.7 L424.0 227.1 L426.9 226.3 L430.4 227.0 L434.0 232.2 L439.3 232.8 L439.3 235.8 L443.8 235.0 L446.2 238.3 L449.9 249.1 L446.1 253.7 L445.7 256.7 L443.6 259.1 L443.9 261.6 L446.0 264.8 L454.5 269.7 L457.0 280.8 L463.8 286.3 L456.5 284.4 L453.1 280.5 L449.2 278.7 L447.6 274.5 L443.9 273.9 L445.5 278.8 L444.4 279.5 L444.7 281.4 L448.2 281.4 L449.8 282.8 L448.7 283.7 L449.4 285.2 L451.8 286.0 L452.6 289.5 L457.6 290.3 L463.9 295.1 L463.7 296.6 L466.0 298.2 L463.7 302.0 L465.8 304.4 L466.2 308.8 L463.0 311.3 L453.4 313.9 L452.9 316.0 L448.4 315.3 L443.7 309.4 L439.8 307.7 L435.3 309.3 L434.0 307.1 L433.4 304.4 L436.3 296.1 L431.9 297.7 L430.0 303.1 L426.7 307.0 Z" fill-rule="evenodd"><title>Census tract 122002</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087122003" aria-label="Select census tract 122003"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087122003" d="M394.8 327.4 L384.2 321.2 L374.0 319.3 L344.0 320.1 L344.0 315.5 L356.1 314.3 L358.6 315.9 L368.7 315.1 L375.7 312.8 L382.1 315.5 L382.3 312.1 L383.8 309.5 L386.9 309.3 L387.3 305.7 L389.4 304.2 L390.5 300.0 L394.6 301.1 L393.7 311.5 L397.2 321.3 L397.4 326.0 L401.1 328.2 L394.8 327.4 Z" fill-rule="evenodd"><title>Census tract 122003</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087122100" aria-label="Select census tract 122100"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087122100" d="M394.2 334.1 L375.4 324.9 L367.9 325.0 L369.5 321.0 L374.3 319.3 L384.2 321.2 L397.7 328.0 L394.2 334.1 Z" fill-rule="evenodd"><title>Census tract 122100</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087122201" aria-label="Select census tract 122201"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087122201" d="M425.5 366.4 L415.1 352.8 L394.2 333.6 L397.7 328.0 L401.1 328.2 L399.1 326.2 L400.0 324.4 L416.9 319.8 L421.4 314.6 L425.4 312.5 L425.5 308.1 L424.2 306.8 L426.7 307.1 L430.0 303.1 L431.9 297.7 L436.3 296.1 L433.4 304.4 L434.0 307.1 L435.3 309.3 L439.8 307.7 L443.7 309.4 L448.4 315.3 L431.1 316.7 L420.6 332.7 L410.1 328.1 L406.0 331.6 L402.2 331.8 L422.4 357.7 L425.1 362.2 L426.3 365.7 L425.5 366.4 Z" fill-rule="evenodd"><title>Census tract 122201</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087122202" aria-label="Select census tract 122202"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087122202" d="M419.5 332.1 L429.0 342.4 L427.7 346.3 L427.9 351.9 L425.9 352.5 L420.8 347.5 L419.1 347.6 L417.1 342.7 L415.6 342.0 L415.6 338.8 L409.1 331.2 L408.9 329.0 L410.1 328.1 L419.5 332.1 Z" fill-rule="evenodd"><title>Census tract 122202</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087122203" aria-label="Select census tract 122203"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087122203" d="M428.3 357.6 L425.7 362.7 L426.3 365.7 L420.7 355.2 L402.2 331.8 L406.0 331.6 L408.9 329.0 L409.1 331.2 L415.6 338.8 L415.6 342.0 L417.1 342.7 L419.1 347.6 L420.8 347.5 L425.9 352.5 L427.7 352.0 L428.3 357.6 Z" fill-rule="evenodd"><title>Census tract 122203</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087122300" aria-label="Select census tract 122300"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087122300" d="M456.2 422.1 L429.3 371.4 L425.5 366.4 L425.7 362.7 L428.3 357.6 L427.7 346.3 L429.0 342.4 L439.3 354.7 L450.1 363.7 L472.2 372.2 L484.7 381.1 L499.3 408.5 L500.7 419.0 L496.8 419.5 L491.5 416.9 L484.2 422.7 L476.1 434.7 L478.4 442.3 L478.1 445.3 L470.4 452.0 L456.2 422.1 Z" fill-rule="evenodd"><title>Census tract 122300</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087122400" aria-label="Select census tract 122400"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087122400" d="M439.3 354.7 L420.6 332.7 L431.1 316.7 L452.9 316.0 L453.4 313.9 L463.0 311.3 L466.2 308.8 L465.8 304.4 L463.7 302.0 L466.0 298.2 L463.7 296.6 L463.9 295.1 L457.6 290.3 L452.6 289.5 L451.8 286.0 L449.4 285.2 L448.7 283.7 L449.8 282.8 L448.2 281.4 L444.7 281.4 L444.4 279.5 L445.5 278.8 L443.9 273.9 L447.6 274.5 L449.2 278.7 L453.1 280.5 L456.5 284.4 L463.8 286.3 L457.0 280.8 L454.5 269.7 L446.0 264.8 L443.9 261.6 L443.6 259.1 L445.7 256.7 L446.1 253.7 L449.9 249.1 L447.2 243.1 L445.7 232.6 L454.9 238.2 L454.8 236.7 L457.6 235.7 L468.3 238.1 L471.6 234.1 L475.4 234.8 L482.2 239.8 L484.1 239.1 L490.0 241.4 L498.2 250.0 L505.1 250.0 L508.1 251.5 L506.8 254.0 L510.1 255.7 L512.6 253.7 L514.7 254.8 L524.7 273.0 L527.3 276.0 L537.6 281.9 L533.9 282.9 L533.5 280.8 L529.6 287.8 L536.2 293.3 L537.2 291.1 L543.4 295.6 L534.8 305.3 L535.8 306.3 L534.0 310.2 L527.2 313.2 L528.0 320.3 L524.7 326.9 L507.0 330.5 L506.0 333.6 L501.1 331.7 L481.6 331.8 L478.9 337.9 L480.5 340.7 L479.5 343.7 L480.1 345.5 L483.0 346.7 L483.4 350.5 L486.4 352.7 L479.4 358.3 L470.6 358.3 L472.9 367.0 L476.1 370.4 L477.1 375.4 L450.1 363.7 L439.3 354.7 Z" fill-rule="evenodd"><title>Census tract 122400</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087122500" aria-label="Select census tract 122500"><path class="weq-tract-static weq-tract-static-1" data-geoid="06087122500" d="M524.7 326.9 L519.2 336.0 L522.8 340.4 L521.2 344.9 L521.9 347.9 L526.8 348.1 L533.5 341.5 L534.6 344.8 L544.4 356.7 L533.1 370.1 L531.2 376.3 L530.8 371.8 L528.3 369.6 L517.1 366.7 L509.8 369.4 L502.4 363.8 L506.8 353.5 L506.7 330.8 L524.7 326.9 Z" fill-rule="evenodd"><title>Census tract 122500</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087123100" aria-label="Select census tract 123100"><path class="weq-tract-static weq-tract-static-2" data-geoid="06087123100" d="M481.5 331.9 L501.1 331.7 L506.5 333.8 L506.8 353.5 L502.4 363.8 L500.0 361.5 L495.9 361.5 L491.4 358.0 L491.0 355.7 L483.4 350.5 L483.0 346.7 L480.1 345.5 L480.5 340.7 L478.9 337.9 L481.5 331.9 Z" fill-rule="evenodd"><title>Census tract 123100</title></path></a>
+<a class="weq-tract-hit" href="#weq-tract-06087123300" aria-label="Select census tract 123300"><path class="weq-tract-static weq-tract-static-0" data-geoid="06087123300" d="M594.9 352.4 L595.2 355.2 L596.3 355.3 L594.9 358.2 L595.7 361.2 L601.5 370.6 L605.3 370.7 L604.3 366.6 L608.4 363.9 L613.7 362.4 L618.8 364.4 L618.2 362.5 L632.2 376.8 L645.6 376.7 L645.7 383.6 L652.9 383.6 L652.7 403.7 L649.1 401.9 L642.1 401.7 L632.1 403.3 L622.2 393.9 L614.5 391.2 L607.6 404.5 L601.6 408.6 L601.3 400.7 L597.6 402.6 L595.6 400.7 L596.4 394.8 L594.0 390.0 L588.6 388.8 L584.5 390.6 L573.8 399.5 L569.3 395.0 L560.4 391.2 L556.5 394.7 L554.0 393.3 L553.0 391.6 L557.6 389.2 L559.6 386.1 L558.4 383.2 L553.0 387.7 L550.4 387.6 L546.3 394.0 L537.3 388.6 L535.8 391.4 L529.7 394.3 L521.8 393.2 L524.1 387.2 L531.8 384.6 L532.6 382.8 L531.2 376.3 L533.1 370.1 L544.4 356.7 L534.6 344.8 L533.5 341.5 L526.8 348.1 L521.9 347.9 L521.2 344.9 L522.8 340.4 L519.2 336.0 L523.8 330.5 L528.0 320.3 L527.2 313.2 L531.0 313.8 L544.2 307.6 L546.7 310.0 L549.7 310.0 L549.3 312.5 L554.0 313.7 L554.2 316.8 L562.1 317.9 L559.6 328.1 L559.9 330.4 L563.7 334.8 L568.1 336.1 L575.7 335.2 L582.3 339.4 L585.3 338.7 L587.9 343.8 L586.7 347.8 L587.6 351.1 L594.9 352.4 Z" fill-rule="evenodd"><title>Census tract 123300</title></path></a>
+</g>
+</svg>
+<div class="weq-v2-legend" aria-label="Map legend">
+<div id="weq-v2-legend-label" class="weq-v2-legend-label">Loading selected condition…</div>
+<div class="weq-v2-gradient"></div>
+<div class="weq-v2-legend-values"><span id="weq-v2-legend-min"></span><span id="weq-v2-legend-mid"></span><span id="weq-v2-legend-max"></span></div>
+<div id="weq-v2-coverage" class="weq-v2-coverage"></div>
+<div id="weq-v2-gate" class="weq-v2-gate" hidden></div>
+<div id="weq-v2-nodata-key" class="weq-v2-nodata-key" hidden><span class="weq-v2-nodata-swatch" aria-hidden="true"></span><span id="weq-v2-nodata-text">No published estimate</span></div>
+</div>
+<p class="weq-v2-map-note">Each color scale shows the range among Santa Cruz County census tracts for the selected condition. Hatched tracts have no published estimate and are not treated as 0. Click or keyboard-select a tract to see its value.</p><details class="weq-v2-coverage-rule"><summary>Coverage standard</summary><p><strong>Strong coverage:</strong> at least 90% of tracts have a value. <strong>Partial:</strong> 75–89%. <strong>Limited:</strong> below 75%. During the Santa Cruz pilot, conditions with at least one usable published value remain selectable and their exact coverage is disclosed. A condition with no usable tract data is disabled.</p></details>
+</div>
+
+<aside id="weq-v2-panel" class="weq-v2-panel" aria-live="polite">
+<div class="weq-v2-panel-kicker">Select an area</div>
+<h3>Click a tract to explore a neighborhood.</h3>
+<p class="weq-v2-meta">You can also use the community or tract search above.</p>
+<div class="weq-v2-place"><strong>What you will see</strong><p>This quick read shows the selected place, condition, value, comparison, and evidence quality. Community context, decision support, access assets, other conditions, and the decision brief appear below the map.</p></div>
+</aside>
+</div>
+
+<div id="weq-v2-details" class="weq-v2-details" hidden aria-live="polite"></div>
+
+<details class="weq-v2-about-data"><summary>About the map data</summary><p class="weq-v2-sources"><strong>Sources:</strong> OEHHA / CalEPA CalEnviroScreen 5.0; U.S. Census Bureau 2020–2024 American Community Survey 5-year Data Profiles and Detailed Tables; Santa Cruz County GIS; Santa Cruz County's <em>Strategic Plan: 2020 Census</em> tract-to-neighborhood outreach geography; and official access-point sources from Workforce Santa Cruz County / California EDD, Goodwill Central Coast, Cabrillo College, WASC Adult Education, Santa Cruz County Office of Education, Santa Cruz and Watsonville public libraries, and Santa Cruz METRO. ACS condition measures are read only from the governed static tract file and must pass the same coverage gate before publication. Community composition currently uses CalEnviroScreen 5.0 published race/ethnicity tract fields; a direct 2020–2024 ACS precision replacement is staged behind its own validation gate. Race and ethnicity are descriptive context only and are not used as a need score, ranking, Decision Lens input, or resource-allocation rule. Access assets are service-zone context, not a distance or travel-time measure. Neighborhood labels are descriptive and should not be read as formal boundaries. Hatched tracts represent missing estimates and are not zero values.</p></details>
+</div>
+</section>
+<script id="weq-v2-acs-static" type="application/octet-stream">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</script>
+<script>(function injected(){
+  const root = document.getElementById('weq-neighborhood-v2');
+  if (!root || root.dataset.ready === '1') return;
+  root.dataset.ready = '1';
+
+  const map = root.querySelector('#weq-v2-map');
+  const modeSelect = root.querySelector('#weq-v2-mode');
+  const metricSelect = root.querySelector('#weq-v2-metric');
+  const compositionSelect = root.querySelector('#weq-v2-composition');
+  const conditionField = root.querySelector('#weq-v2-condition-field');
+  const compositionField = root.querySelector('#weq-v2-composition-field');
+  const placeInput = root.querySelector('#weq-v2-place-search');
+  const placeList = root.querySelector('#weq-v2-place-list');
+  const status = root.querySelector('#weq-v2-status');
+  const panel = root.querySelector('#weq-v2-panel');
+  const detailsPanel = root.querySelector('#weq-v2-details');
+  const legendMin = root.querySelector('#weq-v2-legend-min');
+  const legendMid = root.querySelector('#weq-v2-legend-mid');
+  const legendMax = root.querySelector('#weq-v2-legend-max');
+  const legendLabel = root.querySelector('#weq-v2-legend-label');
+  const coverage = root.querySelector('#weq-v2-coverage');
+  const noDataKey = root.querySelector('#weq-v2-nodata-key');
+  const noDataText = root.querySelector('#weq-v2-nodata-text');
+  const gateEl = root.querySelector('#weq-v2-gate');
+  let links = [...map.querySelectorAll('.weq-tract-hit')];
+  let paths = [...map.querySelectorAll('path[data-geoid]')];
+  const questionSelect = root.querySelector('#weq-v2-question-select');
+
+  const metrics = {
+    poverty: { group:'Economic conditions', label:'Income below 2× federal poverty level', source:'ces', field:'Poverty', unit:'percent', vintage:'2020–2024' },
+    unemployment: { group:'Economic conditions', label:'Unemployment', source:'ces', field:'Unemployment', unit:'percent', vintage:'CalEnviroScreen 5.0 source vintage' },
+    not_labor: { group:'Economic conditions', label:'Not in the labor force', source:'acs', staticKey:'not_labor', unit:'percent', vintage:'2020–2024 ACS' },
+    education: { group:'Education and workforce connection', label:'Adults 25+ without a high school education', source:'ces', field:'Education', unit:'percent', vintage:'2020–2024' },
+    language: { group:'Education and workforce connection', label:'Limited-English-speaking households', source:'ces', field:'Linguistic_Isol', unit:'percent', vintage:'2020–2024' },
+    youth_disconnected: { group:'Education and workforce connection', label:'Youth age 16–19 not enrolled in school and not employed', source:'acs', staticKey:'youth_disconnected', unit:'percent', vintage:'2020–2024 ACS' },
+    no_vehicle: { group:'Access', label:'No vehicle available', source:'acs', staticKey:'no_vehicle', unit:'percent', vintage:'2020–2024 ACS' },
+    no_broadband: { group:'Access', label:'No broadband Internet subscription', source:'acs', staticKey:'no_broadband', unit:'percent', vintage:'2020–2024 ACS' },
+    commute_60_plus: { group:'Access', label:'Workers commuting 60 minutes or more', source:'acs', staticKey:'commute_60_plus', unit:'percent', vintage:'2020–2024 ACS' },
+    housing: { group:'Household and caregiving', label:'Low-income households with severe housing cost burden', source:'ces', field:'HousBurd', unit:'percent', vintage:'2018–2022' },
+    rent_burden: { group:'Household and caregiving', label:'Renters paying 35%+ of income toward rent', source:'acs', staticKey:'rent_burden', unit:'percent', vintage:'2020–2024 ACS' },
+    overcrowding: { group:'Household and caregiving', label:'Occupied housing units with more than 1 person per room', source:'acs', staticKey:'overcrowding', unit:'percent', vintage:'2020–2024 ACS' },
+    childcare_pressure: { group:'Household and caregiving', label:'Children under 6 with all available parents in the labor force', source:'acs', staticKey:'childcare_pressure', unit:'percent', vintage:'2020–2024 ACS', note:'This is a childcare-demand pressure proxy. It does not measure childcare supply, affordability, or unmet demand.' },
+    disability: { group:'Other context', label:'Working-age adults with a disability', source:'acs', staticKey:'disability', unit:'percent', vintage:'2020–2024 ACS' },
+    pollution: { group:'Other context', label:'Pollution burden percentile', source:'ces', field:'Pollution_Pctl', unit:'percentile', vintage:'CalEnviroScreen 5.0' }
+  };
+
+  const compositionMetrics = {
+    hispanic:{label:'Hispanic or Latino (any race)',field:'Hispanic',unit:'percent'},
+    white:{label:'White (Non-Hispanic)',field:'white',unit:'percent'},
+    black:{label:'Black or African American (Non-Hispanic)',field:'black',unit:'percent'},
+    native_american:{label:'Native American (Non-Hispanic)',field:'Native_American',unit:'percent'},
+    asian:{label:'Asian (Non-Hispanic)',field:'asian',unit:'percent'},
+    pacific_islander:{label:'Pacific Islander (Non-Hispanic)',field:'Pacific_Islander',unit:'percent'},
+    other_multiple:{label:'Other / multiple races (Non-Hispanic)',field:'Other_Multiple',unit:'percent'}
+  };
+
+  const metricQuestions = {
+    poverty:'Where might household financial pressure make training or job search harder to sustain?',
+    unemployment:'Where should we look more closely at job matching or reemployment barriers?',
+    not_labor:'Where should we investigate why working-age adults may be disconnected from the labor market?',
+    education:'Where should we examine adult education, bridge, or training connections?',
+    language:'Where should we investigate whether outreach or language access needs attention?',
+    youth_disconnected:'Where should staff examine youth reengagement or work-experience outreach?',
+    no_vehicle:'Where might transportation make workforce or training services harder to reach?',
+    no_broadband:'Where should we examine alternatives to online-only workforce service?',
+    commute_60_plus:'Where might long travel times be affecting access to work, training, or services?',
+    housing:'Where might household costs make training or job search harder to sustain?',
+    rent_burden:'Where might rent pressure reduce the flexibility needed for training or career transition?',
+    overcrowding:'Where should we examine whether study space, remote access, or scheduling may be harder?',
+    childcare_pressure:'Where should we investigate whether caregiving schedules could affect participation?',
+    disability:'Where should we review whether workforce and training access is sufficiently accessible?',
+    pollution:'What workforce question, if any, is supported by this environmental context?'
+  };
+  const compositionQuestion='Who lives here, and what should we understand about the community before designing outreach or services?';
+
+  const accessZoneGeoids = {"santa_cruz_urban":["06087100100","06087100200","06087100300","06087100400","06087100500","06087100600","06087100700","06087100800","06087100900","06087101000","06087101100","06087101200","06087121200","06087121300"],"south_county":["06087110100","06087110200","06087110300","06087110400","06087110501","06087110502","06087110600","06087110700","06087122400","06087122500","06087123100","06087123300"],"mid_county":["06087121000","06087121100","06087121401","06087121402","06087121403","06087121500","06087121600","06087121700","06087121800","06087122001","06087122002","06087122003","06087122100","06087122201","06087122202","06087122203","06087122300"],"san_lorenzo_valley":["06087120301","06087120302","06087120400","06087120500","06087120600","06087120700"],"north_county":["06087120200","06087120800","06087120900"]};
+  const accessAssetCategories = {"workforce":"Workforce services","training":"Education and training","digital_community":"Digital and community access","transit":"Transit hubs"};
+  const accessAssets = [{"id":"WFSCC-WATSONVILLE-AJCC","name":"Watsonville Career Center / Santa Cruz County AJCC","category":"workforce","address":"500 Westridge Drive, Watsonville, CA 95076","zones":["south_county","countywide"],"url":"https://www.ccgoodwill.org/locations/watsonville-career-center/","verified":"2026-09-29"},{"id":"WFSCC-CAPITOLA","name":"Capitola Career Center","category":"workforce","address":"2045 40th Avenue, Suite B, Capitola, CA 95010","zones":["mid_county","santa_cruz_urban","countywide"],"url":"https://workforcescc.com/contact-us/","verified":"2026-09-29"},{"id":"SUENOS-GREEN-VALLEY","name":"Sueños Youth Employment Services","category":"workforce","address":"229 Green Valley Road, Freedom, CA 95019","zones":["south_county","countywide"],"url":"https://santacruzcoe.org/student-services/career-technical-education-partnerships/suenos-program/","verified":"2026-09-29"},{"id":"CABRILLO-APTOS","name":"Cabrillo College Aptos Campus","category":"training","address":"6500 Soquel Drive, Aptos, CA 95003","zones":["mid_county","countywide"],"url":"https://www.cabrillo.edu/contact-us/","verified":"2026-09-29"},{"id":"CABRILLO-WATSONVILLE","name":"Cabrillo College Watsonville Center","category":"training","address":"318 Union Street, Watsonville, CA 95076","zones":["south_county","countywide"],"url":"https://www.cabrillo.edu/watsonville-center/","verified":"2026-09-29"},{"id":"WASC-GREEN-VALLEY","name":"WASC Adult Education - Green Valley Center","category":"training","address":"294 Green Valley Road, Watsonville, CA 95076","zones":["south_county","countywide"],"url":"https://www.wascae.edu/About-Us/About-Us/Contact-Us/index.html","verified":"2026-09-29"},{"id":"WASC-DOWNTOWN","name":"WASC Adult Education - Watsonville Downtown Center","category":"training","address":"320 Rodriguez Street, Watsonville, CA 95076","zones":["south_county","countywide"],"url":"https://www.wascae.edu/About-Us/About-Us/Contact-Us/index.html","verified":"2026-09-29"},{"id":"WASC-SANTA-CRUZ","name":"WASC Adult Education - Santa Cruz Center","category":"training","address":"319 La Fonda Avenue, Santa Cruz, CA 95062","zones":["santa_cruz_urban","mid_county","countywide"],"url":"https://www.wascae.edu/About-Us/About-Us/Contact-Us/index.html","verified":"2026-09-29"},{"id":"CAC-SEQUOIA","name":"Career Advancement Charter - Sequoia Schools","category":"training","address":"229 Green Valley Road, Freedom, CA 95019","zones":["south_county","countywide"],"url":"https://santacruzcoe.org/student-services/alternative-education-programs/career-advancement-charter/","verified":"2026-09-29"},{"id":"CAC-ENCINAL","name":"Career Advancement Charter - County Office of Education","category":"training","address":"400 Encinal Street, Santa Cruz, CA 95060","zones":["santa_cruz_urban","north_county","san_lorenzo_valley","countywide"],"url":"https://santacruzcoe.org/student-services/alternative-education-programs/career-advancement-charter/","verified":"2026-09-29"},{"id":"LIB-WATSONVILLE-MAIN","name":"Watsonville Main Public Library","category":"digital_community","address":"275 Main Street, Suite 100, Watsonville, CA 95076","zones":["south_county"],"url":"https://www.watsonville.gov/2327/Library","verified":"2026-09-29"},{"id":"LIB-FREEDOM","name":"Freedom Branch Library","category":"digital_community","address":"2021 Freedom Boulevard, Freedom, CA 95019","zones":["south_county"],"url":"https://www.watsonville.gov/2327/Library","verified":"2026-09-29"},{"id":"LIB-APTOS","name":"Aptos Branch Library","category":"digital_community","address":"7695 Soquel Drive, Aptos, CA 95003","zones":["mid_county"],"url":"https://www.santacruzpl.org/branches/","verified":"2026-09-29"},{"id":"LIB-LIVE-OAK","name":"Live Oak Branch Library","category":"digital_community","address":"2380 Portola Drive, Santa Cruz, CA 95062","zones":["mid_county","santa_cruz_urban"],"url":"https://www.santacruzpl.org/branches/","verified":"2026-09-29"},{"id":"LIB-CAPITOLA","name":"Capitola Branch Library","category":"digital_community","address":"2005 Wharf Road, Capitola, CA 95010","zones":["mid_county"],"url":"https://www.santacruzpl.org/branches/","verified":"2026-09-29"},{"id":"LIB-DOWNTOWN-SC","name":"Downtown Santa Cruz Branch Library","category":"digital_community","address":"224 Church Street, Santa Cruz, CA 95060","zones":["santa_cruz_urban","north_county"],"url":"https://www.santacruzpl.org/branches/","verified":"2026-09-29"},{"id":"LIB-BRANCIFORTE","name":"Branciforte Branch Library","category":"digital_community","address":"230 Gault Street, Santa Cruz, CA 95062","zones":["santa_cruz_urban"],"url":"https://www.santacruzpl.org/branches/","verified":"2026-09-29"},{"id":"LIB-GARFIELD","name":"Garfield Park Branch Library","category":"digital_community","address":"705 Woodrow Avenue, Santa Cruz, CA 95060","zones":["santa_cruz_urban"],"url":"https://www.santacruzpl.org/branches/","verified":"2026-09-29"},{"id":"LIB-SCOTTS-VALLEY","name":"Scotts Valley Branch Library","category":"digital_community","address":"251 Kings Village Road, Scotts Valley, CA 95066","zones":["north_county"],"url":"https://www.santacruzpl.org/branches/","verified":"2026-09-29"},{"id":"LIB-FELTON","name":"Felton Branch Library","category":"digital_community","address":"6121 Gushee Street, Felton, CA 95018","zones":["san_lorenzo_valley","north_county"],"url":"https://www.santacruzpl.org/branches/","verified":"2026-09-29"},{"id":"LIB-BOULDER-CREEK","name":"Boulder Creek Branch Library","category":"digital_community","address":"13390 West Park Avenue, Boulder Creek, CA 95006","zones":["san_lorenzo_valley"],"url":"https://www.santacruzpl.org/branches/","verified":"2026-09-29"},{"id":"LIB-LA-SELVA","name":"La Selva Beach Branch Library","category":"digital_community","address":"316 Estrella Avenue, La Selva Beach, CA 95076","zones":["mid_county","south_county"],"url":"https://www.santacruzpl.org/branches/","verified":"2026-09-29"},{"id":"TRANSIT-WATSONVILLE","name":"Watsonville Transit Center","category":"transit","address":"475 Rodriguez Street, Watsonville, CA 95076","zones":["south_county"],"url":"https://scmetro.org/wp-content/uploads/2026/03/METRO_SpringHeadways_web-ENG-1.pdf","verified":"2026-09-29"},{"id":"TRANSIT-CAPITOLA","name":"Capitola Mall Transit Center","category":"transit","address":"1855 41st Avenue, Capitola, CA 95010","zones":["mid_county"],"url":"https://scmetro.org/wp-content/uploads/2026/03/METRO_SpringHeadways_web-ENG-1.pdf","verified":"2026-09-29"},{"id":"TRANSIT-RIVER-FRONT","name":"River Front Transit Center","category":"transit","address":"Front Street and Soquel Avenue area, Santa Cruz, CA 95060","zones":["santa_cruz_urban"],"url":"https://scmetro.org/wp-content/uploads/2026/03/METRO_SpringHeadways_web-ENG-1.pdf","verified":"2026-09-29"},{"id":"TRANSIT-CAVALLARO","name":"Cavallaro Transit Center","category":"transit","address":"246 Kings Village Road, Scotts Valley, CA 95066","zones":["north_county","san_lorenzo_valley"],"url":"https://scmetro.org/wp-content/uploads/2026/03/METRO_SpringHeadways_web-ENG-1.pdf","verified":"2026-09-29"}];
+  const decisionRules = {"poverty":{"could_mean":"Household financial pressure can affect the feasibility of unpaid training, transportation, equipment, fees, and time away from work.","examine_next":["Check whether training options are paid, short-term, or paired with supportive services.","Review referral pathways for benefits, transportation, and other basic-needs supports.","Validate the pattern with local outreach partners before changing service design."],"asset_categories":["workforce","training","digital_community"]},"unemployment":{"could_mean":"A higher unemployment estimate can signal a need to look more closely at job matching, recent employer demand, dislocation, and barriers to reemployment. It does not by itself identify the cause.","examine_next":["Compare current employer demand and layoff signals with the skills of job seekers being served.","Check whether career-center outreach and referral pathways are reaching this area.","Look for transportation, language, digital, or training barriers that may compound reemployment difficulty."],"asset_categories":["workforce","training","transit"]},"education":{"could_mean":"Lower formal educational attainment can make adult education, bridge programs, contextualized basic skills, and short-term credential pathways especially relevant to investigate.","examine_next":["Check adult high-school completion, GED/HiSET, ESL, and bridge-program availability.","Review whether career training has entry requirements that create avoidable barriers.","Connect outreach with adult schools, community college, and trusted community access points."],"asset_categories":["training","digital_community","workforce"]},"language":{"could_mean":"A larger share of limited-English-speaking households can make language access, trusted messengers, bilingual navigation, and translated workforce information more important to test.","examine_next":["Confirm that outreach, intake, and key service information are available in the languages used locally.","Review whether staff or partner capacity supports bilingual navigation.","Use adult-education and community access partners to validate which communication channels work."],"asset_categories":["training","digital_community","workforce"]},"housing":{"could_mean":"Severe housing-cost burden among lower-income households can constrain scheduling, training persistence, transportation choices, and the ability to absorb unpaid time.","examine_next":["Check whether training schedules, stipends, paid work experience, and supportive services reduce participation costs.","Review referral pathways for housing and basic-needs support rather than assuming workforce services alone can address the pressure.","Validate whether housing instability is affecting retention or training completion through local operational evidence."],"asset_categories":["workforce","training","digital_community"]},"pollution":{"could_mean":"Pollution burden is environmental context. It may matter for community conditions and job-quality discussions, but it does not measure workforce-system performance or prove a workforce access barrier.","examine_next":["Use this measure as context rather than as a trigger for service allocation.","If a workforce decision depends on environmental exposure, consult the underlying CalEnviroScreen indicators and appropriate environmental-health expertise.","Do not infer employment, training, or discrimination outcomes from this indicator alone."],"asset_categories":[]},"not_labor":{"could_mean":"A larger share of adults outside the labor force can reflect many different circumstances, including caregiving, disability, schooling, retirement, discouraged job search, or other reasons. The estimate does not identify which explanation applies.","examine_next":["Pair this condition with disability, childcare, age, education, and local qualitative evidence.","Check whether career-center outreach is reaching people who are not currently attached to the labor market.","Avoid treating labor-force nonparticipation as unemployment."],"asset_categories":["workforce","training","digital_community"]},"youth_disconnected":{"could_mean":"A larger share of youth who are neither enrolled in school nor employed can make youth outreach, work experience, reengagement, and education-to-career pathways important to examine.","examine_next":["Check Sueños and other youth reengagement/referral capacity serving the area.","Review transportation and schedule barriers to work experience or education.","Validate the ACS estimate with school, youth-provider, and outreach evidence before targeting resources."],"asset_categories":["workforce","training","transit"]},"no_vehicle":{"could_mean":"Limited vehicle access can make location, transit connections, service hours, and remote or neighborhood-based delivery more consequential.","examine_next":["Check whether key workforce and training destinations can be reached by transit at the times services are offered.","Review remote-service and neighborhood-based options where in-person travel is difficult.","Do not assume a nearby facility is practically accessible without travel-time analysis."],"asset_categories":["transit","workforce","training"]},"no_broadband":{"could_mean":"Limited home broadband can make online applications, virtual training, job search, and digital case navigation harder to use consistently.","examine_next":["Identify public computer and Internet access points serving the area.","Check whether required online steps have an in-person or phone alternative.","Review digital-literacy and device-access supports separately from broadband subscription."],"asset_categories":["digital_community","workforce","training"]},"commute_60_plus":{"could_mean":"Long commute times can indicate a mismatch between where people live and where work is located, transportation constraints, or other travel patterns. The measure does not identify the cause.","examine_next":["Compare major employment destinations and transit connections with training and career-center locations.","Check whether training schedules align with commuting realities.","Consider local or hybrid service delivery where travel burden is material."],"asset_categories":["transit","workforce","training"]},"rent_burden":{"could_mean":"High rent burden can reduce the time and financial flexibility available for training, job search, or career transitions.","examine_next":["Review paid training, stipends, supportive services, and short-term pathways.","Check whether basic-needs referrals are easy to access from workforce programs.","Use the measure as financial-pressure context, not as proof that housing is causing a workforce outcome."],"asset_categories":["workforce","training","digital_community"]},"overcrowding":{"could_mean":"Crowded housing can affect quiet study space, remote participation, scheduling, and household responsibilities, but the tract estimate does not show an individual's living situation.","examine_next":["Check whether training and job-search resources include reliable physical study/computer space.","Review flexible scheduling and in-person alternatives for online activities.","Avoid using the tract estimate to make assumptions about individual participants."],"asset_categories":["digital_community","training","workforce"]},"childcare_pressure":{"could_mean":"This proxy identifies places where many young children live in families where all available parents are in the labor force. It can point to a reason to examine childcare-related scheduling pressure, but it does not measure childcare supply, affordability, quality, or unmet demand.","examine_next":["Check service and training schedules against common caregiving windows.","Review childcare referral and supportive-service pathways.","Do not interpret the estimate as a childcare shortage without provider, slot, cost, and family-demand evidence."],"asset_categories":["workforce","training"]},"disability":{"could_mean":"A larger working-age disability estimate can make accessibility, auxiliary aids, remote options, transportation, and disability-employment partnerships especially important to examine.","examine_next":["Review physical, digital, communication, and programmatic accessibility of key service locations.","Check whether auxiliary aids, reasonable accommodations, and remote alternatives are clearly available.","Pair tract context with disability-service expertise rather than inferring individual needs."],"asset_categories":["workforce","training","transit","digital_community"]}};
+
+  const officialNeighborhoods = {"100100":"Delaveaga Park Course","100200":"Midtown","100300":"Pogonip","100400":"UC Santa Cruz","100500":"Arroyo Seco / Moore Creek","100600":"Santa Cruz / Levee","100700":"Tannery","100800":"Lower Ocean / Seabright","100900":"West Seabright","101000":"Boardwalk / Beach Flats","101100":"Steamer Lane","101200":"Natural Bridges","110100":"Ann Soldo Elementary / Bridge Street neighborhoods","110200":"Mintie White / E.A. Hall / MacQuiddy / All Saints / Elks area","110300":"CAB / Plaza / Watsonville High","110400":"West Beach / Industrial / Second Harvest area","110501":"Nob Hill / Cesar Chavez Middle / Coach Town","110502":"DMV / Hyde Elementary / Cesar Chavez Middle","110600":"Watsonville Hospital / Monterey Vista / Freedom Elementary area","110700":"Watsonville Airport","120200":"Davenport / Bonny Doon / Swanton","120301":"Ben Lomond / Fall Creek / Felton / Boulder Creek","120302":"Brackney / Glen Arbor","120400":"Boulder Creek West to Empire Grade","120500":"Los Cumbres / Castle Rock","120600":"Lompico","120700":"North UCSC / Henry Cowell / South Felton","120800":"Pasatiempo","120900":"Scotts Valley / Zayante","121000":"Soquel San Jose Road / Highland Way","121100":"Soquel High area","121200":"Upper Branciforte / Granite Creek / Mystery Spot","121300":"Dominican / Santa Cruz Gardens","121401":"Green Acres Elementary area","121402":"Chanticleer","121403":"Jose Avenue County Park area","121500":"Twin Lakes","121600":"Pleasure Point / Opal Cliffs","121700":"North / northwest 41st Avenue to Wharf Road","121800":"Park Avenue / Bay Avenue / Capitola","122001":"Main Street Elementary / Camphill Communities","122002":"Nisene Marks","122003":"Cabrillo College area","122100":"New Brighton State Beach","122201":"Aptos Village / Rio Del Mar / Seascape Resort","122202":"Rio Del Mar Elementary / Aptos Community Methodist area","122203":"Seascape Golf Club","122300":"Pajaro Dunes to Seascape","122400":"Corralitos","122500":"PVUSD / Holohan / Green Valley area","123100":"Amesti Road / Pinto Lake","123300":"Salsipuedes / Aromas"};
+  const officialNeighborhoodSource = 'Santa Cruz County Strategic Plan: 2020 Census outreach geography';
+  const currentTractLineage = {"06087100801":"06087100800","06087100802":"06087100800","06087101001":"06087101000","06087101002":"06087101000","06087110101":"06087110100","06087110102":"06087110100","06087110201":"06087110200","06087110202":"06087110200","06087110301":"06087110300","06087110302":"06087110300","06087110401":"06087110400","06087110402":"06087110400","06087110503":"06087110502","06087110504":"06087110502","06087110505":"06087110501","06087110506":"06087110501","06087110601":"06087110600","06087110602":"06087110600","06087120901":"06087120900","06087120902":"06087120900","06087121501":"06087121500","06087121502":"06087121500","06087121601":"06087121600","06087121602":"06087121600","06087121701":"06087121700","06087121702":"06087121700","06087121801":"06087121800","06087121802":"06087121800","06087122004":"06087122003","06087122005":"06087122003","06087122204":"06087122201","06087122205":"06087122201","06087122401":"06087122400","06087122402":"06087122400"};
+  const coveragePolicy = {strong:0.90,partial:0.75,total:69};
+  const staticAcsElementId = 'weq-v2-acs-static';
+  // ACS tract data must be packaged into the public page. Do not fetch the private GitHub repository from a visitor browser.
+
+  const state = {
+    ces: new Map(),
+    acs: new Map(),
+    countyAcs: {},
+    context: new Map(),
+    geometry: new Map(),
+    selected: null,
+    mode: modeSelect?.value || 'conditions',
+    metric: metricSelect.value || 'poverty',
+    composition: compositionSelect?.value || 'hispanic',
+    questionId:'',
+    questionText:metricQuestions[metricSelect.value || 'poverty'],
+    coverage: new Map(),
+    loaded: {ces:false, acs:false, context:false, geometry2020:false}
+  };
+
+  conditionField.hidden=state.mode!=='conditions';
+  compositionField.hidden=state.mode!=='composition';
+
+  const normalizeGeoid = value => {
+    const d = String(value ?? '').replace(/\D/g,'');
+    if (d.length === 11) return d;
+    if (d.length === 10) return d.padStart(11,'0');
+    if (d.length === 6) return '06087' + d;
+    return d;
+  };
+  const tractLabel = geoid => {
+    const t = String(geoid).slice(-6);
+    return `${Number(t.slice(0,4))}.${t.slice(4)}`;
+  };
+  const officialNeighborhoodFor = geoid => {
+    const g=normalizeGeoid(geoid);
+    const lineage=currentTractLineage[g]||g;
+    return officialNeighborhoods[String(lineage||'').slice(-6)] || '';
+  };
+  const officialContextFor = geoid => {
+    const g=normalizeGeoid(geoid);
+    const name=officialNeighborhoodFor(g);
+    if(!name) return null;
+    const lineage=currentTractLineage[g]||g;
+    const isSplit=lineage!==g;
+    const primary=isSplit ? `${name} · Tract ${tractLabel(g)}` : name;
+    return {
+      primary,
+      city:'',
+      cdp:'',
+      planning:'',
+      approx:'',
+      description:isSplit
+        ? `This current 2020 Census tract is part of the older Santa Cruz County outreach geography associated with the ${name} area. The tract number distinguishes the newer split geography. Neighborhood labels are descriptive and are not formal boundaries.`
+        : `Santa Cruz County's 2020 Census outreach plan associates this tract with the ${name} area. The label is descriptive and is not a formal neighborhood boundary.`
+    };
+  };
+  const num = value => {
+    if (value === null || value === undefined || value === '' || value === '-666666666') return null;
+    const n = Number(value);
+    return Number.isFinite(n) && n >= 0 ? n : null;
+  };
+  const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+  const fmt = (value, metric) => {
+    if (!Number.isFinite(value)) return 'Not available';
+    if (metric.unit === 'minutes') return `${value.toFixed(1)} min`;
+    if (metric.unit === 'percentile') return `${value.toFixed(1)} percentile`;
+    return `${value.toFixed(1)}%`;
+  };
+  const valueFor = (geoid, key) => {
+    const m = metrics[key];
+    if (!m) return {value:null,moe:null};
+    if (m.source === 'ces') {
+      const row = state.ces.get(geoid);
+      return {value: row ? num(row[m.field]) : null, moe:null};
+    }
+    const row = state.acs.get(geoid);
+    const measure = row?.measures?.[m.staticKey || key];
+    return {value:num(measure?.estimate), moe:num(measure?.moe90)};
+  };
+  const countyValueFor = key => {
+    const m = metrics[key];
+    if (!m || m.source !== 'acs') return null;
+    const measure=state.countyAcs?.measures?.[m.staticKey || key];
+    return num(measure?.estimate);
+  };
+  const compositionValueFor = (geoid,key) => {
+    const m=compositionMetrics[key];
+    const row=state.ces.get(geoid);
+    return m && row ? num(row[m.field]) : null;
+  };
+  const compositionCountyValue = key => {
+    const m=compositionMetrics[key];
+    if(!m) return null;
+    let weighted=0,total=0;
+    state.ces.forEach(row=>{
+      const p=num(row.Population), value=num(row[m.field]);
+      if(Number.isFinite(p) && p>0 && Number.isFinite(value)){
+        weighted += p * value / 100;
+        total += p;
+      }
+    });
+    return total>0 ? 100*weighted/total : null;
+  };
+  const activeValueFor = geoid => state.mode==='composition'
+    ? compositionValueFor(geoid,state.composition)
+    : valueFor(geoid,state.metric).value;
+  const activeDescriptor = () => state.mode==='composition'
+    ? compositionMetrics[state.composition]
+    : metrics[state.metric];
+
+  const mapPalette = {
+    label:'Santa Cruz coastal',
+    colors:['#E8F8F7','#B9E6E1','#72C9BE','#2BA99B','#0B7C78','#07485B']
+  };
+  const hexToRgb=hex=>{
+    const h=String(hex).replace('#','');
+    return [parseInt(h.slice(0,2),16),parseInt(h.slice(2,4),16),parseInt(h.slice(4,6),16)];
+  };
+  function colorFor(value,min,max){
+    if (!Number.isFinite(value)) return '#e9eef1';
+    const t=max>min ? Math.max(0,Math.min(1,(value-min)/(max-min))) : .5;
+    const colors=mapPalette.colors.map(hexToRgb);
+    const scaled=t*(colors.length-1);
+    const idx=Math.min(colors.length-2,Math.floor(scaled));
+    const local=scaled-idx;
+    const a=colors[idx],b=colors[idx+1];
+    const rgb=a.map((v,i)=>Math.round(v+(b[i]-v)*local));
+    return `rgb(${rgb[0]},${rgb[1]},${rgb[2]})`;
+  }
+
+  function coverageFor(key){
+    const values=paths.map(p=>state.mode==='composition'
+      ? compositionValueFor(normalizeGeoid(p.dataset.geoid),key)
+      : valueFor(normalizeGeoid(p.dataset.geoid),key).value);
+    const available=values.filter(Number.isFinite).length;
+    const total=paths.length||coveragePolicy.total;
+    const ratio=total ? available/total : 0;
+    const gate=available===0 ? 'no_data' : (ratio>=coveragePolicy.strong ? 'strong' : (ratio>=coveragePolicy.partial ? 'partial' : 'limited'));
+    const result={available,total,missing:total-available,ratio,gate,readerEnabled:gate!=='no_data'};
+    state.coverage.set(key,result);
+    return result;
+  }
+
+  function coverageLabel(result){
+    if(!result) return '';
+    const pct=Math.round(result.ratio*100);
+    if(result.gate==='no_data') return 'No usable tract data';
+    if(result.gate==='strong') return `Strong coverage · ${pct}%`;
+    if(result.gate==='partial') return `Partial coverage · ${pct}%`;
+    return `Limited coverage · ${pct}%`;
+  }
+
+  function repaint(){
+    const key = state.mode==='composition' ? state.composition : state.metric;
+    const m = activeDescriptor();
+    const series = paths.map(p=>{
+      const geoid=normalizeGeoid(p.dataset.geoid);
+      return {p,geoid,value:state.mode==='composition'
+        ? compositionValueFor(geoid,key)
+        : valueFor(geoid,key).value};
+    });
+    const vals = series.map(d=>d.value).filter(Number.isFinite);
+    const result=coverageFor(key);
+    const missing = result.missing;
+    coverage.textContent = `Published values for ${result.available} of ${result.total} tracts${missing ? `; ${missing} ${missing===1?'tract has':'tracts have'} no published estimate` : '.'}`;
+    gateEl.hidden=state.mode==='composition';
+    if(state.mode!=='composition'){
+      gateEl.className=`weq-v2-gate ${result.gate}`;
+      gateEl.textContent=coverageLabel(result);
+    }
+    noDataKey.hidden = missing===0;
+    noDataText.textContent = missing ? `No published estimate (${missing} ${missing===1?'tract':'tracts'})` : 'No published estimate';
+    if (!vals.length){
+      series.forEach(d=>d.p.style.fill='url(#weq-v2-no-data)');
+      legendLabel.textContent = `${m.label}: no published tract values`;
+      legendMin.textContent=''; legendMid.textContent=''; legendMax.textContent='';
+      if (state.selected) renderPanel(state.selected);
+      return;
+    }
+    const min=Math.min(...vals), max=Math.max(...vals), mid=(min+max)/2;
+    series.forEach(d=>{
+      d.p.style.fill = Number.isFinite(d.value)
+        ? colorFor(d.value,min,max)
+        : 'url(#weq-v2-no-data)';
+    });
+    legendLabel.textContent = state.mode==='composition'
+      ? `${m.label} · share of tract population`
+      : `${m.label} · Santa Cruz County tract range`;
+    legendMin.textContent=fmt(min,m);
+    legendMid.textContent=fmt(mid,m);
+    legendMax.textContent=fmt(max,m);
+    if (state.selected) renderPanel(state.selected);
+  }
+
+  function ringContains(point, ring){
+    const [x,y]=point; let inside=false;
+    for(let i=0,j=ring.length-1;i<ring.length;j=i++){
+      const [xi,yi]=ring[i], [xj,yj]=ring[j];
+      const intersect=((yi>y)!==(yj>y)) && (x < (xj-xi)*(y-yi)/((yj-yi)||1e-12)+xi);
+      if(intersect) inside=!inside;
+    }
+    return inside;
+  }
+  function contains(feature,point){
+    const g=feature?.geometry;
+    if(!g) return false;
+    if(g.type==='Polygon') return g.coordinates.some(r=>ringContains(point,r));
+    if(g.type==='MultiPolygon') return g.coordinates.some(poly=>poly.some(r=>ringContains(point,r)));
+    return false;
+  }
+  function centerOf(feature){
+    const g=feature?.geometry; const pts=[];
+    const pushRing=r=>r.forEach(p=>pts.push(p));
+    if(g?.type==='Polygon') g.coordinates.forEach(pushRing);
+    if(g?.type==='MultiPolygon') g.coordinates.forEach(poly=>poly.forEach(pushRing));
+    if(!pts.length) return null;
+    let minX=Infinity,maxX=-Infinity,minY=Infinity,maxY=-Infinity;
+    pts.forEach(([x,y])=>{minX=Math.min(minX,x);maxX=Math.max(maxX,x);minY=Math.min(minY,y);maxY=Math.max(maxY,y);});
+    return [(minX+maxX)/2,(minY+maxY)/2];
+  }
+  function nameFrom(feature,fields){
+    for(const f of fields){
+      const v=feature?.properties?.[f];
+      if(v && String(v).trim()) return String(v).trim();
+    }
+    return '';
+  }
+  function buildContext(geoid, tractFeature, layers){
+    const point=centerOf(tractFeature);
+    const city=point ? layers.cities.find(f=>contains(f,point)) : null;
+    const cdp=point ? layers.cdps.find(f=>contains(f,point)) : null;
+    const plan=point ? layers.planning.find(f=>contains(f,point)) : null;
+    const row=state.ces.get(geoid)||{};
+    const approx=String(row.ApproxLoc||'').trim();
+    const cityName=nameFrom(city,['NAME','CITY_DESC']);
+    const cdpName=nameFrom(cdp,['NAME','NAMELSAD']);
+    const planName=nameFrom(plan,['Gen_Plan','NAME','GPBND_DESC']);
+    const official=officialNeighborhoodFor(geoid);
+    const primary=official||cityName||cdpName||approx||planName||`Census Tract ${tractLabel(geoid)}`;
+    const parts=[];
+    if(official){
+      parts.push(`Santa Cruz County's 2020 Census outreach plan associates this tract with the ${official} area.`);
+    }else if(cityName){
+      parts.push(`The tract is centered within ${cityName}.`);
+    }else if(cdpName){
+      parts.push(`The tract is centered in the ${cdpName} census-designated community.`);
+    }else if(planName){
+      parts.push(`The tract is centered in the ${planName} planning area.`);
+    }
+    if(planName && !parts.some(x=>x.includes(planName))) parts.push(`It falls within the County's ${planName} planning area.`);
+    if(cityName && official && !official.toLowerCase().includes(cityName.toLowerCase())) parts.push(`Its tract center falls within ${cityName}.`);
+    if(cdpName && official && !official.toLowerCase().includes(cdpName.toLowerCase())) parts.push(`Its tract center falls within the ${cdpName} census-designated community.`);
+    if(approx && !primary.toLowerCase().includes(approx.toLowerCase())) parts.push(`CalEnviroScreen identifies the approximate location as ${approx}.`);
+    parts.push('These labels are descriptive geographic context, not formal neighborhood boundaries.');
+    return {primary,city:cityName,cdp:cdpName,planning:planName,approx,description:parts.join(' ')};
+  }
+
+  function markSelected(geoid){
+    links.forEach(a=>{
+      const g=normalizeGeoid(a.querySelector('path[data-geoid]')?.dataset.geoid);
+      const on=g===geoid;
+      a.classList.toggle('is-selected',on);
+      if(on) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current');
+    });
+  }
+
+  function median(values){
+    const a=values.filter(Number.isFinite).slice().sort((x,y)=>x-y);
+    if(!a.length) return null;
+    const mid=Math.floor(a.length/2);
+    return a.length%2 ? a[mid] : (a[mid-1]+a[mid])/2;
+  }
+
+  function evidenceStripHtml(geoid,key,cell){
+    const m=metrics[key];
+    const result=coverageFor(key);
+    const source=m.source==='acs'?'U.S. Census Bureau ACS':'CalEnviroScreen 5.0';
+    const uncertainty=m.source==='acs'
+      ? (Number.isFinite(cell?.moe)?`± ${fmt(cell.moe,m)} · 90% margin of error`:'Margin of error unavailable')
+      : 'Margin of error not provided';
+    return `<div class="weq-v2-evidence-compact">
+      <span>Evidence</span>
+      <strong>${esc(source)} · ${result.available} of ${result.total} tracts</strong>
+      <small>${esc(uncertainty)} · Context for investigation</small>
+    </div>`;
+  }
+
+  function compositionEvidenceStripHtml(key){
+    const result=coverageFor(key);
+    return `<div class="weq-v2-evidence-compact">
+      <span>Evidence</span>
+      <strong>CalEnviroScreen 5.0 · ${result.available} of ${result.total} tracts</strong>
+      <small>Margin of error not provided · Descriptive community context</small>
+    </div>`;
+  }
+
+  function decisionComparison(geoid,key){
+    const m=metrics[key];
+    const cell=valueFor(geoid,key);
+    if(!Number.isFinite(cell.value)){
+      return 'No published tract estimate is available for this condition. Use the other loaded conditions, local operational evidence, and community input instead of treating the missing value as 0.';
+    }
+    const values=paths.map(p=>valueFor(normalizeGeoid(p.dataset.geoid),key).value).filter(Number.isFinite);
+    const med=median(values);
+    if(!Number.isFinite(med) || values.length<3){
+      return 'A published tract estimate is available, but there are not enough comparable tract values to calculate a stable county tract median.';
+    }
+    const diff=cell.value-med;
+    const unit=m.unit==='percentile' ? 'percentile points' : 'percentage points';
+    if(Math.abs(diff)<0.05){
+      return `The selected estimate is essentially the same as the current median across Santa Cruz County tracts with published values (${fmt(med,m)}).`;
+    }
+    const direction=diff>0?'above':'below';
+    return `The selected estimate is ${Math.abs(diff).toFixed(1)} ${unit} ${direction} the current median across Santa Cruz County tracts with published values (${fmt(med,m)}). This is a descriptive comparison, not a neighborhood rank.`;
+  }
+
+  function accessZoneFor(geoid){
+    for(const [zone,geoids] of Object.entries(accessZoneGeoids)){
+      if(geoids.includes(geoid)) return zone;
+    }
+    return '';
+  }
+
+  function relevantAssets(geoid,categories){
+    const zone=accessZoneFor(geoid);
+    const wanted=new Set((categories&&categories.length)?categories:Object.keys(accessAssetCategories));
+    const candidates=accessAssets
+      .filter(a=>wanted.has(a.category) && (a.zones.includes(zone)||a.zones.includes('countywide')))
+      .sort((a,b)=>{
+        const al=a.zones.includes(zone)?0:1, bl=b.zones.includes(zone)?0:1;
+        return al-bl || a.category.localeCompare(b.category) || a.name.localeCompare(b.name);
+      });
+    const counts={}; const out=[];
+    for(const a of candidates){
+      counts[a.category]=(counts[a.category]||0);
+      if(counts[a.category]>=2) continue;
+      counts[a.category]+=1;
+      out.push(a);
+      if(out.length>=7) break;
+    }
+    return out;
+  }
+
+  function decisionHtml(geoid,key){
+    const rule=decisionRules[key];
+    if(!rule) return '';
+    const items=(rule.examine_next||[]).map(x=>`<li>${esc(x)}</li>`).join('');
+    return `
+      <div class="weq-v2-decision">
+        <div class="weq-v2-decision-head"><strong>Decision lens</strong><span>Prompt, not conclusion</span></div>
+        <div class="weq-v2-decision-block"><b>What stands out</b><p>${esc(decisionComparison(geoid,key))}</p></div>
+        <div class="weq-v2-decision-block"><b>What it could mean</b><p>${esc(rule.could_mean)}</p></div>
+        <div class="weq-v2-decision-block"><b>Examine next</b><ul>${items}</ul></div>
+      </div>`;
+  }
+
+  function assetsHtml(geoid,key){
+    const rule=decisionRules[key]||{};
+    const assets=relevantAssets(geoid,rule.asset_categories||[]);
+    if(!assets.length) return '';
+    const rows=assets.map(a=>`
+      <li class="weq-v2-asset">
+        <span class="weq-v2-asset-tag">${esc(accessAssetCategories[a.category]||a.category)}</span>
+        <a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.name)}</a>
+        <small>${esc(a.address)} · Source checked ${esc(a.verified)}</small>
+      </li>`).join('');
+    return `
+      <details class="weq-v2-assets">
+        <summary>Relevant access assets serving this area</summary>
+        <p class="weq-v2-assets-note">These are source-verified public access points associated with this service zone or the county as a whole. They are not a distance, travel-time, capacity, eligibility, or quality measure.</p>
+        <ul class="weq-v2-asset-list">${rows}</ul>
+      </details>`;
+  }
+
+  function whoLivesHereHtml(row){
+    const cells=Object.entries(compositionMetrics).map(([key,m])=>{
+      const value=num(row?.[m.field]);
+      return {label:m.label,value};
+    }).filter(x=>Number.isFinite(x.value));
+    if(!cells.length) return '';
+    const rows=cells.map(x=>`<div class="weq-v2-who-row"><span>${esc(x.label)}</span><strong>${x.value.toFixed(1)}%</strong></div>`).join('');
+    return `
+      <div class="weq-v2-who">
+        <div class="weq-v2-who-head"><strong>Who lives here?</strong><span>Community composition</span></div>
+        <div class="weq-v2-who-grid">${rows}</div>
+        <p class="weq-v2-who-note"><strong>How to read this:</strong> Hispanic or Latino is an ethnicity and can include people of any race. Race categories shown here are non-Hispanic. These percentages are descriptive community context from CalEnviroScreen 5.0 and are not used as a need score, Decision Lens input, or resource-allocation rule.</p>
+      </div>`;
+  }
+
+  function decisionBriefModel(geoid,key,ctx,row,cell){
+    const m=metrics[key];
+    const rule=decisionRules[key]||{};
+    const question=state.questionText||metricQuestions[key]||'What should we examine next?';
+    const value=Number.isFinite(cell?.value)?fmt(cell.value,m):'No published tract estimate';
+    const moe=Number.isFinite(cell?.moe)?` ± ${fmt(cell.moe,m)} (90% MOE)`:'';
+    const observed=`${m.label}: ${value}${moe}. ${decisionComparison(geoid,key)}`;
+    const assets=relevantAssets(geoid,rule.asset_categories||[]).slice(0,4);
+    const assetText=assets.length?assets.map(a=>a.name).join('; '):'No specific access assets are required by this decision rule.';
+    const next=(rule.examine_next||[]);
+    const limitation=`This tract-level evidence does not establish cause, individual circumstances, program reach, service quality, or where resources should be allocated.${m.note?' '+m.note:''}`;
+    const place=ctx.primary||`Census Tract ${tractLabel(geoid)}`;
+    const text=[
+      'WORKFORCE DECISION BRIEF',
+      '',
+      'Question: '+question,
+      'Place: '+place+' · Census Tract '+tractLabel(geoid),
+      '',
+      'Evidence observed: '+observed,
+      '',
+      'Community context: Race and ethnicity are available in the separate Who lives here? section and are descriptive context only, not a need or priority input.',
+      '',
+      'Relevant access points: '+assetText,
+      '',
+      'Evidence still needed:',
+      ...next.map(x=>'• '+x),
+      '',
+      'What this does not tell us: '+limitation
+    ].join('\n');
+    const nextHtml=next.map(x=>`<li>${esc(x)}</li>`).join('');
+    const assetHtml=assets.length?assets.map(a=>`<li>${esc(a.name)}</li>`).join(''):'<li>No specific access assets are required by this decision rule.</li>';
+    const html=`
+      <details class="weq-v2-brief">
+        <summary>Create a decision brief</summary>
+        <div class="weq-v2-brief-body">
+          <div class="weq-v2-brief-block"><b>Question</b><p>${esc(question)}</p></div>
+          <div class="weq-v2-brief-block"><b>Place</b><p>${esc(place)} · Census Tract ${esc(tractLabel(geoid))}</p></div>
+          <div class="weq-v2-brief-block"><b>Evidence observed</b><p>${esc(observed)}</p></div>
+          <div class="weq-v2-brief-block"><b>Community context</b><p>Use the Who lives here? section as descriptive context only. Race and ethnicity are not need, risk, priority, or Decision Lens inputs.</p></div>
+          <div class="weq-v2-brief-block"><b>Relevant access points</b><ul>${assetHtml}</ul></div>
+          <div class="weq-v2-brief-block"><b>Evidence still needed</b><ul>${nextHtml||'<li>Validate the pattern with local operational evidence and community input.</li>'}</ul></div>
+          <div class="weq-v2-brief-block"><b>What this does not tell us</b><p>${esc(limitation)}</p></div>
+          <button type="button" class="weq-v2-copy-brief" data-copy-brief>Copy brief</button>
+        </div>
+      </details>`;
+    return {html,text};
+  }
+
+  function renderPanel(geoid){
+    state.selected=geoid;
+    markSelected(geoid);
+    const ctx=state.context.get(geoid)||officialContextFor(geoid)||{};
+    const row=state.ces.get(geoid)||{};
+    const population=Number.isFinite(num(row.Population)) ? Math.round(num(row.Population)).toLocaleString() : '';
+    const meta=`Census Tract ${esc(tractLabel(geoid))} · GEOID ${esc(geoid)}${population?` · Population ${population}`:''}`;
+    const question=state.mode==='composition' ? compositionQuestion : (state.questionText||metricQuestions[state.metric]||'What should we examine next?');
+    let readingHtml='', comparisonHtml='', evidenceHtml='', interpretHtml='', detailsHtml='', briefText='';
+
+    if(state.mode==='composition'){
+      const key=state.composition, m=compositionMetrics[key];
+      const value=compositionValueFor(geoid,key);
+      const county=compositionCountyValue(key);
+      readingHtml=`<div class="weq-v2-section-label">What we see</div><div class="weq-v2-reading"><span>${esc(m.label)}</span><strong>${Number.isFinite(value)?fmt(value,m):'No published tract estimate'}</strong><small>Community composition · OEHHA / CalEPA CalEnviroScreen 5.0</small></div>`;
+      comparisonHtml=Number.isFinite(county)
+        ? `<div class="weq-v2-benchmark"><span>Santa Cruz County weighted estimate</span><strong>${fmt(county,m)}</strong></div>`
+        : '';
+      evidenceHtml=compositionEvidenceStripHtml(key);
+      interpretHtml=`<p class="weq-v2-composition-note"><strong>Descriptive context only.</strong> Race and ethnicity are not inputs to the Decision Lens, a need score, tract ranking, or resource-allocation rule.</p>`;
+      detailsHtml=`
+        <div class="weq-v2-details-head">
+          <div><div class="weq-v2-panel-kicker">Details for this place</div><h3>Community context</h3></div>
+          <p>Use composition to understand who lives in the selected area, then validate outreach, language access, partnerships, and service design with direct evidence and community input.</p>
+        </div>
+        <div class="weq-v2-place-context"><strong>About this place</strong><span>${esc(ctx.description||'This is a Santa Cruz County census tract used for neighborhood-scale public data.')}</span></div>
+        <div class="weq-v2-detail-grid">
+          <section class="weq-v2-detail-card">
+            <div class="weq-v2-detail-card-kicker">Community</div>
+            ${whoLivesHereHtml(row)}
+          </section>
+          <section class="weq-v2-detail-card">
+            <div class="weq-v2-detail-card-kicker">How to use this context</div>
+            <h4>Ask, do not assume</h4>
+            <p class="weq-v2-composition-note"><strong>Community composition is descriptive context.</strong> A larger share of a racial or ethnic group does not mean greater need, better or worse outcomes, or a service priority. Use this view to ask whether outreach and service design reflect who lives here.</p>
+          </section>
+          <section class="weq-v2-detail-card">
+            <div class="weq-v2-detail-card-kicker">Guardrails</div>
+            <h4>What this does not tell us</h4>
+            <div class="weq-v2-other-item"><span>Purpose</span><strong>Describe composition</strong></div>
+            <div class="weq-v2-other-item"><span>Not used for</span><strong>Need or ranking</strong></div>
+            <div class="weq-v2-other-item"><span>Do not infer</span><strong>Language, income, immigration, or preferences</strong></div>
+          </section>
+        </div>`;
+    }else{
+      const key=state.metric, m=metrics[key], cell=valueFor(geoid,key);
+      const county=countyValueFor(key);
+      const hasValue=Number.isFinite(cell.value);
+      const moe = Number.isFinite(cell.moe) ? ` <span class="weq-v2-moe">± ${fmt(cell.moe,m)}</span>` : '';
+      const valueHtml = hasValue ? `${fmt(cell.value,m)}${moe}` : 'No published tract estimate';
+      const sourceName=m.source==='acs'?'U.S. Census Bureau ACS':'OEHHA / CalEPA CalEnviroScreen 5.0';
+      readingHtml=`<div class="weq-v2-section-label">What we see</div><div class="weq-v2-reading"><span>${esc(m.label)}</span><strong>${valueHtml}</strong><small>${esc(m.vintage)} · ${sourceName}</small>${m.note?`<small class="weq-v2-method-note">${esc(m.note)}</small>`:''}</div>`;
+      comparisonHtml=Number.isFinite(county) ? `<div class="weq-v2-benchmark"><span>Santa Cruz County</span><strong>${fmt(county,m)}</strong></div>` : '';
+      evidenceHtml=evidenceStripHtml(geoid,key,cell);
+      const missingHtml = hasValue ? '' : `<p class="weq-v2-data-note"><strong>No-data tract.</strong> ${sourceName} does not publish a usable value for this tract for the selected condition. This is a source-data gap, not a 0 value.</p>`;
+      interpretHtml=`${missingHtml}<p class="weq-v2-interpret"><strong>Use as context, not performance.</strong> This neighborhood evidence can frame questions about access, outreach, service design, and partnerships.${Number.isFinite(cell.moe)?' Consider the margin of error before treating small differences as meaningful.':''}</p>`;
+      const decision=decisionHtml(geoid,key) || '<p class="weq-v2-data-note">No governed Decision Lens is defined for this condition.</p>';
+      const assets=assetsHtml(geoid,key) || '<p class="weq-v2-data-note">No specific access assets are required by this decision rule.</p>';
+      const briefModel=decisionBriefModel(geoid,key,ctx,row,cell);
+      briefText=briefModel.text;
+
+      const otherGrid=Object.entries(metrics).filter(([k])=>k!==key).map(([k,om])=>{
+        const oc=valueFor(geoid,k);
+        if(!Number.isFinite(oc.value)) return '';
+        return `<div class="weq-v2-other-item"><span>${esc(om.label)}</span><strong>${fmt(oc.value,om)}${Number.isFinite(oc.moe)?` ± ${fmt(oc.moe,om)}`:''}</strong></div>`;
+      }).join('');
+
+      detailsHtml=`
+        <div class="weq-v2-details-head">
+          <div><div class="weq-v2-panel-kicker">Details for this place</div><h3>Context and next steps</h3></div>
+          <p>Use these sections together. Community composition is descriptive context, the Decision Lens is a prompt for inquiry, and access assets are not measures of travel time, capacity, eligibility, or quality.</p>
+        </div>
+        <div class="weq-v2-place-context"><strong>About this place</strong><span>${esc(ctx.description||'This is a Santa Cruz County census tract used for neighborhood-scale public data.')}</span></div>
+        <div class="weq-v2-detail-grid">
+          <section class="weq-v2-detail-card">
+            <div class="weq-v2-detail-card-kicker">Community</div>
+            ${whoLivesHereHtml(row)}
+          </section>
+          <section class="weq-v2-detail-card">
+            <div class="weq-v2-detail-card-kicker">Decision support</div>
+            ${decision}
+          </section>
+          <section class="weq-v2-detail-card">
+            <div class="weq-v2-detail-card-kicker">Access</div>
+            ${assets}
+          </section>
+        </div>
+        <section class="weq-v2-other-block">
+          <div class="weq-v2-other-head"><strong>Other available conditions</strong><span>Same selected tract</span></div>
+          <div class="weq-v2-other-grid">${otherGrid||'<div class="weq-v2-data-note">No additional loaded measures are available for this tract.</div>'}</div>
+        </section>
+        ${briefModel.html}`;
+    }
+
+    panel.innerHTML=`
+      <div class="weq-v2-panel-kicker">Selected area · Quick read</div>
+      <h3>${esc(ctx.primary||`Tract ${tractLabel(geoid)}`)}</h3>
+      <p class="weq-v2-meta">${meta}</p>
+      <div class="weq-v2-panel-question"><span>${state.mode==='composition'?'Context question':'Decision question'}</span><strong>${esc(question)}</strong></div>
+      ${readingHtml}
+      ${comparisonHtml}
+      ${evidenceHtml}
+      ${interpretHtml}
+    `;
+
+    detailsPanel.innerHTML=detailsHtml;
+    detailsPanel.hidden=false;
+
+    if(briefText){
+      const copy=detailsPanel.querySelector('[data-copy-brief]');
+      if(copy) copy.addEventListener('click',async ()=>{
+        try{
+          await navigator.clipboard.writeText(briefText);
+          copy.textContent='Copied';
+          setTimeout(()=>{copy.textContent='Copy brief';},1800);
+        }catch(e){
+          copy.textContent='Copy unavailable';
+        }
+      });
+    }
+    placeInput.value = `${ctx.primary||'Census tract'} · Tract ${tractLabel(geoid)}`;
+  }
+
+  function rebuildSearch(){
+    const rows=paths.map(p=>{
+      const g=normalizeGeoid(p.dataset.geoid), ctx=state.context.get(g)||{};
+      return {g,label:`${ctx.primary||'Census tract'} · Tract ${tractLabel(g)}`};
+    }).sort((a,b)=>a.label.localeCompare(b.label));
+    root._placeLookup=new Map(rows.map(r=>[r.label,r.g]));
+    placeList.innerHTML=rows.map(r=>`<option value="${esc(r.label)}"></option>`).join('');
+  }
+
+  async function getJson(url){
+    const r=await fetch(url,{headers:{'Accept':'application/json'}});
+    if(!r.ok) throw new Error(`${r.status} ${r.statusText}`);
+    return r.json();
+  }
+
+
+  const excludedCurrentGeoids = new Set(['06087990100']);
+
+  function geometryRings(geometry){
+    if(!geometry) return [];
+    if(geometry.type==='Polygon') return geometry.coordinates||[];
+    if(geometry.type==='MultiPolygon') return (geometry.coordinates||[]).flat();
+    return [];
+  }
+
+  function renderCurrentGeometry(){
+    const features=[...state.geometry.entries()]
+      .filter(([g,f])=>g && !excludedCurrentGeoids.has(g) && geometryRings(f?.geometry).length)
+      .sort((a,b)=>a[0].localeCompare(b[0]));
+    if(features.length<60) return false;
+
+    const allPoints=[];
+    features.forEach(([,f])=>geometryRings(f.geometry).forEach(r=>r.forEach(pt=>{
+      if(Array.isArray(pt) && Number.isFinite(+pt[0]) && Number.isFinite(+pt[1])) allPoints.push([+pt[0],+pt[1]]);
+    })));
+    if(!allPoints.length) return false;
+
+    const lats=allPoints.map(p=>p[1]);
+    const midLat=(Math.min(...lats)+Math.max(...lats))/2;
+    const cosLat=Math.cos(midLat*Math.PI/180);
+    const xs=allPoints.map(p=>p[0]*cosLat), ys=lats;
+    const minX=Math.min(...xs), maxX=Math.max(...xs), minY=Math.min(...ys), maxY=Math.max(...ys);
+    const w=720,h=470,pad=18;
+    const sx=(w-2*pad)/(maxX-minX), sy=(h-2*pad)/(maxY-minY), scale=Math.min(sx,sy);
+    const drawW=(maxX-minX)*scale, drawH=(maxY-minY)*scale;
+    const ox=(w-drawW)/2, oy=(h-drawH)/2;
+    const project=pt=>[
+      ox+(+pt[0]*cosLat-minX)*scale,
+      h-(oy+(+pt[1]-minY)*scale)
+    ];
+    const ringPath=ring=>{
+      if(!ring?.length) return '';
+      return ring.map((pt,i)=>{
+        const [x,y]=project(pt);
+        return `${i?'L':'M'}${x.toFixed(1)} ${y.toFixed(1)}`;
+      }).join(' ')+' Z';
+    };
+
+    const layer=map.querySelector('#weq-tract-static-layer');
+    if(!layer) return false;
+    layer.innerHTML=features.map(([g,f],i)=>{
+      const d=geometryRings(f.geometry).map(ringPath).filter(Boolean).join(' ');
+      const label=tractLabel(g);
+      return `<a class="weq-tract-hit" href="#weq-tract-${g}" aria-label="Select census tract ${label}"><path class="weq-tract-static weq-tract-static-${i%3}" data-geoid="${g}" d="${d}" fill-rule="evenodd"><title>Census tract ${label}</title></path></a>`;
+    }).join('');
+    links=[...map.querySelectorAll('.weq-tract-hit')];
+    paths=[...map.querySelectorAll('path[data-geoid]')];
+    wireTractLinks();
+    rebuildSearch();
+    return paths.length===69;
+  }
+
+  async function loadCes(){
+    const fields=['tract','ApproxLoc','Population','Poverty','Education','Linguistic_Isol','Unemployment','HousBurd','Pollution_Pctl','Hispanic','white','black','Native_American','asian','Pacific_Islander','Other_Multiple'].join(',');
+    const url='https://services1.arcgis.com/PCHfdHz4GlDNAhBb/arcgis/rest/services/calenviroscreen50results_F_070126_gdb/FeatureServer/2/query?where='+encodeURIComponent("county='Santa Cruz'")+'&outFields='+encodeURIComponent(fields)+'&returnGeometry=true&outSR=4326&f=geojson';
+    const data=await getJson(url);
+    (data.features||[]).forEach(f=>{
+      const g=normalizeGeoid(f.properties?.tract);
+      if(!g) return;
+      const props=f.properties||{};
+      state.ces.set(g,props);
+      state.geometry.set(g,f);
+      const approx=String(props.ApproxLoc||'').trim();
+      const official=officialContextFor(g);
+      state.context.set(g, official || {
+        primary:approx||`Census Tract ${tractLabel(g)}`,
+        city:'',
+        cdp:'',
+        planning:'',
+        approx,
+        description:approx
+          ? `This tract is in or near ${approx}, using CalEnviroScreen's published approximate-location label. The label is descriptive and not a formal neighborhood boundary.`
+          : 'This is a Santa Cruz County census tract used for neighborhood-scale public data.'
+      });
+    });
+    state.loaded.ces=state.ces.size>0;
+    state.loaded.context=state.context.size>0;
+    state.loaded.geometry2020=state.loaded.ces ? renderCurrentGeometry() : false;
+  }
+
+  async function loadAcs(){
+    const el=document.getElementById(staticAcsElementId);
+    if(!el) throw new Error('Public inline ACS tract dataset is not packaged with this page');
+    const encoded=(el.textContent||'').replace(/\s+/g,'');
+    if(!encoded) throw new Error('Public inline ACS tract dataset is empty');
+    if(typeof DecompressionStream==='undefined') throw new Error('This browser cannot decode the packaged ACS dataset');
+    let data;
+    try{
+      const bytes=Uint8Array.from(atob(encoded),ch=>ch.charCodeAt(0));
+      const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+      const text=await new Response(stream).text();
+      data=JSON.parse(text);
+    }catch(e){
+      throw new Error('Public inline ACS tract dataset could not be decoded');
+    }
+    if(!data || data.status!=='reader_ready_public_aggregate' || data.geography?.vintage!=='2020 Census' || !Array.isArray(data.tracts) || data.tracts.length!==69){
+      throw new Error('Public inline ACS tract dataset has not cleared the current-geography reader-ready gate');
+    }
+    (data.tracts||[]).forEach(t=>{
+      const g=normalizeGeoid(t.geoid);
+      if(g) state.acs.set(g,t);
+    });
+    state.countyAcs=data.county||{};
+    state.loaded.acs=state.acs.size===69;
+  }
+
+  async function loadContext(){
+    const base='https://sccgis.santacruzcountyca.gov/server/rest/services/gisweb/MapServer/';
+    const q=id=>base+id+'/query?where=1%3D1&outFields=*&returnGeometry=true&outSR=4326&f=geojson';
+    const [planningR,cdpsR,citiesR]=await Promise.allSettled([
+      getJson(q(232)),
+      getJson(q(263)),
+      getJson(q(265))
+    ]);
+    const layers={
+      planning:planningR.status==='fulfilled' ? (planningR.value.features||[]) : [],
+      cdps:cdpsR.status==='fulfilled' ? (cdpsR.value.features||[]) : [],
+      cities:citiesR.status==='fulfilled' ? (citiesR.value.features||[]) : []
+    };
+    state.geometry.forEach((feature,g)=>{
+      const enriched=buildContext(g,feature,layers);
+      const fallback=state.context.get(g);
+      if(enriched && (enriched.city||enriched.cdp||enriched.planning||enriched.approx)){
+        state.context.set(g,enriched);
+      }else if(fallback){
+        state.context.set(g,fallback);
+      }
+    });
+    state.loaded.context=state.context.size>0;
+  }
+
+  function updateAvailability(){
+    [...metricSelect.options].forEach(o=>{
+      const m=metrics[o.value];
+      if(!m) return;
+      if(!o.dataset.baseLabel) o.dataset.baseLabel=o.textContent;
+      const result=coverageFor(o.value);
+      const noUsableData=result.gate==='no_data';
+      const gatePartial=result.gate==='partial';
+      const gateLimited=result.gate==='limited';
+      o.disabled=noUsableData;
+      o.textContent=noUsableData
+        ? o.dataset.baseLabel+' · data unavailable'
+        : (gateLimited
+          ? o.dataset.baseLabel+' · limited coverage'
+          : (gatePartial ? o.dataset.baseLabel+' · partial coverage' : o.dataset.baseLabel));
+      o.dataset.coverageGate=result.gate;
+      o.dataset.coverage=String(result.available);
+    });
+    if(metricSelect.selectedOptions[0]?.disabled){
+      const next=[...metricSelect.options].find(o=>o.value && !o.disabled);
+      if(next){ metricSelect.value=next.value; state.metric=next.value; }
+    }
+  }
+
+  function updateCompositionAvailability(){
+    [...compositionSelect.options].forEach(o=>{
+      const m=compositionMetrics[o.value];
+      if(!m) return;
+      const available=paths.map(p=>compositionValueFor(normalizeGeoid(p.dataset.geoid),o.value)).filter(Number.isFinite).length;
+      o.disabled=available===0;
+      o.dataset.coverage=String(available);
+    });
+    if(compositionSelect.selectedOptions[0]?.disabled){
+      const next=[...compositionSelect.options].find(o=>!o.disabled);
+      if(next){compositionSelect.value=next.value;state.composition=next.value;}
+    }
+  }
+
+  function updateQuestionAvailability(){
+    [...questionSelect.options].forEach(option=>{
+      if(!option.value) return;
+      const mode=option.dataset.questionMode;
+      let ready=true;
+      if(mode==='conditions'){
+        const metricOption=[...metricSelect.options].find(o=>o.value===option.dataset.questionMetric);
+        ready=!!metricOption && !metricOption.disabled;
+      }else if(mode==='composition'){
+        const compositionOption=[...compositionSelect.options].find(o=>o.value===(option.dataset.questionComposition||'hispanic'));
+        ready=!!compositionOption && !compositionOption.disabled;
+      }
+      option.disabled=!ready;
+      const base=option.dataset.questionText||option.textContent.replace(/ · Data staged$/,'');
+      option.textContent=ready?base:base+' · Data staged';
+    });
+    if(questionSelect.selectedOptions[0]?.disabled) questionSelect.value='';
+  }
+
+  function wireTractLinks(){
+    links.forEach(a=>{
+      if(a.dataset.wired==='1') return;
+      a.dataset.wired='1';
+      a.addEventListener('click',e=>{
+        const g=normalizeGeoid(a.querySelector('path[data-geoid]')?.dataset.geoid);
+        if(!g) return;
+        e.preventDefault();
+        renderPanel(g);
+      });
+    });
+  }
+  wireTractLinks();
+  const setMetric=value=>{
+    if(!metrics[value]) return;
+    const option=[...metricSelect.options].find(o=>o.value===value);
+    if(option?.disabled) return;
+    state.metric=value;
+    state.questionId='';
+    if(questionSelect) questionSelect.value='';
+    state.questionText=metricQuestions[value]||'What should we examine next?';
+    repaint();
+  };
+  const setMode=value=>{
+    if(!['conditions','composition'].includes(value)) return;
+    state.mode=value;
+    if(questionSelect) questionSelect.value='';
+    conditionField.hidden=value!=='conditions';
+    compositionField.hidden=value!=='composition';
+    state.questionText=value==='composition' ? compositionQuestion : (metricQuestions[state.metric]||'What should we examine next?');
+    repaint();
+    if(state.selected) renderPanel(state.selected);
+    status.textContent=value==='composition'
+      ? 'Community composition mode. Race and ethnicity describe who lives in each tract and are not used as need, performance, or priority measures.'
+      : 'Conditions & access mode. Choose a workforce question or condition, then select a tract for evidence and next steps.';
+  };
+  questionSelect.addEventListener('change',()=>{
+    const option=questionSelect.selectedOptions[0];
+    if(!option || !option.value) return;
+    const mode=option.dataset.questionMode||'conditions';
+    state.questionId=option.value;
+    state.questionText=option.dataset.questionText || (mode==='composition'?compositionQuestion:'What should we examine next?');
+    modeSelect.value=mode;
+    state.mode=mode;
+    conditionField.hidden=mode!=='conditions';
+    compositionField.hidden=mode!=='composition';
+    if(mode==='conditions'){
+      const metric=option.dataset.questionMetric;
+      if(metric){
+        state.metric=metric;
+        metricSelect.value=metric;
+      }
+    }else{
+      const comp=option.dataset.questionComposition||'hispanic';
+      state.composition=comp;
+      compositionSelect.value=comp;
+    }
+    repaint();
+    if(state.selected) renderPanel(state.selected);
+    status.textContent=`Question selected: ${state.questionText} Choose a tract or community to investigate.`;
+  });
+  metricSelect.onchange=()=>setMetric(metricSelect.value);
+  compositionSelect.onchange=()=>{state.composition=compositionSelect.value;state.questionId='';if(questionSelect)questionSelect.value='';state.questionText=compositionQuestion;repaint();if(state.selected)renderPanel(state.selected);};
+  modeSelect.onchange=()=>setMode(modeSelect.value);
+  window.weqNeighborhoodSetMetric=setMetric;
+  placeInput.addEventListener('change',()=>{
+    const g=root._placeLookup?.get(placeInput.value);
+    if(g) renderPanel(g);
+  });
+  placeInput.addEventListener('keydown',e=>{
+    if(e.key==='Enter'){
+      const g=root._placeLookup?.get(placeInput.value);
+      if(g){e.preventDefault();renderPanel(g);}
+    }
+  });
+
+  paths.forEach(p=>{
+    const g=normalizeGeoid(p.dataset.geoid);
+    const local=officialContextFor(g);
+    if(g && local) state.context.set(g,local);
+  });
+  state.loaded.context=state.context.size>0;
+  rebuildSearch();
+  if(location.hash.startsWith('#weq-tract-')){
+    history.replaceState(null,'',location.pathname+location.search+'#neighborhood-equity');
+  }
+
+  status.textContent='Loading neighborhood conditions and community composition…';
+  Promise.allSettled([loadCes(),loadAcs()]).then(async ()=>{
+    if(state.loaded.ces){
+      try{await loadContext();}catch(e){console.warn('Neighborhood context layer unavailable',e);}
+    }
+    if(state.loaded.acs && !state.loaded.geometry2020){
+      state.loaded.acs=false;
+      state.acs.clear();
+      state.countyAcs={};
+      console.warn('ACS conditions withheld because current 2020 tract geometry is unavailable.');
+    }
+    updateAvailability();
+    updateCompositionAvailability();
+    updateQuestionAvailability();
+    rebuildSearch();
+    repaint();
+    if(state.loaded.ces && !state.loaded.acs){
+      status.textContent='Map ready. Start with a workforce question above or explore the data directly. Questions that depend on the nine staged American Community Survey conditions remain visible and will activate when the governed static file clears publication QA.';
+    }else if(!state.loaded.ces && state.loaded.acs){
+      status.textContent='Map ready with American Community Survey conditions only. CalEnviroScreen data could not be loaded.';
+    }else if(!state.loaded.ces && !state.loaded.acs){
+      status.textContent='The embedded tract map is available, but condition data could not be loaded.';
+    }else{
+      status.textContent='Map ready. Start with a workforce question, choose a place, and use the selected-area panel to move from evidence to next steps. Community composition remains descriptive context only.';
+    }
+  }).catch(e=>{
+    console.error(e);
+    status.textContent='The embedded tract map is available, but live condition data could not be loaded. Source links remain available below.';
+  });
+})();</script>
+
