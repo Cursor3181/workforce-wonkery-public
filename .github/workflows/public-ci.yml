@@ -143,3 +143,30 @@ jobs:
           path: qa/artifacts/browser-acceptance
           if-no-files-found: warn
           retention-days: 7
+
+  public-source-visual:
+    # Test local snapshots of approved public source. Do not pull in private
+    # WordPress snapshot content or execute production mutations.
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install public visual-test browser
+        run: |
+          python -m pip install --disable-pip-version-check playwright==1.63.0
+          python -m playwright install --with-deps chromium
+      - name: Check public WordPress source at desktop tablet and mobile
+        run: python tests/public_source_visual_preview.py
+      - name: Upload public-only visual preview evidence
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-source-visual-evidence
+          path: qa/artifacts/public-preview
+          if-no-files-found: warn
+          retention-days: 7
