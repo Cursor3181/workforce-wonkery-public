@@ -29,7 +29,14 @@ def main() -> int:
                     continue
                 ext = "mjs" if script_type == "module" else "js"
                 temporary = Path(scratch) / f"inline-{validated}.{ext}"
-                temporary.write_text(script, encoding="utf-8")
+                # These source blueprints are not executable until the private
+                # governed builder replaces the two explicit JSON-array tokens.
+                # Normalize only those documented tokens for syntax checking.
+                parse_only = script
+                if html.name.startswith("wae-map-engine-v2-"):
+                    parse_only = parse_only.replace("{{EXCLUDED_PLACE_NAMES_JSON}}", "[]")
+                    parse_only = parse_only.replace("{{PLACE_NAMES_JSON}}", "[]")
+                temporary.write_text(parse_only, encoding="utf-8")
                 check = subprocess.run(
                     ["node", "--check", str(temporary)], capture_output=True,
                     text=True, timeout=10, check=False,
