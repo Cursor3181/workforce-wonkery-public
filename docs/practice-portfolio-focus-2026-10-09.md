@@ -33,3 +33,8 @@ These destinations remain intact for preservation and link continuity until the 
 - Do not remove the live learning pages in this public change.
 - Public CI and review -> merge to public main -> explicitly approved private import -> private validation and publisher approval -> WordPress snapshot/write/readback -> browser and mobile acceptance.
 - Ensure the global footer is updated on WordPress alongside the Practice page, because source merge alone does not change rendered WordPress.
+
+## ETPL role desk follow-up
+- Convert the Academy source, at the existing /academy/ URL, into a first-30-days task and manager handoff guide. Remove course progression and browser-local completion tracking.
+- Update all role desk navigation labels to First 30 Days. Leave Case Lab and the source-linked decision tools in place.
+- Changes remain source-only until the private Publisher has approved and verified WordPress writes.
