@@ -21,7 +21,7 @@ CASES = (
     ("policy", "templates/policy-editorial.html", "ww-policy-page", "page-id-6"),
     ("data", "templates/data-editorial.html", "wd-landing", "page-id-2896"),
     ("practice", "templates/practice-editorial-v2.html", "ww-practice-v2", "page-id-935"),
-    ("report", "templates/intelligence-report.html", "ww-intelligence-report", "page-id-0"),
+    ("report", "templates/intelligence-report.html", "wwir-golden-preview", "page-id-0"),
     ("etpl", "templates/etpl-coordinator-desk.html", "ww-etpl", "page-template-default"),
 )
 WIDTHS = (1440, 768, 390)
@@ -37,12 +37,17 @@ def build_document(source_path: str, body_class: str) -> str:
     # fetching authenticated WordPress records.
     navigation = (
         '<nav class="ww-global-nav" aria-label="Preview navigation">'
-        '<ul class="wp-block-navigation__container" style="display:flex;gap:18px;list-style:none">'
-        '<li><a href="#policy">Policy</a></li>'
-        '<li><a href="#data">Data</a></li>'
-        '<li><a href="#practice">Practice</a></li>'
-        '<li><a href="#reports">Reports</a></li>'
-        '</ul></nav>'
+        '<button type="button" class="wp-block-navigation__responsive-container-open" '
+        'aria-label="Open menu" aria-expanded="false">Menu</button>'
+        '<div class="wp-block-navigation__responsive-container">'
+        '<div class="wp-block-navigation__responsive-container-content">'
+        '<ul class="wp-block-navigation__container" '
+        'style="display:flex;gap:18px;list-style:none;margin:0;padding:0">'
+        '<li class="wp-block-navigation-item"><a href="#policy">Policy</a></li>'
+        '<li class="wp-block-navigation-item"><a href="#data">Data</a></li>'
+        '<li class="wp-block-navigation-item"><a href="#practice">Practice</a></li>'
+        '<li class="wp-block-navigation-item"><a href="#reports">Reports</a></li>'
+        '</ul></div></div></nav>'
     )
     header, n = re.subn(r"<!--\s*wp:navigation\s+.*?/-->", navigation, header, count=1, flags=re.S)
     if n != 1:
@@ -58,7 +63,11 @@ def build_document(source_path: str, body_class: str) -> str:
         '*,*::before,*::after{box-sizing:border-box}'
         '.wp-site-blocks{width:100%}'
         '.wp-block-post-content{width:100%;max-width:none;margin:0;padding:0}'
-        '.ww-global-header,.ww-global-footer{width:100%}</style>'
+        '.ww-global-header,.ww-global-footer{width:100%}'
+        'nav.ww-global-nav>.wp-block-navigation__responsive-container-open{display:none}'
+        '@media(max-width:960px){'
+        'nav.ww-global-nav>.wp-block-navigation__responsive-container-open{display:flex}'
+        '}</style>'
         '<style>' + css + '</style></head>'
         '<body class="' + body_class + '"><div class="wp-site-blocks">'
         + header +

@@ -1058,7 +1058,7 @@
       "target": "tests/browser_acceptance.py"
     },
     {
-      "sha256": "5b41533b51e8ce338af08e1f15847fda9771e45d85dc80d0525f628b11db6ac2",
+      "sha256": "27ea532c510d9eaecaa8c4f80f2d282170f4f730664cb12be4712004f91f3bb2",
       "source": "public-companion/tests/public_source_visual_preview.py",
       "target": "tests/public_source_visual_preview.py"
     },
@@ -1088,7 +1088,7 @@
       "target": ".github/workflows/accessibility-audit.yml"
     }
   ],
-  "source_commit": "abdb417bafe0af2da87a87ed0f1a35180a10db2c",
+  "source_commit": "b72925466e8c7dde7085f31dee80aed3afa7c4fe",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }
