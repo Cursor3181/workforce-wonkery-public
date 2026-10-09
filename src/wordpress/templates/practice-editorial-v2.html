@@ -1043,6 +1043,26 @@ body.page-id-935 .wp-block-post-content>*{max-width:none!important;margin-block-
     margin-top: 0 !important;
   }
 }
+
+/* Focused Practice edition: topic comparisons, task aids, and specialist desks. */
+#ww-practice-v2 .wwp-curated{border-top:1px solid var(--line);padding:39px 0 43px}
+#ww-practice-v2 .wwp-curated-alt{background:#f5f1e9}
+#ww-practice-v2 .wwp-curated h2{font:700 clamp(30px,3vw,43px)/1.1 var(--serif);letter-spacing:-.03em;margin:0 0 9px}
+#ww-practice-v2 .wwp-curated-deck{font:18px/1.5 var(--serif);color:var(--muted);max-width:890px;margin:0 0 24px}
+#ww-practice-v2 .wwp-curated-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+#ww-practice-v2 .wwp-curated-grid-aids{grid-template-columns:repeat(3,minmax(0,1fr))}
+#ww-practice-v2 .wwp-curated-card{display:flex;flex-direction:column;min-width:0;padding:21px 20px;border:1px solid #dcd7cc;border-radius:5px;background:#fff}
+#ww-practice-v2 .wwp-curated-type{font:700 11px/1.35 var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--practice)}
+#ww-practice-v2 .wwp-curated-card h3{font:700 24px/1.12 var(--serif);letter-spacing:-.022em;margin:9px 0 8px}
+#ww-practice-v2 .wwp-curated-card h3 a:hover{color:var(--link)}
+#ww-practice-v2 .wwp-curated-card p{font:15px/1.55 var(--sans);color:#4b5252;margin:0 0 18px}
+#ww-practice-v2 .wwp-curated-link{font:700 15px/1.4 var(--sans);color:var(--link)!important;margin-top:auto}
+#ww-practice-v2 .wwp-curated-more{font:16px/1.5 var(--serif);margin:19px 0 0}
+#ww-practice-v2 .wwp-curated-more a,#ww-practice-v2 .wwp-curated-trust a{color:var(--link);text-decoration:underline;text-underline-offset:3px}
+#ww-practice-v2 .wwp-curated-trust{border-top:1px solid var(--line);padding-top:14px;margin:21px 0 0;color:#50595a;font:13px/1.55 var(--sans)}
+#ww-practice-v2 :is(.wwp-curated,.wwp-paths){scroll-margin-top:80px}
+@media(max-width:1100px){#ww-practice-v2 .wwp-curated-grid,#ww-practice-v2 .wwp-curated-grid-aids{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){#ww-practice-v2 .wwp-curated{padding:28px 0 34px}#ww-practice-v2 .wwp-curated-grid,#ww-practice-v2 .wwp-curated-grid-aids{grid-template-columns:1fr;gap:10px}#ww-practice-v2 .wwp-curated-card{padding:18px}#ww-practice-v2 .wwp-curated-card h3{font-size:23px}#ww-practice-v2 .wwp-curated-deck{font-size:17px;margin-bottom:17px}}
 </style>
 <div id="ww-practice-v2">
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -1055,38 +1075,40 @@ body.page-id-935 .wp-block-post-content>*{max-width:none!important;margin-block-
 </defs></svg>
 
 <section class="wwp-hero" aria-labelledby="wwp-practice-title"><div class="wwp-wrap wwp-hero-inner">
-<p class="wwp-eyebrow">From practice to progress</p>
-<h1 id="wwp-practice-title">Practice <span>Decoded.</span></h1>
-<p class="wwp-hero-deck">Start with what you need to do: solve a problem, learn from the field, or build capability.</p>
-<a class="wwp-hero-button" href="#wwp-practice-paths">Choose your next step <svg class="wwp-icon" aria-hidden="true"><use href="#wwp-arrow"/></svg></a>
+<p class="wwp-eyebrow">From practice to progress</p><h1 id="wwp-practice-title">Practice <span>Decoded.</span></h1>
+<p class="wwp-hero-deck">See how workforce boards tackle real problems. Compare what works, understand the tradeoffs, and find a tool you can use.</p>
+<a class="wwp-hero-button" href="#wwp-practice-paths">Explore practice <svg class="wwp-icon" aria-hidden="true"><use href="#wwp-arrow"/></svg></a>
 </div></section>
-
-<section class="wwp-paths" id="wwp-practice-paths" aria-label="Choose your Practice path"><div class="wwp-wrap wwp-path-grid">
-<article class="wwp-path"><a class="wwp-mobile-path-hit" href="/practice/quickstarts/" aria-label="Solve something now"></a><div class="wwp-path-copy"><div class="wwp-path-top"><span class="wwp-icon-disc"><svg class="wwp-icon" aria-hidden="true"><use href="#wwp-doc"/></svg></span><div><h2>Solve something now</h2><p class="wwp-path-intro">Quickstarts, practical guides, and useful tools for immediate problems.</p></div></div>
-<nav class="wwp-path-links" aria-label="Solve something now"><a href="/practice/quickstarts/">Browse quickstarts</a><a href="/practice/tools/">Use a tool</a><a href="/practice/foundations/job-aids/">Find a guide</a></nav></div>
-<div class="wwp-path-image wwp-ref-card1" role="img" aria-label="Notebook and coffee overlooking a California city"></div></article>
-
-<article class="wwp-path"><a class="wwp-mobile-path-hit" href="/workforce-board-examples/" aria-label="Learn from the field"></a><div class="wwp-path-copy"><div class="wwp-path-top"><span class="wwp-icon-disc"><svg class="wwp-icon" aria-hidden="true"><use href="#wwp-people"/></svg></span><div><h2>Learn from what others are doing</h2><p class="wwp-path-intro">California examples, national ideas, and implementation lessons translated into practical choices.</p></div></div>
-<nav class="wwp-path-links" aria-label="Learn from field examples"><a href="/workforce-board-examples/">California examples</a><a href="/national-practice-ideas/">National ideas for California</a><a href="/implementation-lessons/">Implementation lessons</a></nav></div>
-<div class="wwp-path-image wwp-ref-card2" role="img" aria-label="California city skyline framed by palm trees"></div></article>
-
-<article class="wwp-path"><a class="wwp-mobile-path-hit" href="/practice/foundations/" aria-label="Build capability"></a><div class="wwp-path-copy"><div class="wwp-path-top"><span class="wwp-icon-disc"><svg class="wwp-icon" aria-hidden="true"><use href="#wwp-bars"/></svg></span><div><h2>Build capability</h2><p class="wwp-path-intro">Learning pathways for individuals and teams building stronger workforce practice.</p></div></div>
-<div class="wwp-capability-list">
-<a href="/practice/foundations/"><span class="wwp-mini"><svg class="wwp-icon" aria-hidden="true"><use href="#wwp-book"/></svg></span><span>Foundations Course</span><span class="wwp-chev">›</span></a>
-<a href="/practice/workforce-in-practice/"><span class="wwp-mini"><svg class="wwp-icon" aria-hidden="true"><use href="#wwp-bars"/></svg></span><span>Workforce in Practice</span><span class="wwp-chev">›</span></a>
-<a href="/practice/etpl-coordinator/"><span class="wwp-mini"><svg class="wwp-icon" aria-hidden="true"><use href="#wwp-doc"/></svg></span><span>ETPL Coordinator Desk</span><span class="wwp-chev">›</span></a>
-<a href="/ai-readiness-lab/"><span class="wwp-mini"><svg class="wwp-icon" aria-hidden="true"><use href="#wwp-gear"/></svg></span><span>AI Readiness Lab</span><span class="wwp-chev">›</span></a>
-</div></div>
-<div class="wwp-path-image wwp-ref-card3" role="img" aria-label="A facilitator leading a workforce learning session"></div></article>
+<section class="wwp-paths" id="wwp-practice-paths" aria-label="Explore Practice resources"><div class="wwp-wrap wwp-path-grid">
+<article class="wwp-path"><a class="wwp-mobile-path-hit" href="#wwp-deep-dives" aria-label="Explore Practice Deep Dives"></a><div class="wwp-path-copy"><div class="wwp-path-top"><span class="wwp-icon-disc"><svg class="wwp-icon" aria-hidden="true"><use href="#wwp-people"/></svg></span><div><h2>Practice Deep Dives</h2><p class="wwp-path-intro">Compare how workforce boards approach hard problems, what evidence says, and what California can adapt.</p></div></div><nav class="wwp-path-links" aria-label="Practice Deep Dives links"><a href="#wwp-deep-dives">Explore by issue</a><a href="/national-practice-ideas/">National case library</a></nav></div><div class="wwp-path-image wwp-ref-card1" role="img" aria-label="Editorial photograph of California workforce work"></div></article>
+<article class="wwp-path"><a class="wwp-mobile-path-hit" href="#wwp-desk-aids" aria-label="Explore Desk Aids and Toolkits"></a><div class="wwp-path-copy"><div class="wwp-path-top"><span class="wwp-icon-disc"><svg class="wwp-icon" aria-hidden="true"><use href="#wwp-doc"/></svg></span><div><h2>Desk Aids &amp; Toolkits</h2><p class="wwp-path-intro">Find checklists, decision references, and task guides for the work in front of you.</p></div></div><nav class="wwp-path-links" aria-label="Desk Aids and Toolkits links"><a href="#wwp-desk-aids">Find a desk aid</a><a href="/practice/quickstarts/">Task-based Quickstarts</a></nav></div><div class="wwp-path-image wwp-ref-card2" role="img" aria-label="Editorial photograph of California workforce work"></div></article>
+<article class="wwp-path"><a class="wwp-mobile-path-hit" href="/practice/etpl-coordinator/" aria-label="Explore Specialized Role Desks"></a><div class="wwp-path-copy"><div class="wwp-path-top"><span class="wwp-icon-disc"><svg class="wwp-icon" aria-hidden="true"><use href="#wwp-bars"/></svg></span><div><h2>Specialized Role Desks</h2><p class="wwp-path-intro">Focused help for complex California roles. Start with the ETPL Coordinator Desk.</p></div></div><nav class="wwp-path-links" aria-label="Specialized Role Desks links"><a href="/practice/etpl-coordinator/">ETPL Coordinator Desk</a><a href="/practice/etpl-coordinator/decision-center/">60-Second ETPL Decision Center</a></nav></div><div class="wwp-path-image wwp-ref-card3" role="img" aria-label="Editorial photograph of California workforce work"></div></article>
 </div></section>
-
-<section class="wwp-featured" aria-labelledby="wwp-featured-title"><div class="wwp-wrap">
-<div class="wwp-featured-head"><div><p class="wwp-eyebrow">Keep exploring</p><h2 id="wwp-featured-title">Featured practice resources</h2><p class="wwp-featured-deck">Curated examples, guides, and decision aids to help you move from practice to progress.</p></div><a class="wwp-more" href="/practice/tools/">See more resources →</a></div>
-<div class="wwp-features">
-<article class="wwp-feature"><div class="wwp-feature-image wwp-ref-feat1" role="img" aria-label="California coastal landscape"></div><div><p class="wwp-feature-label">Practical guide</p><h3>Launch or Reset a Sector Partnership</h3><p>Define the shared problem, build employer leadership, and give the partnership a useful purpose.</p><a href="/practice/quickstarts/quickstart-launch-reset-sector-partnership/">Read the guide →</a></div></article>
-<article class="wwp-feature"><div class="wwp-feature-image wwp-ref-feat2" role="img" aria-label="Workers in a career pathway setting"></div><div><p class="wwp-feature-label">Case example</p><h3>Make training fit the workday.</h3><p>NOVAworks adjusted a hotel-worker language-training pilot after attendance suffered.</p><a href="/workforce-board-examples/?story=bp-nova-paid-training-time">Read the example →</a></div></article>
-<article class="wwp-feature"><div class="wwp-feature-image wwp-ref-feat3" role="img" aria-label="Workforce planning materials on a desk"></div><div><p class="wwp-feature-label">Decision aid</p><h3>What can we decide locally?</h3><p>Separate governing requirements from local discretion and questions that need escalation.</p><a href="/practice/foundations/local-decision-authority/">Use the decision aid →</a></div></article>
-</div></div></section>
+<section class="wwp-curated" id="wwp-deep-dives" aria-labelledby="wwp-deep-title"><div class="wwp-wrap">
+<p class="wwp-eyebrow">Practice Deep Dives</p><h2 id="wwp-deep-title">Start with the issue, not the jurisdiction.</h2>
+<p class="wwp-curated-deck">Compare documented workforce approaches, evidence, and implementation tradeoffs. Current briefs are an editorial starting point, not a ranking of workforce boards.</p>
+<div class="wwp-curated-grid wwp-curated-grid-deep"><article class="wwp-curated-card"><span class="wwp-curated-type">Practice research</span><h3><a href="/practice-insight-employer-engagement/">Employer engagement</a></h3><p>What builds lasting employer relationships beyond outreach counts?</p><a class="wwp-curated-link" href="/practice-insight-employer-engagement/">Explore the evidence <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">Practice research</span><h3><a href="/practice-insight-sector-partnerships/">Sector partnerships</a></h3><p>How do boards turn sector meetings into real employer action?</p><a class="wwp-curated-link" href="/practice-insight-sector-partnerships/">Explore the evidence <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">Practice research</span><h3><a href="/practice-insight-job-quality/">Job quality</a></h3><p>How can job quality influence actual investments?</p><a class="wwp-curated-link" href="/practice-insight-job-quality/">Explore the evidence <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">Practice research</span><h3><a href="/practice-insight-apprenticeship-intermediaries/">Apprenticeship intermediaries</a></h3><p>Who owns the work between employer interest and a functioning program?</p><a class="wwp-curated-link" href="/practice-insight-apprenticeship-intermediaries/">Explore the evidence <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">Practice research</span><h3><a href="/practice-insight-rural-delivery/">Rural service delivery</a></h3><p>What makes access work across long distances and smaller communities?</p><a class="wwp-curated-link" href="/practice-insight-rural-delivery/">Explore the evidence <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">Practice research</span><h3><a href="/practice-insight-economic-security/">Economic security</a></h3><p>What changes when success means more than placement?</p><a class="wwp-curated-link" href="/practice-insight-economic-security/">Explore the evidence <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">Practice research</span><h3><a href="/practice-insight-supportive-services-infrastructure/">Supportive services</a></h3><p>How can systems plan for participant stability?</p><a class="wwp-curated-link" href="/practice-insight-supportive-services-infrastructure/">Explore the evidence <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">Practice research</span><h3><a href="/practice-insight-hiring-practice-consultant/">Hiring practices</a></h3><p>How can WDBs help employers change hiring itself?</p><a class="wwp-curated-link" href="/practice-insight-hiring-practice-consultant/">Explore the evidence <span aria-hidden="true">→</span></a></article></div>
+<p class="wwp-curated-more">Want individual cases? <a href="/workforce-board-examples/">Explore California examples</a> and <a href="/national-practice-ideas/">browse national practices translated for California</a>.</p>
+</div></section>
+<section class="wwp-curated wwp-curated-alt" id="wwp-desk-aids" aria-labelledby="wwp-aids-title"><div class="wwp-wrap">
+<p class="wwp-eyebrow">Desk Aids &amp; Toolkits</p><h2 id="wwp-aids-title">Find the tool for the decision in front of you.</h2>
+<p class="wwp-curated-deck">Start with a specific decision, workflow, or quality check. These are working references and, where offered, copyable checklists. More editable templates will be added only after practitioner testing.</p>
+<div class="wwp-curated-grid wwp-curated-grid-aids"><article class="wwp-curated-card"><span class="wwp-curated-type">Decision boundaries</span><h3><a href="/practice/foundations/local-decision-authority/">Local authority decision aid</a></h3><p>Separate controlling requirements from local discretion.</p><a class="wwp-curated-link" href="/practice/foundations/local-decision-authority/">Open the tool <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">File quality</span><h3><a href="/practice/foundations/strong-wioa-file/">Strong WIOA file checklist</a></h3><p>Test whether documentation tells a clear, defensible story.</p><a class="wwp-curated-link" href="/practice/foundations/strong-wioa-file/">Open the tool <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">Risk prevention</span><h3><a href="/practice/foundations/common-mistakes-monitoring-risks/">Monitoring risk reference</a></h3><p>Spot recurring weaknesses and improve the controls behind them.</p><a class="wwp-curated-link" href="/practice/foundations/common-mistakes-monitoring-risks/">Open the tool <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">California ETPL</span><h3><a href="/practice/etpl-coordinator/toolkit/">ETPL coordinator toolkit</a></h3><p>Copy checklists and communication starters for ETPL workflows.</p><a class="wwp-curated-link" href="/practice/etpl-coordinator/toolkit/">Open the tool <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">Sector strategy</span><h3><a href="/practice/quickstarts/quickstart-launch-reset-sector-partnership/">Sector partnership Quickstart</a></h3><p>Move from a shared employer problem to a first accountable action.</p><a class="wwp-curated-link" href="/practice/quickstarts/quickstart-launch-reset-sector-partnership/">Open the tool <span aria-hidden="true">→</span></a></article>
+<article class="wwp-curated-card"><span class="wwp-curated-type">Operating calendar</span><h3><a href="/practice/foundations/annual-operating-calendar/">The WDB year</a></h3><p>Anticipate work cycles and verify dates against current sources.</p><a class="wwp-curated-link" href="/practice/foundations/annual-operating-calendar/">Open the tool <span aria-hidden="true">→</span></a></article></div>
+<p class="wwp-curated-more"><a href="/practice/quickstarts/">Browse task-based Quickstarts</a> or <a href="/practice/etpl-coordinator/">open the ETPL Coordinator Desk</a> for specialized California support.</p>
+<p class="wwp-curated-trust"><strong>Use with judgment.</strong> Workforce Wonkery is an independent, AI-assisted informational resource, not official guidance or a compliance approval. Verify current federal and California sources and applicable local policy before consequential decisions. <a href="/trust/">Our trust standards</a>.</p>
+</div></section>
 
 </div>
 <!-- /wp:html -->
