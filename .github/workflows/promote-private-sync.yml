@@ -11,26 +11,35 @@ permissions:
 
 concurrency:
   group: promote-private-sync
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   promote:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    if: ${{ github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'sync/private-main' && github.event.workflow_run.head_repository.full_name == github.repository }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    env:
+      TESTED_SHA: ${{ github.event.workflow_run.head_sha }}
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: sync/private-main
+          ref: ${{ github.event.workflow_run.head_sha }}
           fetch-depth: 0
-      - name: Promote only when main has not diverged
+      - name: Promote exactly the tested candidate
         shell: bash
         run: |
           set -euo pipefail
-          git fetch origin main
-          if ! git merge-base --is-ancestor origin/main HEAD; then
-            echo "Public main has diverged from the generated sync branch."
-            echo "Do not overwrite it automatically. Reconcile the public change back into the private source repository first."
+          git fetch origin main sync/private-main
+          if [ "$(git rev-parse HEAD)" != "$TESTED_SHA" ]; then
+            echo "Refusing candidate that is not the tested workflow SHA."
             exit 1
           fi
-          git push origin HEAD:main
+          if [ "$(git rev-parse origin/sync/private-main)" != "$TESTED_SHA" ]; then
+            echo "A newer sync candidate exists. Skipping this stale workflow result."
+            exit 0
+          fi
+          if ! git merge-base --is-ancestor origin/main "$TESTED_SHA"; then
+            echo "Public main has diverged. Do not overwrite main or bypass tests."
+            exit 1
+          fi
+          git push origin "$TESTED_SHA:refs/heads/main"
