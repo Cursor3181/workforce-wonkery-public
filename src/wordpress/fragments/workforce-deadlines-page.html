@@ -207,6 +207,7 @@ function addMinutes(date,time,minutes){
  const parts=String(time||'00:00').split(':').map(Number),d=localDate(date);d.setHours(parts[0]||0,parts[1]||0,0,0);d.setMinutes(d.getMinutes()+minutes);
  return {date:ymd(d),time:String(d.getHours()).padStart(2,'0')+String(d.getMinutes()).padStart(2,'0')+'00'};
 }
+function safeDeadlineUrl(value){try{const u=new URL(String(value||''),location.origin);return u.protocol==='https:'||u.protocol==='http:'?u.href:'#'}catch(e){return '#'}}
 function googleUrl(x){
  let dates;
  const p={action:'TEMPLATE',text:x.identifier+' — '+x.label,details:'Workforce Wonkery planning date. Official source controls: '+x.source};
@@ -256,8 +257,8 @@ function eventNode(x){
  (x.roles||[]).forEach(r=>{const t=document.createElement('span');t.className='wwd-tag';t.textContent=roles[r]||r;tags.appendChild(t)});
  (x.topics||[]).slice(0,3).forEach(v=>{const t=document.createElement('span');t.className='wwd-tag';t.textContent=v;tags.appendChild(t)});
  const links=document.createElement('div');links.className='wwd-links';
- const brief=document.createElement('a');brief.href=x.brief_url;brief.textContent='Read the Workforce Wonkery brief';
- const source=document.createElement('a');source.href=x.source;source.target='_blank';source.rel='noopener noreferrer';source.textContent='Official source ↗';links.append(brief,source);
+ const brief=document.createElement('a');brief.href=safeDeadlineUrl(x.brief_url);brief.textContent='Read the Workforce Wonkery brief';
+ const source=document.createElement('a');source.href=safeDeadlineUrl(x.source);source.target='_blank';source.rel='noopener noreferrer';source.textContent='Official source ↗';links.append(brief,source);
  body.append(id,h,title,tags,links);
 
  const actions=document.createElement('div');actions.className='wwd-event-actions';
