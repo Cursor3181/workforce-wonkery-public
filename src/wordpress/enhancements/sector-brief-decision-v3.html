@@ -74,7 +74,7 @@
      card.append(lens);
    }
    const links=document.createElement('div');links.className='spb-market-source-links';
-   const a=document.createElement('a');a.href='/data/labor-market-profiles/#msa-'+m.code;a.textContent='Open full '+(m.market||'labor market')+' profile →';links.append(a);card.append(links);
+   const a=document.createElement('a');const msaCode=String(m.code||'').replace(/[^a-zA-Z0-9_-]/g,'');a.href='/data/labor-market-profiles/#msa-'+encodeURIComponent(msaCode);a.textContent='Open full '+(m.market||'labor market')+' profile →';links.append(a);card.append(links);
    stories.append(card);
  });
  section.append(stories);
