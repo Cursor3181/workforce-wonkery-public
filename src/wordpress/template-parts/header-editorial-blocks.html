@@ -487,13 +487,19 @@ body:is(.page-id-935,.page-id-1210,.page-id-936,.page-id-1136,.page-id-937,.page
   function mainRoot(){
     return document.querySelector('.wp-block-post-content,#ww-pilot-v6,.wd-ui,.waeh,.ww-intel,main');
   }
+  function safeMobileHref(value){
+    try{const u=new URL(String(value||''),location.origin);return u.protocol==='https:'||u.protocol==='http:'?u.href:''}catch(e){return ''}
+  }
   function addTocAndActions(){
     const root=mainRoot(); if(!root)return;
     const h1=root.querySelector('h1'); const hs=[...root.querySelectorAll('h2,h3')].filter(h=>h.offsetParent!==null);
     if(!h1||hs.length<4||root.scrollHeight<1700)return;
     hs.forEach((h,i)=>{if(!h.id)h.id='section-'+(i+1)+'-'+h.textContent.trim().toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,42)});
     const toc=document.createElement('details');toc.className='ww-mobile-toc';
-    toc.innerHTML='<summary>On this page</summary><nav>'+hs.slice(0,8).map(h=>'<a href="#'+h.id+'">'+h.textContent.trim()+'</a>').join('')+'</nav>';
+     const tocSummary=document.createElement('summary');tocSummary.textContent='On this page';
+     const tocNav=document.createElement('nav');
+     hs.slice(0,8).forEach(h=>{const a=document.createElement('a');a.href='#'+encodeURIComponent(h.id);a.textContent=h.textContent.trim();tocNav.appendChild(a)});
+     toc.append(tocSummary,tocNav);
     const actions=document.createElement('div');actions.className='ww-mobile-actions';
     actions.innerHTML='<button type="button" data-act="share">Share</button><button type="button" data-act="copy">Copy link</button><button type="button" data-act="save">Save for later</button>';
     const anchor=h1.parentElement||h1; anchor.insertAdjacentElement('afterend',actions);actions.insertAdjacentElement('afterend',toc);
@@ -619,7 +625,10 @@ body:is(.page-id-935,.page-id-1210,.page-id-936,.page-id-1136,.page-id-937,.page
     const nav=document.querySelector('.ww-ai-nav');if(!nav)return;
     const links=[...nav.querySelectorAll('a')];if(!links.length)return;
     const menu=document.createElement('details');menu.className='ww-mobile-ai-menu';
-    menu.innerHTML='<summary>AI Readiness menu</summary><div class="ww-mobile-ai-links">'+links.map(a=>'<a href="'+a.href+'"'+(a.matches('.is-active,[aria-current="page"]')?' aria-current="page"':'')+'>'+a.textContent.trim()+'</a>').join('')+'</div>';
+     const menuSummary=document.createElement('summary');menuSummary.textContent='AI Readiness menu';
+     const menuLinks=document.createElement('div');menuLinks.className='ww-mobile-ai-links';
+     links.forEach(a=>{const href=safeMobileHref(a.getAttribute('href')||a.href);if(!href)return;const link=document.createElement('a');link.href=href;link.textContent=a.textContent.trim();if(a.matches('.is-active,[aria-current="page"]'))link.setAttribute('aria-current','page');menuLinks.appendChild(link)});
+     menu.append(menuSummary,menuLinks);
     const source=nav.closest('.ww-ai-nav-wrap')||nav;source.classList.add('ww-mobile-ai-nav-source');source.insertAdjacentElement('beforebegin',menu);
   }
 
