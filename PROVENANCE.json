@@ -1,6 +1,6 @@
 {
   "export_mode": "allowlist",
-  "file_count": 216,
+  "file_count": 217,
   "files": [
     {
       "sha256": "e4f195ea1f9d830eb5a206f1f7d93b8c670f1d76d374e0381fa69ff9d9748441",
@@ -1018,7 +1018,7 @@
       "target": "docs/methodology/editorial-standard-feature-briefs.md"
     },
     {
-      "sha256": "275ae5a6f5e155c8144251e0ea84f2c00fd4dbb12552cf8db8c3e951ec89d1d5",
+      "sha256": "25eb5ca83979877b5af06c3cb349ad285c7a6b2bc027cd4a7fa62f5dbf86d864",
       "source": "public-companion/templates/.github/workflows/public-ci.yml",
       "target": ".github/workflows/public-ci.yml"
     },
@@ -1058,6 +1058,11 @@
       "target": "tests/browser_acceptance.py"
     },
     {
+      "sha256": "5b41533b51e8ce338af08e1f15847fda9771e45d85dc80d0525f628b11db6ac2",
+      "source": "public-companion/tests/public_source_visual_preview.py",
+      "target": "tests/public_source_visual_preview.py"
+    },
+    {
       "sha256": "043cddfa74b6d8c33925a077b6ec3c2fe7e6c4fc2ad78a267c2894c9108eab70",
       "source": "public-companion/tests/site-surfaces.json",
       "target": "tests/site-surfaces.json"
@@ -1083,7 +1088,7 @@
       "target": ".github/workflows/accessibility-audit.yml"
     }
   ],
-  "source_commit": "8c5a8eb8b388ca83849d9b48757fbecaf9546dfb",
+  "source_commit": "abdb417bafe0af2da87a87ed0f1a35180a10db2c",
   "source_repository": "Workforce-Wonkery/workforce-wonkery",
   "target_repository": "Workforce-Wonkery/workforce-wonkery-public"
 }
