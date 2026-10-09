@@ -134,6 +134,7 @@ const cfg=JSON.parse(document.getElementById('ww-policy-living-record-config').t
 const title=document.getElementById('wwplr-title'),status=document.getElementById('wwplr-status'),keySummary=document.getElementById('wwplr-key-summary'),details=document.getElementById('wwplr-details'),detailsLabel=document.getElementById('wwplr-details-label'),meta=document.getElementById('wwplr-meta'),key=document.getElementById('wwplr-key'),timelinePanel=document.getElementById('wwplr-timeline-panel'),timeline=document.getElementById('wwplr-timeline'),relationsPanel=document.getElementById('wwplr-relations-panel'),relations=document.getElementById('wwplr-relations'),actionsPanel=document.getElementById('wwplr-actions-panel'),role=document.getElementById('wwplr-role'),actions=document.getElementById('wwplr-actions'),official=document.getElementById('wwplr-official'),authorityNote=document.getElementById('wwplr-authority-note'),footer=document.getElementById('wwplr-footer'),copyMemo=document.getElementById('wwplr-copy-memo'),copyCitation=document.getElementById('wwplr-copy-citation'),printButton=document.getElementById('wwplr-print'),workStatus=document.getElementById('wwplr-work-status'),printSheet=document.getElementById('ww-policy-work-print');
 const roleLabels={director:'Director',fiscal:'Fiscal',program:'Program',board_member:'Board member'};
 
+function safePolicyUrl(value){try{const u=new URL(String(value||''),location.origin);return u.protocol==='https:'||u.protocol==='http:'?u.href:''}catch(e){return ''}}
 function pathOf(url){try{return new URL(url,location.origin).pathname.replace(/\/+$/,'')||'/'}catch(e){return''}}
 function longDate(v){if(!/^\d{4}-\d{2}-\d{2}$/.test(String(v||'')))return v||'';const d=new Date(v+'T12:00:00');return new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric'}).format(d)}
 function typeLabel(v){return String(v||'').replace(/_/g,' ').replace(/\b\w/g,m=>m.toUpperCase())}
@@ -168,7 +169,7 @@ function renderTimeline(rec){
    const li=document.createElement('li'),time=document.createElement('time'),strong=document.createElement('strong'),a=document.createElement('a');
    time.dateTime=item.date||'';time.textContent=longDate(item.date);strong.textContent=item.label||typeLabel(item.kind);
    li.append(time,strong);
-   if(item.source){a.href=item.source;a.target='_blank';a.rel='noopener noreferrer';a.className='wwplr-source';a.textContent='Source ↗';li.appendChild(a)}
+   if(safePolicyUrl(item.source)){a.href=safePolicyUrl(item.source);a.target='_blank';a.rel='noopener noreferrer';a.className='wwplr-source';a.textContent='Source ↗';li.appendChild(a)}
    timeline.appendChild(li);
  });
  timelinePanel.hidden=false;
@@ -179,7 +180,7 @@ function renderRelations(rec){
  rec.relationships.forEach(item=>{
    const li=document.createElement('li'),strong=document.createElement('strong'),span=document.createElement('span'),a=document.createElement('a');
    strong.textContent=typeLabel(item.type)+': ';span.textContent=item.label||item.target_identifier||'Related authority';li.append(strong,span);
-   if(item.source){a.href=item.source;a.target='_blank';a.rel='noopener noreferrer';a.className='wwplr-source';a.textContent=' Source ↗';li.appendChild(a)}
+   if(safePolicyUrl(item.source)){a.href=safePolicyUrl(item.source);a.target='_blank';a.rel='noopener noreferrer';a.className='wwplr-source';a.textContent=' Source ↗';li.appendChild(a)}
    relations.appendChild(li);
  });
  relationsPanel.hidden=false;
@@ -271,7 +272,7 @@ function render(rec,payload){
  if(!rec.status)status.classList.add('wwplr-status-indexed');
  addMeta(rec.identifier);addMeta(rec.document_type);addMeta(rec.jurisdiction);
  if(rec.last_verified)addMeta('Verified '+longDate(rec.last_verified));
- official.href=rec.official_source||'#';official.hidden=!rec.official_source;
+ const officialUrl=safePolicyUrl(rec.official_source);official.href=officialUrl||'#';official.hidden=!officialUrl;
  authorityNote.textContent=governed?'Lifecycle fields shown here are sourced to authoritative records. The official source controls.':'This brief is in the governed policy index, but its lifecycle has not yet been independently structured. Check the official source for current authority.';
  details.hidden=!governed;
  renderKey(rec);renderTimeline(rec);renderRelations(rec);renderActions(rec);
