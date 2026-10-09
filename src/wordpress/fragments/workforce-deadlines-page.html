@@ -1,0 +1,301 @@
+<!-- wp:html -->
+<style id="ww-deadlines-styles">
+#ww-deadlines{--paper:#fcfaf6;--ink:#111d20;--muted:#4d5558;--gold:#d49b25;--gold-dark:#986714;--policy:#8d2437;--teal:#075f70;--line:#dedbd3;--soft:#f4f1e9;--white:#fff;background:var(--paper);color:var(--ink);font:16px/1.5 Arial,Helvetica,sans-serif;min-height:70vh}
+#ww-deadlines *{box-sizing:border-box}
+#ww-deadlines a{color:var(--teal);text-underline-offset:3px}
+#ww-deadlines h1,#ww-deadlines h2,#ww-deadlines h3{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.035em;line-height:1.12;color:var(--ink)}
+#ww-deadlines button,#ww-deadlines input,#ww-deadlines select{font:inherit;color:inherit}
+#ww-deadlines :is(a,button,input,select):focus-visible{outline:3px solid #185cac;outline-offset:3px}
+#ww-deadlines .wwd-wrap{width:calc(100% - 112px);max-width:1320px;margin:0 auto}
+#ww-deadlines .wwd-hero{padding:54px 0 36px;border-bottom:1px solid var(--line)}
+#ww-deadlines .wwd-kicker{margin:0 0 9px;color:var(--gold-dark);font-size:11px;font-weight:800;letter-spacing:.17em;text-transform:uppercase}
+#ww-deadlines h1{max-width:900px;margin:0;font-size:clamp(44px,5.5vw,70px)}
+#ww-deadlines .wwd-deck{max-width:800px;margin:16px 0 0;color:#344145;font:21px/1.42 Georgia,'Times New Roman',serif}
+#ww-deadlines .wwd-hero-meta{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:20px;color:var(--muted);font-size:13px}
+#ww-deadlines .wwd-main{padding:30px 0 72px}
+#ww-deadlines .wwd-summary{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,.8fr);gap:28px;margin-bottom:28px;align-items:stretch}
+#ww-deadlines .wwd-next{padding:24px 26px;border-left:5px solid var(--policy);background:var(--white);border-top:1px solid var(--line);border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+#ww-deadlines .wwd-next-label{margin:0 0 8px;color:var(--policy);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+#ww-deadlines .wwd-next h2{margin:0;font-size:30px}
+#ww-deadlines .wwd-next p{margin:8px 0 0;color:var(--muted)}
+#ww-deadlines .wwd-tools{padding:22px;background:var(--soft)}
+#ww-deadlines .wwd-tools h2{margin:0 0 6px;font-size:23px}
+#ww-deadlines .wwd-tools p{margin:0;color:var(--muted);font-size:14px}
+#ww-deadlines .wwd-tool-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px}
+#ww-deadlines .wwd-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:9px 16px;border:1px solid var(--gold-dark);border-radius:24px;background:var(--paper);color:var(--ink);font-weight:800;text-decoration:none;cursor:pointer}
+#ww-deadlines .wwd-button-primary{background:var(--gold)}
+#ww-deadlines .wwd-subscribe{display:none}
+#ww-deadlines .wwd-subscribe.is-visible{display:inline-flex}
+#ww-deadlines .wwd-controls{padding:20px;background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+#ww-deadlines .wwd-control-grid{display:grid;grid-template-columns:1.2fr 1.2fr 1fr 1fr;gap:14px}
+#ww-deadlines .wwd-control label{display:block;margin-bottom:6px;font-size:12px;font-weight:800}
+#ww-deadlines select,#ww-deadlines input[type=search]{width:100%;min-height:44px;padding:9px 10px;border:1px solid #aeb3af;border-radius:3px;background:var(--paper)}
+#ww-deadlines .wwd-control-search{grid-column:1/-1}
+#ww-deadlines .wwd-check{display:flex;align-items:center;gap:9px;margin-top:15px;font-size:13px}
+#ww-deadlines .wwd-check input{width:18px;height:18px}
+#ww-deadlines .wwd-toolbar{display:flex;align-items:center;gap:18px;justify-content:space-between;padding:24px 0 12px}
+#ww-deadlines .wwd-status{margin:0;color:var(--muted);font-size:14px}
+#ww-deadlines .wwd-clear{border:0;background:none;color:var(--teal);text-decoration:underline;text-underline-offset:4px;min-height:44px;padding:6px 0;cursor:pointer}
+#ww-deadlines .wwd-list{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
+#ww-deadlines .wwd-event{display:grid;grid-template-columns:128px minmax(0,1fr) 210px;gap:26px;padding:24px 0;border-bottom:1px solid var(--line);align-items:start}
+#ww-deadlines .wwd-date{border-left:3px solid var(--gold);padding-left:15px}
+#ww-deadlines .wwd-month{display:block;color:var(--policy);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
+#ww-deadlines .wwd-day{display:block;font:700 38px/1 Georgia,'Times New Roman',serif;margin-top:2px}
+#ww-deadlines .wwd-year{display:block;margin-top:3px;color:var(--muted);font-size:12px}
+#ww-deadlines .wwd-time{display:block;margin-top:7px;color:var(--ink);font-size:12px;font-weight:800}
+#ww-deadlines .wwd-event-id{margin:0 0 5px;color:var(--policy);font-size:12px;font-weight:800}
+#ww-deadlines .wwd-event h3{margin:0;font-size:24px}
+#ww-deadlines .wwd-event-title{margin:7px 0 0;color:var(--muted);font-size:14px}
+#ww-deadlines .wwd-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:13px}
+#ww-deadlines .wwd-tag{display:inline-flex;padding:4px 8px;border-radius:999px;background:#edeee9;font-size:11px}
+#ww-deadlines .wwd-tag-kind{background:#f3e8e7;color:#6f1f30;font-weight:800}
+#ww-deadlines .wwd-links{display:flex;flex-direction:column;align-items:flex-start;gap:5px;margin-top:13px;font-size:13px}
+#ww-deadlines .wwd-event-actions{display:grid;gap:8px}
+#ww-deadlines .wwd-event-actions a,#ww-deadlines .wwd-event-actions button{display:flex;align-items:center;justify-content:center;min-height:42px;padding:8px 12px;border:1px solid var(--line);background:var(--white);border-radius:4px;color:var(--teal);font-weight:800;text-decoration:none;cursor:pointer;text-align:center}
+#ww-deadlines .wwd-event-actions a:hover,#ww-deadlines .wwd-event-actions button:hover{border-color:var(--teal)}
+#ww-deadlines .wwd-empty{padding:42px 20px;text-align:center;border-bottom:1px solid var(--line);background:var(--white)}
+#ww-deadlines .wwd-empty h2{margin:0;font-size:27px}
+#ww-deadlines .wwd-empty p{margin:8px auto 0;max-width:600px;color:var(--muted)}
+#ww-deadlines .wwd-trust{margin-top:32px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.55}
+#ww-deadlines .wwd-error{padding:24px;border-left:4px solid var(--policy);background:#fff;color:var(--ink)}
+@media(max-width:900px){
+ #ww-deadlines .wwd-wrap{width:calc(100% - 48px)}
+ #ww-deadlines .wwd-summary{grid-template-columns:1fr}
+ #ww-deadlines .wwd-control-grid{grid-template-columns:1fr 1fr}
+ #ww-deadlines .wwd-control-search{grid-column:1/-1}
+ #ww-deadlines .wwd-event{grid-template-columns:110px minmax(0,1fr)}
+ #ww-deadlines .wwd-event-actions{grid-column:2}
+}
+@media(max-width:620px){
+ #ww-deadlines .wwd-wrap{width:calc(100% - 32px)}
+ #ww-deadlines .wwd-hero{padding:36px 0 28px}
+ #ww-deadlines h1{font-size:44px}
+ #ww-deadlines .wwd-deck{font-size:18px}
+ #ww-deadlines .wwd-control-grid{grid-template-columns:1fr}
+ #ww-deadlines .wwd-control-search{grid-column:auto}
+ #ww-deadlines .wwd-toolbar{align-items:flex-start;flex-direction:column;gap:4px}
+ #ww-deadlines .wwd-event{grid-template-columns:1fr;gap:15px}
+ #ww-deadlines .wwd-event-actions{grid-column:auto;grid-template-columns:1fr}
+ #ww-deadlines .wwd-date{display:flex;align-items:baseline;gap:7px}
+ #ww-deadlines .wwd-day{font-size:29px}
+ #ww-deadlines .wwd-year{margin-top:0}
+}
+@media(prefers-reduced-motion:reduce){#ww-deadlines *{scroll-behavior:auto!important;transition:none!important}}
+</style>
+
+<div id="ww-deadlines">
+<section class="wwd-hero"><div class="wwd-wrap">
+<p class="wwd-kicker">Policy · Dates that matter</p>
+<h1>Workforce Deadlines</h1>
+<p class="wwd-deck">A practical calendar of comment periods, implementation milestones, operative dates, and other workforce policy dates worth putting on your calendar.</p>
+<div class="wwd-hero-meta"><span id="wwd-reviewed">Governed dates from Workforce Wonkery policy records.</span><span>Official sources control.</span></div>
+</div></section>
+
+<main class="wwd-main"><div class="wwd-wrap">
+<section class="wwd-summary" aria-label="Deadline summary">
+<div class="wwd-next" id="wwd-next">
+<p class="wwd-next-label">Next on the calendar</p>
+<h2>Loading upcoming dates…</h2>
+<p>Workforce Wonkery is checking the governed deadline registry.</p>
+</div>
+<div class="wwd-tools">
+<h2>Take the calendar with you.</h2>
+<p>Download the dates you are viewing as an .ics file for Outlook, Apple Calendar, or another calendar app. Google Calendar links are available on each date.</p>
+<div class="wwd-tool-actions">
+<button class="wwd-button wwd-button-primary" id="wwd-download-all" type="button">Download filtered .ics</button>
+<button class="wwd-button" id="wwd-copy-link" type="button">Copy filtered link</button>
+<a class="wwd-button wwd-subscribe" id="wwd-subscribe" href="#">Subscribe to calendar</a><button class="wwd-button wwd-subscribe" id="wwd-copy-feed" type="button">Copy subscription URL</button>
+</div>
+</div>
+</section>
+
+<section class="wwd-controls" aria-label="Filter workforce deadlines">
+<div class="wwd-control-grid">
+<div class="wwd-control"><label for="wwd-role">My role</label><select id="wwd-role"><option value="all">All roles</option></select></div>
+<div class="wwd-control"><label for="wwd-topic">Topic</label><select id="wwd-topic"><option value="all">All topics</option></select></div>
+<div class="wwd-control"><label for="wwd-kind">Date type</label><select id="wwd-kind"><option value="all">All date types</option></select></div>
+<div class="wwd-control"><label for="wwd-range">Time horizon</label><select id="wwd-range"><option value="90">Next 90 days</option><option value="365">Next 12 months</option><option value="all">All future dates</option></select></div>
+<div class="wwd-control wwd-control-search"><label for="wwd-search">Search dates</label><input id="wwd-search" type="search" autocomplete="off" placeholder="Try WIOA, AI, AB 1534, training, or youth"></div>
+</div>
+<label class="wwd-check" for="wwd-past"><input id="wwd-past" type="checkbox"> Include past dates</label>
+</section>
+
+<div class="wwd-toolbar"><p class="wwd-status" id="wwd-status" role="status" aria-live="polite">Loading workforce deadlines…</p><button class="wwd-clear" id="wwd-clear" type="button">Clear filters</button></div>
+<ol class="wwd-list" id="wwd-list"></ol>
+<div class="wwd-empty" id="wwd-empty" hidden><h2>No dates match these filters.</h2><p>Try a broader role, topic, or time horizon. Dates only appear here when Workforce Wonkery has a governed source for them.</p></div>
+<p class="wwd-trust">Workforce Deadlines is an informational planning tool, not a compliance calendar. Dates are drawn from governed Workforce Wonkery policy records and may not include every date that applies to a specific organization. Check the linked official source before acting.</p>
+</div></main>
+</div>
+
+<script id="ww-deadlines-config" type="application/json">{"schema_version":"1.0","runtime_slug":"ww-runtime-policy-deadlines","runtime_rest":"/wp-json/wp/v2/pages?slug=ww-runtime-policy-deadlines&status=publish&_fields=id,modified,content","runtime_script_id":"ww-policy-deadlines-runtime"}</script>
+<script id="ww-deadlines-app">
+(function(){
+'use strict';
+const root=document.getElementById('ww-deadlines');if(!root||root.dataset.ready)return;root.dataset.ready='1';
+const cfg=JSON.parse(document.getElementById('ww-deadlines-config').textContent);
+const role=document.getElementById('wwd-role'),topic=document.getElementById('wwd-topic'),kind=document.getElementById('wwd-kind'),range=document.getElementById('wwd-range'),search=document.getElementById('wwd-search'),past=document.getElementById('wwd-past');
+const status=document.getElementById('wwd-status'),list=document.getElementById('wwd-list'),empty=document.getElementById('wwd-empty'),nextBox=document.getElementById('wwd-next'),reviewed=document.getElementById('wwd-reviewed'),downloadAll=document.getElementById('wwd-download-all'),copyLink=document.getElementById('wwd-copy-link'),clear=document.getElementById('wwd-clear'),subscribe=document.getElementById('wwd-subscribe'),copyFeed=document.getElementById('wwd-copy-feed');
+let payload=null,current=[],roles={};
+
+function norm(v){return String(v==null?'':v).toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim()}
+function escIcs(v){return String(v||'').replace(/\\/g,'\\\\').replace(/\n/g,'\\n').replace(/;/g,'\\;').replace(/,/g,'\\,')}
+function isoDate(v){return /^\d{4}-\d{2}-\d{2}$/.test(String(v||''))?String(v):''}
+function localDate(v){const d=isoDate(v);return d?new Date(d+'T12:00:00'):null}
+function ymd(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function compactDate(v){return String(v||'').replace(/-/g,'')}
+function nextDay(v){const d=localDate(v);if(!d)return v;d.setDate(d.getDate()+1);return ymd(d)}
+function longDate(v){const d=localDate(v);return d?new Intl.DateTimeFormat('en-US',{month:'long',day:'numeric',year:'numeric'}).format(d):v}
+function month(v){const d=localDate(v);return d?new Intl.DateTimeFormat('en-US',{month:'short'}).format(d):''}
+function day(v){const d=localDate(v);return d?String(d.getDate()):''}
+function year(v){const d=localDate(v);return d?String(d.getFullYear()):''}
+function kindLabel(v){return ({comment:'Comment deadline',effective:'Effective date',operative:'Operative date',implementation:'Implementation milestone',reporting:'Reporting date',application:'Application deadline',review:'Review milestone',feedback:'Feedback deadline',other:'Key date'})[v]||String(v||'Key date').replace(/_/g,' ')}
+function daysFromToday(v){const d=localDate(v);if(!d)return 999999;const t=new Date();t.setHours(12,0,0,0);return Math.ceil((d-t)/86400000)}
+function decodePage(html,id){const t=document.createElement('template');t.innerHTML=html;const s=t.content.querySelector('#'+id);if(!s)throw new Error('Missing runtime payload');return JSON.parse(s.textContent.replace(/&amp;/g,'&'))}
+async function loadRuntime(){const res=await fetch(cfg.runtime_rest,{headers:{Accept:'application/json'}});if(!res.ok)throw new Error('HTTP '+res.status);const rows=await res.json();if(!Array.isArray(rows)||!rows.length)throw new Error('Deadline runtime page not found');return decodePage((rows[0].content&&rows[0].content.rendered)||'',cfg.runtime_script_id)}
+
+function option(select,value,label){const o=document.createElement('option');o.value=value;o.textContent=label;select.appendChild(o)}
+function hydrateFilters(){
+ roles=Object.fromEntries((payload.roles||[]).map(x=>[x.id,x.label]));
+ (payload.roles||[]).forEach(x=>option(role,x.id,x.label));
+ const topics=[...new Set((payload.records||[]).flatMap(x=>x.topics||[]))].sort((a,b)=>a.localeCompare(b));
+ topics.forEach(x=>option(topic,x,x));
+ const kinds=[...new Set((payload.records||[]).map(x=>x.kind).filter(Boolean))].sort();
+ kinds.forEach(x=>option(kind,x,kindLabel(x)));
+ const q=new URLSearchParams(location.search);
+ let savedRole='';
+ try{
+   const lens=JSON.parse(localStorage.getItem('ww_workforce_lens_v1')||'{}');
+   savedRole=lens.role_id||localStorage.getItem('ww-reader-role')||'';
+ }catch(_){
+   try{savedRole=localStorage.getItem('ww-reader-role')||''}catch(__){}
+ }
+ const requestedRole=q.get('role')||savedRole;
+ if([...role.options].some(x=>x.value===requestedRole))role.value=requestedRole;
+ if([...topic.options].some(x=>x.value===q.get('topic')))topic.value=q.get('topic');
+ if([...kind.options].some(x=>x.value===q.get('type')))kind.value=q.get('type');
+ if([...range.options].some(x=>x.value===q.get('range')))range.value=q.get('range');
+ search.value=q.get('q')||'';
+ past.checked=q.get('past')==='1';
+}
+
+function updateUrl(){
+ const u=new URL(location.href),pairs={role:role.value,topic:topic.value,type:kind.value,range:range.value,q:search.value.trim(),past:past.checked?'1':''};
+ Object.entries(pairs).forEach(([k,v])=>{if(v&&v!=='all'&&!(k==='range'&&v==='90'))u.searchParams.set(k,v);else u.searchParams.delete(k)});
+ history.replaceState({deadlines:true},'',u);
+}
+
+function filtered(){
+ const q=norm(search.value),limit=range.value==='all'?Infinity:Number(range.value);
+ return (payload.records||[]).filter(x=>{
+   const delta=daysFromToday(x.date);
+   if(!past.checked&&delta<0)return false;
+   if(delta>=0&&delta>limit)return false;
+   if(role.value!=='all'&&!(x.roles||[]).includes(role.value))return false;
+   if(topic.value!=='all'&&!(x.topics||[]).includes(topic.value))return false;
+   if(kind.value!=='all'&&x.kind!==kind.value)return false;
+   if(q&&!norm([x.identifier,x.label,x.title,(x.topics||[]).join(' '),(x.roles||[]).map(r=>roles[r]||r).join(' ')].join(' ')).includes(q))return false;
+   return true;
+ }).sort((a,b)=>a.date.localeCompare(b.date)||a.identifier.localeCompare(b.identifier));
+}
+
+function timeLabel(x){
+ if(x.all_day!==false||!x.time)return'';
+ const parts=String(x.time).split(':').map(Number),h=parts[0],m=parts[1]||0,ampm=h>=12?'p.m.':'a.m.',hh=((h+11)%12)+1;
+ const zones={'America/Los_Angeles':' PT','America/New_York':' ET','America/Chicago':' CT','America/Denver':' MT'};return hh+':'+String(m).padStart(2,'0')+' '+ampm+(zones[x.timezone]||'');
+}
+function addMinutes(date,time,minutes){
+ const parts=String(time||'00:00').split(':').map(Number),d=localDate(date);d.setHours(parts[0]||0,parts[1]||0,0,0);d.setMinutes(d.getMinutes()+minutes);
+ return {date:ymd(d),time:String(d.getHours()).padStart(2,'0')+String(d.getMinutes()).padStart(2,'0')+'00'};
+}
+function safeDeadlineUrl(value){try{const u=new URL(String(value||''),location.origin);return u.protocol==='https:'||u.protocol==='http:'?u.href:'#'}catch(e){return '#'}}
+function googleUrl(x){
+ let dates;
+ const p={action:'TEMPLATE',text:x.identifier+' — '+x.label,details:'Workforce Wonkery planning date. Official source controls: '+x.source};
+ if(x.all_day===false&&x.time){
+   const start=compactDate(x.date)+'T'+String(x.time).replace(':','')+'00',end=addMinutes(x.date,x.time,15);
+   dates=start+'/'+compactDate(end.date)+'T'+end.time;p.ctz=x.timezone||'America/Los_Angeles';
+ }else dates=compactDate(x.date)+'/'+compactDate(nextDay(x.date));
+ p.dates=dates;return 'https://calendar.google.com/calendar/render?'+new URLSearchParams(p).toString();
+}
+
+function icsText(items){
+ const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Workforce Wonkery//Workforce Deadlines//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:Workforce Wonkery Workforce Deadlines','X-WR-CALDESC:Governed workforce policy dates. Official sources control.'];
+ items.forEach(x=>{
+   const head=['BEGIN:VEVENT','UID:'+escIcs(x.id)+'@workforcewonkery.com','DTSTAMP:'+compactDate(payload.last_reviewed||ymd(new Date()))+'T000000Z'];
+   if(x.all_day===false&&x.time)head.push('DTSTART;TZID='+escIcs(x.timezone||'America/Los_Angeles')+':'+compactDate(x.date)+'T'+String(x.time).replace(':','')+'00','DURATION:PT15M');
+   else head.push('DTSTART;VALUE=DATE:'+compactDate(x.date),'DTEND;VALUE=DATE:'+compactDate(nextDay(x.date)));
+   lines.push(...head,'SUMMARY:'+escIcs(x.identifier+' - '+x.label),'DESCRIPTION:'+escIcs('Official source controls. '+x.source),'URL:'+escIcs(x.brief_url),'CATEGORIES:'+escIcs(kindLabel(x.kind)),'TRANSP:TRANSPARENT','END:VEVENT');
+ });
+ lines.push('END:VCALENDAR');return lines.join('\r\n')+'\r\n';
+}
+function downloadIcs(items,name){if(!items.length)return;const blob=new Blob([icsText(items)],{type:'text/calendar;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=name;a.hidden=true;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000)}
+
+function renderNext(){
+ const upcoming=(payload.records||[]).filter(x=>daysFromToday(x.date)>=0).sort((a,b)=>a.date.localeCompare(b.date));
+ if(!upcoming.length){nextBox.innerHTML='<p class="wwd-next-label">Next on the calendar</p><h2>No future dates are currently governed.</h2><p>New dates will appear when they are added to the policy record registry.</p>';return}
+ const x=upcoming[0];nextBox.innerHTML='';
+ const k=document.createElement('p');k.className='wwd-next-label';k.textContent='Next on the calendar · '+longDate(x.date);
+ const h=document.createElement('h2');h.textContent=x.identifier+' — '+x.label;
+ const p=document.createElement('p');p.textContent=kindLabel(x.kind)+(x.roles&&x.roles.length?' · '+x.roles.map(r=>roles[r]||r).join(', '):'');
+ nextBox.append(k,h,p);
+}
+
+function eventNode(x){
+ const li=document.createElement('li');li.className='wwd-event';
+ const date=document.createElement('time');date.className='wwd-date';date.dateTime=x.date;
+ const m=document.createElement('span');m.className='wwd-month';m.textContent=month(x.date);
+ const d=document.createElement('span');d.className='wwd-day';d.textContent=day(x.date);
+ const y=document.createElement('span');y.className='wwd-year';y.textContent=year(x.date);date.append(m,d,y);
+ const tl=timeLabel(x);if(tl){const ts=document.createElement('span');ts.className='wwd-time';ts.textContent=tl;date.appendChild(ts)}
+
+ const body=document.createElement('div');
+ const id=document.createElement('p');id.className='wwd-event-id';id.textContent=x.identifier+' · '+kindLabel(x.kind);
+ const h=document.createElement('h3');h.textContent=x.label;
+ const title=document.createElement('p');title.className='wwd-event-title';title.textContent=x.title;
+ const tags=document.createElement('div');tags.className='wwd-tags';
+ const kt=document.createElement('span');kt.className='wwd-tag wwd-tag-kind';kt.textContent=kindLabel(x.kind);tags.appendChild(kt);
+ (x.roles||[]).forEach(r=>{const t=document.createElement('span');t.className='wwd-tag';t.textContent=roles[r]||r;tags.appendChild(t)});
+ (x.topics||[]).slice(0,3).forEach(v=>{const t=document.createElement('span');t.className='wwd-tag';t.textContent=v;tags.appendChild(t)});
+ const links=document.createElement('div');links.className='wwd-links';
+ const brief=document.createElement('a');brief.href=safeDeadlineUrl(x.brief_url);brief.textContent='Read the Workforce Wonkery brief';
+ const source=document.createElement('a');source.href=safeDeadlineUrl(x.source);source.target='_blank';source.rel='noopener noreferrer';source.textContent='Official source ↗';links.append(brief,source);
+ body.append(id,h,title,tags,links);
+
+ const actions=document.createElement('div');actions.className='wwd-event-actions';
+ const google=document.createElement('a');google.href=googleUrl(x);google.target='_blank';google.rel='noopener noreferrer';google.textContent='Add to Google Calendar';
+ const one=document.createElement('button');one.type='button';one.textContent='Download event (.ics)';one.addEventListener('click',()=>downloadIcs([x],'workforce-wonkery-'+x.id+'.ics'));
+ actions.append(google,one);li.append(date,body,actions);return li;
+}
+
+function render(){
+ current=filtered();updateUrl();list.innerHTML='';current.forEach(x=>list.appendChild(eventNode(x)));empty.hidden=current.length>0;
+ const total=(payload.records||[]).length;
+ status.textContent=current.length+' date'+(current.length===1?'':'s')+' shown · '+total+' governed date'+(total===1?'':'s')+' in the registry';
+ downloadAll.disabled=!current.length;
+ downloadAll.setAttribute('aria-disabled',String(!current.length));
+ renderNext();
+}
+
+function reset(){
+ role.value='all';topic.value='all';kind.value='all';range.value='90';search.value='';past.checked=false;render();
+}
+
+[role,topic,kind,range,past].forEach(el=>el.addEventListener('change',render));
+let timer;search.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(render,180)});
+clear.addEventListener('click',reset);
+downloadAll.addEventListener('click',()=>downloadIcs(current,'workforce-wonkery-deadlines.ics'));
+copyLink.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(location.href);copyLink.textContent='Link copied';setTimeout(()=>copyLink.textContent='Copy filtered link',1800)}catch(e){copyLink.textContent='Copy the address bar URL'}});copyFeed.addEventListener('click',async()=>{if(!payload||!payload.feed_url)return;try{await navigator.clipboard.writeText(payload.feed_url);copyFeed.textContent='Subscription URL copied';setTimeout(()=>copyFeed.textContent='Copy subscription URL',1800)}catch(e){copyFeed.textContent=payload.feed_url}});
+addEventListener('popstate',()=>location.reload());
+
+loadRuntime().then(data=>{
+ payload=data;hydrateFilters();reviewed.textContent='Last reviewed '+longDate(payload.last_reviewed)+'.';
+ if(payload.feed_url){subscribe.href=payload.feed_url.replace(/^https:/,'webcal:');subscribe.classList.add('is-visible');copyFeed.classList.add('is-visible')}
+ render();
+}).catch(err=>{
+ console.error(err);status.textContent='Deadline data could not be loaded.';
+ nextBox.innerHTML='<div class="wwd-error"><strong>Workforce Deadlines is temporarily unavailable.</strong><br>Use the Policy Briefs library and official sources while the calendar data reloads.</div>';
+ downloadAll.disabled=true;empty.hidden=true;
+});
+})();
+</script>
+<!-- /wp:html -->

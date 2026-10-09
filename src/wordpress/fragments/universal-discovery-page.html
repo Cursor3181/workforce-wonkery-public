@@ -1,0 +1,241 @@
+<!-- wp:html -->
+<style id="ww-discovery-styles">
+#ww-discovery{--paper:#fcfaf6;--ink:#111d20;--muted:#536063;--gold:#d49b25;--gold-dark:#986714;--teal:#075f70;--teal-soft:#e6f1f1;--policy:#8f3547;--practice:#365d36;--line:#dedbd3;--white:#fff;min-height:70vh;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+#ww-discovery *{box-sizing:border-box}
+#ww-discovery a{color:inherit}
+#ww-discovery .wwd-wrap{width:calc(100% - 64px);max-width:1180px;margin:0 auto}
+#ww-discovery .wwd-hero{padding:58px 0 34px;border-bottom:1px solid var(--line);background:linear-gradient(135deg,#fcfaf6 0%,#fcfaf6 55%,#eef5f3 100%)}
+#ww-discovery .wwd-eyebrow{margin:0 0 10px;color:var(--gold-dark);font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+#ww-discovery h1,#ww-discovery h2,#ww-discovery h3{font-family:Georgia,'Times New Roman',serif;color:var(--ink)}
+#ww-discovery h1{max-width:840px;margin:0;font-size:clamp(42px,5vw,68px);line-height:1;letter-spacing:-.045em}
+#ww-discovery .wwd-deck{max-width:720px;margin:16px 0 0;color:#344145;font:21px/1.42 Georgia,'Times New Roman',serif}
+#ww-discovery .wwd-form{margin-top:28px;max-width:860px}
+#ww-discovery .wwd-form label{display:block;margin-bottom:8px;font-weight:800;font-size:14px}
+#ww-discovery .wwd-search-row{display:grid;grid-template-columns:1fr auto;gap:8px}
+#ww-discovery input[type=search]{width:100%;min-height:58px;padding:14px 16px;border:1px solid #9da8a6;border-radius:7px;background:#fff;color:var(--ink);font-size:18px}
+#ww-discovery button{font:inherit}
+#ww-discovery .wwd-search-button{min-height:58px;padding:12px 22px;border:0;border-radius:7px;background:var(--teal);color:#fff;font-weight:800;cursor:pointer}
+#ww-discovery :is(a,button,input):focus-visible{outline:3px solid #185cac;outline-offset:3px}
+#ww-discovery .wwd-examples{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;align-items:center;color:var(--muted);font-size:13px}
+#ww-discovery .wwd-example{padding:6px 9px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer;color:var(--teal);font-weight:700}
+#ww-discovery .wwd-main{padding:30px 0 64px}
+#ww-discovery .wwd-toolbar{display:flex;justify-content:space-between;gap:18px;align-items:center;margin-bottom:20px}
+#ww-discovery .wwd-status{margin:0;color:var(--muted);font-size:14px}
+#ww-discovery .wwd-filters{display:flex;gap:7px;flex-wrap:wrap}
+#ww-discovery .wwd-filter{padding:7px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font-weight:700;cursor:pointer}
+#ww-discovery .wwd-filter[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:#fff}
+#ww-discovery .wwd-empty{padding:30px;border:1px solid var(--line);border-radius:10px;background:#fff}
+#ww-discovery .wwd-empty h2{margin:0 0 8px;font-size:27px}
+#ww-discovery .wwd-empty p{margin:0;color:var(--muted);line-height:1.55}
+#ww-discovery .wwd-best{display:none;margin-bottom:22px;padding:22px;border:1px solid #cddbd8;border-left:5px solid var(--gold);border-radius:9px;background:#fff}
+#ww-discovery .wwd-best.is-visible{display:block}
+#ww-discovery .wwd-best-label{margin:0 0 8px;color:var(--gold-dark);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+#ww-discovery .wwd-best h2{margin:0 0 7px;font-size:29px}
+#ww-discovery .wwd-best h2 a{text-decoration:none}
+#ww-discovery .wwd-best h2 a:hover{text-decoration:underline;text-underline-offset:4px}
+#ww-discovery .wwd-meta{display:flex;flex-wrap:wrap;gap:7px 12px;margin-top:10px;color:var(--muted);font-size:13px}
+#ww-discovery .wwd-type{font-weight:800;color:var(--teal)}
+#ww-discovery .wwd-summary{margin:8px 0 0;color:#3d494c;line-height:1.5}
+#ww-discovery .wwd-related{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+#ww-discovery .wwd-related a{display:block;padding:11px 12px;border:1px solid var(--line);border-radius:6px;text-decoration:none;background:#fcfaf6;font-size:13px;line-height:1.35}
+#ww-discovery .wwd-related a:hover{border-color:var(--teal)}
+#ww-discovery .wwd-results{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+#ww-discovery .wwd-result{border:1px solid var(--line);border-radius:9px;background:#fff}
+#ww-discovery .wwd-result a{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;padding:17px 18px;text-decoration:none}
+#ww-discovery .wwd-result a:hover{background:#fbfaf6}
+#ww-discovery .wwd-result h3{margin:2px 0 6px;font-size:21px;line-height:1.15}
+#ww-discovery .wwd-result p{margin:0;color:var(--muted);font-size:14px;line-height:1.45}
+#ww-discovery .wwd-result-side{min-width:110px;text-align:right;color:var(--muted);font-size:12px}
+#ww-discovery .wwd-result-side strong{display:block;color:var(--teal);font-size:12px}
+#ww-discovery .wwd-policy-status{display:inline-flex;margin-top:7px;padding:4px 7px;border:1px solid #c8b7bb;border-radius:999px;background:#fbf5f6;color:var(--policy);font-size:11px;font-weight:800;line-height:1.2}
+#ww-discovery .wwd-key-date{display:block;margin-top:6px;color:var(--ink);font-size:12px;line-height:1.35}
+#ww-discovery .wwd-source-row{padding:0 18px 14px}
+#ww-discovery .wwd-source-link{color:var(--teal);font-size:12px;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+#ww-discovery .wwd-arrow{display:block;margin-top:9px;color:var(--gold-dark);font-size:20px}
+#ww-discovery .wwd-loadmore{display:none;margin:18px auto 0;padding:10px 16px;border:1px solid var(--teal);border-radius:6px;background:#fff;color:var(--teal);font-weight:800;cursor:pointer}
+#ww-discovery .wwd-loadmore.is-visible{display:block}
+#ww-discovery .wwd-note{margin-top:24px;color:var(--muted);font-size:12px;line-height:1.5}
+#ww-discovery .wwd-decision-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+#ww-discovery .wwd-decision-button{min-height:42px;padding:9px 13px;border:1px solid var(--teal);border-radius:6px;background:var(--teal);color:#fff;font-weight:800;cursor:pointer}
+#ww-discovery .wwd-decision-button-secondary{background:#fff;color:var(--teal)}
+#ww-discovery .wwd-decision{margin:0 0 24px;padding:26px;border:1px solid #c9d9d6;border-top:5px solid var(--teal);border-radius:10px;background:#fff}
+#ww-discovery .wwd-decision[hidden]{display:none!important}
+#ww-discovery .wwd-decision-head{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:start}
+#ww-discovery .wwd-decision-kicker{margin:0 0 5px;color:var(--gold-dark);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+#ww-discovery .wwd-decision h2{margin:0;font-size:31px;line-height:1.08}
+#ww-discovery .wwd-decision-context{max-width:820px;margin:8px 0 0;color:var(--muted);font-size:14px;line-height:1.5}
+#ww-discovery .wwd-coverage{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+#ww-discovery .wwd-coverage-chip{display:inline-flex;align-items:center;gap:6px;padding:6px 9px;border:1px solid #b8cfca;border-radius:999px;background:#eef7f5;color:#174d50;font-size:12px;font-weight:800}
+#ww-discovery .wwd-coverage-chip.is-missing{border-color:#d8cbc2;background:#faf5ef;color:#765234}
+#ww-discovery .wwd-decision-grid{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(280px,.75fr);gap:24px}
+#ww-discovery .wwd-decision-section{min-width:0}
+#ww-discovery .wwd-decision-section h3{margin:0 0 10px;font-size:22px}
+#ww-discovery .wwd-evidence-list{display:grid;gap:10px}
+#ww-discovery .wwd-evidence-item{padding:14px 15px;border:1px solid var(--line);border-radius:8px;background:#fcfaf6}
+#ww-discovery .wwd-evidence-item .wwd-type{font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+#ww-discovery .wwd-evidence-item h4{margin:4px 0 6px;font:700 18px/1.2 Georgia,'Times New Roman',serif}
+#ww-discovery .wwd-evidence-item h4 a{text-decoration:none}
+#ww-discovery .wwd-evidence-item h4 a:hover{text-decoration:underline;text-underline-offset:3px}
+#ww-discovery .wwd-evidence-item p{margin:0;color:var(--muted);font-size:13px;line-height:1.45}
+#ww-discovery .wwd-evidence-meta{margin-top:7px!important;font-size:12px!important}
+#ww-discovery .wwd-evidence-sources{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+#ww-discovery .wwd-evidence-sources a{color:var(--teal);font-size:12px;font-weight:800;text-underline-offset:3px}
+#ww-discovery .wwd-decision-side{display:grid;gap:14px;align-content:start}
+#ww-discovery .wwd-decision-box{padding:15px;border:1px solid var(--line);border-radius:8px;background:#fff}
+#ww-discovery .wwd-decision-box h3{margin:0 0 8px;font-size:19px}
+#ww-discovery .wwd-decision-box ul{margin:0;padding-left:19px}
+#ww-discovery .wwd-decision-box li{margin:0 0 8px;color:#344145;font-size:13px;line-height:1.45}
+#ww-discovery .wwd-decision-box li:last-child{margin-bottom:0}
+#ww-discovery .wwd-decision-footer{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin-top:20px;padding-top:17px;border-top:1px solid var(--line)}
+#ww-discovery .wwd-decision-status{margin:0 0 0 4px;color:var(--muted);font-size:12px}
+@media print{
+ #ww-discovery.wwd-print .wwd-hero,#ww-discovery.wwd-print .wwd-toolbar,#ww-discovery.wwd-print #wwd-best,#ww-discovery.wwd-print #wwd-empty,#ww-discovery.wwd-print #wwd-results,#ww-discovery.wwd-print #wwd-loadmore,#ww-discovery.wwd-print .wwd-note{display:none!important}
+ #ww-discovery.wwd-print .wwd-main{padding:0!important}
+ #ww-discovery.wwd-print .wwd-decision{display:block!important;margin:0;border:0;border-top:0;padding:0}
+ #ww-discovery.wwd-print .wwd-decision-head>button,#ww-discovery.wwd-print .wwd-decision-footer{display:none!important}
+ #ww-discovery.wwd-print .wwd-decision-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+ #ww-discovery .wwd-wrap{width:calc(100% - 32px)}
+ #ww-discovery .wwd-hero{padding:34px 0 24px}
+ #ww-discovery h1{font-size:43px}
+ #ww-discovery .wwd-deck{font-size:18px}
+ #ww-discovery .wwd-search-row{grid-template-columns:1fr}
+ #ww-discovery .wwd-search-button{width:100%}
+ #ww-discovery .wwd-toolbar{align-items:flex-start;flex-direction:column}
+ #ww-discovery .wwd-related{grid-template-columns:1fr}
+ #ww-discovery .wwd-result a{grid-template-columns:1fr}
+ #ww-discovery .wwd-result-side{text-align:left}
+ #ww-discovery .wwd-decision{padding:20px}
+ #ww-discovery .wwd-decision-head,#ww-discovery .wwd-decision-grid{grid-template-columns:1fr}
+ #ww-discovery .wwd-decision-head>button{justify-self:start}
+}
+@media(prefers-reduced-motion:reduce){#ww-discovery *{scroll-behavior:auto!important;transition:none!important}}
+</style>
+<div id="ww-discovery">
+<section class="wwd-hero"><div class="wwd-wrap">
+<p class="wwd-eyebrow">Workforce Wonkery discovery</p>
+<h1>Find the useful thing faster.</h1>
+<p class="wwd-deck">Search policy, labor-market data, occupations, training opportunities, sector partnerships, practice tools, and reports from one place.</p>
+<form class="wwd-form" id="wwd-form" role="search" action="https://workforcewonkery.com/discover/" method="get">
+<label for="wwd-query">What are you trying to figure out?</label>
+<div class="wwd-search-row"><input id="wwd-query" name="q" type="search" autocomplete="off" spellcheck="true" placeholder="Try “AB 1534”, “nursing Fresno”, or “rapid response”"><button class="wwd-search-button" type="submit">Search</button></div>
+</form>
+<div class="wwd-examples"><span>Try:</span><button type="button" class="wwd-example" data-query="AB 1534">AB 1534</button><button type="button" class="wwd-example" data-query="registered nurses Fresno">registered nurses Fresno</button><button type="button" class="wwd-example" data-query="rapid response">rapid response</button><button type="button" class="wwd-example" data-query="AI workforce">AI workforce</button><button type="button" class="wwd-example" data-query="workforce deadlines">workforce deadlines</button></div>
+</div></section>
+<section class="wwd-main"><div class="wwd-wrap">
+<div class="wwd-toolbar"><p id="wwd-status" class="wwd-status" role="status" aria-live="polite">Start typing to search Workforce Wonkery.</p><div class="wwd-filters" aria-label="Filter search results"><button class="wwd-filter" type="button" data-filter="all" aria-pressed="true">All</button><button class="wwd-filter" type="button" data-filter="policy" aria-pressed="false">Policy</button><button class="wwd-filter" type="button" data-filter="data" aria-pressed="false">Data</button><button class="wwd-filter" type="button" data-filter="practice" aria-pressed="false">Practice</button></div></div>
+<article id="wwd-best" class="wwd-best" aria-label="Best match"></article>
+<section id="wwd-decision" class="wwd-decision" hidden aria-labelledby="wwd-decision-title">
+<div class="wwd-decision-head"><div><p class="wwd-decision-kicker">Decision support</p><h2 id="wwd-decision-title">Decision brief</h2><p id="wwd-decision-context" class="wwd-decision-context"></p></div><button id="wwd-decision-close" class="wwd-decision-button wwd-decision-button-secondary" type="button">Close brief</button></div>
+<div id="wwd-decision-coverage" class="wwd-coverage" aria-label="Evidence coverage"></div>
+<div class="wwd-decision-grid">
+<section class="wwd-decision-section" aria-labelledby="wwd-evidence-title"><h3 id="wwd-evidence-title">Evidence to review</h3><div id="wwd-decision-evidence" class="wwd-evidence-list"></div></section>
+<div class="wwd-decision-side">
+<section class="wwd-decision-box" aria-labelledby="wwd-questions-title"><h3 id="wwd-questions-title">Questions to resolve</h3><ul id="wwd-decision-questions"></ul></section>
+<section class="wwd-decision-box" aria-labelledby="wwd-limits-title"><h3 id="wwd-limits-title">What this does not establish</h3><ul id="wwd-decision-limits"></ul></section>
+</div>
+</div>
+<div class="wwd-decision-footer"><button id="wwd-decision-copy" class="wwd-decision-button" type="button">Copy brief</button><button id="wwd-decision-print" class="wwd-decision-button wwd-decision-button-secondary" type="button">Print / save PDF</button><p id="wwd-decision-status" class="wwd-decision-status" role="status" aria-live="polite"></p></div>
+</section>
+<div id="wwd-empty" class="wwd-empty"><h2>Ask it like you would ask a colleague.</h2><p>You can search a bill number, acronym, occupation, place, workforce topic, or practical task. Common workforce acronyms and several likely misspellings are handled automatically.</p></div>
+<ol id="wwd-results" class="wwd-results"></ol>
+<button id="wwd-loadmore" class="wwd-loadmore" type="button">Show more results</button>
+<p class="wwd-note">Search is generated from governed Workforce Wonkery content and data products. Official sources control where a Workforce Wonkery summary differs from an underlying authority.</p>
+<noscript><div class="wwd-empty"><h2>JavaScript is required for universal discovery.</h2><p>You can still use the <a href="https://workforcewonkery.com/policy-briefs/">Policy Brief Library</a>, <a href="https://workforcewonkery.com/data/">Data</a>, and <a href="https://workforcewonkery.com/practice/">Practice</a> directly.</p></div></noscript>
+</div></section>
+</div>
+<script id="ww-discovery-config" type="application/json">{"schema_version":"1.0","manifest_page_id":7329,"manifest_rest":"/wp-json/wp/v2/pages/7329?_fields=id,slug,modified,content","release":"discovery-2026-10-07-decision-brief-a"}</script>
+<script id="ww-discovery-app">
+(function(){
+'use strict';
+const root=document.getElementById('ww-discovery');if(!root||root.dataset.ready)return;root.dataset.ready='1';
+const form=document.getElementById('wwd-form'),input=document.getElementById('wwd-query'),status=document.getElementById('wwd-status'),best=document.getElementById('wwd-best'),empty=document.getElementById('wwd-empty'),list=document.getElementById('wwd-results'),more=document.getElementById('wwd-loadmore'),decision=document.getElementById('wwd-decision'),decisionTitle=document.getElementById('wwd-decision-title'),decisionContext=document.getElementById('wwd-decision-context'),decisionCoverage=document.getElementById('wwd-decision-coverage'),decisionEvidenceHost=document.getElementById('wwd-decision-evidence'),decisionQuestionsHost=document.getElementById('wwd-decision-questions'),decisionLimitsHost=document.getElementById('wwd-decision-limits'),decisionStatus=document.getElementById('wwd-decision-status');
+const filters=[...root.querySelectorAll('.wwd-filter')],examples=[...root.querySelectorAll('.wwd-example')];
+const cfg=JSON.parse(document.getElementById('ww-discovery-config').textContent);
+let manifest=null,docs=[],loaded=new Set(),filter='all',visible=12,lastQuery='',searchVersion=0,lastDecision=null;
+const LENS_KEY='ww_workforce_lens_v1';
+const ROLE_LABELS={director:'Director / Executive',fiscal:'Fiscal',program:'Program',business_services:'Business Services',board_member:'Board Member',training_partner:'Education / Training Partner',research_policy:'Research / Policy'};
+const esc=s=>String(s==null?'':s);
+function readerLens(){try{return JSON.parse(localStorage.getItem(LENS_KEY)||'{}')}catch(_){return {}}}
+function lensActive(){const l=readerLens();return !!(l.jurisdiction_code||l.state_code||l.area_id||l.role_id)}
+function lensBoost(doc){
+ const l=readerLens(),code=String(l.jurisdiction_code||l.state_code||'').toUpperCase(),area=String(l.area_id||''),role=String(l.role_id||'');
+ let boost=0;
+ if(area&&String(doc.market_id||'')===area)boost+=55;
+ const codes=(doc.jurisdiction_codes||doc.state_codes||[]).map(x=>String(x).toUpperCase());
+ const levels=(doc.scope_levels||[]).map(x=>String(x).toLowerCase());
+ if(code&&codes.includes(code))boost+=28;
+ else if(code&&levels.includes('national'))boost+=10;
+ if(role&&(doc.audience_roles||[]).includes(role))boost+=18;
+ return boost;
+}
+function norm(s){return esc(s).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/\u0026amp;/g,' and ').replace(/[^a-z0-9]+/g,' ').trim().replace(/\s+/g,' ')}
+function words(s){return norm(s).split(' ').filter(Boolean)}
+function dist(a,b){if(a===b)return 0;if(!a)return b.length;if(!b)return a.length;let p=[...Array(b.length+1).keys()];for(let i=1;i<=a.length;i++){let c=[i];for(let j=1;j<=b.length;j++)c[j]=Math.min(c[j-1]+1,p[j]+1,p[j-1]+(a[i-1]===b[j-1]?0:1));p=c}return p[b.length]}
+function fuzzy(q,doc){if(q.length<5)return false;const max=q.length>=8?2:1;return words(doc.title+' '+(doc.identifier||'')+' '+(doc.aliases||[]).join(' ')).some(w=>Math.abs(w.length-q.length)<=max?dist(q,w)<=max:false)}
+function decodePage(html,id){const t=document.createElement('template');t.innerHTML=html;const s=t.content.querySelector('#'+id);if(!s)throw new Error('Missing '+id);const amp=String.fromCharCode(38),raw=s.textContent.replace(/\u0026#0*38;/g,amp).replace(/\u0026amp;/g,amp);return JSON.parse(raw)}
+async function pageJson(rest,id,signal){const res=await fetch(rest,{signal,headers:{Accept:'application/json'}});if(!res.ok)throw new Error('HTTP '+res.status);const data=await res.json();return decodePage((data.content?data.content.rendered:'')||'',id)}
+async function getManifest(){if(manifest)return manifest;manifest=await pageJson(cfg.manifest_rest,'ww-discovery-manifest');return manifest}
+function intent(q,m){const n=norm(q),scores={};Object.entries(m.aliases.intent_terms||{}).forEach(([k,terms])=>{scores[k]=(terms||[]).reduce((s,t)=>s+(n.includes(norm(t))?1:0),0)});if(/\b(ab|sb|hr|s|tegl|wsin|wsd)\s*\d+/i.test(q))scores.policy=(scores.policy||0)+4;if(/\b\d{2}-\d{4}\b/.test(q))scores.occupation=(scores.occupation||0)+5;return Object.entries(scores).sort((a,b)=>b[1]-a[1])[0]||['',0]}
+function shardOrder(q,m){const [i,score]=intent(q,m),base=[];
+ if(i==='policy')base.push('policy','site');
+ else if(i==='occupation')base.push('occupation-11-29','occupation-31-59','regional');
+ else if(i==='sector')base.push('sector','regional');
+ else if(i==='labor_market'||i==='training'||i==='equity')base.push('regional','sector');
+ else if(i==='practice')base.push('practice','site','policy');
+ else if(i==='report')base.push('site','policy');
+ else base.push('site','policy','regional','practice');
+ const n=norm(q);if(score<1?(!/\b(ab|sb|tegl|wsin|wsd)\s*\d+/i.test(q)?n.split(' ').length>1:false):false)base.push('occupation-11-29','occupation-31-59');
+ return [...new Set(base.concat(Object.keys(m.runtime.shards)))];
+}
+async function loadShard(name){if(loaded.has(name))return;const m=await getManifest(),meta=m.runtime.shards[name];if(!meta)return;const data=await pageJson(meta.rest,'ww-discovery-shard');docs.push(...(data.records||[]));loaded.add(name)}
+function expand(q,m){let n=norm(q);(m.aliases.typo_hints||[]).forEach(([wrong,right])=>{n=n.replace(new RegExp('\\b'+norm(wrong).replace(/ /g,'\\s+')+'\\b','g'),norm(right))});const set=new Set(words(n));(m.aliases.groups||[]).forEach(g=>{const terms=[g.canonical].concat(g.terms||[]);if(terms.some(t=>n.includes(norm(t))))terms.forEach(t=>words(t).forEach(w=>set.add(w)))});return {phrase:n,tokens:[...set]}}
+function family(doc){if(['Policy Brief','Policy Pulse','Policy Tool'].includes(doc.type))return'policy';if(['Quickstart','Foundation','Practice'].includes(doc.type))return'practice';if(['Occupation','Labor Market','Sector Partnership','Training Opportunity','Access & Equity','Data'].includes(doc.type))return'data';return'site'}
+function scoreDoc(doc,qx,primaryIntent){const title=norm(doc.title),id=norm(doc.identifier),geo=norm(doc.geography),search=norm(doc.search),aliases=norm((doc.aliases||[]).join(' '));let s=Number(doc.priority||0)/10;
+ if(id?qx.phrase===id:false)s+=300;if(title===qx.phrase)s+=250;else if(title.startsWith(qx.phrase))s+=190;else if(title.includes(qx.phrase))s+=145;
+ if(search.includes(qx.phrase))s+=65;if(geo?geo.includes(qx.phrase):false)s+=90;if(aliases?aliases.includes(qx.phrase):false)s+=80;
+ qx.tokens.forEach(t=>{if(title.split(' ').includes(t))s+=30;else if(title.includes(t))s+=20;if(id===t)s+=90;if(geo.includes(t))s+=18;if(search.includes(t))s+=8;if(fuzzy(t,doc))s+=7});
+ if(primaryIntent?doc.intent===primaryIntent:false)s+=26;if(doc.freshness==='Current')s+=3;s+=lensBoost(doc);return s}
+function rankedResults(q,scopeFilter){if(!manifest||!q.trim())return[];const active=scopeFilter==null?filter:scopeFilter,qx=expand(q,manifest),[pi]=intent(q,manifest);return docs.map(d=>({d,s:scoreDoc(d,qx,pi)})).filter(x=>x.s>=18?(active==='all'||family(x.d)===active):false).sort((a,b)=>b.s-a.s||Number(b.d.priority||0)-Number(a.d.priority||0)||esc(a.d.title).localeCompare(esc(b.d.title)))}
+function filteredResults(q){return rankedResults(q,filter)}
+function metaText(d){return [d.type,d.geography,d.date].filter(Boolean).join(' · ')}
+function makeRelated(items,top){const seen=new Set([top.id]),out=[];for(const x of items){if(seen.has(x.d.id)||family(x.d)===family(top))continue;seen.add(x.d.id);out.push(x.d);if(out.length===3)break}return out}
+function synthetic(items,q){const occ=items.find(x=>x.d.type==='Occupation'?x.s>=35:false),market=items.find(x=>x.d.type==='Labor Market'?x.s>=30:false);if(!occ||!market)return null;const u=new URL('https://workforcewonkery.com/data/occupation-explorer/');u.searchParams.set('geo',market.d.market_id);u.searchParams.set('soc',occ.d.soc);return{id:'synthetic:'+occ.d.id+':'+market.d.id,type:'Occupation + local market',title:occ.d.title+' in '+market.d.title.replace(/\s+MSA$/i,''),url:u.toString(),summary:'Open the occupation directly in the selected labor market.',geography:market.d.title,priority:999,intent:'occupation'}}
+function policyMeta(d,host){if(d.status_label){const s=document.createElement('span');s.className='wwd-policy-status';s.textContent=d.status_label;host.appendChild(s)}if(d.key_date&&d.key_date.date){const k=document.createElement('span');k.className='wwd-key-date';k.textContent=(d.key_date.label||'Key date')+' · '+d.key_date.date;host.appendChild(k)}}
+function safeDiscoveryUrl(value,internal){try{const u=new URL(String(value||''),location.origin);if(u.protocol!=='https:'&&u.protocol!=='http:')return '#';if(internal&&u.origin!==location.origin&&u.hostname!=='workforcewonkery.com')return '#';return u.href}catch(e){return '#'}}
+function sourceLink(d){if(!d.official_source)return null;const row=document.createElement('div');row.className='wwd-source-row';const a=document.createElement('a');a.className='wwd-source-link';a.href=safeDiscoveryUrl(d.official_source,false);a.target='_blank';a.rel='noopener noreferrer';a.textContent='Official source ↗';row.appendChild(a);return row}
+function lensSummary(){const l=readerLens(),code=String(l.jurisdiction_code||l.state_code||'').toUpperCase(),place=l.area_label||l.jurisdiction_label||code,role=l.role_label||ROLE_LABELS[l.role_id]||'';return [place,role].filter(Boolean).join(' · ')||'No saved place or role'}
+function decisionEvidence(items){const chosen=[],seen=new Set();function take(predicate,limit){let count=0;for(const x of items){if(count>=limit)break;const d=x.d;if(seen.has(d.id)||!predicate(d))continue;seen.add(d.id);chosen.push(d);count++}}take(d=>family(d)==='policy',2);take(d=>family(d)==='data',2);take(d=>family(d)==='practice',2);take(d=>family(d)==='site'&&d.type==='Intelligence Report',1);if(!chosen.length)take(()=>true,5);return chosen.slice(0,7)}
+function coverageFor(items){const out={policy:0,data:0,practice:0};items.forEach(x=>{const f=family(x.d);if(Object.prototype.hasOwnProperty.call(out,f))out[f]++});return out}
+function decisionQuestionsFor(coverage){const l=readerLens(),out=['What decision are we actually making, and by when?','Which evidence here is local enough and current enough for that decision?','What new evidence would change the decision?'];const role=l.role_id;if(role==='director')out.push('What can we decide locally, and what requires board, state, or partner action?');else if(role==='fiscal')out.push('What funding, allowability, procurement, or cost assumption still needs verification?');else if(role==='program')out.push('What would change for participants, staff, eligibility, or service flow?');else if(role==='business_services')out.push('What have employers actually said or done, rather than what market data imply?');else if(role==='board_member')out.push('What decision or oversight question belongs at board level?');else if(role==='training_partner')out.push('What proof do we have of employer demand, training capacity, outcomes, and access?');else if(role==='research_policy')out.push('Which claim needs a stronger primary source or better geographic fit?');if(!coverage.data)out.push('What local data do we need before judging scale, demand, access, or return on investment?');if(!coverage.policy)out.push('Does a controlling rule, deadline, funding condition, or local discretion apply?');if(!coverage.practice)out.push('What comparable operating example could test whether the idea is practical here?');return [...new Set(out)]}
+function decisionLimitsFor(coverage){const out=['Search rank is relevance, not evidence strength and not a recommendation.'];if(coverage.policy)out.push('Workforce Wonkery summarizes policy; the linked official authority controls.');if(coverage.data)out.push('Labor-market signals do not by themselves prove a shortage, employer hiring need, causal barrier, or training return.');if(coverage.practice)out.push('A practice example does not establish causal effectiveness or local fit.');if(!coverage.data)out.push('No data result is in this evidence set, so it cannot support a scale or investment conclusion.');if(!coverage.policy)out.push('No policy result is in this evidence set, so compliance or allowability should be checked separately.');out.push('The brief organizes governed material already on Workforce Wonkery. It does not replace local validation, partner agreement, fiscal review, or professional judgment.');return out}
+function decisionText(model){const lines=['WORKFORCE WONKERY DECISION BRIEF','','Question: '+model.query,'Lens: '+model.lens,'','This brief organizes governed Discovery results. It is not a recommendation.','','EVIDENCE TO REVIEW'];model.evidence.forEach(d=>{lines.push('',d.type+': '+d.title,d.summary||'','Workforce Wonkery: '+d.url);if(d.official_source)lines.push('Official source: '+d.official_source)});lines.push('','QUESTIONS TO RESOLVE');model.questions.forEach(x=>lines.push('- '+x));lines.push('','WHAT THIS DOES NOT ESTABLISH');model.limits.forEach(x=>lines.push('- '+x));return lines.join('\n')}
+function renderDecisionBrief(q){const items=rankedResults(q,'all'),evidence=decisionEvidence(items),coverage=coverageFor(items),questions=decisionQuestionsFor(coverage),limits=decisionLimitsFor(coverage),lens=lensSummary();lastDecision={query:q,lens,evidence,coverage,questions,limits};decision.dataset.query=q;decisionTitle.textContent='Decision brief: '+q;decisionContext.textContent='Lens: '+lens+'. Built from current governed Discovery results. The brief organizes evidence and questions; it does not make the decision for you.';decisionCoverage.innerHTML='';[['policy','Policy'],['data','Data'],['practice','Practice']].forEach(pair=>{const key=pair[0],label=pair[1],chip=document.createElement('span');chip.className='wwd-coverage-chip'+(coverage[key]?'':' is-missing');chip.textContent=label+' · '+(coverage[key]?coverage[key]+' match'+(coverage[key]===1?'':'es'):'not found');decisionCoverage.appendChild(chip)});decisionEvidenceHost.innerHTML='';evidence.forEach(d=>{const card=document.createElement('article');card.className='wwd-evidence-item';const type=document.createElement('div');type.className='wwd-type';type.textContent=d.type;const h=document.createElement('h4'),a=document.createElement('a');a.href=safeDiscoveryUrl(d.url,true);a.textContent=d.title;h.appendChild(a);const p=document.createElement('p');p.textContent=d.summary||'Open the source for detail.';const meta=document.createElement('p');meta.className='wwd-evidence-meta';meta.textContent=[d.geography,d.date].filter(Boolean).join(' · ');const sources=document.createElement('div');sources.className='wwd-evidence-sources';const w=document.createElement('a');w.href=d.url;w.textContent='Open Workforce Wonkery →';sources.appendChild(w);if(d.official_source){const o=document.createElement('a');o.href=d.official_source;o.target='_blank';o.rel='noopener noreferrer';o.textContent='Official source ↗';sources.appendChild(o)}card.append(type,h,p);if(meta.textContent)card.appendChild(meta);card.appendChild(sources);decisionEvidenceHost.appendChild(card)});decisionQuestionsHost.innerHTML='';questions.forEach(x=>{const li=document.createElement('li');li.textContent=x;decisionQuestionsHost.appendChild(li)});decisionLimitsHost.innerHTML='';limits.forEach(x=>{const li=document.createElement('li');li.textContent=x;decisionLimitsHost.appendChild(li)});decisionStatus.textContent='';decision.hidden=false;decision.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'})}
+function render(q,loading){lastQuery=q;if(decision.dataset.query&&decision.dataset.query!==q){decision.hidden=true;decision.dataset.query='';lastDecision=null}const items=filteredResults(q);const synth=synthetic(items,q);const top=synth||items[0]?.d||null;empty.hidden=!!q.trim();best.classList.toggle('is-visible',!!top);best.innerHTML='';
+ if(top){const label=document.createElement('p');label.className='wwd-best-label';label.textContent=synth?'Combined match':(lensActive()&&lensBoost(top)>0?'Best match for your Lens':'Best match');const h=document.createElement('h2'),a=document.createElement('a');a.href=safeDiscoveryUrl(top.url,true);a.textContent=top.title;h.appendChild(a);const p=document.createElement('p');p.className='wwd-summary';p.textContent=top.summary||'Open this result.';const m=document.createElement('div');m.className='wwd-meta';m.innerHTML='<span class="wwd-type"></span><span></span>';m.children[0].textContent=top.type;m.children[1].textContent=top.document_type||top.geography||top.date||'';policyMeta(top,m);best.append(label,h,p,m);const src=sourceLink(top);if(src)best.appendChild(src);
+   const rel=makeRelated(items,top);if(rel.length){const box=document.createElement('div');box.className='wwd-related';rel.forEach(d=>{const x=document.createElement('a');x.href=safeDiscoveryUrl(d.url,true);x.textContent=d.type+' · '+d.title;box.appendChild(x)});best.appendChild(box)}
+   if(!loading&&q.trim()){const actions=document.createElement('div');actions.className='wwd-decision-actions';const build=document.createElement('button');build.id='wwd-build-decision';build.className='wwd-decision-button';build.type='button';build.textContent='Build decision brief';build.addEventListener('click',()=>renderDecisionBrief(q));actions.appendChild(build);best.appendChild(actions)}
+ }
+ list.innerHTML='';const rendered=items.filter(x=>!top||x.d.id!==top.id).slice(0,visible);rendered.forEach(({d})=>{const li=document.createElement('li');li.className='wwd-result';const a=document.createElement('a');a.href=safeDiscoveryUrl(d.url,true);const main=document.createElement('div'),type=document.createElement('div'),h=document.createElement('h3'),p=document.createElement('p'),side=document.createElement('div'),strong=document.createElement('strong'),small=document.createElement('span'),arrow=document.createElement('span');type.className='wwd-type';type.textContent=d.type;h.textContent=d.title;p.textContent=d.summary||'';main.append(type,h,p);side.className='wwd-result-side';strong.textContent=d.document_type||d.geography||'';small.textContent=d.date||'';policyMeta(d,side);arrow.className='wwd-arrow';arrow.textContent='→';side.append(strong,small,arrow);a.append(main,side);li.appendChild(a);const src=sourceLink(d);if(src)li.appendChild(src);list.appendChild(li)});
+ more.classList.toggle('is-visible',items.length>(visible+(top?!synth:false?1:0)));status.textContent=q.trim()?(loading?'Searching across Workforce Wonkery…':items.length+' useful match'+(items.length===1?'':'es')+' found for “'+q+'”.'+(lensActive()?' Your Lens adjusts order without hiding matches.':'')):'Start typing to search Workforce Wonkery.';
+}
+async function search(q,updateUrl){const v=++searchVersion;visible=12;if(updateUrl){const u=new URL(location.href);if(q.trim())u.searchParams.set('q',q.trim());else u.searchParams.delete('q');history.replaceState({discovery:true},'',u)}
+ if(!q.trim()){render('',false);return}status.textContent='Searching across Workforce Wonkery…';
+ try{const m=await getManifest(),order=shardOrder(q,m),first=order.slice(0,Math.min(3,order.length));await Promise.all(first.map(n=>loadShard(n)));if(v!==searchVersion)return;render(q,true);for(const n of order.slice(first.length)){if(v!==searchVersion)return;try{await loadShard(n);render(q,true)}catch(e){console.warn('Discovery shard',n,e)}}if(v===searchVersion)render(q,false)}
+ catch(e){console.error(e);status.textContent='Universal search could not load. You can still search the site normally.';empty.hidden=false;empty.replaceChildren();const heading=document.createElement('h2');heading.textContent='Search is temporarily unavailable.';const p=document.createElement('p'),a=document.createElement('a');a.href='https://workforcewonkery.com/?s='+encodeURIComponent(q);a.textContent='Try the standard site search for “'+q+'” →';p.appendChild(a);empty.append(heading,p)}
+}
+form.addEventListener('submit',e=>{e.preventDefault();search(input.value,true)});
+let timer;input.addEventListener('input',()=>{clearTimeout(timer);timer=setTimeout(()=>{if(input.value.trim().length>=2)search(input.value,false);else if(!input.value.trim())search('',false)},180)});
+examples.forEach(b=>b.addEventListener('click',()=>{input.value=b.dataset.query||'';search(input.value,true);input.focus()}));
+filters.forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.filter;filters.forEach(x=>x.setAttribute('aria-pressed',String(x===b)));visible=12;render(lastQuery,false)}));
+more.addEventListener('click',()=>{visible+=12;render(lastQuery,false)});
+document.getElementById('wwd-decision-close').addEventListener('click',()=>{decision.hidden=true;const b=document.getElementById('wwd-build-decision');if(b)b.focus()});
+document.getElementById('wwd-decision-copy').addEventListener('click',async()=>{if(!lastDecision)return;try{await navigator.clipboard.writeText(decisionText(lastDecision));decisionStatus.textContent='Copied with source links and evidence limits.'}catch(e){decisionStatus.textContent='Automatic copy is unavailable. Use your browser to select and copy the brief.'}});
+document.getElementById('wwd-decision-print').addEventListener('click',()=>{root.classList.add('wwd-print');window.print()});
+addEventListener('afterprint',()=>root.classList.remove('wwd-print'));
+addEventListener('popstate',()=>{const q=new URLSearchParams(location.search).get('q')||'';input.value=q;search(q,false)});
+const initial=new URLSearchParams(location.search).get('q')||'';input.value=initial;if(initial)search(initial,false);else{getManifest().catch(()=>{});input.focus()}
+})();
+</script>
+<!-- /wp:html -->

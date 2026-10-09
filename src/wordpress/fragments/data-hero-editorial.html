@@ -1,0 +1,43 @@
+<style>
+
+/* CHG-20260927-DATA-HERO-SF-GOLDEN-HOUR-01 */
+.wd-ui .wd-hero.wd-hero-sf{height:clamp(420px,31.5vw,610px);min-height:0;padding:0!important;background:#fcfaf6;position:relative;isolation:isolate;overflow:hidden;border-bottom:1px solid #eee9de}
+.wd-ui .wd-hero-sf:before{display:none!important}
+.wd-ui .wd-hero-sf:after{content:'';position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#fcfaf6 0%,#fcfaf6 31%,rgba(252,250,246,.98) 38%,rgba(252,250,246,.84) 45%,rgba(252,250,246,.42) 53%,rgba(252,250,246,0) 65%)}
+.wd-ui .wd-hero-photo{position:absolute;inset:0 0 0 auto;width:63%;height:100%;overflow:hidden;z-index:0}
+.wd-ui .wd-hero-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:center center}
+.wd-ui .wd-hero-inner{height:100%;position:relative;z-index:2;display:flex;align-items:center}
+.wd-ui .wd-hero-copy{width:49%;padding:0}
+.wd-ui .wd-hero-sf .wd-kicker{display:block!important;color:#986714!important;font:600 clamp(11px,.72vw,15px)/1.5 var(--sans)!important;letter-spacing:.16em!important;text-transform:uppercase!important;margin:0 0 clamp(12px,1.1vw,20px)!important}
+.wd-ui .wd-hero-sf .wd-kicker:after{display:none!important}
+.wd-ui .wd-hero-sf h1{font-size:clamp(56px,5.1vw,94px)!important;line-height:.98!important;letter-spacing:-.052em!important;max-width:none!important;margin:0 0 clamp(18px,1.5vw,28px)!important;white-space:nowrap}
+.wd-ui .wd-hero-sf h1 span{color:#986714!important}
+.wd-ui .wd-hero-sf .wd-deck{font:clamp(20px,1.45vw,29px)/1.42 var(--serif)!important;color:#1d3546!important;max-width:760px!important;background:transparent!important}
+@media(max-width:1000px){
+  .wd-ui .wd-hero-copy{width:55%}
+  .wd-ui .wd-hero-sf h1{white-space:normal}
+  .wd-ui .wd-hero-photo{width:59%}
+}
+@media(max-width:760px){
+  .wd-ui .wd-hero.wd-hero-sf{height:auto!important;min-height:0!important}
+  .wd-ui .wd-hero-inner{height:auto!important;display:block!important;padding:26px 0 22px!important}
+  .wd-ui .wd-hero-copy{width:100%!important}
+  .wd-ui .wd-hero-sf .wd-kicker{font-size:11px!important;margin-bottom:9px!important}
+  .wd-ui .wd-hero-sf h1{font-size:44px!important;line-height:1.03!important;margin-bottom:12px!important}
+  .wd-ui .wd-hero-sf .wd-deck{font-size:19px!important;line-height:1.42!important;max-width:none!important}
+  .wd-ui .wd-hero-photo{position:relative!important;inset:auto!important;width:100%!important;height:220px!important}
+  .wd-ui .wd-hero-photo img{object-position:center center}
+  .wd-ui .wd-hero-sf:after{display:none!important}
+}
+
+</style>
+<section class="wd-hero wd-hero-sf" aria-labelledby="wd-data-hero-title">
+  <div class="wd-hero-photo" aria-hidden="true"><img src="https://workforcewonkery.com/wp-content/uploads/2026/09/data-hero-san-francisco-photo-only-clean.png" alt="" width="1228" height="606" fetchpriority="high"></div>
+  <div class="wd-wrap wd-hero-inner">
+    <div class="wd-hero-copy">
+      <p class="wd-kicker">Data for a stronger California</p>
+      <h1 id="wd-data-hero-title">Data <span>Decoded.</span></h1>
+      <p class="wd-deck">Clear, credible labor market insights to help you understand what’s happening in California’s economy — and what it means for your work.</p>
+    </div>
+  </div>
+</section>
