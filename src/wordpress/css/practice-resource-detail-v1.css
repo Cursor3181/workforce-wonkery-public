@@ -87,29 +87,26 @@
   border-top:1px solid #e8e2d7;font:12px/1.5 Arial,Helvetica,sans-serif!important;
   color:#63706a;
 }
+/* The Decode should read like a concise note from a trusted colleague,
+   not four dashboard cards. Preserve the four editorial functions. */
 :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content>.wwr-decode-title{
-  margin:31px 0 10px!important;color:#365d36!important;
-  font:700 13px/1.4 Arial,Helvetica,sans-serif!important;
-  text-transform:uppercase;letter-spacing:.12em!important;
+  margin:33px 0 14px!important;color:#365d36!important;
+  font:700 26px/1.2 Georgia,"Times New Roman",serif!important;
+  text-transform:none;letter-spacing:-.03em!important;
 }
 :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wwr-decode{
-  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));
-  list-style:none!important;gap:0;margin:0 0 42px!important;padding:0!important;
-  border-top:1px solid #dedbd3;border-bottom:1px solid #dedbd3;
+  display:block!important;list-style:none!important;max-width:790px;
+  margin:0 0 42px!important;padding:5px 0 5px 20px!important;
+  border-left:3px solid #365d36;border-top:0;border-bottom:0;
 }
 :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wwr-decode>li{
-  list-style:none!important;margin:0!important;padding:18px 24px!important;
-  border-bottom:1px solid #dedbd3;color:#253236;font:16px/1.55 Arial,Helvetica,sans-serif;
-}
-:is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wwr-decode>li:nth-child(odd){
-  border-right:1px solid #dedbd3;
-}
-:is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wwr-decode>li:nth-last-child(-n+2){
-  border-bottom:0;
+  list-style:none!important;margin:0!important;padding:7px 0!important;
+  border:0!important;color:#253236;font:16px/1.6 Arial,Helvetica,sans-serif;
 }
 :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wwr-decode strong{
-  display:block;margin-bottom:5px;color:#365d36;
-  font:700 12px/1.45 Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.08em;
+  display:inline;margin:0 7px 0 0;color:#365d36;
+  font:700 17px/1.5 Georgia,"Times New Roman",serif;
+  text-transform:none;letter-spacing:0;
 }
 :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wp-block-table{
   max-width:100%;margin:24px 0 30px;overflow-x:auto;display:block;
@@ -139,11 +136,12 @@
     font-size:clamp(34px,8vw,44px)!important;
   }
   :is(body.page-id-7584,body.page-id-7585) .wwr-hero .wwr-deck{font-size:19px!important}
-  :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wwr-decode{grid-template-columns:1fr}
-  :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wwr-decode>li{
-    border-right:0!important;border-bottom:1px solid #dedbd3!important;padding:14px 2px!important;
+  :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wwr-decode{
+    padding-left:15px!important;margin-bottom:34px!important
   }
-  :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wwr-decode>li:last-child{border-bottom:0!important}
+  :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content .wwr-decode>li{
+    padding:7px 0!important;font-size:15.5px
+  }
 }
 @media(max-width:450px){
   :is(body.page-id-7584,body.page-id-7585) .wp-block-post-content{
