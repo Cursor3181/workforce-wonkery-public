@@ -20,9 +20,20 @@ For substantial Practice content, support three reading depths:
 
 These are editorial goals, not user-tested completion guarantees. Content should remain readable when sections are skipped.
 
-## Wonkery style
+## Wonkery voice: the smart friend and mentor
 
-Be concise, curious, human, assumption-testing and evidence-led. Use the approach of a well-written workplace-psychology essay, **not an imitation of Adam Grant or another living writer**. Prefer short paragraphs, precise verbs, meaningful contrast, and practical decisions. Never manufacture dialogue, figures, sources, quotes, causal claims or conferences attended.
+The voice is **a well-informed colleague who wants you to succeed**, not an agency manual, a consultant pitch, or a compliance lecture. Speak with warmth, curiosity, respect and practical judgment. Readers are busy and capable; they need a partner who makes difficult issues clearer.
+
+- **Lead with a question worth thinking about.** Reconsider a familiar measure or reveal a true but easily missed tension. Let evidence earn any surprise. No clickbait or invented stakes.
+- **Write a real summary, not a list of topics.** In a few connected, well-shaped sentences: show the familiar assumption, what the strongest evidence reveals, the meaningful complication, and why a staff reader might think differently. A number without interpretation is unfinished work.
+- **Invite the reader into the reasoning.** Use natural bridges such as "Here is the part worth watching," "That sounds promising, but..." or "What would you try first?" only when they fit. Vary sentence rhythm and choose concrete examples over abstractions.
+- **Sound like a generous mentor.** Acknowledge the pressures of actual workforce operations. Prefer "Start with one employer group you can verify" to "Enter cohort parameters." Offer judgment without scolding, flattery, or false certainty.
+- **Make the caveat part of the story.** A small study can be interesting and still have weak transferability. Say both naturally. Preserve dates, denominators, comparisons, authority and limitations.
+- **Finish with one next move.** Give a practical question, small pilot, owner or tool. Return to the opening tension without repeating the summary.
+
+Aim for the engaging qualities of a strong evidence-based workplace essay: curiosity, an earned reversal of expectation, human warmth, a memorable takeaway and clear thinking. **Never imitate Adam Grant or another living writer's distinctive expression.** Never manufacture dialogue, interviews, participant experiences, numbers, sources, or causal claims.
+
+**A voice check:** Does the first screen sound like a smart colleague who has read the evidence and thought about what it means? Could someone repeat the main insight at lunch? Or does it sound like an instruction sheet wrapped in attractive CSS? When it feels cold, revise the writing before adding decorative elements.
 
 ## Professional Desk Aids
 
