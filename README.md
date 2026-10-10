@@ -4,10 +4,6 @@
 
 This is the public development home for Workforce Wonkery reader-facing WordPress source, public datasets, accessible testing, and reusable documentation.
 
-## Decoded reader promise
-
-The [Decoded Reader Contract](docs/decoded-reader-contract.md) is the permanent public implementation standard for staff-readable Policy, Data and Practice pages. New work should explain the insight, the evidence and its limits, how the practice operates, and what readers can do. See the root AGENTS.md for future contributors. Final editorial acceptance and WordPress publication remain governed privately.
-
 ## Repository ownership
 
 - **Public-owned website source:** `src/wordpress/` contains the source of approved website pages, shared components, CSS, JavaScript, and selected WordPress plugin code. Changes are reviewed through public pull requests.
